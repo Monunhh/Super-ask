@@ -18,11 +18,12 @@ sequenceDiagram
     C->>L: detectLanguageAndNormalise(text)
     L-->>C: normalisedQuery + language
     Note over L: «Pure Fabrication, High Cohesion»<br/>Khmer/English handling is isolated in one<br/>focused class instead of being spread<br/>across UI and controller
-    C->>C: screenGuardrails(question) and checkScope()
+    C->>C: screenGuardrails(question)
     opt question matches a curated Tier-1 answer
         C-->>UI: curated answer, served word-for-word
         UI-->>U: displayAnswer()  (no retrieval, no model call)
     end
+    C->>C: checkScope(question)  (government-service questions only)
     C->>R: retrievePassages(query)
     Note right of R: «include» UC-2:<br/>RetrieveOfficialSources
     R-->>C: ranked passages + source metadata
