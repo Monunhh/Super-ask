@@ -44,9 +44,10 @@ FIGS = [
      "(<b>Controller</b>). SourceRegistry owns the registered source list, so adding a new ministry is just a new "
      "registry entry with no change to the rest of the system (<b>Information Expert</b>, REQ-30). The platform "
      "crawlers (website, Facebook, Telegram) implement one SourceCrawler interface, so a new platform never changes "
-     "RefreshController (<b>Polymorphism</b>, <b>Protected Variations</b>). ContentStore creates and versions content "
-     "records because it aggregates them (<b>Creator</b>, <b>Information Expert</b>), and RefreshController creates "
-     "the RefreshReport from the results it holds (<b>Creator</b>)."),
+     "RefreshController (<b>Polymorphism</b>, <b>Protected Variations</b>). Changed content is queued for a human "
+     "steward to review — the crawler never writes to the knowledge base directly. ContentStore creates and versions "
+     "the approved content records because it aggregates them (<b>Creator</b>, <b>Information Expert</b>), and "
+     "RefreshController creates the RefreshReport from the results it holds (<b>Creator</b>)."),
 ]
 
 INTRO = """
