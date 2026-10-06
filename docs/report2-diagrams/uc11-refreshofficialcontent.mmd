@@ -1,0 +1,39 @@
+sequenceDiagram
+    autonumber
+    actor T as Scheduler (system timer)
+    participant C as :RefreshController
+    participant G as :SourceRegistry
+    participant W as :SourceCrawler
+    participant O as Official Source
+    participant Q as :ReviewQueue
+    participant S as :ContentStore
+    participant P as :RefreshReport
+
+    T->>C: startRefresh()
+    Note over C: «Controller»<br/>RefreshController handles the timer's<br/>system event and coordinates the whole<br/>refresh run
+    C->>G: loadRegisteredSources()
+    G-->>C: source list (website / Facebook / Telegram)
+    Note over G: «Information Expert»<br/>SourceRegistry owns the registered source<br/>list, so adding a new ministry is just a new<br/>registry entry (REQ-30)
+    loop for each registered source
+        C->>W: fetchLatest(source)
+        Note over W: «Polymorphism, Protected Variations»<br/>WebsiteCrawler, FacebookCrawler and<br/>TelegramCrawler implement one<br/>SourceCrawler interface — a new platform<br/>never changes RefreshController
+        W->>O: request latest page or posts
+        O-->>W: pageOrPosts (or error / block page)
+        W-->>C: extractedText + fetchDate (or failure)
+        alt fetch succeeded
+            C->>S: compareWithStored(source, extractedText)
+            opt content changed
+                C->>Q: queueChangeForReview(source, diff)
+                Note over Q: Changed content is flagged<br/>for a human steward to review —<br/>the crawler never writes to the<br/>knowledge base directly
+                Q->>S: storeContent(text, url, fetchedAt)<br/>only after the steward approves
+                S->>S: reindex()
+                Note over S: «Creator, Information Expert»<br/>ContentStore creates and<br/>versions the approved record,<br/>updating the data used<br/>for answers
+            end
+            C->>G: updateLastVerified(source)
+        else fetch failed or blocked
+            C->>G: recordFailure(source)  (stored copy is kept)
+        end
+    end
+    C->>P: create(checked, changed, failed)
+    Note over P: «Creator»<br/>RefreshController holds the<br/>run's results, so it creates<br/>the RefreshReport
+    C-->>T: refreshReport

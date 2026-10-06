@@ -1,0 +1,32 @@
+sequenceDiagram
+    autonumber
+    participant C as :QAController
+    participant R as :RetrievalService
+    participant H as :ConversationHistory
+    participant K as :KeywordIndex
+    participant X as :VectorIndex
+    participant S as :ContentStore
+
+    C->>R: retrievePassages(query, conversationId)
+    Note over R: «Pure Fabrication, Low Coupling»<br/>Retrieval logic lives in one service class,<br/>so the controller never touches the<br/>indexes or the store directly
+    opt follow-up question that does not name its subject
+        R->>H: getRecentContext(conversationId)
+        H-->>R: earlier questions + answers
+        R->>R: rewriteQueryWithContext()
+        Note over H: «Information Expert»<br/>ConversationHistory owns the earlier<br/>exchanges, so it supplies the context<br/>for the rewrite
+    end
+    R->>R: normaliseAndExpand(query)<br/>(synonyms, abbreviations, e.g. "MPWT")
+    R->>K: search(terms)
+    K-->>R: keyword matches
+    R->>X: search(queryEmbedding)
+    X-->>R: semantic matches
+    Note over K,X: «Polymorphism, Protected Variations»<br/>Both indexes implement one SearchIndex<br/>interface — a new search method can be<br/>added without changing RetrievalService
+    R->>R: mergeAndRerank(results)
+    R->>S: filterCurrentlyEffective(results)
+    S-->>R: passages still in effect + source metadata
+    Note over S: «Information Expert»<br/>ContentStore holds effective dates and<br/>last-verified dates, so it decides which<br/>content is still current
+    alt top score >= relevance threshold
+        R-->>C: topPassages + source metadata
+    else top score < relevance threshold
+        R-->>C: emptyResult (UC-1 continues with «extend» UC-4)
+    end

@@ -1,0 +1,27 @@
+sequenceDiagram
+    autonumber
+    actor U as Citizen / User
+    participant UI as :ChatUI
+    participant C as :QAController
+    participant H as :ConversationHistory
+    participant D as :OfficeDirectory
+
+    U->>UI: askContactAndLocation("the ministry for this")
+    UI->>C: getOfficeContact(request)
+    Note over C: «Controller»<br/>The same use-case controller coordinates<br/>this flow, so the UI stays free of lookup<br/>logic
+    C->>H: resolveProcedure(conversationId)
+    H-->>C: procedure discussed earlier (UC-8 context)
+    Note over H: «Information Expert»<br/>ConversationHistory knows what "this"<br/>refers to, because it holds the earlier<br/>conversation
+    C->>D: findResponsibleOffice(procedure)
+    alt online contact available
+        D-->>C: ContactInfo(name, address, hours, phone,<br/>mapLink, sourceRef)
+        C-->>UI: contact card + official source
+        UI-->>U: showContactCard() + showSource()
+    else no online contact available
+        D-->>C: officeLocation + mapLink only
+        C-->>UI: "No verified online contact information<br/>is available." + location
+        UI-->>U: showNoContactNotice() + location + map link
+    end
+    Note over D: «Information Expert, High Cohesion»<br/>OfficeDirectory owns office records<br/>collected by UC-11, so it answers which<br/>office is responsible and what contact<br/>data is verified — it never guesses
+    U->>UI: selectOpenInGoogleMaps()
+    UI-->>U: openMap(officeLocation) in a new tab

@@ -1,0 +1,13 @@
+{
+  "theme": "default",
+  "themeVariables": {
+    "fontFamily": "arial",
+    "noteFontFamily": "arial",
+    "messageFontFamily": "arial",
+    "actorFontFamily": "arial"
+  },
+  "sequence": {
+    "noteMargin": 12,
+    "wrap": false
+  }
+}
