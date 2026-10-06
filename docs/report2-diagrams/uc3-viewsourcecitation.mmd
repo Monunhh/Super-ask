@@ -1,0 +1,27 @@
+sequenceDiagram
+    autonumber
+    actor U as Citizen / User
+    participant UI as :ChatUI
+    participant P as :CitationPresenter
+    participant A as :Answer
+    participant F as :FeedbackLog
+
+    UI->>P: renderSourceCards(answer)
+    P->>A: getCitations()
+    A-->>P: SourceCitation list (ministry, title, url,<br/>effectiveDate, lastVerifiedDate)
+    Note over A: «Information Expert»<br/>The Answer object owns its citations,<br/>so it is asked for them instead of the<br/>presenter digging through other objects
+    opt last-verified date is past its review date
+        P->>P: markPossiblyOutdated(citation)
+    end
+    P-->>UI: source cards, visually separate from answer text
+    UI-->>U: show "Verified Source" card(s)
+    Note over P: «Pure Fabrication, High Cohesion»<br/>Presentation of citations is one focused<br/>responsibility — keeping it out of :ChatUI<br/>and :Answer keeps both cohesive
+    U->>UI: selectSourceLink()
+    UI-->>U: openOfficialSource(url) in a new tab
+    opt user finds the information incorrect
+        U->>UI: reportAnswer(answerId, comment)
+        UI->>F: recordReport(answerId, citedSourceId, comment)
+        F-->>UI: confirmReportReceived()
+        UI-->>U: show confirmation
+        Note over F: «Creator, Low Coupling»<br/>FeedbackLog stores reports, so it creates<br/>the Report record — the UI only forwards<br/>the event
+    end
