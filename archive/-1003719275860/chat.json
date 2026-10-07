@@ -1,0 +1,20 @@
+{
+ "chat": {
+  "admins": "[{\"user_id\": 5253685983, \"name\": \"Yean\", \"username\": \"yayayeanie\", \"status\": \"creator\", \"title\": null, \"is_bot\": false}, {\"user_id\": 740207002, \"name\": \"SereyProphea\", \"username\": \"SereyProphea\", \"status\": \"administrator\", \"title\": null, \"is_bot\": false}]",
+  "chat_id": -1003719275860,
+  "chat_type": "supergroup",
+  "description": null,
+  "first_seen_at": "2026-10-07T08:47:13Z",
+  "is_channel": 0,
+  "is_forum": 1,
+  "is_group": 1,
+  "is_private": 0,
+  "last_synced_at": null,
+  "member_count": 7,
+  "pinned_text": "Competition & Hackathons \n\n‼️Update: \n- Further Discussion needed: to discuss everyone's roles as well as interests within the competition, a clarification with everyone regarding the competition & hackathon itself (not to be mixed in with the school project) \n- meetings will be arrange after the submission of our project proposals\n\n💻 FrancoTech: Innovation Competition: \nDeadline: 21st September\nSemi-final Judging is on 30th September \n\nRequirements: \n-Project Description \n-Presentation deck\n-demo/Prototype materials\n-team information and supporting documents depending on the category of our choosing\n\n🖥️ Turing Hackathon: \nDeadline: 25th September\nPhases and dates\n- Program Orientation & Idea Hatching: 24st & 31st October\n -Hackathon Days: 6th, 7ths, & 8th November \n- Demo Day: 8th of November \n\nRequirments\n- form: https://airtable.com/app0Qy9jCtaoJTI6t/pagS3BzTGqfBz1l3U/form",
+  "profile_updated_at": "2026-10-07T08:47:14Z",
+  "title": "CSCI441 AO3 Project",
+  "username": null
+ },
+ "sync": null
+}
