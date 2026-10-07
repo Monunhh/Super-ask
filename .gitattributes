@@ -1,0 +1,4 @@
+# Written by collector/gitstore.py
+archive/*/media/** filter=lfs diff=lfs merge=lfs -text
+*.jsonl text eol=lf merge=union
+*.json text eol=lf
