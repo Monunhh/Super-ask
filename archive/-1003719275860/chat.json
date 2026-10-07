@@ -16,5 +16,13 @@
   "title": "CSCI441 AO3 Project",
   "username": null
  },
- "sync": null
+ "sync": {
+  "backfill_done": 0,
+  "chat_id": -1003719275860,
+  "last_error": null,
+  "last_synced_at": "2026-10-07T09:14:37Z",
+  "messages_collected": 1,
+  "newest_id": 962,
+  "oldest_id": 962
+ }
 }
