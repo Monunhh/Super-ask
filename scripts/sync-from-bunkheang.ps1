@@ -3,9 +3,9 @@
 # documents on top. Later runs: pulls anything new from Bunkheang's repo and
 # pushes it here, keeping Monunhh/Super-ask the latest version of everything.
 #
-# Run from the repo root:  powershell -ExecutionPolicy Bypass -File sync-from-bunkheang.ps1
+# Run from the repo root:  powershell -ExecutionPolicy Bypass -File scripts/sync-from-bunkheang.ps1
 $ErrorActionPreference = "Continue"
-Set-Location $PSScriptRoot
+Set-Location (Join-Path $PSScriptRoot "..")
 
 function Invoke-Git {
   # git writes progress to stderr; run through cmd so PowerShell 5.1 does not
@@ -15,14 +15,12 @@ function Invoke-Git {
   if ($LASTEXITCODE -ne 0) { throw "git $GitCommand failed (exit $LASTEXITCODE)" }
 }
 
-# Report artifacts that live in THIS repo (not in Bunkheang's) and must survive
-# every sync. Add new report files here as the course goes on.
+# Course material that lives in THIS repo (not in Bunkheang's) and must survive
+# every sync. All report deliverables sit under docs/reports and the diagram
+# sources under docs/report2-diagrams, so "docs" covers them.
 $keep = @(
-  "SuperAsk-3c-use-cases.html",
-  "SuperAsk-report2-interaction-diagrams.html",
-  "superask-use-case-diagram.png",
-  "sync-from-bunkheang.ps1",
-  "docs"
+  "docs",
+  "scripts/sync-from-bunkheang.ps1"
 )
 
 Invoke-Git "fetch bunkheang"
@@ -37,7 +35,11 @@ cmd /c "git push origin origin/main:refs/heads/$backup 2>&1"
 $tmp = Join-Path $env:TEMP "superask-sync-$(Get-Random)"
 New-Item -ItemType Directory -Force $tmp | Out-Null
 foreach ($item in $keep) {
-  if (Test-Path $item) { Copy-Item $item (Join-Path $tmp $item) -Recurse -Force }
+  if (Test-Path $item) {
+    $dest = Join-Path $tmp $item
+    New-Item -ItemType Directory -Force (Split-Path $dest) | Out-Null
+    Copy-Item $item $dest -Recurse -Force
+  }
 }
 
 # Point main at Bunkheang's latest.
@@ -46,7 +48,12 @@ Invoke-Git "switch -C main bunkheang/main"
 # Restore the report artifacts on top and commit them if anything changed.
 foreach ($item in $keep) {
   $src = Join-Path $tmp $item
-  if (Test-Path $src) { Copy-Item $src . -Recurse -Force }
+  if (Test-Path $src) {
+    $parent = Split-Path $item
+    if (-not $parent) { $parent = "." }
+    New-Item -ItemType Directory -Force $parent | Out-Null
+    Copy-Item $src $parent -Recurse -Force
+  }
 }
 Invoke-Git "add -A"
 $pending = git status --porcelain

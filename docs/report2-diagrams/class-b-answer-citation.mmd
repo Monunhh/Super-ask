@@ -1,0 +1,114 @@
+classDiagram
+    direction LR
+
+    class QAController {
+        +askQuestion(request)
+        -confidenceGate(result)
+        -moderateOutput(answer)
+    }
+    class AIModelGateway {
+        -provider
+        -fallbackProvider
+        -promptVersion
+        +generateAnswer(question, passages, lang, history)
+        +describeProvider()
+        -buildPrompt(request)
+        -parseGeneration(raw)
+    }
+    class LlmProvider {
+        <<interface>>
+        +info
+        +generate(request)
+    }
+    class AnthropicProvider {
+        -apiKey
+        -model
+        +generate(request)
+    }
+    class SeaLionProvider {
+        -endpoint
+        -model
+        +generate(request)
+    }
+    class ExtractiveProvider {
+        +generate(request)
+    }
+    class AnswerVerifier {
+        +verifyClaims(draft, citedIds, citedPassages, retrievedIds)
+        +createAnswer(draft, citations, lang)
+        -extractClaims(text)
+        -supportedBy(claim, corpus)
+    }
+    class Answer {
+        +id
+        +tier
+        +language
+        +text
+        +escalate
+        +unverified
+        +office
+        +getCitations()
+    }
+    class SourceCitation {
+        +id
+        +ministry
+        +ministryKm
+        +doc
+        +instrument
+        +article
+        +url
+        +effectiveDate
+        +lastVerifiedDate
+        +reviewDue
+        +freshness
+        +quote
+    }
+    class Passage {
+        +id
+        +text
+    }
+    class CitationPresenter {
+        +renderSourceCards(answer)
+        +markPossiblyOutdated(citation)
+        +toCitation(passage, lang)
+    }
+    class ChatUI {
+        +displayAnswer(answer)
+        +displaySourceCitation(answer)
+        +openOfficialSource(url)
+        +reportAnswer(answerId, comment)
+    }
+    class FeedbackLog {
+        -auditLog
+        -feedbackLog
+        -escalationLog
+        +recordReport(answerId, citedSourceIds, comment)
+        +recordAnswer(record)
+        +recordEscalation(record)
+        -redact(text)
+    }
+    class Report {
+        +at
+        +answerId
+        +kind
+        +comment
+        +citedIds
+        +ministries
+    }
+
+    QAController --> AIModelGateway
+    QAController --> AnswerVerifier
+    QAController --> FeedbackLog : audit
+    AIModelGateway --> LlmProvider
+    AnthropicProvider ..|> LlmProvider
+    SeaLionProvider ..|> LlmProvider
+    ExtractiveProvider ..|> LlmProvider
+    AnswerVerifier ..> Answer : creates
+    Answer "1" *-- "0..*" SourceCitation
+    SourceCitation "1" --> "1" Passage : cites
+    CitationPresenter --> Answer : getCitations
+    CitationPresenter ..> SourceCitation
+    ChatUI --> CitationPresenter
+    ChatUI --> FeedbackLog : recordReport
+    FeedbackLog ..> Report : creates
+    Report "*" --> "1" Answer

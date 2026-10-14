@@ -1,0 +1,160 @@
+classDiagram
+    direction LR
+
+    class ChatUI {
+        -language
+        -conversationId
+        -messages
+        -isLoading
+        +enterQuestion(text)
+        +submitQuestion()
+        +displayAnswer(answer)
+        +displayDecline(coveredAreas)
+        +displaySourceCitation(answer)
+        +showContactCard(contact)
+        +openOfficialSource(url)
+        +reportAnswer(answerId, comment)
+        +switchLanguage(lang)
+        +selectPopularProcedure(name)
+    }
+    class TelegramBot {
+        -botToken
+        -webhookSecret
+        -miniAppUrl
+        +handleUpdate(update)
+        +sendReply(chatId, answer)
+        +sendChatAction(chatId)
+        +channelKeyboard()
+    }
+    class Question {
+        +text
+        +language
+        +history
+        +sessionId
+    }
+    class QAController {
+        -curatedThreshold
+        -retrievalMinScore
+        +askQuestion(request)
+        +getOfficeContact(request)
+        -screenGuardrails(question)
+        -matchCurated(question, lang)
+        -checkScope(question)
+        -confidenceGate(result)
+        -moderateOutput(answer)
+        -buildDecline(reason)
+    }
+    class LanguageService {
+        +detectLanguage(text)
+        +normalise(text)
+        +segment(text)
+        +romanisedToKhmer(text)
+        +khmerDigitsToAscii(text)
+    }
+    class RetrievalService {
+        -topK
+        -anchorLookback
+        +retrievePassages(question, history, topK)
+        -processQuery(question, history)
+        -rewriteQueryWithContext(question, history)
+        -normaliseAndExpand(query)
+        -mergeAndRerank(lexical, dense)
+    }
+    class SearchIndex {
+        <<interface>>
+        +build(passages)
+        +search(query)
+    }
+    class KeywordIndex {
+        -k1
+        -b
+        -avgDocLength
+        -postings
+        +build(passages)
+        +search(query)
+        -idf(term)
+    }
+    class VectorIndex {
+        -dimensions
+        -vectors
+        +build(passages)
+        +search(query)
+        -embed(text)
+        -cosine(a, b)
+    }
+    class ContentStore {
+        -passages
+        -byId
+        -curatedAnswers
+        -glossary
+        -aliases
+        +load()
+        +getPassage(id)
+        +filterCurrentlyEffective(candidates)
+        +freshnessOf(passage)
+        +compareWithStored(source, text)
+        +storeContent(text, url, fetchedAt)
+        +reindex()
+    }
+    class Passage {
+        +id
+        +ministry
+        +ministryKm
+        +doc
+        +instrument
+        +article
+        +url
+        +effective
+        +verified
+        +reviewDue
+        +geoScope
+        +sensitivity
+        +superseded
+        +stewardApproved
+        +text
+        +textKm
+        +keywords
+        +questions
+    }
+    class Candidate {
+        +lexical
+        +dense
+        +fused
+        +rerank
+        +cited
+    }
+    class ConversationHistory {
+        -conversations
+        -maxTurns
+        +getRecentContext(conversationId)
+        +addToRecentConversations(question, answer)
+        +resolveProcedure(conversationId)
+        +listRecent()
+        +remove(conversationId)
+        +clearAll()
+    }
+    class Conversation {
+        +id
+        +title
+        +at
+        +turns
+    }
+
+    ChatUI ..> Question : creates
+    TelegramBot ..> Question : creates
+    ChatUI --> QAController : askQuestion
+    TelegramBot --> QAController : askQuestion
+    QAController --> LanguageService
+    QAController --> RetrievalService
+    QAController --> ContentStore : curated match
+    QAController --> ConversationHistory
+    RetrievalService "1" --> "2" SearchIndex
+    RetrievalService --> ContentStore
+    RetrievalService --> ConversationHistory : follow-up context
+    RetrievalService ..> Candidate : creates
+    Candidate "*" --> "1" Passage
+    KeywordIndex ..|> SearchIndex
+    VectorIndex ..|> SearchIndex
+    ContentStore "1" *-- "*" Passage
+    ConversationHistory "1" *-- "*" Conversation
+    Conversation "1" o-- "*" Question

@@ -10,6 +10,14 @@ Web, Next.js App Router, TypeScript.
 
 ---
 
+## Course deliverables (CSCI441, Team AO3)
+
+The proposal, Report One, and the Report Two diagram pages are collected in
+[`docs/reports/`](docs/reports/README.md). Diagram sources and build scripts are
+in [`docs/report2-diagrams/`](docs/report2-diagrams/README.md).
+
+---
+
 ## Run it
 
 ```bash

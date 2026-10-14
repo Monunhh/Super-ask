@@ -1,10 +1,10 @@
-# Builds SuperAsk-report2-interaction-diagrams.html with the five sequence
+# Builds docs/reports/SuperAsk-report2-interaction-diagrams.html with the five sequence
 # diagram PNGs embedded as data URIs, so each image can be copied straight
-# into the Google Doc (same hand-off pattern as SuperAsk-3c-use-cases.html).
+# into the Google Doc (same hand-off pattern as docs/reports/SuperAsk-3c-use-cases.html).
 import base64, pathlib
 
 HERE = pathlib.Path(__file__).parent
-OUT = HERE.parent.parent / "SuperAsk-report2-interaction-diagrams.html"
+OUT = HERE.parent / "reports" / "SuperAsk-report2-interaction-diagrams.html"
 
 def img(name):
     data = base64.b64encode((HERE / name).read_bytes()).decode()

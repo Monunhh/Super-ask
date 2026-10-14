@@ -1,0 +1,47 @@
+classDiagram
+    direction LR
+
+    class ChatUI {
+        +askContactAndLocation(text)
+        +showContactCard(contact)
+        +showNoContactNotice(location)
+        +openMap(location)
+    }
+    class QAController {
+        +getOfficeContact(request)
+    }
+    class ConversationHistory {
+        +resolveProcedure(conversationId)
+    }
+    class OfficeDirectory {
+        -facilities
+        -emergencyNumbers
+        -supportOffice
+        +findResponsibleOffice(procedure, province)
+        +getContact(officeId)
+        +supportOffice()
+    }
+    class ContactInfo {
+        +id
+        +ministry
+        +name
+        +nameKm
+        +services
+        +province
+        +address
+        +hours
+        +phone
+        +mapLink
+        +sourceRef
+    }
+    class RegisteredSource {
+        +id
+        +org
+        +url
+    }
+
+    ChatUI --> QAController
+    QAController --> ConversationHistory : resolve what this refers to
+    QAController --> OfficeDirectory
+    OfficeDirectory "1" o-- "*" ContactInfo
+    ContactInfo "*" --> "0..1" RegisteredSource : verified from

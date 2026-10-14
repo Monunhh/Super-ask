@@ -1,0 +1,96 @@
+classDiagram
+    direction LR
+
+    namespace Boundary {
+        class ChatUI
+        class TelegramBot
+    }
+    namespace Control {
+        class QAController
+        class RefreshController
+    }
+    namespace Services {
+        class LanguageService
+        class RetrievalService
+        class AIModelGateway
+        class AnswerVerifier
+        class CitationPresenter
+    }
+    namespace SearchAndModel {
+        class SearchIndex
+        class KeywordIndex
+        class VectorIndex
+        class LlmProvider
+        class AnthropicProvider
+        class ExtractiveProvider
+    }
+    namespace KnowledgeAndConversation {
+        class ContentStore
+        class Passage
+        class Candidate
+        class ConversationHistory
+        class Conversation
+        class Question
+        class Answer
+        class SourceCitation
+        class OfficeDirectory
+        class ContactInfo
+        class FeedbackLog
+        class Report
+    }
+    namespace ContentRefresh {
+        class SourceRegistry
+        class RegisteredSource
+        class SourceCrawler
+        class WebsiteCrawler
+        class FacebookCrawler
+        class TelegramCrawler
+        class ReviewQueue
+        class ChangeSignal
+        class RefreshReport
+    }
+
+    ChatUI --> QAController
+    TelegramBot --> QAController
+    ChatUI --> CitationPresenter
+    ChatUI --> FeedbackLog
+    QAController --> LanguageService
+    QAController --> RetrievalService
+    QAController --> AIModelGateway
+    QAController --> AnswerVerifier
+    QAController --> ConversationHistory
+    QAController --> OfficeDirectory
+    QAController --> ContentStore
+    RetrievalService --> SearchIndex
+    RetrievalService --> ContentStore
+    RetrievalService --> ConversationHistory
+    RetrievalService ..> Candidate
+    Candidate --> Passage
+    KeywordIndex ..|> SearchIndex
+    VectorIndex ..|> SearchIndex
+    ContentStore *-- Passage
+    AIModelGateway --> LlmProvider
+    AnthropicProvider ..|> LlmProvider
+    ExtractiveProvider ..|> LlmProvider
+    AnswerVerifier ..> Answer
+    Answer *-- SourceCitation
+    SourceCitation --> Passage
+    CitationPresenter --> Answer
+    FeedbackLog ..> Report
+    Report --> Answer
+    ConversationHistory *-- Conversation
+    Conversation o-- Question
+    Conversation o-- Answer
+    OfficeDirectory o-- ContactInfo
+    RefreshController --> SourceRegistry
+    RefreshController --> SourceCrawler
+    RefreshController --> ReviewQueue
+    RefreshController --> ContentStore
+    RefreshController ..> RefreshReport
+    SourceRegistry o-- RegisteredSource
+    WebsiteCrawler ..|> SourceCrawler
+    FacebookCrawler ..|> SourceCrawler
+    TelegramCrawler ..|> SourceCrawler
+    ReviewQueue o-- ChangeSignal
+    ChangeSignal --> RegisteredSource
+    ReviewQueue --> ContentStore
