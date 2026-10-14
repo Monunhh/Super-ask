@@ -1,0 +1,102 @@
+classDiagram
+    direction LR
+
+    class RefreshController {
+        -mode
+        -priorities
+        -startedAt
+        +startRefresh(options)
+        -compareWithStored(source, snapshot)
+        -classifyChange(diff)
+        -createReport()
+    }
+    class SourceRegistry {
+        -sources
+        +loadRegisteredSources()
+        +register(source)
+        +updateLastVerified(source)
+        +recordFailure(source, error)
+    }
+    class RegisteredSource {
+        +id
+        +org
+        +orgKm
+        +category
+        +url
+        +host
+        +platform
+        +priority
+        +depth
+        +maxPages
+        +politenessDelayMs
+        +enabled
+        +lastVerified
+        +kbMinistry
+    }
+    class SourceCrawler {
+        <<interface>>
+        +fetchLatest(source)
+    }
+    class WebsiteCrawler {
+        -userAgent
+        -timeoutMs
+        -maxBytes
+        +fetchLatest(source)
+        -checkRobots(host)
+        -extractText(html)
+        -detectSoftBlock(response)
+    }
+    class FacebookCrawler {
+        +fetchLatest(source)
+    }
+    class TelegramCrawler {
+        +fetchLatest(source)
+    }
+    class ReviewQueue {
+        -queuePath
+        +queueChangeForReview(changes)
+        +pendingCount()
+        +approve(change)
+    }
+    class ChangeSignal {
+        +id
+        +sourceId
+        +url
+        +kind
+        +risk
+        +riskTerms
+        +detectedAt
+        +title
+        +previousRawPath
+        +currentRawPath
+        +status
+    }
+    class ContentStore {
+        +compareWithStored(source, text)
+        +storeContent(text, url, fetchedAt)
+        +reindex()
+    }
+    class RefreshReport {
+        +startedAt
+        +finishedAt
+        +sourcesAttempted
+        +sourcesReachable
+        +pagesFetched
+        +pagesBlockedByRobots
+        +pagesRejected
+        +changes
+        +errors
+    }
+
+    RefreshController --> SourceRegistry
+    RefreshController --> SourceCrawler
+    RefreshController --> ReviewQueue
+    RefreshController --> ContentStore : compare
+    RefreshController ..> RefreshReport : creates
+    SourceRegistry "1" o-- "*" RegisteredSource
+    WebsiteCrawler ..|> SourceCrawler
+    FacebookCrawler ..|> SourceCrawler
+    TelegramCrawler ..|> SourceCrawler
+    ReviewQueue "1" o-- "*" ChangeSignal
+    ChangeSignal "*" --> "1" RegisteredSource
+    ReviewQueue --> ContentStore : storeContent after steward approval
