@@ -12,6 +12,7 @@ rest of the repository; see the top-level README for how to run it.
 | Use case diagram | `superask-use-case-diagram.png` |
 | Report Two, Part One: interaction (sequence) diagrams, Figures 8–12 | `SuperAsk-report2-interaction-diagrams.html` |
 | Report Two, Part Two, Section 2: class diagram and interface specification | `SuperAsk-report2-class-diagram.html` |
+| Full Report Two (revised 2026-10-22: no officer escalation, private-project framing) | `CSCI441-TeamAO3-ReportTwo.pdf` |
 
 The `.html` pages are self-contained (images embedded), so they open directly in
 a browser. Their diagram sources and the scripts that build them are in
