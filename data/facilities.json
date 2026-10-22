@@ -33,13 +33,5 @@
       { "label": "Ambulance", "labelKm": "សង្គ្រោះបន្ទាន់", "number": "119" },
       { "label": "Fire", "labelKm": "អគ្គិភ័យ", "number": "118" }
     ]
-  },
-  "support": {
-    "_comment": "Responsible office contact details supplied where human handover is unavailable (FR-29).",
-    "name": "DG Support",
-    "nameKm": "DG Support",
-    "address": "Digital Government Committee, Ministry of Post and Telecommunications",
-    "hours": "Official government working hours",
-    "phone": "[SAMPLE NUMBER]"
   }
 }

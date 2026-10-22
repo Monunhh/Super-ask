@@ -1,11 +1,11 @@
 {
   "_comment": "Official terminology, explained in plain language (section 6.1). Served verbatim as Tier 1 — human-approved text, no generation, nothing to fabricate. This is the content behind the promise the off-domain refusal makes: SuperAsk cannot translate or answer general knowledge, but it CAN say what a word in a government document means. Without these entries that promise pointed at a question the service then refused.",
   "_scopeNote": "Terminology only — the words a citizen meets in a legal instrument or in SuperAsk's own citation block. NOT service objects. 'Birth certificate' and 'family book' are deliberately absent: those have real procedures in the corpus and belong to retrieval, and a definition served in place of a procedure is a worse answer than the one retrieval gives.",
-  "_reviewNote": "PROTOTYPE CONTENT. Definitions describe the Cambodian normative hierarchy in general terms and state no fee, deadline, or office. They still require sign-off by a ministry content steward, and the Khmer text requires review by a Khmer-speaking content officer, before any release.",
+  "_reviewNote": "PROTOTYPE CONTENT. Definitions describe the Cambodian normative hierarchy in general terms and state no fee, deadline, or office. They still require sign-off by a content steward, and the Khmer text requires review by a Khmer-speaking reviewer, before any release.",
   "terms": [
     {
       "id": "GLO-001",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Prakas", "km": "ប្រកាស" },
       "match": ["prakas", "brakas", "ប្រកាស"],
@@ -16,7 +16,7 @@
     },
     {
       "id": "GLO-002",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Joint prakas", "km": "ប្រកាសអន្តរក្រសួង" },
       "match": [
@@ -32,7 +32,7 @@
     },
     {
       "id": "GLO-003",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Sub-decree", "km": "អនុក្រឹត្យ" },
       "match": [
@@ -52,7 +52,7 @@
     },
     {
       "id": "GLO-004",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Royal decree", "km": "ព្រះរាជក្រឹត្យ" },
       "match": [
@@ -69,7 +69,7 @@
     },
     {
       "id": "GLO-005",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Royal kram", "km": "ព្រះរាជក្រម" },
       "match": [
@@ -86,7 +86,7 @@
     },
     {
       "id": "GLO-006",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Circular", "km": "សារាចរ" },
       "match": ["circular", "sarachor", "sarachar", "សារាចរ"],
@@ -97,7 +97,7 @@
     },
     {
       "id": "GLO-007",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Administrative notice", "km": "សេចក្តីជូនដំណឹង" },
       "match": [
@@ -113,7 +113,7 @@
     },
     {
       "id": "GLO-008",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Official Gazette", "km": "រាជកិច្ច" },
       "match": [
@@ -130,7 +130,7 @@
     },
     {
       "id": "GLO-009",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Article", "km": "មាត្រា" },
       "match": ["article", "matra", "មាត្រា"],
@@ -141,7 +141,7 @@
     },
     {
       "id": "GLO-010",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": { "en": "Certified copy", "km": "ច្បាប់ចម្លងមានបញ្ជាក់" },
       "match": [
@@ -159,7 +159,7 @@
     },
     {
       "id": "GLO-011",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": {
         "en": "Commune and sangkat",
@@ -180,7 +180,7 @@
     },
     {
       "id": "GLO-012",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": {
         "en": "District, municipality, khan and province",
@@ -207,7 +207,7 @@
     },
     {
       "id": "GLO-013",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": {
         "en": "Ministry abbreviations in a citation",
@@ -230,7 +230,7 @@
     },
     {
       "id": "GLO-014",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-31",
       "term": {
         "en": "Effective, verified and review due",

@@ -81,7 +81,7 @@ export function miniAppUrl(): string {
   if (fromEnv) return fromEnv.replace(/\/$/, "");
   const site = process.env.NEXT_PUBLIC_SITE_URL?.trim();
   if (site) return `${site.replace(/\/$/, "")}/chat`;
-  return "https://askgov-one.vercel.app/chat";
+  return "http://localhost:3000/chat";
 }
 
 /** Persistent keyboard: Mini App + keep chatting by text. */

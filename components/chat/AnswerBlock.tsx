@@ -1,20 +1,20 @@
 "use client";
 
 /**
- * One assistant turn: the answer, its persistent source receipt, the escalation
- * action, the controls, and the non-binding notice.
+ * One assistant turn: the answer, its persistent source receipt, the decline
+ * notice where no source covered the question, the controls, and the
+ * non-binding notice.
  *
  * Ordering here is a requirement, not a layout preference. The answer, then the
- * sources (FR-62), then escalation (FR-66), then the notice (FR-65). The notice
- * is last because it applies to everything above it.
+ * sources (FR-62), then the decline notice (UC-4), then the notice (FR-65). The
+ * notice is last because it applies to everything above it.
  */
 
 import { useState } from "react";
-import { AlertTriangle, Flag, Send, ShieldCheck, Terminal } from "lucide-react";
+import { AlertTriangle, Flag, ShieldCheck, Terminal } from "lucide-react";
 import type { AskResponse } from "@/lib/types";
 import { T } from "@/lib/ui/theme";
 import { UI, UNVERIFIED_NOTICE } from "@/lib/ui/copy";
-import { SUPPORT_HANDLE } from "@/lib/ui/support";
 import { AnswerText } from "./AnswerText";
 import { SourceCard } from "./SourceCard";
 import { ReportDialog } from "./ReportDialog";
@@ -22,18 +22,11 @@ import { ReportDialog } from "./ReportDialog";
 export function AnswerBlock({
   answer,
   onOpenTrace,
-  onEscalate,
-  showDetail = false,
 }: {
   answer: AskResponse;
   onOpenTrace: (a: AskResponse) => void;
-  /** Handover to DG Support. Owns the transcript, so it lives in Chat. */
-  onEscalate: (a: AskResponse) => Promise<void>;
-  /** True for the first escalated answer in a conversation only. */
-  showDetail?: boolean;
 }) {
   const [reporting, setReporting] = useState(false);
-  const [handover, setHandover] = useState<"idle" | "sending">("idle");
   const lang = answer.lang;
   const hasSources = answer.citations.length > 0;
 
@@ -150,68 +143,24 @@ export function AnswerBlock({
       )}
 
       {/*
-        FR-66 — escalation as an explicit action.
-
-        One compact row: the reason, then the action. The longer explanation
-        appears only on the first escalation of a conversation (showDetail),
-        because repeating it under every escalated answer trains the citizen to
-        skip the whole block, and the action goes unread with it.
-
-        On the FR-28 wording: this deliberately does NOT tell the citizen their
-        conversation has been passed along. The transcript is stored server side
-        against a reference token and the token travels in the link, but whether
-        the officer sees it depends on the DG Support bot resolving that token —
-        which is dependency D-04 and not verified. Promising a handover the far
-        end may not honour is the kind of claim that costs trust the first time a
-        citizen has to repeat themselves anyway.
+        UC-4 — the decline notice. SuperAsk says it has no approved source and
+        stops there. There is no handover: the citizen can rephrase, pick a
+        suggested question, or confirm with the responsible office themselves.
       */}
-      {answer.escalate && (
+      {answer.coverageGap && (
         <div className="mt-3.5">
-          <div className="flex flex-wrap items-center gap-x-2.5 gap-y-2">
-            <span
-              className="km inline-flex items-center gap-1.5"
-              style={{ fontSize: 12.5, color: T.inkSoft }}
-            >
-              <AlertTriangle
-                size={13}
-                color={T.noticeText}
-                className="shrink-0"
-                aria-hidden
-              />
-              {UI.escalateCompact[lang]}
-            </span>
-
-            <button
-              disabled={handover === "sending"}
-              title={`${SUPPORT_HANDLE} · Telegram`}
-              className="inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5"
-              style={{
-                background: handover === "sending" ? T.inkFaint : T.deep,
-                color: "#fff",
-                fontSize: 12,
-                fontWeight: 500,
-              }}
-              onClick={async () => {
-                setHandover("sending");
-                try {
-                  await onEscalate(answer);
-                } finally {
-                  setHandover("idle");
-                }
-              }}
-            >
-              <Send size={12} aria-hidden /> {UI.connectOfficer[lang]}
-            </button>
-          </div>
-
-          {showDetail && (
-            <div
-              className="km mt-2"
-              style={{ fontSize: 11, color: T.inkFaint, maxWidth: 460 }}
-            >
-              {UI.escalateDetail[lang]}
-            </div>
-          )}
+          <span
+            className="km inline-flex items-center gap-1.5"
+            style={{ fontSize: 12.5, color: T.inkSoft }}
+          >
+            <AlertTriangle
+              size={13}
+              color={T.noticeText}
+              className="shrink-0"
+              aria-hidden
+            />
+            {UI.noSourceNotice[lang]}
+          </span>
         </div>
       )}
 

@@ -47,7 +47,7 @@ export const T = {
   greenWash: "#E8F6F0",
 
   /**
-   * Notice — replaces the former amber. Used for the escalation callout, the
+   * Notice — replaces the former amber. Used for the decline callout, the
    * internal-view warning, and the "review due" freshness state.
    *
    * `notice` is the specified #4295F5 and is used for borders, icons, and fills,

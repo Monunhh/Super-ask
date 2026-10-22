@@ -73,7 +73,7 @@ export async function POST(request: Request) {
   } catch (err) {
     console.error("[/api/ask] unhandled", err);
 
-    // NFR-09: degrade to escalation, never to a bare failure. The citizen gets
+    // NFR-09: degrade to a plain decline, never to a bare failure. The citizen gets
     // a usable next step rather than an error.
     return NextResponse.json(
       {
@@ -81,9 +81,9 @@ export async function POST(request: Request) {
         tier: 3,
         lang: "en",
         answer:
-          "SuperAsk could not process that request. A DG Support officer can help you continue.",
+          "SuperAsk could not process that request. Please try again in a moment.",
         citations: [],
-        escalate: true,
+        coverageGap: false,
       },
       { status: 200, headers: { "Cache-Control": "no-store" } },
     );

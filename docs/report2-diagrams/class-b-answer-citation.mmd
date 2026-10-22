@@ -44,7 +44,7 @@ classDiagram
         +tier
         +language
         +text
-        +escalate
+        +coverageGap
         +unverified
         +office
         +getCitations()
@@ -81,10 +81,8 @@ classDiagram
     class FeedbackLog {
         -auditLog
         -feedbackLog
-        -escalationLog
         +recordReport(answerId, citedSourceIds, comment)
         +recordAnswer(record)
-        +recordEscalation(record)
         -redact(text)
     }
     class Report {

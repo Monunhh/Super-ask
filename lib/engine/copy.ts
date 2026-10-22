@@ -46,7 +46,7 @@ export function notAServiceQuestion(lang: Lang): string {
  * A refusal that only says "no" is a dead end, and a dead end is what makes a
  * service feel unusable even when it is behaving correctly. So it says what IS
  * covered — most citizens who hit this asked about a service that has not been
- * onboarded yet, and redirecting them costs nothing and saves an escalation.
+ * onboarded yet, and redirecting them costs nothing and saves a dead end.
  *
  * The coverage list is derived from the loaded corpus rather than hardcoded, so
  * it cannot drift out of date as ministries onboard.
@@ -63,7 +63,7 @@ export function cannotAnswer(lang: Lang): string {
       "បច្ចុប្បន្ន SuperAsk គ្របដណ្តប់លើ៖",
       ...ministries.map((m) => `• ${m}`),
       "",
-      "ប្រសិនបើសំណួររបស់អ្នកស្ថិតក្នុងវិស័យទាំងនេះ សូមសាកសួរម្តងទៀតដោយប្រើពាក្យផ្សេង។ បើមិនមែនទេ មន្ត្រីអាចជួយអ្នកបាន។",
+      "ប្រសិនបើសំណួររបស់អ្នកស្ថិតក្នុងវិស័យទាំងនេះ សូមសាកសួរម្តងទៀតដោយប្រើពាក្យផ្សេង។",
     ].join("\n");
   }
 
@@ -73,7 +73,7 @@ export function cannotAnswer(lang: Lang): string {
     "Right now it covers:",
     ...ministries.map((m) => `• ${m}`),
     "",
-    "If your question is in one of those areas, try asking it a different way. If it is not, an officer can help you.",
+    "If your question is in one of those areas, try asking it a different way.",
   ].join("\n");
 }
 
@@ -89,7 +89,7 @@ export function cannotAnswer(lang: Lang): string {
  *
  * So it does three things and no more: names the distinction between the rule
  * and its reason, says SuperAsk will not invent the second, and offers both real
- * ways forward — the officer, who can speak to policy, and the rule question,
+ * ways forward — the responsible office, which can speak to policy, and the rule question,
  * which SuperAsk genuinely can answer.
  */
 export function reasonNotInSource(lang: Lang): string {
@@ -102,7 +102,7 @@ export function reasonNotInSource(lang: Lang): string {
       "• SuperAsk មិនបង្កើតមូលហេតុដែលគ្មាននៅក្នុងឯកសារយោងឡើយ — មូលហេតុដែលប្រឌិតឡើងសម្រាប់វិធានរបស់រដ្ឋាភិបាល អាក្រក់ជាងការមិនឆ្លើយ",
       "",
       "អ្វីដែលអាចជួយបាន៖",
-      "• មន្ត្រីអាចពន្យល់អំពីគោលនយោបាយនៅពីក្រោយវិធាននេះ",
+      "• ការិយាល័យទទួលបន្ទុកអាចពន្យល់អំពីគោលនយោបាយនៅពីក្រោយវិធាននេះ",
       "• បើអ្នកចង់ដឹងអំពីវិធានខ្លួនឯង — លក្ខខណ្ឌ ថ្លៃសេវា ឬពេលវេលាដែលវាអនុវត្ត — សូមសួរបែបនោះ ហើយ SuperAsk នឹងឆ្លើយពីឯកសារយោង",
     ].join("\n");
   }
@@ -115,7 +115,7 @@ export function reasonNotInSource(lang: Lang): string {
     "• SuperAsk does not supply reasons that are not in the source — an invented rationale for a government rule is worse than none",
     "",
     "What can help:",
-    "• An officer can explain the policy behind it",
+    "• The responsible office can explain the policy behind it",
     "• If you want the rule itself — the conditions, the fee, or when it applies — ask for that and SuperAsk will answer it from the source",
   ].join("\n");
 }
@@ -153,6 +153,6 @@ export function entityLookup(lang: Lang): string {
 }
 
 export const SUPPRESSED: Record<Lang, string> = {
-  en: "SuperAsk drafted an answer but could not confirm every detail against an approved source, so it has withheld it.\n\nAn officer can give you a confirmed answer.",
-  km: "SuperAsk បានព្រាងចម្លើយមួយ ប៉ុន្តែមិនអាចផ្ទៀងផ្ទាត់រាល់ព័ត៌មានលម្អិតជាមួយឯកសារយោងដែលបានអនុម័តទេ ដូច្នេះវាបានទប់ចម្លើយនោះ។\n\nមន្ត្រីអាចផ្តល់ចម្លើយដែលបានផ្ទៀងផ្ទាត់ជូនអ្នក។",
+  en: "SuperAsk drafted an answer but could not confirm every detail against an approved source, so it has withheld it.\n\nConfirm the details with the responsible office.",
+  km: "SuperAsk បានព្រាងចម្លើយមួយ ប៉ុន្តែមិនអាចផ្ទៀងផ្ទាត់រាល់ព័ត៌មានលម្អិតជាមួយឯកសារយោងដែលបានអនុម័តទេ ដូច្នេះវាបានទប់ចម្លើយនោះ។\n\nសូមផ្ទៀងផ្ទាត់ព័ត៌មានលម្អិតជាមួយការិយាល័យទទួលបន្ទុក។",
 };

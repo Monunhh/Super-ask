@@ -5,8 +5,8 @@
  * correct every string a citizen sees without touching component code, and so
  * that adding a language (Phase 2) is a data change.
  *
- * The Khmer here is prototype copy and needs review by a Khmer-speaking content
- * officer before any release.
+ * The Khmer here is prototype copy and needs review by a Khmer-speaking
+ * reviewer before any release.
  */
 
 import type { Lang } from "@/lib/types";
@@ -30,8 +30,8 @@ export const UNVERIFIED_NOTICE: Copy = {
 
 export const UI = {
   brandSub: {
-    en: "Digital Government Committee",
-    km: "គណៈកម្មាធិការរដ្ឋាភិបាលឌីជីថល",
+    en: "Independent service guide",
+    km: "មគ្គុទ្ទេសក៍សេវាឯករាជ្យ",
   } satisfies Copy,
 
   newQuestion: { en: "New question", km: "សំណួរថ្មី" } satisfies Copy,
@@ -83,20 +83,6 @@ export const UI = {
   } satisfies Copy,
 
   /**
-   * FR-66 — escalation presented as an explicit action.
-   *
-   * "Explicit" is satisfied by a visible, labelled control. It does not require
-   * repeating the same three-line explanation under every escalated answer; a
-   * citizen who reads the same paragraph four times stops reading it, and the
-   * action it wraps gets ignored with it. So the action is always shown, and the
-   * explanation is shown once per conversation.
-   */
-  connectOfficer: {
-    en: "Ask an officer",
-    km: "សួរមន្ត្រី",
-  } satisfies Copy,
-
-  /**
    * The unverified-answer banner (AskResponse.unverified).
    *
    * Sits ABOVE the answer, not below it. A citizen who reads the answer and
@@ -113,32 +99,13 @@ export const UI = {
     km: "SuperAsk គ្មានឯកសាររដ្ឋាភិបាលដែលបានអនុម័តសម្រាប់ករណីនេះទេ។ ចម្លើយខាងក្រោមគឺជាការណែនាំទូទៅពីម៉ូដែល AI — សូមផ្ទៀងផ្ទាត់ថ្លៃសេវា កំណត់ពេល ឯកសារ ឬការិយាល័យ មុននឹងអនុវត្ត។",
   } satisfies Copy,
 
-  /** The one-line reason, always shown next to the action. */
-  escalateCompact: {
+  /** UC-4: shown under a declined answer when no approved source covers it. */
+  noSourceNotice: {
     en: "No approved source covers this.",
     km: "គ្មានឯកសារយោងដែលបានអនុម័តសម្រាប់ករណីនេះ។",
   } satisfies Copy,
 
-  /**
-   * Shown only on the first escalation of a conversation. Deliberately does not
-   * promise that the officer will already have the conversation — see the
-   * handover note in components/AnswerBlock.tsx.
-   */
-  escalateDetail: {
-    en: "Opens a chat with DG Support on Telegram. Your question is sent with the request so the officer has the context.",
-    km: "បើកការសន្ទនាជាមួយ DG Support នៅលើ Telegram។ សំណួររបស់អ្នកត្រូវផ្ញើជាមួយសំណើ ដើម្បីឱ្យមន្ត្រីមានបរិបទ។",
-  } satisfies Copy,
-
-  handoverFailed: {
-    en: "Could not open the handover. Contact DG Support directly:",
-    km: "មិនអាចបើកការបញ្ជូនបន្តបានទេ។ សូមទាក់ទង DG Support ដោយផ្ទាល់៖",
-  } satisfies Copy,
-
-  /**
-   * FR-29. Retained because the requirement stands — the office block is
-   * suppressed only while the directory holds placeholder contact details. See
-   * supportOffice() in lib/engine/tiers.ts.
-   */
+  /** Label for the responsible-office line of an answer. */
   officeFallback: {
     en: "Responsible office",
     km: "ការិយាល័យទទួលបន្ទុក",
@@ -158,8 +125,8 @@ export const UI = {
   } satisfies Copy,
 
   reportBody: {
-    en: "This report goes to the content steward at the ministry that owns the cited source. Tell them what is wrong, if you can.",
-    km: "របាយការណ៍នេះនឹងទៅដល់អ្នកទទួលបន្ទុកខ្លឹមសារនៅក្រសួងដែលជាម្ចាស់ឯកសារយោង។ សូមប្រាប់ថាអ្វីមិនត្រឹមត្រូវ ប្រសិនបើអ្នកអាច។",
+    en: "This report goes to the SuperAsk content team, who check it against the cited source. Tell them what is wrong, if you can.",
+    km: "របាយការណ៍នេះនឹងទៅដល់ក្រុមខ្លឹមសារ SuperAsk ដែលនឹងពិនិត្យវាជាមួយឯកសារយោង។ សូមប្រាប់ថាអ្វីមិនត្រឹមត្រូវ ប្រសិនបើអ្នកអាច។",
   } satisfies Copy,
 
   reportPlaceholder: {
@@ -171,8 +138,8 @@ export const UI = {
   cancel: { en: "Cancel", km: "បោះបង់" } satisfies Copy,
 
   reportThanks: {
-    en: "Report sent to the responsible ministry steward.",
-    km: "របាយការណ៍បានផ្ញើទៅអ្នកទទួលបន្ទុកក្រសួង។",
+    en: "Report sent to the SuperAsk content team.",
+    km: "របាយការណ៍បានផ្ញើទៅក្រុមខ្លឹមសារ SuperAsk។",
   } satisfies Copy,
 
   /** FR-64 badge labels. */
@@ -192,8 +159,8 @@ export const UI = {
   trace: { en: "Trace", km: "ដាននៃចម្លើយ" } satisfies Copy,
   traceTitle: { en: "Answer trace", km: "ដាននៃចម្លើយ" } satisfies Copy,
   traceInternal: {
-    en: "Internal view — DGC and ministry users only. Not shown to citizens.",
-    km: "ទិដ្ឋភាពខាងក្នុង — សម្រាប់តែអ្នកប្រើ DGC និងក្រសួង។",
+    en: "Internal view — SuperAsk team only. Not shown to citizens.",
+    km: "ទិដ្ឋភាពខាងក្នុង — សម្រាប់តែក្រុមការងារ SuperAsk។",
   } satisfies Copy,
 
   toggleSidebar: { en: "Toggle sidebar", km: "បិទបើករបារចំហៀង" } satisfies Copy,

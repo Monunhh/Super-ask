@@ -6,17 +6,17 @@
  * correctly-behaving service feel stupid:
  *
  *   glossary      a definition question. In scope (section 6.1) — ANSWERED
- *   off-domain    not a service question at all. Refused, no escalation:
- *                 sending someone to an officer because they asked for a
- *                 translation wastes the officer's time and theirs
- *   coverage gap  a service question from a ministry not yet onboarded. The
- *                 officer is ALWAYS offered and there are never citations.
+ *   off-domain    not a service question at all. Refused; not flagged as a
+ *                 coverage gap, because there was nothing of SuperAsk's kind
+ *                 to answer
+ *   coverage gap  a service question from a ministry not yet onboarded. It is
+ *                 ALWAYS flagged coverageGap and there are never citations.
  *                 Whether the citizen also receives an unverified model answer
  *                 depends on GENERAL_FALLBACK_ENABLED, so this route covers
  *                 both refusal and unverified-answer, and the flag decides
  *                 which — see the `unverified` column in the output.
  *   entity lookup a question about a NAMED business or record rather than the
- *                 rule (section 6.2). Refused WITH escalation, and answered
+ *                 rule (section 6.2). Refused, flagged as a gap, and answered
  *                 with the addresses of the public registers.
  *
  * The fifth ending is the ordinary one: retrieval answers it, with citations.
@@ -32,7 +32,7 @@
 /**
  * This harness classifies routing by reading `diagnostics.refusalReason`, which
  * only exists when diagnostics are enabled. Diagnostics are opt-in (FR-72/73:
- * the trace is for DGC and ministry users, so the citizen default must be off),
+ * the trace is for the SuperAsk team, so the citizen default must be off),
  * therefore the check turns them on for itself.
  *
  * This works because ask() reads process.env at call time, not at module load
@@ -84,7 +84,7 @@ const CASES: Case[] = [
   // ── Definition questions are IN scope and must be answered ───────────────
   // The off-domain refusal copy names "What does prakas mean?" as an example of
   // something SuperAsk can do. Before the glossary existed it then refused that
-  // exact question and offered to escalate it.
+  // exact question.
   {
     q: "what does prakas mean",
     route: "glossary",
@@ -148,7 +148,7 @@ const CASES: Case[] = [
     why: "comparison is a definitional intent",
   },
 
-  // ── Not a service question: refuse, do NOT escalate ──────────────────────
+  // ── Not a service question: refuse, not a coverage gap ───────────────────
   {
     q: "how do you say hello in khmer",
     route: "off-domain",
@@ -158,7 +158,7 @@ const CASES: Case[] = [
   { q: "what is the capital of france", route: "off-domain", why: "general knowledge" },
   { q: "what is the weather today", route: "off-domain", why: "not a service at all" },
 
-  // ── Coverage gap: refuse AND escalate, an officer can help ───────────────
+  // ── Coverage gap: refuse and flag the gap ───────────────────────────────
   {
     q: "how do i apply for a fishing permit",
     route: "coverage-gap",
@@ -167,9 +167,9 @@ const CASES: Case[] = [
   {
     q: "how do i enrol my child in school",
     route: "coverage-gap",
-    why: "same — must offer the officer, unlike off-domain",
+    why: "same — must be flagged as a gap, unlike off-domain",
     knownGap:
-      "answered from an onboarded ministry instead of escalating. Same defect " +
+      "answered from an onboarded ministry instead of declining. Same defect " +
       "as the company/passport cases noted below: 'child' and 'school' clear " +
       "the retrieval floor against civil-registration content on shared " +
       "vocabulary. Fix is retrieval precision, not routing.",
@@ -277,7 +277,7 @@ function routeOf(res: Awaited<ReturnType<typeof ask>>): Route {
   if (reason === "scope:entity_record_lookup") return "entity-lookup";
   if (reason?.startsWith("retrieval:")) return "coverage-gap";
   // An unsourced answer IS the coverage-gap ending, just with the fallback on:
-  // no approved source, no citations, officer offered. Classifying it as
+  // no approved source, no citations, gap flagged. Classifying it as
   // "answered" would let a genuine leak — an off-domain question picked up by
   // the fallback — pass as an ordinary answer, which is how it escaped once.
   if (reason === "fallback:general_knowledge") return "coverage-gap";
@@ -301,14 +301,14 @@ async function main() {
 
     if (route !== c.route) problems.push(`route ${route}, expected ${c.route}`);
 
-    // Escalation is the operational difference between the refusals: an officer
-    // can help with a coverage gap or a register lookup, and cannot help with
-    // the weather.
-    const wantEscalate =
+    // The gap flag is the operational difference between the refusals: a
+    // coverage gap or a register lookup is something SuperAsk could cover one
+    // day; the weather is not.
+    const wantGap =
       c.route === "coverage-gap" || c.route === "entity-lookup";
-    if (c.route !== "answered" && res.escalate !== wantEscalate) {
+    if (c.route !== "answered" && res.coverageGap !== wantGap) {
       problems.push(
-        `escalate ${res.escalate}, expected ${wantEscalate}`,
+        `coverageGap ${res.coverageGap}, expected ${wantGap}`,
       );
     }
 

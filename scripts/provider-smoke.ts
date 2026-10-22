@@ -21,7 +21,7 @@ import { describeProvider } from "../lib/llm";
 
 /**
  * Two sources and two probes. The first probe is answerable from the sources.
- * The second is not, and a model that answers it anyway — rather than escalating
+ * The second is not, and a model that answers it anyway — rather than declining
  * — has failed rule 2, which is the failure mode that matters most here.
  */
 const SOURCES = [
@@ -44,19 +44,19 @@ const PROBES = [
     label: "answerable",
     question: "I lost my national ID card. What do I do?",
     lang: "en" as const,
-    expectEscalate: false,
+    expectDecline: false,
   },
   {
-    label: "not-in-sources (must escalate)",
+    label: "not-in-sources (must decline)",
     question: "How much does it cost to replace a lost national ID card?",
     lang: "en" as const,
-    expectEscalate: true,
+    expectDecline: true,
   },
   {
     label: "khmer",
     question: "ខ្ញុំបាត់អត្តសញ្ញាណប័ណ្ណ តើត្រូវធ្វើដូចម្តេច?",
     lang: "km" as const,
-    expectEscalate: false,
+    expectDecline: false,
   },
 ];
 
@@ -93,7 +93,7 @@ async function main() {
       continue;
     }
 
-    const escalateOk = out.shouldEscalate === probe.expectEscalate;
+    const declineOk = out.shouldDecline === probe.expectDecline;
     // Rule 3: no figure that is not in the sources. Thirty is the only number
     // the sources contain, so any other figure is fabricated.
     //
@@ -109,12 +109,12 @@ async function main() {
       (n) => !["30", "thirty"].includes(n.toLowerCase().replace(/\.$/, "")),
     );
 
-    if (!escalateOk || invented.length) failures++;
+    if (!declineOk || invented.length) failures++;
 
-    console.log(`${!escalateOk || invented.length ? "WARN" : "ok  "}  ${probe.label}  (${ms}ms)`);
-    console.log(`      confidence ${out.confidence}  escalate ${out.shouldEscalate}  citations [${out.citations.join(", ")}]`);
-    if (!escalateOk) {
-      console.log(`      expected escalate=${probe.expectEscalate}`);
+    console.log(`${!declineOk || invented.length ? "WARN" : "ok  "}  ${probe.label}  (${ms}ms)`);
+    console.log(`      confidence ${out.confidence}  decline ${out.shouldDecline}  citations [${out.citations.join(", ")}]`);
+    if (!declineOk) {
+      console.log(`      expected decline=${probe.expectDecline}`);
     }
     if (invented.length) {
       console.log(`      figures not present in sources: ${invented.join(", ")}`);

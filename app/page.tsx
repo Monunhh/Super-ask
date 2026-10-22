@@ -24,7 +24,7 @@ const FEATURE_ICONS = [
   Shield,
 ];
 
-const AGENCIES = ["DGC", "MPWT", "MoI", "MoC"] as const;
+const AGENCIES = ["MoI", "MPWT", "MoC", "NBC"] as const;
 
 type ChatPhase = "idle" | "question" | "typing" | "streaming" | "done";
 

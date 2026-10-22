@@ -3,12 +3,12 @@
  *
  * OFF (`GENERAL_FALLBACK_ENABLED=false`) is the PRD behaviour: no approved
  * source, no answer. ON lets the model answer a coverage gap from its own
- * knowledge, labelled unverified, with the officer still offered.
+ * knowledge, labelled unverified.
  *
  * It is ON by default in this build because the corpus is four ministries of
  * sample content. Even when ON, it does not invent a government procedure —
- * fees, offices, deadlines — for a coverage gap. That answer is a refusal and
- * an officer, not a fluent guess. The flag remains for the rare in-scope
+ * fees, offices, deadlines — for a coverage gap. That answer is a refusal,
+ * not a fluent guess. The flag remains for the rare in-scope
  * question that is not a procedure and not a follow-up in a service thread.
  *
  * What it does NOT loosen: the §12 policy guardrails, the off-domain screen,
@@ -21,7 +21,6 @@ import { UNVERIFIED_NOTICE } from "@/lib/ui/copy";
 import { generate, GENERAL_PROMPT_VERSION } from "@/lib/llm";
 import { isOffDomain, looksLikeServiceQuestion } from "./guardrails";
 import { looksLikeEntityLookup } from "./topicality";
-import { supportOffice } from "./citations";
 
 export const GENERAL_FALLBACK_ENABLED =
   (process.env.GENERAL_FALLBACK_ENABLED ?? "true").toLowerCase() !== "false";
@@ -45,7 +44,7 @@ export interface GeneralFallbackInput {
  * Two callers, because there are two ways to arrive at "no approved source
  * answers this". Retrieval can find nothing above the floor, or it can find
  * something plausible that turns out not to answer the question, which the
- * grounded generation reports by escalating. The second is the common one on
+ * grounded generation reports by declining. The second is the common one on
  * a follow-up turn: history pulls the rewritten query toward whatever the
  * corpus does cover, so the passport question retrieves driving-licence
  * provisions and lands here rather than below the floor.
@@ -95,7 +94,7 @@ export async function tryGeneralFallback(
   // at a procedure it does not know, so a decline is a real signal, not a
   // formality. An extractive degradation lands here too, and must not be
   // dressed up as an unverified answer.
-  if (!general.answer || general.shouldEscalate) return null;
+  if (!general.answer || general.shouldDecline) return null;
 
   return input.finish(
     {
@@ -106,10 +105,8 @@ export async function tryGeneralFallback(
       // Never any: an unsourced answer with a citation would be a fabricated
       // government reference.
       citations: [],
-      // Still offered. The officer is the path to a confirmed answer, and
-      // that matters more here than after a sourced one.
-      escalate: true,
-      office: supportOffice(),
+      // Still a coverage gap: nothing approved covers the question.
+      coverageGap: true,
       unverified: true,
     },
     input.baseDiagnostics({

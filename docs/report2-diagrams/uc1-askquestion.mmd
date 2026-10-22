@@ -40,8 +40,8 @@ sequenceDiagram
         UI-->>U: displayAnswer() in the question's language
         UI-->>U: displaySourceCitation()  «include» UC-3
     else no relevant source, or a claim cannot be verified
-        C-->>UI: decline(coveredAreas) + escalation option  «extend» UC-4
-        UI-->>U: displayDecline() + offer human support
+        C-->>UI: decline(coveredAreas)  «extend» UC-4
+        UI-->>U: displayDecline() with the areas SuperAsk.AI covers
     end
     C->>H: addToRecentConversations(question, answer)
     Note over H: «Information Expert»<br/>ConversationHistory holds past exchanges<br/>(on the citizen's device for the web, in<br/>session memory for Telegram), so it stores<br/>and lists them

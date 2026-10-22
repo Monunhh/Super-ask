@@ -14,7 +14,6 @@
 import { Check, Menu, ShieldCheck, X } from "lucide-react";
 import { T, BRAND_BAR_HEIGHT } from "@/lib/ui/theme";
 import { SUGGESTIONS, UI } from "@/lib/ui/copy";
-import { SUPPORT_BOT, SUPPORT_HANDLE } from "@/lib/ui/support";
 import { useSiteLang } from "@/lib/ui/site-lang";
 import { SuperAskLogo } from "@/components/site";
 import { AnswerBlock } from "./AnswerBlock";
@@ -41,18 +40,15 @@ export function Chat({ coverage }: { coverage: Coverage[] }) {
     setTrace,
     sidebar,
     setSidebar,
-    handoverError,
     history,
     conversationId,
     terminated,
-    firstEscalationIndex,
     endRef,
     ask,
     startNewConversation,
     openConversation,
     deleteConversation,
     clearHistory,
-    escalate,
   } = useConversation();
 
   return (
@@ -238,33 +234,8 @@ export function Chat({ coverage }: { coverage: Coverage[] }) {
                   key={i}
                   answer={turn.response}
                   onOpenTrace={setTrace}
-                  onEscalate={escalate}
-                  showDetail={i === firstEscalationIndex}
                 />
               ),
-            )}
-
-            {handoverError && (
-              <div
-                className="mb-8 rounded-xl px-4 py-3"
-                style={{
-                  background: T.noticeWash,
-                  border: `1px solid ${T.noticeLine}`,
-                  fontSize: 12.5,
-                  color: T.noticeText,
-                }}
-                role="alert"
-              >
-                {UI.handoverFailed[lang]}{" "}
-                <a
-                  href={`https://t.me/${SUPPORT_BOT}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: T.deep, fontWeight: 600 }}
-                >
-                  {SUPPORT_HANDLE}
-                </a>
-              </div>
             )}
 
             {busyHere && (

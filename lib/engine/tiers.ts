@@ -3,7 +3,7 @@
  *
  *   Tier 1  Human-approved curated answer, served verbatim.   50–70% at maturity
  *   Tier 2  Retrieval augmented generation over the corpus.    25–45%
- *   Tier 3  Refusal and escalation to a human agent.            5–10%
+ *   Tier 3  Refusal: SuperAsk declines rather than guess.         5–10%
  *
  * The order of operations is the safety design, not an implementation detail:
  *
@@ -12,7 +12,7 @@
  *
  * Guardrails run BEFORE retrieval, so an out-of-scope question never reaches a
  * model at all. The confidence gate runs BEFORE generation, so weak retrieval
- * escalates instead of producing a fluent answer over irrelevant sources —
+ * declines instead of producing a fluent answer over irrelevant sources —
  * which is the failure mode section 13 explicitly calls worse than no service.
  * The verification gate runs AFTER generation and can still suppress an answer
  * that has already been written.
@@ -50,14 +50,14 @@ import {
   entityLookup,
   SUPPRESSED,
 } from "./copy";
-import { toCitation, supportOffice } from "./citations";
+import { toCitation } from "./citations";
 import { tryGeneralFallback } from "./fallback";
 
 const CURATED_THRESHOLD = Number(
   process.env.CURATED_MATCH_THRESHOLD ?? "0.72",
 );
 /**
- * Escalation floor (FR-16). Derived from the sweep in scripts/eval.ts against
+ * Decline floor (FR-16). Derived from the sweep in scripts/eval.ts against
  * the golden set, not chosen by feel: at 0.20 the starter set answers 91.2% of
  * in-scope questions and refuses 100% of out-of-scope ones. Re-derive whenever
  * the corpus, the segmenter, or the reranker changes.
@@ -75,7 +75,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
   const question = req.question.trim();
   const lang = detectLang(question);
   /**
-   * FR-72 / FR-73: the answer trace is for DGC and ministry users, not
+   * FR-72 / FR-73: the answer trace is for the SuperAsk team, not
    * citizens. This is opt-IN — set DIAGNOSTICS_ENABLED=true to expose it.
    *
    * It previously defaulted to on (`!== "false"`), which meant the default
@@ -114,7 +114,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
     trace("done", {
       tier: out.tier,
       lang: out.lang,
-      escalate: out.escalate,
+      coverageGap: out.coverageGap,
       unverified: out.unverified === true,
       terminal: out.terminal === true,
       refusalReason: diag.refusalReason,
@@ -146,10 +146,10 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         lang,
         answer: hit.message[lang],
         citations: [],
-        // An emergency terminates the interaction rather than escalating it.
-        escalate: !hit.terminal,
+        // A policy refusal is not a coverage gap: SuperAsk is not allowed to
+        // answer, whatever the corpus holds. An emergency also terminates.
+        coverageGap: false,
         terminal: hit.terminal,
-        office: hit.terminal ? undefined : supportOffice(),
       },
       baseDiagnostics({ tier: 3, refusalReason: `policy:${hit.kind}` }),
     );
@@ -167,7 +167,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         lang,
         answer: curated.answer,
         citations: [],
-        escalate: false,
+        coverageGap: false,
       },
       baseDiagnostics({
         tier: 1,
@@ -205,9 +205,8 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         lang,
         answer: notAServiceQuestion(lang),
         citations: [],
-        // No officer: sending someone to a government desk because they asked
-        // for the weather wastes their time and the officer's.
-        escalate: false,
+        // Not a coverage gap: there was nothing of SuperAsk's kind to answer.
+        coverageGap: false,
       },
       baseDiagnostics({ tier: 3, refusalReason: "scope:not_a_service_question" }),
     );
@@ -257,7 +256,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
       baseDiagnostics,
     });
 
-  // ── Confidence gate: escalate rather than generate over weak sources ─────
+  // ── Confidence gate: decline rather than generate over weak sources ─────
   // FR-16. This runs before generation on purpose (section 13).
   if (candidates.length === 0 || topScore < RETRIEVAL_MIN_SCORE) {
     trace("confidence_gate", {
@@ -284,7 +283,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
           // about any specific service. Attaching an instrument number and an
           // article to it would be inventing source metadata.
           citations: [],
-          escalate: false,
+          coverageGap: false,
         },
         baseDiagnostics({
           tier: 1,
@@ -299,7 +298,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
     }
 
     // Anything reaching here is in domain — the off-domain screen ran before
-    // retrieval — so this is a coverage gap, and the officer is worth offering.
+    // retrieval — so this is a coverage gap.
     const fallback = await generalFallback();
     if (fallback) return fallback;
 
@@ -310,8 +309,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         lang,
         answer: cannotAnswer(lang),
         citations: [],
-        escalate: true,
-        office: supportOffice(),
+        coverageGap: true,
       },
       baseDiagnostics({
         tier: 3,
@@ -359,8 +357,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         lang,
         answer: entityLookup(lang),
         citations: [],
-        escalate: true,
-        office: supportOffice(),
+        coverageGap: true,
       },
       baseDiagnostics({
         tier: 3,
@@ -390,8 +387,8 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
   // verification gate passes because every clause of it is genuinely supported.
   //
   // Decided here rather than by the model, and that placement is the fix. Rule 2
-  // of the grounding prompt already tells the model to escalate when the SOURCES
-  // do not contain the answer, and the escalation branch below already handles
+  // of the grounding prompt already tells the model to decline when the SOURCES
+  // do not contain the answer, and the decline branch below already handles
   // it correctly. Production showed the model simply does not agree that it is
   // in that situation: asked why the late penalty exists it read the penalty
   // provision as the answer, restated it, and appended "because the regulation
@@ -420,9 +417,9 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
   // The top source is also what `topical` above is assessed against, so the two
   // gates judge the same passage rather than quietly disagreeing about which
   // source the answer is really resting on. The cost is a rationale sitting in
-  // the second candidate and not the first, which escalates a question the
+  // the second candidate and not the first, which declines a question the
   // corpus could have answered — the over-refusal direction §13 prefers, and
-  // recoverable through the officer.
+  // recoverable by asking again in other words.
   if (topical.onTopic && rationaleGap(question, [top.text])) {
     trace("rationale", { gap: true });
     return finish(
@@ -435,14 +432,13 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         // put the "what" back in front of a citizen who has already been told
         // it twice — which is the complaint this whole path exists to answer.
         citations: [],
-        escalate: true,
-        office: supportOffice(),
+        coverageGap: true,
       },
       baseDiagnostics({
         tier: 3,
         ...retrievalDiag,
         confidence: "low",
-        // Distinct from provider:escalated. The corpus covers this subject and
+        // Distinct from provider:declined. The corpus covers this subject and
         // the engine, not the model, decided the question was unanswerable from
         // it — and the rate of these is a content signal worth measuring
         // separately: a "why" the corpus cannot answer is a gap in the
@@ -468,15 +464,15 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
   };
 
   // The model claimed it cannot answer, or produced no citations.
-  if (outcome.shouldEscalate || !outcome.answer) {
+  if (outcome.shouldDecline || !outcome.answer) {
     /*
       Retrieval returned something the model would not answer from. That is a
       coverage gap ONLY when what it returned was not about the question.
 
-      This used to hand every escalation to the unsourced fallback, on the
+      This used to hand every model decline to the unsourced fallback, on the
       reading that a model declining meant the corpus held nothing. It does not.
       "Why is there a late penalty" retrieves MPWT-DL-008 — which states the
-      penalty, its rate, and when it starts — and the model escalates because the
+      penalty, its rate, and when it starts — and the model declines because the
       source gives the rule and not the REASON for it. The citizen was then told
       "SuperAsk has no approved government document covering this" and handed
       general-knowledge speculation ("it may encourage people to complete the
@@ -485,9 +481,8 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
       §13 failure the fallback is supposed to be fenced away from.
 
       So the fallback is offered only when the top source is genuinely off the
-      topic. When it is on topic, the honest ending is the escalation below: the
-      corpus has something, this particular question is not answered by it, and
-      an officer is the way to a real answer.
+      topic. When it is on topic, the honest ending is the decline below: the
+      corpus has something, and this particular question is not answered by it.
     */
     const fallback = topical.onTopic ? null : await generalFallback();
     if (fallback) return fallback;
@@ -499,15 +494,14 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         lang,
         answer: outcome.answer || cannotAnswer(lang),
         citations: [],
-        escalate: true,
-        office: supportOffice(),
+        coverageGap: true,
       },
       baseDiagnostics({
         tier: 3,
         ...retrievalDiag,
         ...providerDiag,
         confidence: outcome.confidence,
-        refusalReason: "provider:escalated",
+        refusalReason: "provider:declined",
       }),
     );
   }
@@ -547,8 +541,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         lang,
         answer: SUPPRESSED[lang],
         citations: [],
-        escalate: true,
-        office: supportOffice(),
+        coverageGap: true,
       },
       baseDiagnostics({
         tier: 3,
@@ -572,8 +565,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         lang,
         answer: moderation.message[lang],
         citations: [],
-        escalate: true,
-        office: supportOffice(),
+        coverageGap: true,
       },
       baseDiagnostics({
         tier: 3,
@@ -624,7 +616,7 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
       lang,
       answer,
       citations,
-      escalate: false,
+      coverageGap: false,
     },
     baseDiagnostics({
       tier,

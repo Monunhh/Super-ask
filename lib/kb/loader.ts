@@ -57,7 +57,6 @@ export interface Kb {
   aliases: Record<string, string[]>;
   facilities: Facility[];
   emergency: Array<{ label: string; labelKm: string; number: string }>;
-  support: { name: string; address: string; hours: string; phone: string };
   builtAt: string;
 }
 
@@ -90,8 +89,7 @@ function build(): Kb {
   const facilityFile = readJson<{
     facilities: Facility[];
     emergency: { numbers: Array<{ label: string; labelKm: string; number: string }> };
-    support: { name: string; address: string; hours: string; phone: string };
-  }>("facilities.json");
+    }>("facilities.json");
 
   return {
     chunks,
@@ -103,7 +101,6 @@ function build(): Kb {
     aliases: aliasFile.aliases,
     facilities: facilityFile.facilities,
     emergency: facilityFile.emergency.numbers,
-    support: facilityFile.support,
     builtAt: new Date().toISOString(),
   };
 }

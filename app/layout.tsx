@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Ask about Cambodian government services. Every answer shows the official source it came from.",
   applicationName: "SuperAsk",
-  authors: [{ name: "Digital Government Committee" }],
+  authors: [{ name: "SuperAsk team" }],
   robots: { index: false, follow: false },
 };
 

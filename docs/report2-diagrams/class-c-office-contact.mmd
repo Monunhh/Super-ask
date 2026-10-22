@@ -16,10 +16,8 @@ classDiagram
     class OfficeDirectory {
         -facilities
         -emergencyNumbers
-        -supportOffice
         +findResponsibleOffice(procedure, province)
         +getContact(officeId)
-        +supportOffice()
     }
     class ContactInfo {
         +id

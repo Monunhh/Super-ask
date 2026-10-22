@@ -27,9 +27,9 @@
  *
  * So the gap is detected explicitly: the citizen asked for a reason AND no
  * cited source contains one. The answer then says so in those words instead of
- * dressing the rule up as its own cause, and the officer is offered — a policy
- * rationale is exactly the kind of thing a human can explain and a published
- * procedure page cannot.
+ * dressing the rule up as its own cause — a policy rationale is exactly the
+ * kind of thing the responsible office can explain and a published procedure
+ * page cannot.
  *
  * This follows the topicality downgrade rather than the suppression path: the
  * citizen keeps the sourced rule, which is real information they asked around,

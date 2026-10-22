@@ -2,7 +2,7 @@
  * Phase 0 provider: Claude via the commercial API (RD-01).
  *
  * External hosting, permitted only under the NFR-11 exemption for the closed
- * pilot with DGC and ministry staff. That exemption lapses at Phase 1 public
+ * pilot. That exemption lapses at Phase 1 public
  * release; from then on live citizen query handling must be domestic (R-14).
  *
  * The API key is read from the server environment and never leaves this process
@@ -160,7 +160,7 @@ export function createAnthropicProvider(): LlmProvider {
         answer: "",
         citations: [],
         confidence: "low",
-        shouldEscalate: true,
+        shouldDecline: true,
       };
     }
 

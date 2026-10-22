@@ -2,7 +2,7 @@
  * Guardrails and refusal policy (PRD section 12, section 6.2).
  *
  * ── GOVERNANCE NOTE ────────────────────────────────────────────────────────
- * The refusal policy is a governance document approved at DGC leadership level,
+ * The refusal policy is a governance document owned by the SuperAsk project,
  * not a setting configured at engineering discretion (section 12 preamble,
  * OD-07 pending). The patterns below are the machine-readable expression of
  * that policy. Changing what SuperAsk refuses is a governance change that happens
@@ -12,8 +12,8 @@
  * Refusal precision is a measured metric: at least 98% of out-of-scope
  * questions must be refused correctly (M-04, NFR-02). Recall on refusal matters
  * more than elegance, so these are broad keyword nets applied before retrieval
- * — a false refusal costs the citizen an escalation to a human, while a false
- * acceptance costs the government an answer it had no authority to give.
+ * — a false refusal costs the citizen a retry, while a false acceptance
+ * costs them an answer SuperAsk had no source for.
  */
 
 import type { Lang } from "@/lib/types";
@@ -75,8 +75,8 @@ const RULES: Rule[] = [
       /(ស្ថានភាពពាក្យសុំ|ពាក្យសុំរបស់ខ្ញុំ|ឯកសាររបស់ខ្ញុំ|ត្រួតពិនិត្យករណីរបស់ខ្ញុំ)/,
     ],
     message: {
-      en: "SuperAsk cannot look up an individual case or personal record. It has no access to personal data and no way to verify who you are.\n\nAn officer can check this for you, or you can ask at the office holding your file.",
-      km: "SuperAsk មិនអាចស្វែងរកករណីបុគ្គល ឬកំណត់ត្រាផ្ទាល់ខ្លួនបានទេ។ វាមិនមានសិទ្ធិចូលដល់ទិន្នន័យផ្ទាល់ខ្លួន ហើយមិនអាចផ្ទៀងផ្ទាត់អត្តសញ្ញាណអ្នកបានទេ។\n\nមន្ត្រីអាចពិនិត្យជំនួសអ្នក ឬអ្នកអាចសួរនៅការិយាល័យដែលកាន់កាប់ឯកសាររបស់អ្នក។",
+      en: "SuperAsk cannot look up an individual case or personal record. It has no access to personal data and no way to verify who you are.\n\nAsk at the office holding your file.",
+      km: "SuperAsk មិនអាចស្វែងរកករណីបុគ្គល ឬកំណត់ត្រាផ្ទាល់ខ្លួនបានទេ។ វាមិនមានសិទ្ធិចូលដល់ទិន្នន័យផ្ទាល់ខ្លួន ហើយមិនអាចផ្ទៀងផ្ទាត់អត្តសញ្ញាណអ្នកបានទេ។\n\nសូមសួរនៅការិយាល័យដែលកាន់កាប់ឯកសាររបស់អ្នក។",
     },
   },
   {
@@ -89,8 +89,8 @@ const RULES: Rule[] = [
       /(ស្របច្បាប់ឬទេ|ខ្ញុំមានសិទ្ធិ|ប្រឹក្សាច្បាប់|អាចប្តឹងបានទេ)/,
     ],
     message: {
-      en: "SuperAsk explains procedures, not legal position. It cannot tell you whether something is lawful in your situation or what the consequences would be.\n\nFor that you need a qualified legal professional. An officer can point you to the responsible authority for your case.",
-      km: "SuperAsk ពន្យល់អំពីនីតិវិធី មិនមែនស្ថានភាពផ្នែកច្បាប់ទេ។ វាមិនអាចប្រាប់អ្នកថាតើអ្វីមួយស្របច្បាប់ក្នុងស្ថានភាពរបស់អ្នក ឬផលវិបាកជាអ្វីនោះទេ។\n\nសម្រាប់ករណីនោះ អ្នកត្រូវការជំនាញការផ្នែកច្បាប់។ មន្ត្រីអាចណែនាំអ្នកទៅអាជ្ញាធរទទួលបន្ទុក។",
+      en: "SuperAsk explains procedures, not legal position. It cannot tell you whether something is lawful in your situation or what the consequences would be.\n\nFor that you need a qualified legal professional or the responsible authority for your case.",
+      km: "SuperAsk ពន្យល់អំពីនីតិវិធី មិនមែនស្ថានភាពផ្នែកច្បាប់ទេ។ វាមិនអាចប្រាប់អ្នកថាតើអ្វីមួយស្របច្បាប់ក្នុងស្ថានភាពរបស់អ្នក ឬផលវិបាកជាអ្វីនោះទេ។\n\nសម្រាប់ករណីនោះ អ្នកត្រូវការជំនាញការផ្នែកច្បាប់ ឬអាជ្ញាធរទទួលបន្ទុក។",
     },
   },
   {
@@ -118,8 +118,8 @@ const RULES: Rule[] = [
       /(ជម្លោះដីធ្លី|ដីធ្លីជម្លោះ|ព្រំដីជម្លោះ)/,
     ],
     message: {
-      en: "SuperAsk does not handle land disputes. These turn on contested facts and are decided by the competent authority, not by an information service.\n\nAn officer can direct you to the responsible authority.",
-      km: "SuperAsk មិនដោះស្រាយជម្លោះដីធ្លីទេ។ ករណីទាំងនេះពាក់ព័ន្ធអង្គហេតុដែលមានការប្រកែក ហើយត្រូវសម្រេចដោយអាជ្ញាធរមានសមត្ថកិច្ច មិនមែនដោយសេវាព័ត៌មានទេ។\n\nមន្ត្រីអាចណែនាំអ្នកទៅអាជ្ញាធរទទួលបន្ទុក។",
+      en: "SuperAsk does not handle land disputes. These turn on contested facts and are decided by the competent authority, not by an information service.\n\nContact the competent authority directly.",
+      km: "SuperAsk មិនដោះស្រាយជម្លោះដីធ្លីទេ។ ករណីទាំងនេះពាក់ព័ន្ធអង្គហេតុដែលមានការប្រកែក ហើយត្រូវសម្រេចដោយអាជ្ញាធរមានសមត្ថកិច្ច មិនមែនដោយសេវាព័ត៌មានទេ។\n\nសូមទាក់ទងអាជ្ញាធរមានសមត្ថកិច្ចដោយផ្ទាល់។",
     },
   },
   {
@@ -131,8 +131,8 @@ const RULES: Rule[] = [
       /(គណនាពន្ធ|ពន្ធដែលខ្ញុំត្រូវបង់|ពន្ធប៉ុន្មាន)/,
     ],
     message: {
-      en: "SuperAsk does not calculate tax. The amount depends on your specific circumstances and a wrong figure would carry real financial consequences for you.\n\nThe General Department of Taxation or an officer can help with a calculation.",
-      km: "SuperAsk មិនគណនាពន្ធទេ។ ចំនួនទឹកប្រាក់អាស្រ័យលើកាលៈទេសៈជាក់លាក់របស់អ្នក ហើយតួលេខខុសនឹងបង្កផលវិបាកផ្នែកហិរញ្ញវត្ថុពិតប្រាកដដល់អ្នក។\n\nអគ្គនាយកដ្ឋានពន្ធដារ ឬមន្ត្រីអាចជួយក្នុងការគណនា។",
+      en: "SuperAsk does not calculate tax. The amount depends on your specific circumstances and a wrong figure would carry real financial consequences for you.\n\nThe General Department of Taxation can help with a calculation.",
+      km: "SuperAsk មិនគណនាពន្ធទេ។ ចំនួនទឹកប្រាក់អាស្រ័យលើកាលៈទេសៈជាក់លាក់របស់អ្នក ហើយតួលេខខុសនឹងបង្កផលវិបាកផ្នែកហិរញ្ញវត្ថុពិតប្រាកដដល់អ្នក។\n\nអគ្គនាយកដ្ឋានពន្ធដារអាចជួយក្នុងការគណនា។",
     },
   },
   {
@@ -159,8 +159,8 @@ const RULES: Rule[] = [
       /(ខ្ញុំចង់ដាក់បណ្តឹង|រាយការណ៍អំពីមន្ត្រី|មន្ត្រីទារប្រាក់)/,
     ],
     message: {
-      en: "SuperAsk cannot receive or process a complaint — it is an information service, not a grievance channel.\n\nIt can tell you where complaints for a given service are lodged and how an appeal works. An officer can take this further.",
-      km: "SuperAsk មិនអាចទទួល ឬដំណើរការបណ្តឹងបានទេ — វាជាសេវាព័ត៌មាន មិនមែនជាបណ្តាញទទួលបណ្តឹងទេ។\n\nវាអាចប្រាប់អ្នកថាបណ្តឹងសម្រាប់សេវាណាមួយត្រូវដាក់នៅឯណា និងការតវ៉ាដំណើរការយ៉ាងណា។ មន្ត្រីអាចជួយបន្ថែម។",
+      en: "SuperAsk cannot receive or process a complaint — it is an information service, not a grievance channel.\n\nIt can tell you where complaints for a given service are lodged and how an appeal works.",
+      km: "SuperAsk មិនអាចទទួល ឬដំណើរការបណ្តឹងបានទេ — វាជាសេវាព័ត៌មាន មិនមែនជាបណ្តាញទទួលបណ្តឹងទេ។\n\nវាអាចប្រាប់អ្នកថាបណ្តឹងសម្រាប់សេវាណាមួយត្រូវដាក់នៅឯណា និងការតវ៉ាដំណើរការយ៉ាងណា។",
     },
   },
 ];
@@ -249,7 +249,7 @@ const OFF_DOMAIN: RegExp[] = [
  * service signal, not when it happens to miss every pattern someone thought to
  * write down. That flips the failure mode from "unbounded leak" to "a service
  * question with unusual vocabulary gets refused" — the direction §13 prefers,
- * since a refusal is recoverable via the officer and a fluent wrong answer is
+ * since a refusal is recoverable by asking again and a fluent wrong answer is
  * not.
  * ───────────────────────────────────────────────────────────────────────────
  *

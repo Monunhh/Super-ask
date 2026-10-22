@@ -5,7 +5,7 @@ import type { GenerationRequest } from "@/lib/llm/provider";
 /**
  * NFR-18 / BR-009: no component outside lib/llm/ contains model-specific logic,
  * and credentials live only in this layer. NFR-09: where model services are
- * unavailable the system degrades to escalation, never to failure.
+ * unavailable the system degrades to a decline, never to failure.
  */
 
 /** The source block shape tiers.ts assembles: id, header, and both variants. */
@@ -89,18 +89,18 @@ describe("extractive provider", () => {
     expect(res.answer).toMatch(/ភាសាអង់គ្លេសតែប៉ុណ្ណោះ/);
   });
 
-  it("escalates with no citation when there are no sources", async () => {
+  it("declines with no citation when there are no sources", async () => {
     const res = await provider.generate(request({ sources: [] }));
-    expect(res.shouldEscalate).toBe(true);
+    expect(res.shouldDecline).toBe(true);
     expect(res.citations).toEqual([]);
     expect(res.confidence).toBe("low");
   });
 
-  it("escalates in general mode too — no model means no general knowledge", async () => {
+  it("declines in general mode too — no model means no general knowledge", async () => {
     // The correct degradation, not a gap: the general fallback is a model
     // capability, and where there is no model there is no fallback.
     const res = await provider.generate(request({ sources: [], mode: "general" }));
-    expect(res.shouldEscalate).toBe(true);
+    expect(res.shouldDecline).toBe(true);
     expect(res.citations).toEqual([]);
   });
 
@@ -186,7 +186,7 @@ describe("generate — NFR-09 degradation", () => {
     expect(out.fallbackReason).toMatch(/not-a-provider/i);
   });
 
-  it("still gives the citizen the provision and an offer of an officer", async () => {
+  it("still gives the citizen the provision", async () => {
     vi.stubEnv("LLM_PROVIDER", "not-a-provider");
     const { generate } = await load();
 
@@ -194,7 +194,7 @@ describe("generate — NFR-09 degradation", () => {
     expect(withSource.citations).toEqual(["MPWT-DL-001"]);
 
     const without = await generate(request({ sources: [] }));
-    expect(without.shouldEscalate).toBe(true);
+    expect(without.shouldDecline).toBe(true);
   });
 
   it("reports the extractive provider's own info after a degradation, not the failed one's", async () => {

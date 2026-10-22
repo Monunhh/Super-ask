@@ -23,15 +23,6 @@ export function formatTelegramAnswer(res: AskResponse): string {
     }
   }
 
-  if (res.escalate) {
-    lines.push("");
-    lines.push(
-      res.lang === "km"
-        ? "ប្រសិនបើអ្នកត្រូវការជំនួយបន្ថែម សូមសួរមន្ត្រីតាម SuperAsk នៅលើវេប។"
-        : "If you need more help, ask an officer through SuperAsk on the web.",
-    );
-  }
-
   lines.push("");
   lines.push(
     res.lang === "km"
