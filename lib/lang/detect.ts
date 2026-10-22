@@ -1,7 +1,7 @@
 /**
  * Language detection (FR-08). The system replies in the language the citizen
  * used, so this decides both the generation instruction and the UI copy for
- * disclaimers and escalation.
+ * disclaimers and declines.
  *
  * THE RULE IS THE SCRIPT THE CITIZEN TYPED IN.
  *

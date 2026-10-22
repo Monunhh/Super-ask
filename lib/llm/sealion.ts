@@ -8,8 +8,7 @@
  *
  * ── RESIDENCY WARNING ──────────────────────────────────────────────────────
  * Hosted by AI Singapore, outside Cambodia. Same NFR-11 exemption limits as
- * the Anthropic path (R-14): closed pilot with DGC and ministry staff only,
- * lapsing at public release. Reports residency honestly so the diagnostic
+ * the Anthropic path (R-14): closed pilot only, lapsing at public release. Reports residency honestly so the diagnostic
  * panel flags it. Do not present this provider as domestic.
  * ───────────────────────────────────────────────────────────────────────────
  *

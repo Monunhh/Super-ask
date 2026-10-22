@@ -36,7 +36,7 @@ import { join } from "node:path";
 const UA =
   "SuperAskBot/0.1 (" +
   (process.env.MONITOR_CONTACT ?? "content-ops@localhost") +
-  ") DGC content ingestion";
+  ") SuperAsk content ingestion";
 
 interface Target {
   slug: string;
@@ -285,7 +285,7 @@ async function main() {
   }
   console.log(
     `\nAll chunks are stewardApproved:false. Nothing here has been reviewed by\n` +
-      `a ministry content steward (§10.5, FR-49).\n`,
+      `a content steward (§10.5, FR-49).\n`,
   );
 }
 

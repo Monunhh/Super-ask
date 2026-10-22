@@ -1,5 +1,5 @@
 /**
- * Phase 1 target provider: self-hosted Qwen on DGC infrastructure (RD-02).
+ * Phase 1 target provider: self-hosted Qwen (RD-02).
  *
  * vLLM exposes an OpenAI-compatible interface, which is why the abstraction
  * layer above targets that shape (section 10.6 condition 2): migration is a
@@ -8,7 +8,7 @@
  * Before this becomes the live path, section 10.6 requires:
  *   - Qwen benchmarked against the Khmer golden question set during Phase 0,
  *     alongside SEA-LION and other candidates (condition 4, R-13).
- *   - Licence terms reviewed and approved by DGC legal counsel (NFR-20, D-08).
+ *   - Licence terms reviewed and approved by legal counsel (NFR-20, D-08).
  *   - Prompt templates and output contracts revalidated against Qwen, because
  *     instruction-following differs between model families (condition 6).
  */
@@ -27,7 +27,7 @@ import {
 export function createVllmProvider(): LlmProvider {
   const baseUrl =
     process.env.VLLM_BASE_URL?.trim() ||
-    "http://inference.internal.dgc:8000/v1";
+    "http://localhost:8000/v1";
   const model = process.env.VLLM_MODEL?.trim() || "qwen3-32b-instruct";
   const apiKey = process.env.VLLM_API_KEY?.trim();
 
@@ -35,7 +35,7 @@ export function createVllmProvider(): LlmProvider {
     id: "vllm",
     label: "Qwen (self-hosted, vLLM)",
     model,
-    hosting: "DGC infrastructure",
+    hosting: "Self-hosted",
     residency: "Cambodia",
     note: "Target state. Requires GPU procurement and licence review (OD-03, D-06, NFR-20).",
   };

@@ -3,7 +3,7 @@
 /**
  * Conversation state for the citizen chat (section 8.9).
  *
- * Ask, history, pending, escalate, and deliver live here so Chat.tsx is the
+ * Ask, history, pending, and deliver live here so Chat.tsx is the
  * layout. All model access still goes through POST /api/ask.
  */
 
@@ -47,7 +47,6 @@ export function useConversation() {
   const busy = pendingIn !== null;
   const [trace, setTrace] = useState<AskResponse | null>(null);
   const [sidebar, setSidebar] = useState(true);
-  const [handoverError, setHandoverError] = useState(false);
   const [sessionId] = useState(() => newId());
   const endRef = useRef<HTMLDivElement>(null);
 
@@ -101,12 +100,6 @@ export function useConversation() {
     (t) => t.role === "assistant" && t.response.terminal,
   );
 
-  // Index of the first escalated answer. Only that one carries the explanation
-  // of what the handover does; every later escalation shows the action alone.
-  const firstEscalationIndex = turns.findIndex(
-    (t) => t.role === "assistant" && t.response.escalate,
-  );
-
   /**
    * Put a finished answer in the conversation that asked for it.
    *
@@ -158,7 +151,7 @@ export function useConversation() {
       const response = (await res.json()) as AskResponse;
       deliver(askedIn, { role: "assistant", response });
     } catch {
-      // NFR-09: degrade to escalation, not to a broken screen.
+      // NFR-09: degrade to a plain message, not to a broken screen.
       deliver(askedIn, {
         role: "assistant",
         response: {
@@ -167,10 +160,10 @@ export function useConversation() {
           lang: detectLang(question),
           answer:
             detectLang(question) === "km"
-              ? "ការតភ្ជាប់បានបរាជ័យ។ សូមព្យាយាមម្តងទៀត ឬទាក់ទងមន្ត្រី។"
-              : "The connection failed. Try again, or contact an officer.",
+              ? "ការតភ្ជាប់បានបរាជ័យ។ សូមព្យាយាមម្តងទៀត។"
+              : "The connection failed. Try again.",
           citations: [],
-          escalate: true,
+          coverageGap: false,
         },
       });
     } finally {
@@ -182,7 +175,6 @@ export function useConversation() {
     setConversationId(newId());
     setTurns([]);
     setTrace(null);
-    setHandoverError(false);
   }
 
   function openConversation(id: string) {
@@ -191,7 +183,6 @@ export function useConversation() {
     setConversationId(found.id);
     setTurns(found.turns as Turn[]);
     setTrace(null);
-    setHandoverError(false);
   }
 
   function deleteConversation(id: string) {
@@ -206,57 +197,6 @@ export function useConversation() {
     startNewConversation();
   }
 
-  /**
-   * Human handover (FR-27, FR-28).
-   *
-   * Posts the transcript to the server, which stores it against a reference
-   * token, then opens the DG Support bot with only that token in the link. The
-   * citizen's questions never enter a URL.
-   *
-   * The tab is opened from inside the click handler rather than after the fetch
-   * resolves, because a popup blocker will discard a window.open() that is no
-   * longer attributable to a user gesture — and a handover button that silently
-   * does nothing is worse than one that is honestly unavailable.
-   */
-  async function escalate(answer: AskResponse) {
-    const transcript = turns.map((t) =>
-      t.role === "user"
-        ? { role: "user" as const, text: t.text }
-        : { role: "assistant" as const, text: t.response.answer },
-    );
-
-    const tab = window.open("", "_blank");
-
-    try {
-      const res = await fetch("/api/escalate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          answerId: answer.id,
-          sessionId,
-          lang: answer.lang,
-          transcript,
-          citedIds: answer.citations.map((c) => c.id),
-          ministries: [...new Set(answer.citations.map((c) => c.ministry))],
-        }),
-      });
-
-      const { url } = (await res.json()) as { url?: string };
-      if (!url) throw new Error("no handover url");
-
-      if (tab) {
-        tab.location.href = url;
-      } else {
-        // Popup blocked. Navigating the current tab still respects the gesture.
-        window.location.href = url;
-      }
-
-      setHandoverError(false);
-    } catch {
-      tab?.close();
-      setHandoverError(true);
-    }
-  }
 
   return {
     turns,
@@ -268,18 +208,15 @@ export function useConversation() {
     setTrace,
     sidebar,
     setSidebar,
-    handoverError,
     history,
     conversationId,
     lang,
     terminated,
-    firstEscalationIndex,
     endRef,
     ask,
     startNewConversation,
     openConversation,
     deleteConversation,
     clearHistory,
-    escalate,
   };
 }

@@ -6,7 +6,7 @@
  * Exposes answer tier, active model provider, retrieval candidates with their
  * component and fused scores, cited sources, confidence, and latency.
  *
- * FR-73: available to DGC and ministry users only, never to citizens. In this
+ * FR-73: available to the SuperAsk team only, never to citizens. In this
  * build the gate is the DIAGNOSTICS_ENABLED server flag — when it is off the
  * server omits the payload entirely, so the panel has nothing to render and the
  * data never crosses the network. That is the right shape for the gate: a

@@ -432,8 +432,8 @@ mark the loser as an alias rather than a separate organization.
 Public search engines will not give you every `.gov.kh` host - `site:` operators are heavily
 sampled and most sub-national and internal systems are not indexed at all. The paths that will:
 
-1. **Ask for the zone.** The `.kh` ccTLD is administered under MPTC. As a DGC business analyst
-   you are inside the institution that can request the authoritative `.gov.kh` registration list.
+1. **Ask for the zone.** The `.kh` ccTLD is administered under MPTC. A contact inside MPTC
+   can request the authoritative `.gov.kh` registration list.
    This single request beats every crawling technique below and should be step one.
 2. **Certificate transparency.** Query `crt.sh` for `%.gov.kh` and `%.edu.kh`. Every host that has
    ever been issued a public TLS certificate appears there, including ones no search engine indexes.
@@ -465,9 +465,8 @@ sampled and most sub-national and internal systems are not indexed at all. The p
   documents are high enough to poison retrieval.
 - **Record `language` per chunk, not per site.** Most of these sites serve parallel Khmer and
   English content at different paths, and a mixed-language index degrades retrieval for both.
-- **Respect `robots.txt` and rate-limit at 1 request / 2s per host.** You are crawling your own
-  government's infrastructure; a rude crawler from a DGC IP range is a political problem, not
-  just a technical one.
+- **Respect `robots.txt` and rate-limit at 1 request / 2s per host.** You are crawling government
+  infrastructure; a rude crawler is a political problem, not just a technical one.
 
 ## 8. Reproduction
 

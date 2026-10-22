@@ -105,19 +105,17 @@ describe("gate ordering", () => {
     expect(res.citations).toEqual([]);
   });
 
-  it("terminates on an emergency instead of escalating (rule 6)", async () => {
+  it("terminates on an emergency (rule 6)", async () => {
     const res = await ask(req("someone is bleeding, help me now"));
     expect(res.terminal).toBe(true);
-    expect(res.escalate).toBe(false);
-    expect(res.office).toBeUndefined();
+    expect(res.coverageGap).toBe(false);
   });
 
-  it("escalates, not terminates, on a non-emergency policy refusal", async () => {
+  it("declines without terminating on a non-emergency policy refusal", async () => {
     const res = await ask(req("has my licence application been approved yet"));
     expect(res.tier).toBe(3);
-    expect(res.escalate).toBe(true);
+    expect(res.coverageGap).toBe(false);
     expect(res.terminal).toBeFalsy();
-    expect(res.office).toBeDefined();
     expect(res.diagnostics?.refusalReason).toBe("policy:personal_case");
   });
 
@@ -128,9 +126,9 @@ describe("gate ordering", () => {
     expect(res.diagnostics?.candidates).toEqual([]);
   });
 
-  it("does not send an off-domain asker to an officer — it would waste both their time", async () => {
+  it("does not flag an off-domain refusal as a coverage gap", async () => {
     const res = await ask(req("tell me a joke"));
-    expect(res.escalate).toBe(false);
+    expect(res.coverageGap).toBe(false);
     expect(res.citations).toEqual([]);
   });
 
@@ -155,11 +153,11 @@ describe("Tier 1 — served verbatim, no generation", () => {
     ask = await loadAsk();
   });
 
-  it("serves a curated answer at tier 1 with no citations and no escalation", async () => {
+  it("serves a curated answer at tier 1 with no citations and no coverage gap", async () => {
     const res = await ask(req("what services do you cover"));
     if (res.diagnostics?.provider === "curated") {
       expect(res.tier).toBe(1);
-      expect(res.escalate).toBe(false);
+      expect(res.coverageGap).toBe(false);
       expect(res.citations).toEqual([]);
       expect(res.diagnostics?.confidence).toBe("high");
     }
@@ -169,7 +167,7 @@ describe("Tier 1 — served verbatim, no generation", () => {
     const res = await ask(req("what does prakas mean"));
     expect(res.tier).toBe(1);
     expect(res.diagnostics?.provider).toBe("glossary");
-    expect(res.escalate).toBe(false);
+    expect(res.coverageGap).toBe(false);
   });
 
   it("attaches no citation to a definition — inventing source metadata is the FR-45 failure", async () => {
@@ -305,16 +303,15 @@ describe("FR-16 confidence gate", () => {
     const ask = await loadAsk({ RETRIEVAL_MIN_SCORE: "0.99" });
     const res = await ask(req("how do i renew my driving licence"));
     expect(res.tier).toBe(3);
-    expect(res.escalate).toBe(true);
+    expect(res.coverageGap).toBe(true);
     expect(res.citations).toEqual([]);
     expect(res.diagnostics?.refusalReason).toMatch(/^retrieval:/);
   });
 
-  it("offers the officer on a coverage gap, unlike an off-domain refusal", async () => {
+  it("flags a coverage gap, unlike an off-domain refusal", async () => {
     const ask = await loadAsk({ RETRIEVAL_MIN_SCORE: "0.99" });
     const res = await ask(req("how do i apply for a fishing permit"));
-    expect(res.escalate).toBe(true);
-    expect(res.office).toBeDefined();
+    expect(res.coverageGap).toBe(true);
   });
 
   it("answers more questions as the floor drops", async () => {
@@ -396,7 +393,7 @@ describe("GENERAL_FALLBACK_ENABLED — the unsourced answer switch", () => {
     const res = await ask(req("how do i apply for a fishing permit"));
     expect(res.unverified).toBeFalsy();
     expect(res.tier).toBe(3);
-    expect(res.escalate).toBe(true);
+    expect(res.coverageGap).toBe(true);
     expect(res.citations).toEqual([]);
   });
 });
@@ -436,7 +433,7 @@ describe("robustness", () => {
 
 /**
  * The paths after generation. The extractive provider quotes verbatim and never
- * escalates, so these branches are unreachable without controlling what the
+ * declines, so these branches are unreachable without controlling what the
  * provider returns — the mock exists to reach them, not to test the model.
  */
 describe("post-generation gates", () => {
@@ -447,7 +444,7 @@ describe("post-generation gates", () => {
       answer: string;
       citations: string[];
       confidence: string;
-      shouldEscalate: boolean;
+      shouldDecline: boolean;
     }>,
     env: Record<string, string> = {},
   ) {
@@ -464,7 +461,7 @@ describe("post-generation gates", () => {
       answer: "The renewal fee is 30,000 riel.",
       citations: ["MPWT-DL-001"],
       confidence: "high",
-      shouldEscalate: false,
+      shouldDecline: false,
       provider: {
         id: "mock",
         label: "Mock",
@@ -495,7 +492,7 @@ describe("post-generation gates", () => {
 
     expect(res.tier).toBe(3);
     expect(res.citations).toEqual([]);
-    expect(res.escalate).toBe(true);
+    expect(res.coverageGap).toBe(true);
     expect(res.diagnostics?.refusalReason).toBe("verification:failed");
     expect(res.answer).not.toContain("45,000");
   });
@@ -529,25 +526,24 @@ describe("post-generation gates", () => {
 
     expect(res.tier).toBe(3);
     expect(res.citations).toEqual([]);
-    expect(res.escalate).toBe(true);
+    expect(res.coverageGap).toBe(true);
     expect(res.diagnostics?.refusalReason).toBe("moderation:legal_advice");
   });
 
-  it("escalates when the model itself declines", async () => {
-    const ask = await loadWithProvider({ shouldEscalate: true });
+  it("declines when the model itself declines", async () => {
+    const ask = await loadWithProvider({ shouldDecline: true });
     const res = await ask(req("how do i renew my driving licence"));
 
     expect(res.tier).toBe(3);
-    expect(res.escalate).toBe(true);
-    expect(res.office).toBeDefined();
-    expect(res.diagnostics?.refusalReason).toBe("provider:escalated");
+    expect(res.coverageGap).toBe(true);
+    expect(res.diagnostics?.refusalReason).toBe("provider:declined");
   });
 
-  it("escalates rather than answering when the model returns an empty answer", async () => {
+  it("declines rather than answering when the model returns an empty answer", async () => {
     const ask = await loadWithProvider({ answer: "" });
     const res = await ask(req("how do i renew my driving licence"));
-    expect(res.escalate).toBe(true);
-    expect(res.diagnostics?.refusalReason).toBe("provider:escalated");
+    expect(res.coverageGap).toBe(true);
+    expect(res.diagnostics?.refusalReason).toBe("provider:declined");
   });
 
   it("keeps a verified answer and its citations when everything passes", async () => {
@@ -592,9 +588,8 @@ describe("post-generation gates", () => {
       // fired, it must say so as its own reason rather than as a provider
       // decline, because the rate of these measures a content gap.
       if (res.diagnostics?.refusalReason === "rationale:not_in_source") {
-        expect(res.escalate).toBe(true);
-        expect(res.office).toBeDefined();
-      }
+        expect(res.coverageGap).toBe(true);
+          }
     });
 
     it("keeps the sourced rule rather than withholding it — a downgrade, not a dead end", async () => {

@@ -23,17 +23,3 @@ export function toCitation(chunk: Chunk, lang: Lang): Citation {
   };
 }
 
-/**
- * FR-29 — responsible office contact details where human handover is
- * unavailable. Still returned in the payload; the interface currently surfaces
- * the DG Support handover instead of rendering a block of placeholder numbers.
- */
-export function supportOffice() {
-  const { support } = getKb();
-  return {
-    name: support.name,
-    address: support.address,
-    hours: support.hours,
-    phone: support.phone,
-  };
-}

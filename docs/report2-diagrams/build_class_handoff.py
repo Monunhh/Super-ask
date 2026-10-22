@@ -93,7 +93,7 @@ FIGS_2A = [
      "Figure 9: Partial class diagram C: office contact and location (UC-7 GetOfficeContactAndLocation).",
      "QAController asks ConversationHistory which procedure “this” refers to, then asks OfficeDirectory for the responsible "
      "office. OfficeDirectory aggregates the ContactInfo records (today loaded from <i>data/facilities.json</i>) and also holds the "
-     "emergency numbers and the DG Support office used for escalation. Each ContactInfo may point to the RegisteredSource it was "
+     "emergency numbers. Each ContactInfo may point to the RegisteredSource it was "
      "verified from (REQ-11, REQ-12); when no verified online contact exists, OfficeDirectory returns the location only and the "
      "ChatUI shows the “no verified online contact” notice (REQ-13, REQ-39)."),
     ("class-d-content-refresh.png",
@@ -119,14 +119,14 @@ few small value types are shared by several classes and are defined once first.<
 
 SHARED_TYPES = [
     ("Lang", "enumeration {km, en}", "Language of a question, answer, or interface text."),
-    ("Tier", "enumeration {1, 2, 3}", "How the answer was produced: 1 curated human-approved answer, 2 retrieval-augmented generation, 3 refusal and escalation."),
+    ("Tier", "enumeration {1, 2, 3}", "How the answer was produced: 1 curated human-approved answer, 2 retrieval-augmented generation, 3 refusal."),
     ("Freshness", "enumeration {fresh, due, stale}", "Whether a passage's last-verified date is within, at, or past its review date."),
-    ("Confidence", "enumeration {high, medium, low}", "The model's self-reported confidence; low confidence forces escalation."),
+    ("Confidence", "enumeration {high, medium, low}", "The model's self-reported confidence; low confidence forces a decline."),
     ("Turn", "structure {role: enumeration {user, assistant}, text: String}", "One message of a conversation, used as history context."),
     ("RetrievalResult", "structure {query: ProcessedQuery, candidates: List<Candidate>, topScore: Real}", "What RetrievalService returns; topScore is the best rerank score, normalised 0&ndash;1, and drives the confidence gate."),
     ("ProcessedQuery", "structure {raw: String, normalised: String, segments: List<String>, expanded: List<String>, romanised: Boolean, rewritten: String}", "The question after normalisation, segmentation, alias expansion and (for follow-ups) rewriting."),
     ("GenerationRequest", "structure {question: String, lang: Lang, mode: enumeration {grounded, general}, sources: List<Passage>, history: List<Turn>}", "Everything a model provider needs to write an answer; <i>grounded</i> is the default and restricts the model to the supplied passages."),
-    ("GenerationResult", "structure {answer: String, citations: List<String>, confidence: Confidence, shouldEscalate: Boolean}", "The draft answer with the passage ids it rests on."),
+    ("GenerationResult", "structure {answer: String, citations: List<String>, confidence: Confidence, shouldDecline: Boolean}", "The draft answer with the passage ids it rests on."),
     ("VerificationResult", "structure {passed: Boolean, unsupported: List<String>, invalidCitations: List<String>}", "Outcome of the claim check: claims with no supporting passage, and cited ids that were never retrieved."),
     ("GuardrailHit", "structure {kind: String, message: String}", "Why a question or answer was stopped by a guardrail (emergency, legal advice, political, out of scope, moderation)."),
     ("FetchResult", "structure {status: Integer, body: String, fetchedAt: Date, blocked: Boolean, error: String}", "What a crawler got back from an official source."),
@@ -144,7 +144,7 @@ CLASSES = [
      [("+enterQuestion(text: String): void", "Puts the typed text into the input field; empty text keeps the send button disabled (UC-1 2a)."),
       ("+submitQuestion(): void", "Builds a Question from the input and the recent turns and calls QAController.askQuestion."),
       ("+displayAnswer(answer: Answer): void", "Renders the answer text in the question's language with steps, documents, fees, deadlines and hours."),
-      ("+displayDecline(coveredAreas: List<String>): void", "Shows the “cannot answer” message with the areas SuperAsk.AI does cover and the escalation option (UC-4)."),
+      ("+displayDecline(coveredAreas: List<String>): void", "Shows the “cannot answer” message with the areas SuperAsk.AI does cover (UC-4)."),
       ("+displaySourceCitation(answer: Answer): void", "Asks CitationPresenter to render the Verified Source cards under the answer (UC-3)."),
       ("+showContactCard(contact: ContactInfo): void", "Shows name, address, hours, phone and the Google Maps link (UC-7)."),
       ("+openOfficialSource(url: String): void", "Opens the cited official page in a new tab."),
@@ -172,7 +172,7 @@ CLASSES = [
     ("QAController", "control",
      "Use-case controller for all citizen-facing flows (UC-1, 2, 3, 4, 7, 8). Runs the fixed pipeline guardrail screen &rarr; curated match &rarr; retrieval &rarr; confidence gate &rarr; generation &rarr; verification &rarr; output moderation &rarr; citation assembly (<i>lib/engine/tiers.ts</i>).",
      [("curatedThreshold", "Real", "Minimum match score for a Tier 1 curated answer to be served verbatim (0.72)."),
-      ("retrievalMinScore", "Real", "Escalation floor: if the top rerank score is below it the question goes to UC-4 (0.20).")],
+      ("retrievalMinScore", "Real", "Decline floor: if the top rerank score is below it the question goes to UC-4 (0.20).")],
      [("+askQuestion(request: Question): Answer", "Main operation of UC-1; returns a sourced Answer, a curated answer, or a decline."),
       ("+getOfficeContact(request: Question): Answer", "UC-7: resolves the procedure, finds the office and returns an Answer whose <i>office</i> field holds the ContactInfo."),
       ("−screenGuardrails(question: String): GuardrailHit", "Policy screen that runs before any retrieval (emergency, legal advice, political, chit-chat); null when the question may proceed."),
@@ -180,7 +180,7 @@ CLASSES = [
       ("−checkScope(question: String): Boolean", "True when the question is about a government service (UC-1 5a)."),
       ("−confidenceGate(result: RetrievalResult): Boolean", "True when result.topScore &ge; retrievalMinScore; false sends the flow to UC-4."),
       ("−moderateOutput(answer: String): GuardrailHit", "Checks the generated text before it is shown; null when clean."),
-      ("−buildDecline(reason: String): Answer", "Builds the Tier 3 Answer with the decline text, covered areas and escalate = true.")]),
+      ("−buildDecline(reason: String): Answer", "Builds the Tier 3 Answer with the decline text, covered areas and coverageGap = true.")]),
     ("RefreshController", "control",
      "Use-case controller for UC-11. Started by the Scheduler (a weekly scheduled task), it coordinates the crawl of every registered source, change detection, queueing for steward review, and the run report (<i>lib/crawl/crawl.ts</i>).",
      [("mode", "enumeration {verify, monitor}", "verify probes that a source is reachable; monitor fetches content and detects changes."),
@@ -268,9 +268,9 @@ CLASSES = [
       ("tier", "Tier", "How the answer was produced."),
       ("language", "Lang", "Language of the answer text."),
       ("text", "String", "The answer, or the decline text for Tier 3."),
-      ("escalate", "Boolean", "True when the citizen should be offered human support (UC-4)."),
+      ("coverageGap", "Boolean", "True when the question is in scope but no approved source covers it (UC-4)."),
       ("unverified", "Boolean", "True only when the operator-enabled general-knowledge fallback produced the answer; citations are then empty and the interface shows an unverified marker."),
-      ("office", "ContactInfo", "Responsible office, present for UC-7 answers and when handover is unavailable.")],
+      ("office", "ContactInfo", "Responsible office, present for UC-7 answers.")],
      [("+getCitations(): List<SourceCitation>", "The citations that support this answer, in the order cited (Information Expert).")]),
     ("SourceCitation", "entity",
      "One Verified Source card under an answer (the <i>Citation</i> contract; REQ-6, REQ-28).",
@@ -290,13 +290,11 @@ CLASSES = [
       ("+markPossiblyOutdated(citation: SourceCitation): void", "Adds the “confirm with the office” note when freshness is stale (UC-3 2a)."),
       ("+toCitation(passage: Passage, lang: Lang): SourceCitation", "Builds a SourceCitation from a Passage, choosing the Khmer or English fields.")]),
     ("FeedbackLog", "service",
-     "Append-only logs of answers served, citizen reports and escalations (<i>lib/log/audit.ts</i>). Personal data is redacted before writing.",
+     "Append-only logs of answers served and citizen reports (<i>lib/log/audit.ts</i>). Personal data is redacted before writing.",
      [("auditLog", "String", "Path of the answer audit log (var/audit.jsonl)."),
-      ("feedbackLog", "String", "Path of the report log (var/feedback.jsonl)."),
-      ("escalationLog", "String", "Path of the escalation log (var/escalations.jsonl).")],
+      ("feedbackLog", "String", "Path of the report log (var/feedback.jsonl).")],
      [("+recordReport(answerId: String, citedSourceIds: List<String>, comment: String): Report", "Creates and stores a Report against the cited sources (Creator; UC-3 3a)."),
       ("+recordAnswer(record: AuditRecord): void", "Logs question, language, tier, provider, prompt version, retrieved and cited ids and latency for every answer."),
-      ("+recordEscalation(record: EscalationRecord): String", "Stores the redacted transcript for the support agent and returns the reference token."),
       ("−redact(text: String): String", "Masks phone numbers, ids and other personal data.")]),
     ("Report", "entity",
      "A citizen's report about an answer (the <i>FeedbackRecord</i> contract).",
@@ -329,7 +327,7 @@ CLASSES = [
       ("reviewDue", "Date", "Date after which it is flagged for review."), ("geoScope", "String", "Province code, or KH for nationwide."),
       ("sensitivity", "enumeration {public, internal, restricted}", "Only public passages are served to citizens."),
       ("superseded", "Boolean", "True for replaced versions; excluded from retrieval."),
-      ("stewardApproved", "Boolean", "True when a ministry steward approved it; false for anything machine-ingested."),
+      ("stewardApproved", "Boolean", "True when a content steward approved it; false for anything machine-ingested."),
       ("text", "String", "English text."), ("textKm", "String", "Khmer text."),
       ("keywords", "List<String>", "Maintained alias set for retrieval."),
       ("questions", "List<String>", "Candidate citizen questions indexed alongside the passage.")],
@@ -354,13 +352,11 @@ CLASSES = [
      [("id", "String", "Unique id."), ("title", "String", "Derived from the first question."), ("at", "Date", "Time of the last turn."), ("turns", "List<Turn>", "Questions and answers in order.")],
      []),
     ("OfficeDirectory", "entity / expert",
-     "Verified office records (<i>data/facilities.json</i> loaded by <i>lib/kb/loader.ts</i>), plus emergency numbers and the DG Support office.",
+     "Verified office records (<i>data/facilities.json</i> loaded by <i>lib/kb/loader.ts</i>), plus emergency numbers.",
      [("facilities", "List<ContactInfo>", "Offices with their services and provinces."),
-      ("emergencyNumbers", "List<EmergencyNumber>", "Label (km/en) and number."),
-      ("supportOffice", "ContactInfo", "Where citizens are sent when SuperAsk.AI cannot help.")],
+      ("emergencyNumbers", "List<EmergencyNumber>", "Label (km/en) and number.")],
      [("+findResponsibleOffice(procedure: String, province: String): ContactInfo", "The office that handles the procedure in that province; null when nothing verified exists (UC-7 4a, 4b)."),
-      ("+getContact(officeId: String): ContactInfo", "One office record."),
-      ("+supportOffice(): ContactInfo", "The DG Support office for escalation.")]),
+      ("+getContact(officeId: String): ContactInfo", "One office record.")]),
     ("ContactInfo", "entity",
      "Contact and location of one office (the <i>Facility</i> contract).",
      [("id", "String", "Unique id."), ("ministry", "String", "Parent ministry."), ("name", "String", "Office name, English."), ("nameKm", "String", "Office name, Khmer."),
@@ -463,7 +459,7 @@ TRACE_ROWS = [
      "The external actor stays external; what the system owns is the gateway that talks to it. The gateway was given a provider interface with three realisations so the model vendor can change without touching the pipeline (Protected Variations), and so the 7a fallback (“show the most relevant passage word for word”) is just another provider, ExtractiveProvider."),
     ("Answer with steps, documents, fees, deadlines, hours (UC-1 step 9; REQ-16 to REQ-20, REQ-33)",
      "Answer",
-     "Kept as one entity. Tier, escalate and unverified were added because the use-case extensions (curated answer, UC-4 decline, model fallback) are all Answers of a different kind rather than different classes."),
+     "Kept as one entity. Tier, coverageGap and unverified were added because the use-case extensions (curated answer, UC-4 decline, model fallback) are all Answers of a different kind rather than different classes."),
     ("Verified source / citation (UC-3; REQ-6, REQ-28, REQ-34)",
      "SourceCitation, CitationPresenter",
      "The “Verified Source card” concept split into the data (SourceCitation, composed into Answer) and the behaviour of showing it separately from the answer text and flagging an outdated one (CitationPresenter). The split keeps REQ-28 in one class."),
@@ -478,7 +474,7 @@ TRACE_ROWS = [
      "The office became ContactInfo (the record) and OfficeDirectory (the expert that finds the responsible office and knows when nothing verified exists, so it never guesses). The Google Maps link became the mapLink attribute."),
     ("Report of incorrect information (UC-3 3a)",
      "Report, FeedbackLog",
-     "The citizen's report became a Report entity created by FeedbackLog. FeedbackLog also absorbed the audit trail of answers and escalations, which Report One mentions only indirectly through REQ-22 acceptance testing, because they are the same append-only, redacted log mechanism."),
+     "The citizen's report became a Report entity created by FeedbackLog. FeedbackLog also absorbed the audit trail of answers, which Report One mentions only indirectly through REQ-22 acceptance testing, because they are the same append-only, redacted log mechanism."),
     ("Registered official sources: ministry websites, Facebook pages, Telegram channels (UC-11 precondition, steps 2&ndash;4; REQ-8, REQ-30)",
      "SourceRegistry, RegisteredSource, SourceCrawler (interface), WebsiteCrawler, FacebookCrawler, TelegramCrawler",
      "The source list became SourceRegistry (expert) holding RegisteredSource entries. The three platforms named in Report One became three realisations of one SourceCrawler interface, so a fourth platform is one new class. Only WebsiteCrawler is implemented so far; the other two are in the diagram because the use case names them."),
@@ -537,13 +533,13 @@ REVIEW = """
 have no text yet. Suggested subsystems, matching the packages of Figure 1 and the code folders: Citizen
 Interface (web chat, Telegram bot and Mini App), Question-Answer Engine (controller, language, retrieval,
 generation, verification), Knowledge Base (content store, office directory, curated answers), Content
-Monitoring (registry, crawlers, review queue), and Logging (audit, feedback, escalation). Styles that fit:
+Monitoring (registry, crawlers, review queue), and Logging (audit, feedback). Styles that fit:
 client&ndash;server over HTTPS, a layered pipeline inside the engine, and event-driven for the two entry points
 (user request, scheduler tick).</li>
 <li><b>Class names.</b> Section 3 already uses QAController, RetrievalService, AIModelGateway, RefreshController,
 SourceCrawler, ConversationHistory and Scheduler. These match Section 2, so nothing needs renaming.</li>
 <li><b>3d Connectors and Network Protocols.</b> The text is right but names no protocol. Add: the web chat calls
-the backend over HTTPS with JSON bodies (POST /api/ask, POST /api/feedback, POST /api/escalate, GET /api/health);
+the backend over HTTPS with JSON bodies (POST /api/ask, POST /api/feedback, GET /api/health);
 Telegram delivers messages by HTTPS webhook (Telegram Bot API &rarr; POST /api/telegram/webhook, checked
 with a shared secret) and replies go back through the Bot API over HTTPS; the Mini App is the same /chat page
 loaded inside Telegram (the page allows telegram.org as a frame ancestor); the AI model is called over HTTPS
@@ -556,7 +552,7 @@ and ordinary requests at 300 s by the host; the 5 s target of REQ-24 is dominate
 runs in milliseconds).</li>
 <li><b>3f Hardware Requirements: replace with specific minimums.</b> The current text says “sufficient CPU
 and RAM” without numbers. Suggested replacement is below.</li>
-<li><b>Data storage caveat.</b> Audit, feedback and escalation logs are append-only files under <i>var/</i>.
+<li><b>Data storage caveat.</b> Audit and feedback logs are append-only files under <i>var/</i>.
 On the Vercel host the file system is not persistent, so these logs do not survive a redeploy; the architecture
 section should say that a database or log service is required for production. The knowledge base itself is in
 the repository, so it is safe.</li>

@@ -24,7 +24,7 @@ function jaccard(a: Set<string>, b: Set<string>): number {
 
 /**
  * Score one candidate against the query. Range is roughly 0–1; absolute values
- * matter only in that they feed the escalation threshold (FR-16), so the
+ * matter only in that they feed the decline threshold (FR-16), so the
  * threshold and this function must be tuned together.
  */
 export function rerankOne(query: string, chunk: Chunk): number {

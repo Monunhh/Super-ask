@@ -12,7 +12,7 @@ export function SiteFooter({ lang }: { lang: Lang }) {
             {t(MARKETING.builtBy, lang)}
           </p>
           <p className="text-[15px] font-semibold leading-snug">
-            {t(MARKETING.dgc, lang)}
+            {t(MARKETING.team, lang)}
           </p>
         </div>
 

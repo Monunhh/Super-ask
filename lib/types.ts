@@ -41,7 +41,7 @@ export interface Chunk {
   /** Superseded versions are excluded from retrieval (FR-18, FR-58). */
   superseded?: boolean;
   /**
-   * Has a ministry content steward approved this chunk for citizens?
+   * Has a content steward approved this chunk for citizens?
    *
    * Absent on the hand-written sample corpus. Explicitly `false` on anything
    * §8.6 ingestion produced, because a crawler fetching a page is not a human
@@ -94,7 +94,7 @@ export interface Citation {
   quote: string;
 }
 
-/** Internal diagnostic payload. DGC and ministry users only (FR-72, FR-73). */
+/** Internal diagnostic payload. SuperAsk team only (FR-72, FR-73). */
 export interface Diagnostics {
   tier: Tier;
   provider: string;
@@ -133,12 +133,12 @@ export interface Diagnostics {
    *   retrieval:no_candidates  nothing retrieved at all
    *   verification:failed  FR-15 gate suppressed a written answer
    *   moderation:<kind>    NFR-04 output moderation caught the answer
-   *   provider:escalated   the model itself declined to answer
+   *   provider:declined    the model itself declined to answer
    *   rationale:not_in_source  the citizen asked WHY a rule exists and the
    *                       sources state the rule without giving a reason. The
    *                       ENGINE decided this, not the model — see
    *                       lib/engine/rationale.ts. Kept separate from
-   *                       provider:escalated because the corpus does cover the
+   *                       provider:declined because the corpus does cover the
    *                       subject: the rate of these measures a gap in the
    *                       published source pages, and the fix is content.
    *   fallback:general_knowledge  NOT a refusal — no source covered the
@@ -167,14 +167,12 @@ export interface AskResponse {
   lang: Lang;
   answer: string;
   citations: Citation[];
-  escalate: boolean;
-  /** Responsible office details, supplied when handover is unavailable (FR-29). */
-  office?: {
-    name: string;
-    address: string;
-    hours: string;
-    phone: string;
-  };
+  /**
+   * True when the question is in scope but no approved source covers it
+   * (UC-4). The interface shows a plain "no approved source" notice; there is
+   * no handover to anyone.
+   */
+  coverageGap: boolean;
   /**
    * The answer came from the model's general knowledge, not from an approved
    * source, because no source in the corpus covered the question and the

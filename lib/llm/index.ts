@@ -53,7 +53,7 @@ export interface GenerateOutcome extends GenerationResult {
  *
  * A model outage, an auth failure, a timeout, or output that does not satisfy
  * the answer contract all land here. In every case the citizen still gets the
- * retrieved provision and the offer of an officer, and the diagnostic payload
+ * retrieved provision, and the diagnostic payload
  * records what actually happened so the failure is visible to operators rather
  * than silent.
  */

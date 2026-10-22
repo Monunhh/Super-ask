@@ -8,9 +8,9 @@
  *    procurement decision lands (OD-05).
  *
  * 2. It is the NFR-09 degradation path: where model services are unavailable
- *    the system degrades to escalation rather than to failure. Serving the
- *    responsible provision verbatim with its citation, and offering an officer,
- *    is a better failure mode for a government service than an error page.
+ *    the system degrades to a decline rather than to failure. Serving the
+ *    responsible provision verbatim with its citation is a better failure mode
+ *    than an error page.
  *
  * It cannot hallucinate, because it only ever returns text copied from a
  * retrieved source. It also cannot synthesise across sources or answer in a
@@ -31,8 +31,8 @@ const NO_KHMER_TEXT = {
 };
 
 const NOT_FOUND = {
-  en: "SuperAsk has no approved source covering this question. An officer can help you.",
-  km: "SuperAsk មិនមានឯកសារយោងដែលបានអនុម័តសម្រាប់សំណួរនេះទេ។ មន្ត្រីអាចជួយអ្នកបាន។",
+  en: "SuperAsk has no approved source covering this question.",
+  km: "SuperAsk មិនមានឯកសារយោងដែលបានអនុម័តសម្រាប់សំណួរនេះទេ។",
 };
 
 export function createExtractiveProvider(reason?: string): LlmProvider {
@@ -49,7 +49,7 @@ export function createExtractiveProvider(reason?: string): LlmProvider {
 
   async function generate(req: GenerationRequest): Promise<GenerationResult> {
     // Also the general-mode answer: an extractive provider has no knowledge of
-    // its own to fall back on, so an unsourced question escalates. The general
+    // its own to fall back on, so an unsourced question declines. The general
     // fallback is a model capability, and where there is no model there is no
     // fallback — which is the correct degradation, not a gap.
     if (req.sources.length === 0) {
@@ -57,7 +57,7 @@ export function createExtractiveProvider(reason?: string): LlmProvider {
         answer: NOT_FOUND[req.lang],
         citations: [],
         confidence: "low",
-        shouldEscalate: true,
+        shouldDecline: true,
       };
     }
 
@@ -92,7 +92,7 @@ export function createExtractiveProvider(reason?: string): LlmProvider {
       // Never claims better than medium: a verbatim provision may be the right
       // provision without being a direct answer to what was asked.
       confidence: "medium",
-      shouldEscalate: false,
+      shouldDecline: false,
     };
   }
 

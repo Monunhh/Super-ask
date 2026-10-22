@@ -49,8 +49,8 @@ export const MARKETING = {
     en: "SuperAsk answers questions about procedures, required documents, official fees, and which office handles your case. Every answer shows the official source it came from.",
   } satisfies Copy,
   usedBy: {
-    km: "បម្រើប្រជាពលរដ្ឋ និងភ្នាក់ងាររដ្ឋាភិបាល",
-    en: "Built for citizens and government agencies",
+    km: "គ្របដណ្តប់លើនីតិវិធីពី",
+    en: "Covers procedures from",
   } satisfies Copy,
   featuresTitle: {
     km: "លក្ខណៈពិសេសនៃ SuperAsk",
@@ -82,10 +82,10 @@ export const MARKETING = {
       },
     },
     {
-      title: { km: "ភ្ជាប់ទៅមន្ត្រី", en: "Connect to an officer" },
+      title: { km: "ប្រាប់នៅពេលវាមិនដឹង", en: "Says when it does not know" },
       body: {
-        km: "នៅពេល SuperAsk មិនអាចឆ្លើយបាន វាភ្ជាប់អ្នកទៅមន្ត្រីដើម្បីជំនួយបន្ថែម។",
-        en: "When SuperAsk cannot answer, it connects you to an officer for further help.",
+        km: "នៅពេលគ្មានឯកសារយោងដែលបានអនុម័តសម្រាប់សំណួរ SuperAsk នឹងប្រាប់អ្នក ជាជាងទាយ។",
+        en: "When no approved source covers a question, SuperAsk says so instead of guessing.",
       },
     },
     {
@@ -155,16 +155,16 @@ export const MARKETING = {
   privacy: { km: "ឯកជនភាព", en: "Privacy" } satisfies Copy,
   terms: { km: "លក្ខខណ្ឌប្រើប្រាស់", en: "Terms of use" } satisfies Copy,
   copyright: {
-    km: "© 2026 គណៈកម្មាធិការរដ្ឋាភិបាលឌីជីថល",
-    en: "© 2026 Digital Government Committee",
+    km: "© 2026 SuperAsk",
+    en: "© 2026 SuperAsk",
   } satisfies Copy,
-  dgc: {
-    km: "គណៈកម្មាធិការរដ្ឋាភិបាលឌីជីថល",
-    en: "Digital Government Committee",
+  team: {
+    km: "ក្រុមការងារ SuperAsk — គម្រោងឯកជន មិនមែនសេវារដ្ឋាភិបាលទេ",
+    en: "The SuperAsk team — an independent project, not a government service",
   } satisfies Copy,
   address: {
-    km: "អគារលេខ១៣ មហាវិថីព្រះមុនីវង្ស សង្កាត់ស្រះចក ខណ្ឌដូនពេញ រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា ១២០២១០",
-    en: "Building No. 13, Preah Monivong Blvd, Sangkat Srah Chak, Khan Daun Penh, Phnom Penh, Cambodia 120210",
+    km: "រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា",
+    en: "Phnom Penh, Cambodia",
   } satisfies Copy,
   email: "info@superask.kh",
 

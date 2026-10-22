@@ -4,21 +4,13 @@ import { useCallback, useEffect, useState } from "react";
 import type { Lang } from "@/lib/ui/marketing";
 
 const KEY = "superask.site-lang.v1";
-const LEGACY_KEY = "askgov.site-lang.v1";
 
 export function useSiteLang(defaultLang: Lang = "en") {
   const [lang, setLangState] = useState<Lang>(defaultLang);
 
   useEffect(() => {
     try {
-      let stored = window.localStorage.getItem(KEY);
-      if (!stored) {
-        stored = window.localStorage.getItem(LEGACY_KEY);
-        if (stored === "km" || stored === "en") {
-          window.localStorage.setItem(KEY, stored);
-          window.localStorage.removeItem(LEGACY_KEY);
-        }
-      }
+      const stored = window.localStorage.getItem(KEY);
       if (stored === "km" || stored === "en") setLangState(stored);
     } catch {
       /* private browsing / blocked storage */

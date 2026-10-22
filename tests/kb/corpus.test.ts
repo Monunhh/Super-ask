@@ -255,7 +255,4 @@ describe("supporting data files", () => {
     }
   });
 
-  it("gives DG Support contact details for the escalation path (FR-29)", () => {
-    expect(kb.support.name.trim()).not.toBe("");
-  });
 });

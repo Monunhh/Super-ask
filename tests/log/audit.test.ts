@@ -116,7 +116,7 @@ describe("audit writers redact before storage", () => {
       lang: "en",
       answer: "We cannot look up 012345678.",
       citations: [],
-      escalate: true,
+      coverageGap: true,
     });
 
     const record = await writtenRecord();
@@ -132,7 +132,7 @@ describe("audit writers redact before storage", () => {
       lang: "en",
       answer: "The fee is 30,000 riel.",
       citations: [{ id: "MPWT-DL-001" } as never],
-      escalate: false,
+      coverageGap: false,
       diagnostics: {
         tier: 2,
         provider: "gateway",
@@ -174,7 +174,7 @@ describe("audit writers redact before storage", () => {
       lang: "en",
       answer: "Unsourced answer.",
       citations: [],
-      escalate: false,
+      coverageGap: false,
       unverified: true,
     });
 
@@ -194,25 +194,6 @@ describe("audit writers redact before storage", () => {
     expect((await writtenRecord()).comment).not.toContain("345 678");
   });
 
-  it("recordEscalation redacts every transcript turn (FR-28)", async () => {
-    const { recordEscalation } = await import("@/lib/log/audit");
-    await recordEscalation({
-      ref: "REF-1",
-      answerId: "a1",
-      lang: "en",
-      transcript: [
-        { role: "user", text: "my id is 012345678" },
-        { role: "assistant", text: "Contact sok@example.com" },
-      ],
-      citedIds: [],
-      ministries: [],
-    });
-
-    const record = await writtenRecord();
-    expect(record.transcript[0].text).toBe("my id is [ID]");
-    expect(record.transcript[1].text).toBe("Contact [EMAIL]");
-  });
-
   it("does not throw when the disk write fails — an audit failure must not fail the citizen's request", async () => {
     appendFile.mockRejectedValueOnce(new Error("ENOSPC"));
     const errorSpy = vi.spyOn(console, "error").mockImplementation(() => {});
@@ -225,7 +206,7 @@ describe("audit writers redact before storage", () => {
         lang: "en",
         answer: "a",
         citations: [],
-        escalate: true,
+        coverageGap: true,
       }),
     ).resolves.toBeUndefined();
 

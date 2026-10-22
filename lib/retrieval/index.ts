@@ -150,7 +150,7 @@ const FUSE_DEPTH = 8;
 export interface RetrievalResult {
   query: ProcessedQuery;
   candidates: Candidate[];
-  /** Top rerank score, normalised 0–1. Drives the FR-16 escalation decision. */
+  /** Top rerank score, normalised 0–1. Drives the FR-16 decline decision. */
   topScore: number;
 }
 

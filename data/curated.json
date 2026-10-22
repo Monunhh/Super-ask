@@ -4,7 +4,7 @@
   "answers": [
     {
       "id": "CUR-010",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-30",
       "matchMode": "whole",
       "match": [
@@ -33,7 +33,7 @@
     },
     {
       "id": "CUR-011",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-30",
       "matchMode": "whole",
       "match": [
@@ -55,7 +55,7 @@
     },
     {
       "id": "CUR-012",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-30",
       "matchMode": "whole",
       "match": [
@@ -78,29 +78,27 @@
     },
     {
       "id": "CUR-001",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-20",
       "match": [
         "what is superask",
-        "what is askgov",
         "who are you",
         "what can you do",
         "what do you do",
         "how can you help",
         "superask ជាអ្វី",
-        "askgov ជាអ្វី",
         "អ្នកជានរណា",
         "អ្នកអាចជួយអ្វីបាន"
       ],
       "answer": {
-        "en": "SuperAsk answers questions about Cambodian government services. It gives you procedures, required documents, official fees, timelines, and which office handles your case, and it shows the official source behind every answer.\n\nIt does not handle individual cases, look up personal records, or give legal advice. For those, it will connect you to an officer.",
-        "km": "SuperAsk ឆ្លើយសំណួរអំពីសេវាសាធារណៈរបស់រដ្ឋាភិបាលកម្ពុជា។ វាផ្តល់ជូននីតិវិធី ឯកសារតម្រូវ ថ្លៃសេវាជាផ្លូវការ កំណត់ពេល និងការិយាល័យទទួលបន្ទុក ព្រមទាំងបង្ហាញឯកសារយោងជាផ្លូវការសម្រាប់ចម្លើយនីមួយៗ។\n\nវាមិនដោះស្រាយករណីបុគ្គល មិនស្វែងរកព័ត៌មានផ្ទាល់ខ្លួន និងមិនផ្តល់ការប្រឹក្សាផ្នែកច្បាប់ឡើយ។ សម្រាប់ករណីទាំងនោះ វានឹងភ្ជាប់អ្នកទៅមន្ត្រី។"
+        "en": "SuperAsk answers questions about Cambodian government services. It gives you procedures, required documents, official fees, timelines, and which office handles your case, and it shows the official source behind every answer.\n\nIt does not handle individual cases, look up personal records, or give legal advice. For those, ask the responsible office directly.",
+        "km": "SuperAsk ឆ្លើយសំណួរអំពីសេវាសាធារណៈរបស់រដ្ឋាភិបាលកម្ពុជា។ វាផ្តល់ជូននីតិវិធី ឯកសារតម្រូវ ថ្លៃសេវាជាផ្លូវការ កំណត់ពេល និងការិយាល័យទទួលបន្ទុក ព្រមទាំងបង្ហាញឯកសារយោងជាផ្លូវការសម្រាប់ចម្លើយនីមួយៗ។\n\nវាមិនដោះស្រាយករណីបុគ្គល មិនស្វែងរកព័ត៌មានផ្ទាល់ខ្លួន និងមិនផ្តល់ការប្រឹក្សាផ្នែកច្បាប់ឡើយ។ សម្រាប់ករណីទាំងនោះ សូមទាក់ទងការិយាល័យទទួលបន្ទុកដោយផ្ទាល់។"
       },
       "citations": []
     },
     {
       "id": "CUR-002",
-      "approvedBy": "DGC content operations (prototype)",
+      "approvedBy": "SuperAsk content team (prototype)",
       "approvedAt": "2026-07-20",
       "match": [
         "which ministries are covered",

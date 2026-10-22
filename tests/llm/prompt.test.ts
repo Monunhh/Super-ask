@@ -63,7 +63,7 @@ describe("prompt selection", () => {
   it("identifies SuperAsk as a government service in both prompts", () => {
     for (const prompt of [GROUNDING_PROMPT, GENERAL_KNOWLEDGE_PROMPT]) {
       expect(prompt).toMatch(/You are SuperAsk/);
-      expect(prompt).toMatch(/Royal Government of Cambodia/i);
+      expect(prompt).toMatch(/independent information assistant/i);
     }
   });
 });
@@ -143,7 +143,7 @@ describe("parseGeneration", () => {
     answer: "The renewal fee is 30,000 riel.",
     citations: ["MPWT-DL-001"],
     confidence: "high",
-    should_escalate: false,
+    should_decline: false,
   });
 
   it("parses clean JSON", () => {
@@ -151,7 +151,7 @@ describe("parseGeneration", () => {
       answer: "The renewal fee is 30,000 riel.",
       citations: ["MPWT-DL-001"],
       confidence: "high",
-      shouldEscalate: false,
+      shouldDecline: false,
     });
   });
 
@@ -199,18 +199,18 @@ describe("parseGeneration", () => {
   });
 
   describe("grounded mode — rule 4", () => {
-    it("escalates an answer that rests on nothing, whatever the model claimed", () => {
+    it("declines an answer that rests on nothing, whatever the model claimed", () => {
       const res = parseGeneration(
-        JSON.stringify({ answer: "a", citations: [], should_escalate: false }),
+        JSON.stringify({ answer: "a", citations: [], should_decline: false }),
       );
-      expect(res.shouldEscalate).toBe(true);
+      expect(res.shouldDecline).toBe(true);
     });
 
-    it("escalates when the model asks to, even with citations", () => {
+    it("declines when the model asks to, even with citations", () => {
       const res = parseGeneration(
-        JSON.stringify({ answer: "a", citations: ["x"], should_escalate: true }),
+        JSON.stringify({ answer: "a", citations: ["x"], should_decline: true }),
       );
-      expect(res.shouldEscalate).toBe(true);
+      expect(res.shouldDecline).toBe(true);
     });
   });
 
@@ -231,20 +231,20 @@ describe("parseGeneration", () => {
       expect(res.confidence).toBe("medium");
     });
 
-    it("does not escalate on empty citations — that is the expected state here", () => {
+    it("does not decline on empty citations — that is the expected state here", () => {
       const res = parseGeneration(
-        JSON.stringify({ answer: "a", citations: [], should_escalate: false }),
+        JSON.stringify({ answer: "a", citations: [], should_decline: false }),
         "general",
       );
-      expect(res.shouldEscalate).toBe(false);
+      expect(res.shouldDecline).toBe(false);
     });
 
     it("still honours the model's own decline", () => {
       const res = parseGeneration(
-        JSON.stringify({ answer: "a", should_escalate: true }),
+        JSON.stringify({ answer: "a", should_decline: true }),
         "general",
       );
-      expect(res.shouldEscalate).toBe(true);
+      expect(res.shouldDecline).toBe(true);
     });
   });
 });

@@ -4,7 +4,7 @@ Phase 0 build of the citizen-facing assistant specified in `SuperAsk-PRD-v0.2.md
 Web, Next.js App Router, TypeScript.
 
 > **Prototype. All knowledge base content is sample content and is not
-> authoritative.** No ministry steward has approved anything in `data/`. Fees and
+> authoritative.** No content steward has approved anything in `data/`. Fees and
 > deadlines are deliberately marked as placeholders rather than filled with
 > plausible numbers — an invented fee is the exact harm R-06 and R-02 describe.
 
@@ -29,7 +29,7 @@ npm run dev                    # http://localhost:3000
 It runs with **no credential configured**. With none, generation falls back to
 the deterministic extractive provider, which quotes the retrieved provision
 verbatim with its citation. Retrieval, tiering, guardrails, citation, the
-verification gate, escalation, and the whole interface work unchanged.
+verification gate, decline logic, and the whole interface work unchanged.
 
 ```bash
 npm run check            # typecheck + test + build + every harness below. CI runs this
@@ -66,8 +66,8 @@ Status of the SuperAsk Phase 0 prototype as implemented in this repository
 2. **Citizen Q&A (Telegram text)** — Same ask engine via a Telegram bot: type a question, get a reply in chat.
 3. **Telegram Mini App** — Open the full SuperAsk chat UI inside Telegram, or keep chatting by text.
 4. **Bilingual citizen surface** — Landing + chat support EN/KM; replies follow the user’s language.
-5. **Grounded answers with guardrails** — Retrieval over a sample KB, source citations, confidence checks, and escalation when the system should not answer alone.
-6. **Feedback / escalation / audit** — Feedback and escalate actions; append-only audit logs with PII redaction.
+5. **Grounded answers with guardrails** — Retrieval over a sample KB, source citations, confidence checks, and a plain decline when no approved source covers the question.
+6. **Feedback / audit** — Feedback action; append-only audit logs with PII redaction.
 7. **Marketing / onboarding shell** — Landing page plus login/register screens (session is prototype-only, not real identity).
 
 ### What is already functional, what is currently being tackled?
@@ -78,7 +78,7 @@ Status of the SuperAsk Phase 0 prototype as implemented in this repository
 - Ask API + RAG pipeline (normalize → retrieve → generate → verify)
 - Telegram bot webhook (text answers) + Mini App entry points (keyboard + menu button)
 - Production deploy on Vercel with Telegram webhook configured
-- Citations, basic escalation deep-link, feedback/audit APIs
+- Citations, feedback/audit APIs
 - Health check and local eval/CI checks (`npm run check`)
 
 **Currently being tackled / next**
@@ -86,7 +86,6 @@ Status of the SuperAsk Phase 0 prototype as implemented in this repository
 - Real authentication (login/register are UI / `localStorage` stubs)
 - Stronger retrieval (dense/rerank pieces are lightweight stand-ins, not full neural models)
 - Broader, steward-approved knowledge base (sample ministries only today)
-- Closing the loop with DG Support / officer handover (escalation is only half-wired)
 - Content portal / ingest / RBAC (not built yet)
 - More reliable Telegram multi-turn history across serverless cold starts
 
@@ -96,7 +95,7 @@ Status of the SuperAsk Phase 0 prototype as implemented in this repository
 2. **Channel dual-mode design** — Citizens can text the bot or use the Mini App; both share one ask engine.
 3. **Deployment and ops setup** — Vercel hosting, env secrets for Telegram, webhook registration scripts, `/api/health`.
 4. **Quality gates** — Typecheck, tests, and eval harnesses in CI so retrieval/guardrail changes do not silently regress.
-5. **Risk and honesty controls** — Sample KB only; no invented fees; refuse/escalate when confidence is low; PII redaction in logs.
+5. **Risk and honesty controls** — Sample KB only; no invented fees; refuse when confidence is low; PII redaction in logs.
 6. **Cross-surface coordination** — Same brand and UX direction across landing, web chat, and Telegram.
 7. **Content governance line** — Crawl/monitor never auto-publishes into the answerable KB (steward approval gap is intentional; see `data/README.md`).
 
@@ -107,10 +106,9 @@ Status of the SuperAsk Phase 0 prototype as implemented in this repository
 | PRD area | Status |
 |---|---|
 | §8.1 Query handling | Khmer + English input, Unicode normalisation and canonical reordering (FR-04), shared segmentation (FR-05), romanised-Khmer mapping (FR-03), alias expansion (FR-06), session follow-up rewriting (FR-07), language detection (FR-08) |
-| §8.2 Answer generation | Three tiers, curated-first (FR-10/11), hybrid retrieval + RRF + rerank (FR-12/13), sources-only generation (FR-14), verification gate (FR-15), confidence-gated escalation (FR-16), effective-content-only filter (FR-18) |
+| §8.2 Answer generation | Three tiers, curated-first (FR-10/11), hybrid retrieval + RRF + rerank (FR-12/13), sources-only generation (FR-14), verification gate (FR-15), confidence-gated decline (FR-16), effective-content-only filter (FR-18) |
 | §6.1 Terminology | Plain-language explanation of official terms — instrument types, ministry abbreviations, administrative levels, and the three dates on a citation — served as Tier 1 from `data/glossary.json` |
 | §8.3 Citation | Every field of FR-20 → FR-26, always visible |
-| §8.4 Escalation | Explicit action (FR-27, FR-30), transcript handover to DG Support on Telegram (FR-28), office fallback details (FR-29) |
 | §8.7 Content monitoring | Web adapter over a 132-source registry (FR-47), change signals raised to a steward review queue and never published (FR-49), raw copy and fetch timestamp retained (FR-54), §10.5 risk classification. Facebook, Telegram, video and document adapters not built |
 | §8.8 Audit | Full FR-55 record, PII redacted before storage (FR-56) |
 | §8.9 Citizen interface | FR-60 → FR-74 |
@@ -126,12 +124,12 @@ prefixed rather than lumped together:
 | Reason | Meaning | What to do about it |
 |---|---|---|
 | `policy:<kind>` | The §12 refusal policy fired, before retrieval. `emergency`, `legal_advice`, `personal_case`, `prediction`, `land_dispute`, `tax_computation`, `political`, `complaint_routing` | Nothing — working as governed. Changing it is a governance decision (OD-07) |
-| `scope:not_a_service_question` | Not a government-service question at all — translation, general knowledge, chit-chat. Refused **without** an escalation offer | Nothing. Sending someone to an officer because they asked for the weather wastes the officer's time and theirs |
+| `scope:not_a_service_question` | Not a government-service question at all — translation, general knowledge, chit-chat. Refused, not flagged as a coverage gap | Nothing. There was no government-service question to answer |
 | `retrieval:below_floor` | Nothing scored above `RETRIEVAL_MIN_SCORE`. SuperAsk is *allowed* to answer; it has no source that covers the question | Usually a **content coverage gap** — add the content. If the source clearly exists and should have matched, it is a retrieval problem (R-07) |
 | `retrieval:no_candidates` | Retrieval returned nothing at all | Same, more clear-cut |
 | `verification:failed` | An answer was written, then suppressed by the FR-15 gate for an unsupported claim | Check `unsupported claims` in the trace. Either the model invented a figure, or the source phrases it in a form the extractor misses |
 | `moderation:<kind>` | NFR-04 output moderation caught the finished answer | Review the grounding prompt |
-| `provider:escalated` | The model itself declined to answer from the sources | Often correct behaviour |
+| `provider:declined` | The model itself declined to answer from the sources | Often correct behaviour |
 
 The distinction matters operationally: `policy:` means the platform is not
 permitted to answer, `scope:` means there was nothing of its kind to answer, and
@@ -213,7 +211,7 @@ over `lib/` and `app/api/`:
 
 | Suite | Covers |
 |---|---|
-| `tests/engine/tiers` | §10.2 tiering and **the order the gates run in** — policy before scope before retrieval before generation. Post-generation branches use a mocked provider, because the extractive one never escalates |
+| `tests/engine/tiers` | §10.2 tiering and **the order the gates run in** — policy before scope before retrieval before generation. Post-generation branches use a mocked provider, because the extractive one never declines |
 | `tests/engine/guardrails` | the §12 refusal policy, rule by rule, in both languages; the positive scope gate; NFR-04 output moderation |
 | `tests/engine/verify` | FR-15 — invented fees and deadlines blocked, faithful paraphrase passed |
 | `tests/engine/rationale` | rule-restated-as-its-own-reason; the stray-purpose-clause trap |
@@ -271,7 +269,7 @@ it. A green M-04 means the ten negatives were refused, not that refusal is
 solved.
 
 The golden set is 34 questions, not the ≥300
-produced with the officers who answer these queries today (§13, weeks 1–3) —
+produced with people who answer these queries today (§13, weeks 1–3) —
 treat it as a smoke test of the pipeline, not evidence of retrieval quality.
 And M-01 groundedness and M-02 uncited-claim count cannot be computed without
 human grading (D-05); the eval script says so rather than reporting a number it
@@ -372,7 +370,7 @@ to "one month".
 ### Crawling government infrastructure
 
 The politeness defaults are limits, not targets, and they are deliberate: a rude
-crawler from a DGC address is a political problem before it is a technical one.
+crawler is a political problem before it is a technical one.
 
 - `robots.txt` honoured per host, including `Crawl-delay`, with a named
   `User-Agent` group beating the wildcard
@@ -420,7 +418,7 @@ lib/engine/tiers.ts
 
 The order is the safety design. Guardrails run before retrieval so an
 out-of-scope question never reaches a model. The confidence gate runs before
-generation so weak retrieval escalates instead of producing a fluent answer over
+generation so weak retrieval declines instead of producing a fluent answer over
 irrelevant sources — the failure §13 calls worse than no service. The
 verification gate runs after generation and can still withhold an answer that
 has already been written.
@@ -433,7 +431,7 @@ Nothing outside `lib/llm/` contains model-specific logic.
 |---|---|---|---|
 | OpenAI-compatible gateway | `gateway` | Third-party gateway | External, non-domestic |
 | Claude, commercial API | `anthropic` | External | Outside Cambodia |
-| Qwen via vLLM | `vllm` | DGC infrastructure | Cambodia |
+| Qwen via vLLM | `vllm` | Self-hosted | Cambodia |
 | Deterministic extraction | `extractive` | In-process | Cambodia |
 
 **Currently configured: `gateway`.** One credential fronts many model families,
@@ -462,7 +460,7 @@ conditionals.
 
 Migrating to Phase 1 is `LLM_PROVIDER=vllm` plus `VLLM_BASE_URL`. Before that is
 a live path, §10.6 requires the Qwen benchmark against the Khmer golden set
-(condition 4, R-13), DGC legal approval of licence terms (NFR-20, D-08), and
+(condition 4, R-13), legal approval of licence terms (NFR-20, D-08), and
 prompt revalidation against Qwen (condition 6). None of those are code tasks and
 none are done.
 
@@ -473,7 +471,7 @@ none are done.
 See `.env.example`. Three settings are governance decisions rather than tuning
 knobs:
 
-- **`RETRIEVAL_MIN_SCORE`** — the FR-16 escalation floor, default `0.20`. Derived
+- **`RETRIEVAL_MIN_SCORE`** — the FR-16 decline floor, default `0.20`. Derived
   from the sweep `npm run eval` prints, not chosen by feel. **Re-derive this
   whenever the corpus, the segmenter, or the reranker changes.** At 0.20 the
   starter set answers 67.6% of in-scope questions and refuses 90% of
@@ -484,7 +482,7 @@ knobs:
   runs there.
 - **`GENERAL_FALLBACK_ENABLED`** — default on. When a question is in scope and no
   approved source covers it, the model answers from its own knowledge, labelled
-  unverified, with no citations and the officer still offered. Off is the §13
+  unverified, with no citations. Off is the §13
   behaviour: no approved source, no answer. On is a deliberate loosening while
   the corpus is four ministries of sample content, and it should be revisited as
   coverage grows — the wider the corpus, the more likely a question that misses
@@ -539,8 +537,8 @@ cases, reported as `GAP` rather than counted as failures:
 
 | Case | What happens | Should happen |
 |---|---|---|
-| "how do i enrol my child in school" | answered from civil-registration content | coverage gap, offer the officer |
-| "where in phnom penh?" after a passport thread | drifts to driving-licence locations | coverage gap, offer the officer |
+| "how do i enrol my child in school" | answered from civil-registration content | coverage gap, declined |
+| "where in phnom penh?" after a passport thread | drifts to driving-licence locations | coverage gap, declined |
 
 They are marked rather than deleted so the specification survives, and the
 marker itself is checked: if either starts passing, scope-check reports `FIXD`
@@ -563,23 +561,9 @@ carries a note not to add these cases until the gate can tell them apart.
    — the payload is omitted server-side rather than hidden in CSS — but before
    public release it must become a role check against the FR-59 RBAC model.
    Today, flag on means every caller of `/api/ask` receives it.
-2. **DG Support handover is half-wired (D-04).** Our side works and is verified:
-   `POST /api/escalate` stores the transcript server side (PII redacted) against a
-   reference token and returns `https://t.me/DGSupportKH_bot?start=<ref>`, which
-   the button opens.
-
-   **The bot side is not verified.** FR-28's promise only holds if
-   `@DGSupportKH_bot` implements a `/start` handler that resolves the token and
-   shows the officer the transcript. That handler is not in this repository and
-   has not been tested against a live bot. Until it exists, the interface
-   deliberately does **not** tell the citizen their conversation has been passed
-   along — it says only that the officer is sent the question. Do not soften that
-   wording before the bot resolves refs, or the first citizen who has to repeat
-   themselves is a broken promise rather than a missing feature.
-
-   To close it: have the bot read the `start` payload, look the ref up (today
-   `var/escalations.jsonl`, in production the domestic store), and post the
-   transcript into the officer's view.
+2. **No human handover.** SuperAsk is a private project. When it cannot answer
+   it says so and stops; it does not route the citizen to any government
+   officer or support desk, and there is no escalation endpoint.
 3. **The dense retriever is not a neural embedding model.** It is a hashed
    character-n-gram vector with cosine similarity — a real second signal with
    different failure modes from BM25, deliberately chosen because character
@@ -594,7 +578,7 @@ carries a note not to add these cases until the gate can tell them apart.
    (`ដោ | យ | រ | បៀ`). Recall survives via cluster bigrams and the dense
    signal, but this is the top candidate for replacement (R-07).
 6. **Khmer UI copy, `textKm` fields, and the `data/glossary.json` definitions
-   need review by a Khmer-speaking content officer.** Written for structure, not
+   need review by a Khmer-speaking reviewer.** Written for structure, not
    signed off for language. The glossary additionally needs a ministry content
    steward to confirm the legal descriptions: the definitions state no fee,
    deadline, or office, and describe the normative hierarchy in general terms,
@@ -613,7 +597,7 @@ carries a note not to add these cases until the gate can tell them apart.
    `superseded` flag is honoured by retrieval but nothing sets it),
    facility-directory routing (FR-17 — the directory exists in
    `data/facilities.json` but questions are not routed to it), voice (FR-09,
-   FR-19, Phase 2), plain-language mode (NFR-16), steward reminder escalation
+   FR-19, Phase 2), plain-language mode (NFR-16), steward reminders
    (FR-53).
 8. **Audit and feedback logs write to `var/*.jsonl` on local disk.** Gitignored.
    Production needs domestic managed storage under the NFR-13 retention policy
@@ -669,7 +653,7 @@ app/
   api/health/route.ts       provider + residency + per-ministry freshness
 components/
   Chat.tsx                  conversation state
-  AnswerBlock.tsx           answer + sources + escalation + notice
+  AnswerBlock.tsx           answer + sources + decline notice + notice
   SourceCard.tsx            the source receipt (FR-62/63)
   FreshnessBadge.tsx        FR-64
   DiagnosticPanel.tsx       FR-72/73
@@ -736,7 +720,7 @@ internet → nginx :80 → 127.0.0.1:3000 (superask.service, user superask)
 | `limit_req` 12 r/min on `/api/`, 120 r/min site | `/etc/nginx/conf.d/superask-limits.conf` | Every `/api/ask` is a paid model call. Unlimited public access is an open tap on the gateway credit. A citizen asks a question every few seconds; a scraper does not. |
 | App bound to `127.0.0.1` | `superask.service` | Port 3000 is unreachable publicly, so the rate limits and headers cannot be bypassed |
 | `/api/health` → localhost only | nginx `location = /api/health` | It names the provider, the model and the gateway base URL. No client calls it |
-| `DIAGNOSTICS_ENABLED=false` | `/opt/superask/.env.local` | FR-72/73 — the answer trace is for DGC and ministry users, not citizens |
+| `DIAGNOSTICS_ENABLED=false` | `/opt/superask/.env.local` | FR-72/73 — the answer trace is for the SuperAsk team, not citizens |
 | `.env.local` mode 600, owned by `superask` | droplet | R-15 / FR-74 — the credential is readable only by the service account |
 | Unprivileged user + systemd sandboxing | `superask.service` | `ProtectSystem=strict`, `NoNewPrivileges`, `PrivateDevices`; the audit log is the only writable path |
 | `X-Powered-By` stripped, `server_tokens off` | nginx + `next.config.ts` | Do not hand a scanner the stack |

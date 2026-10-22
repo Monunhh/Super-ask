@@ -1,5 +1,5 @@
 {
-  "_comment": "Golden question set (glossary: 'Golden question set'). Phase 0 weeks 1–3 require at least 300 questions produced WITH the officers who currently answer citizen queries — that is the real artefact and this file is not a substitute for it. This is a starter set of 34 written to be phrased DIFFERENTLY from the candidate questions indexed against each chunk, so that recall here measures retrieval rather than string matching against itself. The `negative` entries carry no expected chunk: they must be refused or escalated, and they measure refusal precision (M-04).",
+  "_comment": "Golden question set (glossary: 'Golden question set'). Phase 0 weeks 1–3 require at least 300 questions produced WITH the people who currently answer citizen queries — that is the real artefact and this file is not a substitute for it. This is a starter set of 34 written to be phrased DIFFERENTLY from the candidate questions indexed against each chunk, so that recall here measures retrieval rather than string matching against itself. The `negative` entries carry no expected chunk: they must be refused or escalated, and they measure refusal precision (M-04).",
   "positives": [
     { "q": "how do i extend my driving licence before it runs out", "expect": "MPWT-DL-001" },
     { "q": "what do i bring to renew a car licence", "expect": "MPWT-DL-001" },

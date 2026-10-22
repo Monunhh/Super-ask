@@ -21,7 +21,6 @@ import type { AskResponse } from "@/lib/types";
 const LOG_DIR = join(process.cwd(), "var");
 const AUDIT_LOG = join(LOG_DIR, "audit.jsonl");
 const FEEDBACK_LOG = join(LOG_DIR, "feedback.jsonl");
-const ESCALATION_LOG = join(LOG_DIR, "escalations.jsonl");
 
 /**
  * PII redaction. Ordered most-specific-first so that a phone number inside a
@@ -74,7 +73,8 @@ export interface AuditRecord {
   verificationPassed: boolean;
   unsupportedClaims: string[];
   refusalReason?: string;
-  escalated: boolean;
+  /** True when the question was in scope but no approved source covered it. */
+  coverageGap: boolean;
   /**
    * The answer came from the model's general knowledge rather than an approved
    * source (GENERAL_FALLBACK_ENABLED). Recorded as its own field because
@@ -121,7 +121,7 @@ export async function recordAnswer(
     verificationPassed: d?.verification.passed ?? true,
     unsupportedClaims: d?.verification.unsupported ?? [],
     refusalReason: d?.refusalReason,
-    escalated: res.escalate,
+    coverageGap: res.coverageGap,
     unverified: res.unverified === true,
     latencyMs: d?.latencyMs ?? -1,
   };
@@ -156,44 +156,3 @@ export async function recordFeedback(record: Omit<FeedbackRecord, "at">) {
   });
 }
 
-export interface EscalationRecord {
-  /** Reference token handed to DG Support. Resolves to this record. */
-  ref: string;
-  at: string;
-  answerId: string;
-  sessionId?: string;
-  lang: string;
-  /** Redacted transcript, in order. This is what satisfies FR-28. */
-  transcript: Array<{ role: "user" | "assistant"; text: string }>;
-  citedIds: string[];
-  ministries: string[];
-}
-
-/**
- * Record a human handover (FR-27, FR-28).
- *
- * FR-28 requires the conversation history to reach the receiving agent so the
- * citizen does not have to repeat themselves. The transcript is stored HERE,
- * server side, and DG Support is given only a short reference token.
- *
- * That indirection is deliberate. The alternative — packing the conversation
- * into the handover link — would put citizen question text into a URL, where it
- * lands in browser history, in any referrer header, and in every proxy log along
- * the way. For a service whose users ask about births, deaths, and lost
- * documents that is not an acceptable place for it to end up, and NFR-12 applies
- * the draft data protection principles regardless of any public authority
- * exemption. A token also survives the 64-character limit Telegram imposes on a
- * deep-link start parameter, which the transcript would not.
- */
-export async function recordEscalation(
-  record: Omit<EscalationRecord, "at">,
-): Promise<void> {
-  await appendLine(ESCALATION_LOG, {
-    ...record,
-    transcript: record.transcript.map((t) => ({
-      role: t.role,
-      text: redact(t.text),
-    })),
-    at: new Date().toISOString(),
-  });
-}

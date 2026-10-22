@@ -46,7 +46,7 @@ const ANSWER = {
   answer: "The renewal fee is 30,000 riel.",
   citations: ["MPWT-DL-001"],
   confidence: "high",
-  should_escalate: false,
+  should_decline: false,
 };
 
 let fetchMock: ReturnType<typeof vi.fn>;
@@ -156,7 +156,7 @@ describe("request shaping", () => {
     await provider.generate(request());
     const [system] = sentBody().messages;
     expect(system.role).toBe("system");
-    expect(system.content).toMatch(/Royal Government of Cambodia/i);
+    expect(system.content).toMatch(/independent information assistant/i);
   });
 
   it("puts the sources and the question in the final user message", async () => {
@@ -201,7 +201,7 @@ describe("response handling", () => {
       answer: "The renewal fee is 30,000 riel.",
       citations: ["MPWT-DL-001"],
       confidence: "high",
-      shouldEscalate: false,
+      shouldDecline: false,
     });
   });
 

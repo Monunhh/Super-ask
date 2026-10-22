@@ -131,13 +131,13 @@ for (const { q, reason } of golden.negatives) {
 /**
  * Threshold selection (FR-16).
  *
- * The escalation floor trades two error types against each other: too low and
+ * The decline floor trades two error types against each other: too low and
  * out-of-scope questions get answered from irrelevant sources; too high and
- * in-scope questions escalate to a human who did not need to be involved.
+ * in-scope questions are declined that the corpus could have answered.
  *
  * For a government service the asymmetry is not close — a confident wrong answer
  * about a fee or a deadline is the R-02 harm the platform exists to avoid, while
- * an unnecessary escalation costs an officer a few minutes. So the sweep reports
+ * an unnecessary decline costs the citizen a retry. So the sweep reports
  * both columns and the threshold is chosen from evidence rather than taste.
  */
 function sweep() {
@@ -169,7 +169,7 @@ console.log("\nSuperAsk — retrieval and refusal evaluation");
 console.log("=".repeat(62));
 console.log(`Golden positives : ${total}`);
 console.log(`Golden negatives : ${golden.negatives.length}`);
-console.log(`Escalation floor : ${RETRIEVAL_MIN_SCORE} (RETRIEVAL_MIN_SCORE)`);
+console.log(`Decline floor    : ${RETRIEVAL_MIN_SCORE} (RETRIEVAL_MIN_SCORE)`);
 console.log("-".repeat(62));
 console.log(`Recall @1        : ${pct(at1, total)}`);
 console.log(`Recall @3        : ${pct(at3, total)}`);
@@ -191,7 +191,7 @@ console.log(
   `  min ${sortedPos[0].toFixed(3)}   p10 ${sortedPos[Math.floor(total * 0.1)].toFixed(3)}   median ${sortedPos[Math.floor(total * 0.5)].toFixed(3)}   max ${sortedPos[total - 1].toFixed(3)}`,
 );
 
-console.log("\nEscalation-floor sweep:");
+console.log("\nDecline-floor sweep:");
 console.log("  floor   in-scope answered   out-of-scope refused");
 for (const r of sweep()) {
   const answeredPct = pct(r.answered, total);

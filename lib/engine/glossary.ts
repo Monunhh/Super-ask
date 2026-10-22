@@ -8,8 +8,8 @@
  *
  * That sentence was true as policy and false as behaviour. The corpus holds
  * procedures, not definitions, so "what does prakas mean" scored 0.11 against
- * the retrieval floor of 0.20 and came back as a coverage gap with an offer to
- * escalate — the service advertising a capability and then refusing the exact
+ * the retrieval floor of 0.20 and came back as a coverage gap —
+ * the service advertising a capability and then refusing the exact
  * example it gave. This module is what makes the sentence true.
  * ───────────────────────────────────────────────────────────────────────────
  *

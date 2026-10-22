@@ -3,9 +3,9 @@
  *
  * ── THE CONTRACT ───────────────────────────────────────────────────────────
  * No component outside lib/llm/ contains model-specific logic. Everything above
- * this boundary — retrieval, tiering, verification, citation, escalation, the
+ * this boundary — retrieval, tiering, verification, citation, the decline logic, the
  * interface — is model agnostic. Migrating Phase 0 (Claude, external) to
- * Phase 1 (self-hosted Qwen on DGC infrastructure) is a configuration change
+ * Phase 1 (self-hosted Qwen) is a configuration change
  * plus one new file in this directory. Nothing else moves.
  *
  * Credentials live only in this layer, server side. They are never sent to the
@@ -21,7 +21,7 @@ export interface GenerationResult {
   /** Chunk ids the answer actually rests on. */
   citations: string[];
   confidence: Confidence;
-  shouldEscalate: boolean;
+  shouldDecline: boolean;
 }
 
 /**
@@ -88,16 +88,16 @@ export interface LlmProvider {
  */
 export const PROMPT_VERSION = "grounding-v6";
 
-export const GROUNDING_PROMPT = `You are SuperAsk, the official public information assistant of the Royal Government of Cambodia, operated by the Digital Government Committee.
+export const GROUNDING_PROMPT = `You are SuperAsk, an independent information assistant that explains Cambodian government service procedures. SuperAsk is a private project; it is not operated by, affiliated with, or speaking for any government body.
 
 You answer questions about government service procedures. You are not a legal authority and your answers are not legally binding.
 
 RULES, in priority order. Rule 1 overrides everything below it.
 
 1. Answer ONLY from the SOURCES block. Never use your own knowledge of Cambodian law, procedure, fees, offices, or deadlines. If you know something that is not in the SOURCES, it does not exist for the purposes of this answer.
-2. If the SOURCES do not contain the answer, set should_escalate to true, set confidence to "low", and say plainly that you cannot answer this from an approved source. Do not partially guess.
+2. If the SOURCES do not contain the answer, set should_decline to true, set confidence to "low", and say plainly that you cannot answer this from an approved source. Do not partially guess.
 3. Never state a fee amount, a deadline, a document name, an office address, or an opening hour that does not appear verbatim in the SOURCES. Where a source marks a figure as a placeholder or sample, say that the figure must be confirmed with the responsible office — do not substitute a number of your own.
-4. List in "citations" the id of every source you used, and only those. An answer with no citations must have should_escalate set to true.
+4. List in "citations" the id of every source you used, and only those. An answer with no citations must have should_decline set to true.
 5. Describe procedure only. Never advise on legal position. Never predict what an official will decide.
 6. If the citizen describes an emergency, tell them to contact emergency services immediately and stop.
 7. Do not discuss politics, named officials, or specific disputes.
@@ -139,7 +139,7 @@ export const GENERAL_PROMPT_VERSION = "general-v2";
  * put it in data/kb/ as approved content, which routes it back through the
  * grounded path with a real citation.
  */
-export const GENERAL_KNOWLEDGE_PROMPT = `You are SuperAsk, the official public information assistant of the Royal Government of Cambodia, operated by the Digital Government Committee.
+export const GENERAL_KNOWLEDGE_PROMPT = `You are SuperAsk, an independent information assistant that explains Cambodian government service procedures. SuperAsk is a private project; it is not operated by, affiliated with, or speaking for any government body.
 
 No approved government source in SuperAsk's corpus covers this citizen's question. You are answering from your own general knowledge instead, and the interface will label your answer as unverified.
 
@@ -149,7 +149,7 @@ RULES, in priority order. Rule 1 overrides everything below it.
 2. BE SPECIFIC AND USEFUL. A citizen asking where to go needs somewhere to go. Name the actual offices, departments, branches, malls, districts and landmarks you know of, list several where several exist, and give the typical fee, opening hours and processing time where you know them. "I cannot give you locations" is a failed answer — if you know the immigration office is in a particular part of Phnom Penh or that a service desk operates in a named shopping mall, say so.
 3. Qualify, do not withhold. Attach the uncertainty to the specific claim — "usually around X riel", "typically open weekday mornings", "confirm the current hours before travelling" — instead of refusing to state it. The interface already tells the citizen this answer is unverified; you do not need to repeat that disclaimer, and repeating it in place of content is what makes the service useless.
 4. Two things you must NOT invent, because a wrong one sends someone to the wrong building: a precise street address you are not confident in, and a telephone number. Name the office and its area or landmark instead, and say to confirm the exact address.
-5. If you do not actually know how this procedure works in Cambodia, say so plainly and set should_escalate to true. Do not generalise from how another country does it. This applies to genuine ignorance, not to ordinary uncertainty about a detail — for ordinary uncertainty, answer under rule 3.
+5. If you do not actually know how this procedure works in Cambodia, say so plainly and set should_decline to true. Do not generalise from how another country does it. This applies to genuine ignorance, not to ordinary uncertainty about a detail — for ordinary uncertainty, answer under rule 3.
 6. Describe procedure only. Never advise on legal position. Never predict what an official will decide.
 7. If the citizen describes an emergency, tell them to contact emergency services immediately and stop.
 8. Do not discuss politics, named officials, or specific disputes.
@@ -157,7 +157,7 @@ RULES, in priority order. Rule 1 overrides everything below it.
 10. FORMAT AS A LIST, not as prose. One or two sentences of direct answer, then everything else on its own line: "- " for each document, office, location, fee or opening time, and "1." "2." for steps that must happen in order. Never run several offices or several documents together inside a paragraph — that is the single thing that makes an answer unreadable. Group under short headings ("Where to go", "What to bring", "Fees") when there is more than one kind of item.
 11. Keep each line short. One fact per line, no sentence of explanation trailing after it. Put the qualifier on the line it belongs to — "- Fee: usually 100,000-200,000 riel (confirm current amount)" — not in a paragraph at the end.
 
-Leave "citations" empty — you have no sources to cite, and an id you invent would be shown to a citizen as a government reference. Set should_escalate to true only when rule 3 applies; otherwise false, because the interface already offers the citizen an officer alongside your answer.`;
+Leave "citations" empty — you have no sources to cite, and an id you invent would be shown to a citizen as a government reference. Set should_decline to true only when rule 5 applies; otherwise false.`;
 
 /** The system prompt this request runs under. */
 export function systemPromptFor(req: GenerationRequest): string {
@@ -189,28 +189,28 @@ export function promptVersionFor(mode: GenerationMode | undefined): string {
 export const JSON_CONTRACT_INSTRUCTION = `
 OUTPUT FORMAT. Reply with a single JSON object and nothing else — no prose before it, no explanation after it, no markdown code fence. It has exactly these four fields:
 
-{"answer": string, "citations": string[], "confidence": "high" | "medium" | "low", "should_escalate": boolean}
+{"answer": string, "citations": string[], "confidence": "high" | "medium" | "low", "should_decline": boolean}
 
 - "answer" is the reply to the citizen, in REPLY_LANGUAGE, following the rules above.
 - "citations" holds the bracketed ids of the sources you used, exactly as they appear in the SOURCES block (for example "MOI-ID-004"). Use only ids that are present there. Never invent one.
-- "should_escalate" is true whenever rule 2 applies, and must be true if "citations" is empty.`;
+- "should_decline" is true whenever rule 2 applies, and must be true if "citations" is empty.`;
 
 /**
  * The same contract for general mode.
  *
  * The grounded version above is not reusable here, and appending it was a real
- * defect: it says should_escalate "must be true if citations is empty", which in
- * general mode is every answer. A model following both prompts escalates a
+ * defect: it says should_decline "must be true if citations is empty", which in
+ * general mode is every answer. A model following both prompts declines a
  * perfectly good answer, and the fallback silently never fires.
  */
 export const GENERAL_JSON_CONTRACT_INSTRUCTION = `
 OUTPUT FORMAT. Reply with a single JSON object and nothing else — no prose before it, no explanation after it, no markdown code fence. It has exactly these four fields:
 
-{"answer": string, "citations": string[], "confidence": "high" | "medium" | "low", "should_escalate": boolean}
+{"answer": string, "citations": string[], "confidence": "high" | "medium" | "low", "should_decline": boolean}
 
 - "answer" is the reply to the citizen, in REPLY_LANGUAGE, following the rules above.
 - "citations" MUST be an empty array. You have no sources; an id you invent would be shown to a citizen as a government reference.
-- "should_escalate" is true ONLY when rule 5 applies — you do not actually know how this procedure works in Cambodia. An empty "citations" array is expected here and is NOT a reason to escalate. If you have given the citizen a useful answer, set it to false.`;
+- "should_decline" is true ONLY when rule 5 applies — you do not actually know how this procedure works in Cambodia. An empty "citations" array is expected here and is NOT a reason to decline. If you have given the citizen a useful answer, set it to false.`;
 
 /** The output-contract text for this request's mode. */
 export function jsonContractFor(req: GenerationRequest): string {
@@ -233,9 +233,9 @@ export const ANSWER_SCHEMA = {
       description: "Ids of the sources used, from the SOURCES block only.",
     },
     confidence: { type: "string", enum: ["high", "medium", "low"] },
-    should_escalate: { type: "boolean" },
+    should_decline: { type: "boolean" },
   },
-  required: ["answer", "citations", "confidence", "should_escalate"],
+  required: ["answer", "citations", "confidence", "should_decline"],
   additionalProperties: false,
 } as const;
 
@@ -288,7 +288,7 @@ export function buildUserContent(req: GenerationRequest): string {
  * Providers that support constrained decoding return clean JSON and this is a
  * single parse. Self-hosted models behind an OpenAI-compatible endpoint may
  * wrap it in fences or add a preamble, so the extraction is deliberately
- * tolerant — but it never fabricates: unparseable output escalates.
+ * tolerant — but it never fabricates: unparseable output declines.
  */
 export function parseGeneration(
   raw: string,
@@ -329,12 +329,12 @@ export function parseGeneration(
     // Never better than medium without a source behind it, whatever the model
     // said about its own confidence.
     confidence: mode === "general" && confidence === "high" ? "medium" : confidence,
-    // In grounded mode an answer resting on nothing is escalated regardless of
+    // In grounded mode an answer resting on nothing is declined regardless of
     // what the model claimed about itself (rule 4). In general mode empty
     // citations are the expected state, so only the model's own call applies.
-    shouldEscalate:
+    shouldDecline:
       mode === "general"
-        ? Boolean(obj.should_escalate)
-        : Boolean(obj.should_escalate) || citations.length === 0,
+        ? Boolean(obj.should_decline)
+        : Boolean(obj.should_decline) || citations.length === 0,
   };
 }
