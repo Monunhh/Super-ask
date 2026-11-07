@@ -18,7 +18,7 @@ export function askHref(q: string): string {
   return `/chat?q=${encodeURIComponent(q)}`;
 }
 
-export const GRADIENT = "linear-gradient(135deg,#046EC5,#64E8C7)";
+export const GRADIENT = "linear-gradient(135deg,#4F3FA8,#6D5BD0)";
 
 /* ── Channel icons (from the Figma) ──────────────────────────────────────── */
 
@@ -55,15 +55,15 @@ export function MessengerIcon({ size = 48 }: { size?: number }) {
 export function WebIcon({ size = 48 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 48 48" fill="none" aria-hidden>
-      <circle cx="24" cy="24" r="24" fill="#F0F9FF" />
-      <circle cx="24" cy="24" r="12" stroke="#046EC5" strokeWidth="1.5" fill="none" />
+      <circle cx="24" cy="24" r="24" fill="#F7F5FF" />
+      <circle cx="24" cy="24" r="12" stroke="#4F3FA8" strokeWidth="1.5" fill="none" />
       <path
         d="M24 12c-3 3-4.5 7.5-4.5 12s1.5 9 4.5 12M24 12c3 3 4.5 7.5 4.5 12s-1.5 9-4.5 12"
-        stroke="#046EC5"
+        stroke="#4F3FA8"
         strokeWidth="1.5"
       />
-      <path d="M12 24h24" stroke="#046EC5" strokeWidth="1.5" />
-      <path d="M13 19h22M13 29h22" stroke="#046EC5" strokeWidth="1" opacity="0.4" />
+      <path d="M12 24h24" stroke="#4F3FA8" strokeWidth="1.5" />
+      <path d="M13 19h22M13 29h22" stroke="#4F3FA8" strokeWidth="1" opacity="0.4" />
     </svg>
   );
 }
@@ -82,7 +82,7 @@ export function Eyebrow({
   align?: "center" | "start";
   className?: string;
 }) {
-  const c = dark ? "#BBDFFC" : "#046EC5";
+  const c = dark ? "#D4CCF7" : "#4F3FA8";
   const rule = (
     <span
       aria-hidden
@@ -196,13 +196,13 @@ export function VerifiedChip({
       style={{
         background: "rgba(255,255,255,0.96)",
         padding: "10px 14px",
-        boxShadow: "0 8px 32px rgba(4,110,197,0.13)",
+        boxShadow: "0 8px 32px rgba(79,63,168,0.13)",
         maxWidth: 210,
         ...style,
       }}
     >
       <div className="mb-1 flex items-center gap-1.5">
-        <span className="h-[7px] w-[7px] shrink-0 rounded-full" style={{ background: "#64E8C7" }} />
+        <span className="h-[7px] w-[7px] shrink-0 rounded-full" style={{ background: "#9D8CF2" }} />
         <span
           style={{
             fontSize: 10,
@@ -238,7 +238,7 @@ export function BothChannelsChip({
       style={{
         background: "rgba(255,255,255,0.96)",
         padding: "10px 14px",
-        boxShadow: "0 8px 32px rgba(4,110,197,0.13)",
+        boxShadow: "0 8px 32px rgba(79,63,168,0.13)",
         ...style,
       }}
     >
@@ -319,7 +319,7 @@ export function PhoneMock({
           <div className="flex gap-[7px]">
             <div
               className="flex shrink-0 items-center justify-center rounded-full"
-              style={{ width: 26, height: 26, background: `linear-gradient(135deg,${accent},#64E8C7)` }}
+              style={{ width: 26, height: 26, background: `linear-gradient(135deg,${accent},#9D8CF2)` }}
             >
               <span style={{ fontSize: 9, fontWeight: 800, color: "#fff" }}>SA</span>
             </div>
@@ -338,9 +338,9 @@ export function PhoneMock({
                   <span style={{ color: "#4A5565", fontSize: 10, lineHeight: lh(lang, 1.45, 1.7) }}>{r.val[lang]}</span>
                 </div>
               ))}
-              <div className="flex items-center gap-[5px]" style={{ marginTop: 8, padding: "5px 9px", background: "#EFF6FF", borderRadius: 8 }}>
-                <span className="shrink-0 rounded-full" style={{ width: 5, height: 5, background: "#64E8C7" }} />
-                <span style={{ fontSize: 9, color: "#046EC5", lineHeight: lh(lang, 1.3, 1.6) }}>{demo.source[lang]}</span>
+              <div className="flex items-center gap-[5px]" style={{ marginTop: 8, padding: "5px 9px", background: "#F3F0FF", borderRadius: 8 }}>
+                <span className="shrink-0 rounded-full" style={{ width: 5, height: 5, background: "#9D8CF2" }} />
+                <span style={{ fontSize: 9, color: "#4F3FA8", lineHeight: lh(lang, 1.3, 1.6) }}>{demo.source[lang]}</span>
               </div>
             </div>
           </div>

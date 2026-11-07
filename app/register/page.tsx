@@ -82,7 +82,7 @@ function RegisterForm({ lang }: { lang: Lang }) {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder={t(MARKETING.namePlaceholder, lang)}
-            className="h-12 rounded-lg border px-3.5 text-[15px] transition-all outline-none focus:border-[var(--sa-sky)] focus:ring-2 focus:ring-[#046EC5]/15"
+            className="h-12 rounded-lg border px-3.5 text-[15px] transition-all outline-none focus:border-[var(--sa-sky)] focus:ring-2 focus:ring-[#4F3FA8]/15"
             style={fieldStyle}
           />
         </label>
@@ -100,7 +100,7 @@ function RegisterForm({ lang }: { lang: Lang }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t(MARKETING.emailPlaceholder, lang)}
-            className="h-12 rounded-lg border px-3.5 text-[15px] transition-all outline-none focus:border-[var(--sa-sky)] focus:ring-2 focus:ring-[#046EC5]/15"
+            className="h-12 rounded-lg border px-3.5 text-[15px] transition-all outline-none focus:border-[var(--sa-sky)] focus:ring-2 focus:ring-[#4F3FA8]/15"
             style={fieldStyle}
           />
         </label>
@@ -118,7 +118,7 @@ function RegisterForm({ lang }: { lang: Lang }) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder={t(MARKETING.passwordPlaceholder, lang)}
-            className="h-12 rounded-lg border px-3.5 text-[15px] transition-all outline-none focus:border-[var(--sa-sky)] focus:ring-2 focus:ring-[#046EC5]/15"
+            className="h-12 rounded-lg border px-3.5 text-[15px] transition-all outline-none focus:border-[var(--sa-sky)] focus:ring-2 focus:ring-[#4F3FA8]/15"
             style={fieldStyle}
           />
         </label>
@@ -136,7 +136,7 @@ function RegisterForm({ lang }: { lang: Lang }) {
             value={confirm}
             onChange={(e) => setConfirm(e.target.value)}
             placeholder={t(MARKETING.passwordPlaceholder, lang)}
-            className="h-12 rounded-lg border px-3.5 text-[15px] transition-all outline-none focus:border-[var(--sa-sky)] focus:ring-2 focus:ring-[#046EC5]/15"
+            className="h-12 rounded-lg border px-3.5 text-[15px] transition-all outline-none focus:border-[var(--sa-sky)] focus:ring-2 focus:ring-[#4F3FA8]/15"
             style={fieldStyle}
           />
         </label>
@@ -150,7 +150,7 @@ function RegisterForm({ lang }: { lang: Lang }) {
         <button
           type="submit"
           disabled={busy}
-          className="ag-press mt-2 inline-flex h-12 items-center justify-center rounded-lg text-[15px] font-semibold text-white shadow-md shadow-[#046EC5]/20 transition-all hover:opacity-95 disabled:opacity-70"
+          className="ag-press mt-2 inline-flex h-12 items-center justify-center rounded-lg text-[15px] font-semibold text-white shadow-md shadow-[#4F3FA8]/20 transition-all hover:opacity-95 disabled:opacity-70"
           style={{ background: "var(--sa-gradient)" }}
         >
           {t(MARKETING.register, lang)}

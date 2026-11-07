@@ -7,7 +7,7 @@ import { SuperAskLogo } from "./SuperAskLogo";
 import { MARKETING, t, type Lang } from "@/lib/ui/marketing";
 import { NAV } from "@/lib/ui/landing";
 
-const GRADIENT = "linear-gradient(135deg,#046EC5,#64E8C7)";
+const GRADIENT = "linear-gradient(135deg,#4F3FA8,#6D5BD0)";
 
 /** "ខ្មែរ | EN" — both options visible, the active one in brand blue. */
 export function LangToggle({
@@ -26,7 +26,7 @@ export function LangToggle({
         aria-pressed={active}
         className="rounded px-0.5"
         style={{
-          color: active ? "#046EC5" : "#4A5565",
+          color: active ? "#4F3FA8" : "#4A5565",
           fontWeight: active ? 600 : 500,
           lineHeight: 1.6,
         }}
@@ -76,7 +76,7 @@ export function SiteHeader({
             <Link
               key={l.id}
               href={`/#${l.id}`}
-              className="transition-colors hover:text-[#046EC5]"
+              className="transition-colors hover:text-[#4F3FA8]"
               style={{ color: "#4A5565", fontSize: 14, fontWeight: 500, lineHeight: 1.5 }}
             >
               {l.label[lang]}
@@ -89,7 +89,7 @@ export function SiteHeader({
             {variant === "default" && (
               <Link
                 href="/login"
-                className="transition-colors hover:text-[#046EC5]"
+                className="transition-colors hover:text-[#4F3FA8]"
                 style={{ color: "#4A5565", fontSize: 13, fontWeight: 500 }}
               >
                 {t(MARKETING.login, lang)}

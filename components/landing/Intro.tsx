@@ -53,7 +53,7 @@ export function Hero({ lang }: { lang: Lang }) {
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
-          backgroundImage: "radial-gradient(#BBDFFC 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(#D4CCF7 1px, transparent 1px)",
           backgroundSize: "28px 28px",
           opacity: 0.32,
         }}
@@ -113,7 +113,7 @@ export function Hero({ lang }: { lang: Lang }) {
           <div
             aria-hidden
             className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"
-            style={{ width: 480, height: 480, background: "radial-gradient(circle, #EFF6FF 0%, transparent 70%)" }}
+            style={{ width: 480, height: 480, background: "radial-gradient(circle, #F3F0FF 0%, transparent 70%)" }}
           />
           <VerifiedChip lang={lang} text={HERO.chipSource[lang]} className="hidden md:block" style={{ top: "12%", left: -20 }} />
           <BothChannelsChip lang={lang} className="hidden md:flex" style={{ top: "35%", right: -20 }} />
@@ -134,7 +134,7 @@ export function Stats({ lang }: { lang: Lang }) {
   return (
     <section
       className="px-6 py-16"
-      style={{ background: "#F0F9FF", borderTop: "1px solid #E0F0FF", borderBottom: "1px solid #E0F0FF" }}
+      style={{ background: "#F7F5FF", borderTop: "1px solid #ECE8FB", borderBottom: "1px solid #ECE8FB" }}
     >
       <div className="mx-auto max-w-[900px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -144,11 +144,11 @@ export function Stats({ lang }: { lang: Lang }) {
               <div
                 key={s.label.en}
                 className={`px-8 py-7 text-center ${i < 3 ? "border-b sm:border-b-0 lg:border-r" : ""} ${i % 2 === 0 ? "sm:border-r" : ""}`}
-                style={{ borderColor: "#D0E8F8" }}
+                style={{ borderColor: "#E2DCF8" }}
               >
-                <Icon size={22} strokeWidth={1.6} color="#046EC5" className="mx-auto mb-1.5" aria-hidden />
+                <Icon size={22} strokeWidth={1.6} color="#4F3FA8" className="mx-auto mb-1.5" aria-hidden />
                 <div
-                  style={{ fontSize: "clamp(28px,4vw,40px)", fontWeight: 700, color: "#046EC5", letterSpacing: "-1px", lineHeight: 1 }}
+                  style={{ fontSize: "clamp(28px,4vw,40px)", fontWeight: 700, color: "#4F3FA8", letterSpacing: "-1px", lineHeight: 1 }}
                 >
                   {s.n}
                 </div>
@@ -233,7 +233,7 @@ function Cross() {
 function Tick() {
   return (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0" aria-hidden>
-      <circle cx="7" cy="7" r="6" fill="#64E8C7" fillOpacity="0.15" stroke="#35C1A7" strokeWidth="1.2" />
+      <circle cx="7" cy="7" r="6" fill="#9D8CF2" fillOpacity="0.15" stroke="#7C6CD8" strokeWidth="1.2" />
       <path d="M4.5 7l2 2 3-3" stroke="#0A7D63" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -262,7 +262,7 @@ export function Compare({ lang }: { lang: Lang }) {
             <div role="columnheader" style={{ ...head, color: "#99A1AF", borderLeft: "1px solid #E8EDF2" }}>
               {COMPARE.head.without[lang]}
             </div>
-            <div role="columnheader" style={{ ...head, color: "#046EC5", borderLeft: "1px solid #E8EDF2", background: "#F0F9FF" }}>
+            <div role="columnheader" style={{ ...head, color: "#4F3FA8", borderLeft: "1px solid #E8EDF2", background: "#F7F5FF" }}>
               {COMPARE.head.with[lang]}
             </div>
           </div>
@@ -289,10 +289,10 @@ export function Compare({ lang }: { lang: Lang }) {
                 className="flex items-center gap-2 px-3 py-4 sm:px-5"
                 style={{
                   fontSize: 13,
-                  color: "#046EC5",
+                  color: "#4F3FA8",
                   fontWeight: 500,
                   borderLeft: "1px solid #E8EDF2",
-                  background: "#F0F9FF",
+                  background: "#F7F5FF",
                   lineHeight: lh(lang, 1.5),
                 }}
               >

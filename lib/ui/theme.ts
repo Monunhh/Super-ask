@@ -1,39 +1,40 @@
 /**
- * Design tokens — follows the SuperAsk Figma (blue → teal).
+ * Design tokens — follows the SuperAsk (StartUp) Figma: indigo → violet.
  *
- *   #046EC5  blue  — brand, primary actions, user turns, links
- *   #64E8C7  teal  — "verified" accent, gradient end
- *   #FFFFFF  paper — content surfaces
+ *   #4F3FA8  indigo — brand, primary actions, user turns, links
+ *   #9D8CF2  violet — accent: dots, fills, the light end of heading accents
+ *   #FFFFFF  paper  — content surfaces
  *
- * The signature brand surface is the 135° blue → teal gradient (T.gradient).
- * Teal is a light colour: it is used for dots, fills and the gradient, never
- * for small text on white. Text that needs to read as "verified" uses
- * T.tealText, which keeps the hue but clears WCAG AA on white.
+ * The signature brand surface is the 135° indigo → violet gradient
+ * (T.gradient). The light violet is decoration only, never small text on
+ * white. Text that must read as "verified" uses T.tealText — a green kept for
+ * its meaning, which clears WCAG AA on white. (The `teal*` token names predate
+ * the palette change and are kept so components need no edit.)
  *
  * Semantic state colours (verified / review due / stale) stay distinct from
- * the brand blue: a freshness indicator that reads as "brand" defeats FR-64.
+ * the brand: a freshness indicator that reads as "brand" defeats FR-64.
  *
  * Shadows are kept shallow deliberately — NFR-15 targets low-end Android, and
  * large blurred shadows are the cheapest way to make a page scroll badly.
  */
 export const T = {
-  sky: "#046EC5",
-  skyDeep: "#035A9F",
-  skyWash: "#EFF6FF",
-  skyLine: "#BBDFFC",
+  sky: "#4F3FA8",
+  skyDeep: "#3F3289",
+  skyWash: "#F3F0FF",
+  skyLine: "#D4CCF7",
 
-  deep: "#046EC5",
-  deepHover: "#035A9F",
-  deepWash: "#F0F9FF",
+  deep: "#4F3FA8",
+  deepHover: "#3F3289",
+  deepWash: "#F7F5FF",
 
-  teal: "#64E8C7",
+  teal: "#9D8CF2",
   tealText: "#0A7D63",
   tealWash: "#ECFDF7",
 
   /** Dark surfaces: chat sidebar, features band. */
-  slate: "#1E2939",
+  slate: "#171936",
   /** Footer. */
-  night: "#030712",
+  night: "#0C0B20",
 
   paper: "#FFFFFF",
   page: "#F8FAFC",
@@ -63,14 +64,14 @@ export const T = {
   redWash: "#FEF3F2",
   redLine: "#FECDCA",
 
-  gradient: "linear-gradient(135deg,#046EC5,#64E8C7)",
+  gradient: "linear-gradient(135deg,#4F3FA8,#6D5BD0)",
 
   shadowSm: "0 1px 4px rgba(0,0,0,0.07)",
   shadowMd: "0 2px 8px rgba(0,0,0,0.07)",
-  shadowLg: "0 8px 32px rgba(4,110,197,0.12)",
+  shadowLg: "0 8px 32px rgba(79,63,168,0.12)",
 
-  /** Focus ring, as a shadow, tinted with brand blue. */
-  ringSky: "0 0 0 3px rgba(4,110,197,0.18)",
+  /** Focus ring, as a shadow, tinted with brand indigo. */
+  ringSky: "0 0 0 3px rgba(79,63,168,0.18)",
 } as const;
 
 /** Height of the top bar in the chat app. */

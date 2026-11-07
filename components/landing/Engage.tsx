@@ -64,8 +64,8 @@ export function Channels({ lang }: { lang: Lang }) {
       cta: CHANNELS.web.cta[lang],
       href: "/chat",
       external: false,
-      accent: "#046EC5",
-      bg: "#F0F9FF",
+      accent: "#4F3FA8",
+      bg: "#F7F5FF",
     },
     {
       Logo: TelegramIcon,
@@ -148,7 +148,7 @@ export function Trust({ lang }: { lang: Lang }) {
             const Icon = c.icon === "shield" ? ShieldCheck : Lock;
             return (
               <div key={c.title.en} className="rounded-2xl p-8 text-left" style={{ background: "#FAFBFC", border: "1px solid #F0F4F8" }}>
-                <Icon size={28} strokeWidth={1.6} color="#046EC5" className="mb-3.5" aria-hidden />
+                <Icon size={28} strokeWidth={1.6} color="#4F3FA8" className="mb-3.5" aria-hidden />
                 <h3 style={{ fontSize: 19, fontWeight: 700, color: "#101828", margin: "0 0 12px", lineHeight: lh(lang, 1.35, 1.6) }}>{c.title[lang]}</h3>
                 <p style={{ fontSize: 15, color: "#4A5565", margin: 0, lineHeight: lh(lang, 1.65) }}>{c.body[lang]}</p>
               </div>
@@ -184,12 +184,12 @@ export function About({ lang }: { lang: Lang }) {
                 style={{
                   width: 52,
                   height: 52,
-                  background: "linear-gradient(135deg,#EFF6FF,#BBDFFC)",
+                  background: "linear-gradient(135deg,#F3F0FF,#D4CCF7)",
                   border: "2px solid #fff",
-                  boxShadow: "0 2px 8px rgba(4,110,197,0.10)",
+                  boxShadow: "0 2px 8px rgba(79,63,168,0.10)",
                 }}
               >
-                <UserRound size={24} strokeWidth={1.5} color="#046EC5" aria-hidden />
+                <UserRound size={24} strokeWidth={1.5} color="#4F3FA8" aria-hidden />
               </div>
               <div className="min-w-0 flex-1 text-left">
                 <p style={{ fontWeight: 700, fontSize: 14, color: "#101828", margin: "0 0 2px", lineHeight: 1.4 }}>{m.name}</p>
@@ -199,7 +199,7 @@ export function About({ lang }: { lang: Lang }) {
                 href="#"
                 aria-label={`${m.name} on LinkedIn`}
                 className="flex shrink-0 items-center gap-1 opacity-70 transition-opacity hover:opacity-100"
-                style={{ color: "#046EC5", fontSize: 12 }}
+                style={{ color: "#4F3FA8", fontSize: 12 }}
               >
                 <Linkedin size={13} aria-hidden />
                 LinkedIn
@@ -253,12 +253,12 @@ export function Faqs({ lang }: { lang: Lang }) {
                   <span style={{ fontSize: 16, fontWeight: 600, color: "#101828", lineHeight: lh(lang, 1.5, 1.7) }}>{f.q[lang]}</span>
                   <span
                     className="flex shrink-0 items-center justify-center rounded-full transition-colors"
-                    style={{ width: 28, height: 28, background: isOpen ? "#EFF6FF" : "#F8FAFC" }}
+                    style={{ width: 28, height: 28, background: isOpen ? "#F3F0FF" : "#F8FAFC" }}
                   >
                     <ChevronDown
                       size={14}
                       strokeWidth={2}
-                      color={isOpen ? "#046EC5" : "#99A1AF"}
+                      color={isOpen ? "#4F3FA8" : "#99A1AF"}
                       style={{ transform: isOpen ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}
                       aria-hidden
                     />
@@ -317,7 +317,7 @@ export function FinalCta({ lang }: { lang: Lang }) {
           <Link
             href="/chat"
             className="ag-press flex items-center gap-2 rounded-[10px] bg-white transition-opacity hover:opacity-90"
-            style={{ color: "#046EC5", fontWeight: 700, fontSize: 15, padding: "14px 32px" }}
+            style={{ color: "#4F3FA8", fontWeight: 700, fontSize: 15, padding: "14px 32px" }}
           >
             <WebIcon size={20} />
             {COMMON.openWeb[lang]}

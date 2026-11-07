@@ -91,7 +91,7 @@ export function AnswerBlock({
       ? answer.answer.slice(0, -UNVERIFIED_NOTICE[lang].length).trimEnd()
       : answer.answer;
 
-  const footBtn = "inline-flex items-center gap-1.5 transition-colors hover:text-[#046EC5]";
+  const footBtn = "inline-flex items-center gap-1.5 transition-colors hover:text-[#4F3FA8]";
 
   return (
     <div className="ag-fade mb-5 flex items-start gap-2.5">
@@ -227,7 +227,7 @@ export function AnswerBlock({
                 <button
                   type="button"
                   onClick={() => setHelpful(true)}
-                  className="rounded-md px-2.5 py-1 transition-colors hover:border-[#BBDFFC]"
+                  className="rounded-md px-2.5 py-1 transition-colors hover:border-[#D4CCF7]"
                   style={{ border: `1px solid ${T.line}`, color: T.inkSoft }}
                 >
                   {UI.yes[lang]}

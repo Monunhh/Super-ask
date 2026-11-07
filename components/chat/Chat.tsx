@@ -130,11 +130,11 @@ export function Chat({ coverage }: { coverage: Coverage[] }) {
           <Globe size={12} color={T.sky} strokeWidth={2} aria-hidden />
           <span style={{ fontWeight: 600, color: T.sky }}>{UI.web[lang]}</span>
           <span aria-hidden style={{ color: T.lineStrong }}>·</span>
-          <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[#046EC5]">
+          <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[#4F3FA8]">
             Telegram
           </a>
           <span aria-hidden style={{ color: T.lineStrong }}>·</span>
-          <a href={MESSENGER_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[#046EC5]">
+          <a href={MESSENGER_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[#4F3FA8]">
             Messenger
           </a>
         </div>
@@ -147,7 +147,7 @@ export function Chat({ coverage }: { coverage: Coverage[] }) {
               startNewConversation();
               setDrawer(false);
             }}
-            className="ag-press inline-flex items-center gap-1.5 rounded-md transition-colors hover:border-[#046EC5]"
+            className="ag-press inline-flex items-center gap-1.5 rounded-md transition-colors hover:border-[#4F3FA8]"
             style={{ border: `1px solid ${T.line}`, padding: "5px 12px", fontSize: 13, color: T.inkSoft, lineHeight: 1.5 }}
           >
             <Plus size={14} aria-hidden className="sm:hidden" />

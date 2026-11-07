@@ -44,7 +44,7 @@ function Column({
 
 export function SiteFooter({ lang }: { lang: Lang }) {
   return (
-    <footer className="mt-auto px-6 pb-8 pt-16" style={{ background: "#030712", color: "#fff" }}>
+    <footer className="mt-auto px-6 pb-8 pt-16" style={{ background: "#0C0B20", color: "#fff" }}>
       <div className="mx-auto max-w-[1200px]">
         <div className="mb-14 grid grid-cols-2 gap-12 md:grid-cols-[1.3fr_1fr_1fr_1fr_1.3fr]">
           <div className="col-span-2 md:col-span-1">
