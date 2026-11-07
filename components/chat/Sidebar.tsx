@@ -57,7 +57,7 @@ export function Sidebar({
   return (
     <aside
       className={`ag-scroll flex shrink-0 flex-col overflow-y-auto ${className}`}
-      style={{ width: 232, background: "#1E2939" }}
+      style={{ width: 232, background: "#22253A" }}
     >
       {/* Recent conversations. Device-local — see lib/ui/history.ts. */}
       {history.length > 0 && (
@@ -88,7 +88,7 @@ export function Sidebar({
                     <span
                       aria-hidden
                       className="absolute left-0 rounded-sm"
-                      style={{ top: 7, bottom: 7, width: 2.5, background: "#64E8C7" }}
+                      style={{ top: 7, bottom: 7, width: 2.5, background: "#9D8CF2" }}
                     />
                   )}
                   <button

@@ -631,7 +631,7 @@ operational record — it must not be joined to this.**
 
 ### Palette note
 
-The brand palette follows the SuperAsk Figma: `#046EC5` (blue — brand, primary actions, user turns), `#64E8C7` (teal — "verified" accent and the end of the signature 135° blue → teal gradient), and `#FFFFFF`. Teal is too light for small text on white, so text that must read as "verified" uses `T.tealText` (`#0A7D63`, WCAG AA). Notices are amber (`T.noticeText` `#B54708` on `#FFFAEB`), so the FR-64 **"Review due"** freshness state reads as a caution rather than as brand; "Verified" (green `#0A7D63`) and "Past review date" (red `#D92D20`) keep their universal meaning. Tokens live in `lib/ui/theme.ts`, mirrored as CSS variables in `app/globals.css`.
+The brand palette follows the SuperAsk (StartUp) Figma: `#4F3FA8` (indigo — brand, primary actions, user turns), `#9D8CF2` (light violet — accents and the light end of heading highlights), and `#FFFFFF`; the signature surface is the 135° `#4F3FA8` → `#6D5BD0` gradient. Light violet is decoration only, never small text on white. "Verified" text stays green (`#0A7D63`, WCAG AA) for its meaning; notices are amber (`#B54708` on `#FFFAEB`), so the FR-64 **"Review due"** state reads as a caution, and "Past review date" is red (`#D92D20`). Tokens live in `lib/ui/theme.ts`, mirrored as CSS variables in `app/globals.css`.
 
 ---
 

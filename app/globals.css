@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------------
-   Brand palette — blue → teal, following the SuperAsk Figma.
+   Brand palette — indigo → violet, following the SuperAsk (StartUp) Figma.
    Mirrors lib/ui/theme.ts; keep the two in step.
    --------------------------------------------------------------------------- */
 :root {
-  --sa-sky: #046ec5;
-  --sa-sky-deep: #035a9f;
-  --sa-sky-wash: #eff6ff;
-  --sa-sky-line: #bbdffc;
+  --sa-sky: #4F3FA8;
+  --sa-sky-deep: #3F3289;
+  --sa-sky-wash: #F3F0FF;
+  --sa-sky-line: #D4CCF7;
 
-  --sa-deep: #046ec5;
-  --sa-deep-hover: #035a9f;
-  --sa-deep-wash: #f0f9ff;
+  --sa-deep: #4F3FA8;
+  --sa-deep-hover: #3F3289;
+  --sa-deep-wash: #F7F5FF;
 
-  --sa-teal: #64e8c7;
+  --sa-teal: #9D8CF2;
   --sa-teal-text: #0a7d63;
 
-  --sa-slate: #1e2939;
-  --sa-night: #030712;
+  --sa-slate: #171936;
+  --sa-night: #0C0B20;
 
   --sa-paper: #ffffff;
   --sa-page: #f8fafc;
@@ -38,7 +38,7 @@
   --sa-notice-line: #fedf89;
   --sa-red: #d92d20;
 
-  --sa-gradient: linear-gradient(135deg, #046ec5, #64e8c7);
+  --sa-gradient: linear-gradient(135deg,#4F3FA8,#6D5BD0);
 
   --sa-font: "Inter", "Noto Sans Khmer", system-ui, -apple-system, "Segoe UI",
     sans-serif;
@@ -296,14 +296,14 @@ h3 {
    Brand gradient text — the accent word in every section heading.
    --------------------------------------------------------------------------- */
 .grad-text {
-  background: linear-gradient(90deg, #046ec5 0%, #64e8c7 100%);
+  background: linear-gradient(90deg, #4F3FA8 0%, #9D8CF2 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .grad-text-dark {
-  background: linear-gradient(90deg, #ffffff 0%, #bbdffc 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #D4CCF7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -348,8 +348,8 @@ section[id] {
 
 .sa-lift:hover {
   transform: translateY(-2px);
-  border-color: #bbdffc;
-  box-shadow: 0 4px 20px rgba(4, 110, 197, 0.14);
+  border-color: #D4CCF7;
+  box-shadow: 0 4px 20px rgba(79,63,168, 0.14);
 }
 
 @media (prefers-reduced-motion: reduce) {

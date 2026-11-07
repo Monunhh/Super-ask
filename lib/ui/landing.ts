@@ -105,7 +105,7 @@ export const HERO_DEMO: PhoneDemo = {
     km: "ប្រភព៖ សេចក្តីជូនដំណឹង ក.ស.ដ — ផ្ទៀងផ្ទាត់ ១២ កញ្ញា ២០២៦",
   },
   chip: HERO.chipSource,
-  accent: "#046EC5",
+  accent: "#4F3FA8",
 };
 
 export const IN_ACTION = {
@@ -152,7 +152,7 @@ export const IN_ACTION = {
         en: "Dept. of Immigration · Official portal · Verified 8 Sep 2026",
         km: "នាយកដ្ឋានអន្តោប្រវេសន៍ · វិបផតថលផ្លូវការ · ផ្ទៀងផ្ទាត់ ៨ កញ្ញា ២០២៦",
       },
-      accent: "#046EC5",
+      accent: "#4F3FA8",
     },
     {
       title: { en: "Business Registration", km: "ការចុះបញ្ជីអាជីវកម្ម" },
@@ -181,7 +181,7 @@ export const IN_ACTION = {
         en: "Ministry of Commerce · Prakas No. 123 · Verified 5 Sep 2026",
         km: "ក្រសួងពាណិជ្ជកម្ម · ប្រកាសលេខ ១២៣ · ផ្ទៀងផ្ទាត់ ៥ កញ្ញា ២០២៦",
       },
-      accent: "#0A6ABF",
+      accent: "#5847BE",
     },
     {
       title: { en: "Birth Certificate", km: "សំបុត្រកំណើត" },
@@ -216,7 +216,7 @@ export const IN_ACTION = {
         en: "Ministry of Interior · Official circular · Verified 2 Sep 2026",
         km: "ក្រសួងមហាផ្ទៃ · សារាចរផ្លូវការ · ផ្ទៀងផ្ទាត់ ២ កញ្ញា ២០២៦",
       },
-      accent: "#1A7DB5",
+      accent: "#6E5BD0",
     },
   ] satisfies PhoneDemo[],
 };
@@ -264,7 +264,7 @@ export const WHY = {
   cards: [
     {
       n: "01",
-      accent: "#046EC5",
+      accent: "#4F3FA8",
       label: { en: "Scattered everywhere", km: "ព័ត៌មានរាយប៉ាយគ្រប់ទីកន្លែង" },
       sub: {
         en: "Official information lives across 100+ ministry websites, Facebook pages and Telegram channels. There's no single place to look.",
@@ -273,7 +273,7 @@ export const WHY = {
     },
     {
       n: "02",
-      accent: "#1A8FD1",
+      accent: "#6A55D6",
       label: { en: "Invisible to search", km: "ស្វែងរកមិនឃើញ" },
       sub: {
         en: "Much Khmer guidance is posted as images: public, but unsearchable, often undated and unowned.",
@@ -282,7 +282,7 @@ export const WHY = {
     },
     {
       n: "03",
-      accent: "#35C1A7",
+      accent: "#7C6CD8",
       label: { en: "Paid for what's free", km: "បង់ថ្លៃលើអ្វីដែលឥតគិតថ្លៃ" },
       sub: {
         en: "Citizens arrive with wrong documents, lose a day and a wage, or pay a broker for information the state publishes for free.",

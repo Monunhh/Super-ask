@@ -17,8 +17,8 @@ const SIZE: Record<
 const MARK_RATIO = 579 / 638;
 
 /**
- * Brand lockup: the blue SuperAsk “S” mark (Angkor + chat bubble) beside a
- * blue → teal gradient wordmark, as in the Figma.
+ * Brand lockup: the purple SuperAsk “S” mark (Angkor + chat bubble) beside an
+ * indigo → violet gradient wordmark, as in the Figma.
  * - `mark`: S icon + optional wordmark (headers / chat)
  * - `lockup`: full stacked logo with wordmark baked in
  * - `dark`: for dark surfaces — the mark renders white, the wordmark white → ice
@@ -44,7 +44,7 @@ export function SuperAskLogo({
   const inner =
     variant === "lockup" ? (
       <Image
-        src="/brand/superask-lockup-blue.png"
+        src="/brand/superask-lockup.png"
         alt="SuperAsk"
         width={Math.round(s.lockupH * (961 / 808))}
         height={s.lockupH}
@@ -55,7 +55,7 @@ export function SuperAskLogo({
     ) : (
       <>
         <Image
-          src="/brand/superask-mark-blue.png"
+          src="/brand/superask-mark.png"
           alt=""
           width={s.mark}
           height={Math.round(s.mark * MARK_RATIO)}
