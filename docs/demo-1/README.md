@@ -18,6 +18,7 @@ docs/demo-1/
     presentation_slides.pdf
     individual_contributions.pdf
   slides/                  source of presentation_slides.pdf (HTML deck, build.py)
+  documents/               source of the technical, user and contributions PDFs (HTML, build.py)
 ```
 
 `1_code`, `2_unit_testing` and `4_data_collection` hold a README rather than a
@@ -61,11 +62,11 @@ date, the video was due **7 Nov** and the e-archive is due **11 Nov 2026**.
 
 | Document | Status | What needs fixing |
 |---|---|---|
-| `technical_documentation.pdf` | ⚠️ | Has a cover page. Still says "slides/ and documentation/" and "README3.txt … after relocating", both now stale; should point to `docs/demo-1/`. Says the test counts "should be verified": state them plainly (610 unit, 33 API route integration, plus 9 more in `3_integration_testing`; 89.6% line coverage). Says Node.js 24; CI uses Node 22. "Codebase reviewed: … ZIP" reads like a review, not our own documentation. No table of contents. |
-| `user_documentation.pdf` | ⚠️ | Content is good. Needs a table of contents; the cover says "Codebase reviewed: … ZIP", which doesn't fit a user guide. |
+| `technical_documentation.pdf` | ✅ | Cover page (document type, project title, group, members) and table of contents. Points to `docs/demo-1/`; states the measured results (610 unit, 33 + 9 integration, 89.6% line coverage, evaluation); Node.js 22 as in CI. Built from `documents/technical_documentation.html`. |
+| `user_documentation.pdf` | ✅ | Cover page and table of contents; step-by-step guide by use case (ask, citation, decline, office contact, Telegram). Built from `documents/user_documentation.html`. |
 | `brochure.pdf` | ✅ | One page: title, date, team number, full member names, features, website, Telegram and GitHub links, system requirements ("What you need"), test and evaluation results. |
 | `presentation_slides.pdf` | ✅ | 5 slides: cover; who it's for and how it works (flow diagram + chart of what it can answer); roadmap with timing; live-demo plan (use case → business goal → what you will see); results chart and plan to Demo 2. No source code. Old 20-slide deck kept in `slides/backup/` for Q&A. |
-| `individual_contributions.pdf` | ⚠️ | Covers all 6 members and project management (coordination, plan of work, responsibilities, Gantt). **No cover page.** **No percentages** (or a statement that everyone agrees on equal contribution). **No note on non-applicable items** (code kept at the repo root) and how to reallocate those points. |
+| `individual_contributions.pdf` | ✅ | Cover page and table of contents. Percentages totalling 100% (Chun Phallamonunhh, Fong Yean and Heng Bunkheang 18% each, Choi Heejae 16%, Sarin Sereyprophea and Neang Doungkhe 15%), contributions by item and by member with evidence, demo presenter per use case, explanation of the code kept at the repo root, item 8 (database) marked not applicable with a proposed reallocation, and project management (coordination, plan of work, responsibilities, Gantt chart with labelled date axis). **All six members must confirm the percentages before it is emailed.** |
 
 ### Demo and presentation (not in the repo, so tick these off yourselves)
 
@@ -85,6 +86,12 @@ date, the video was due **7 Nov** and the e-archive is due **11 Nov 2026**.
 | Contribution breakdown emailed after the demo, all members copied | ❌ |
 
 ---
+
+## Rebuilding the documents
+
+`python3 docs/demo-1/documents/build.py` rebuilds the technical, user and
+contributions PDFs in `5_documentation/` from the HTML in `documents/` (needs
+Chrome; with `pip install pypdf` the contents pages get page numbers).
 
 ## Rebuilding the slides
 
