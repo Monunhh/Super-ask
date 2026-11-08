@@ -47,8 +47,11 @@ x-shape[kind="rounded"] { border-radius: 16px; }
 #counter { position: fixed; right: 20px; bottom: 16px; z-index: 5; font: 600 13px/1 Inter, Arial, sans-serif; color: #fff; background: rgba(23,25,54,.72); padding: 8px 12px; border-radius: 999px; letter-spacing: .02em; backdrop-filter: blur(6px); }
 #hint { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 5; font: 500 13px/1 Inter, Arial, sans-serif; color: #fff; background: rgba(23,25,54,.72); padding: 9px 14px; border-radius: 999px; transition: opacity .6s ease; backdrop-filter: blur(6px); }
 #hint.gone { opacity: 0; pointer-events: none; }
+#dl { position: fixed; right: 20px; top: 16px; z-index: 5; display: inline-flex; align-items: center; gap: 8px; font: 600 13px/1 Inter, Arial, sans-serif; color: #fff; text-decoration: none; background: rgba(79,63,168,.9); padding: 9px 14px; border-radius: 999px; transition: opacity .4s ease, background .15s; backdrop-filter: blur(6px); }
+#dl:hover { background: #4F3FA8; }
+#dl svg { width: 15px; height: 15px; }
 #counter, #progress { transition: opacity .4s ease; }
-body.idle #counter { opacity: 0; }
+body.idle #counter, body.idle #dl { opacity: 0; }
 
 /* ── Overlays ────────────────────────────────────────────────────────────── */
 .overlay { position: fixed; inset: 0; z-index: 20; }
@@ -94,9 +97,10 @@ kbd { font: 600 12px ui-monospace, Menlo, monospace; background: #F3F0FF; color:
 @page { size: 1920px 1080px; margin: 0; }
 @media print {
   html, body { overflow: visible; height: auto; background: #fff; }
+  #stage { position: static; }
   #deck { position: static; transform: none !important; height: auto; }
   .slide { position: relative; opacity: 1; visibility: visible; break-after: page; height: 1080px; }
-  #progress, #counter, #hint, .overlay, #presenter { display: none !important; }
+  #progress, #counter, #hint, #dl, .overlay, #presenter { display: none !important; }
 }
 </style>
 </head>
@@ -660,10 +664,11 @@ kbd { font: 600 12px ui-monospace, Menlo, monospace; background: #F3F0FF; color:
   </div></div>
   <div id="progress"><span></span></div>
   <div id="counter"></div>
+  <a id="dl" href="SuperAsk-Demo1.pdf" download title="Download all slides as PDF (D)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download PDF</a>
   <div id="hint">← → to move · F full screen · S presenter view · ? shortcuts</div>
   <div id="notes" class="overlay" hidden></div>
   <div id="overview" class="overlay" hidden><h2>SuperAsk.AI — Demo 1 · 20 slides</h2><div class="grid"></div></div>
-  <div id="help" class="overlay" hidden><div class="card"><h2>Keyboard shortcuts</h2><table><tr><td><kbd>→</kbd><kbd>Space</kbd></td><td>Next slide</td></tr><tr><td><kbd>←</kbd><kbd>Backspace</kbd></td><td>Previous slide</td></tr><tr><td><kbd>Home</kbd><kbd>End</kbd></td><td>First / last slide</td></tr><tr><td><kbd>7</kbd><kbd>Enter</kbd></td><td>Jump to slide 7</td></tr><tr><td><kbd>F</kbd></td><td>Full screen</td></tr><tr><td><kbd>S</kbd></td><td>Presenter view (notes, next slide, timer)</td></tr><tr><td><kbd>N</kbd></td><td>Show / hide speaker notes</td></tr><tr><td><kbd>G</kbd></td><td>Slide overview</td></tr><tr><td><kbd>B</kbd></td><td>Black screen</td></tr><tr><td><kbd>Esc</kbd></td><td>Close overlays</td></tr><tr><td><kbd>Ctrl</kbd><kbd>P</kbd></td><td>Print / save as PDF, one slide per page</td></tr></table><p style="margin:14px 0 0;color:#4A5565">Click the right side of a slide to go forward, the left side to go back. Swipe on touch screens.</p></div></div>
+  <div id="help" class="overlay" hidden><div class="card"><h2>Keyboard shortcuts</h2><table><tr><td><kbd>→</kbd><kbd>Space</kbd></td><td>Next slide</td></tr><tr><td><kbd>←</kbd><kbd>Backspace</kbd></td><td>Previous slide</td></tr><tr><td><kbd>Home</kbd><kbd>End</kbd></td><td>First / last slide</td></tr><tr><td><kbd>7</kbd><kbd>Enter</kbd></td><td>Jump to slide 7</td></tr><tr><td><kbd>F</kbd></td><td>Full screen</td></tr><tr><td><kbd>S</kbd></td><td>Presenter view (notes, next slide, timer)</td></tr><tr><td><kbd>N</kbd></td><td>Show / hide speaker notes</td></tr><tr><td><kbd>G</kbd></td><td>Slide overview</td></tr><tr><td><kbd>D</kbd></td><td>Download the slides as PDF</td></tr><tr><td><kbd>B</kbd></td><td>Black screen</td></tr><tr><td><kbd>Esc</kbd></td><td>Close overlays</td></tr><tr><td><kbd>Ctrl</kbd><kbd>P</kbd></td><td>Print / save as PDF, one slide per page</td></tr></table><p style="margin:14px 0 0;color:#4A5565">Click the right side of a slide to go forward, the left side to go back. Swipe on touch screens.</p></div></div>
   <div id="blackout" class="overlay" hidden></div>
 </div>
 <div id="presenter" hidden>
@@ -806,6 +811,7 @@ var NOTES = ["YEAN: Good morning. We are the SuperAsk.AI team, and this is our D
     else if (k === 'End') go(N - 1);
     else if (isPresenter) return;
     else if (k === 'f' || k === 'F') fullscreen();
+    else if (k === 'd' || k === 'D') document.getElementById('dl').click();
     else if (k === 'n' || k === 'N') toggle('notes');
     else if (k === 'g' || k === 'G' || k === 'o' || k === 'O') toggle('overview');
     else if (k === 's' || k === 'S') openPresenter();
@@ -835,7 +841,7 @@ var NOTES = ["YEAN: Good morning. We are the SuperAsk.AI team, and this is our D
     addEventListener('resize', function () { scaleDeck(); if (!document.getElementById('overview').hidden) buildOverview(); });
     // Click: left third goes back, the rest goes forward. Links still work.
     document.getElementById('stage').addEventListener('click', function (e) {
-      if (e.target.closest('a')) return;
+      if (e.target.closest('a')) return; // links (and the PDF button) keep working
       (e.clientX < innerWidth * 0.3 ? prev : next)();
     });
     var x0 = null;

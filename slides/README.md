@@ -2,6 +2,16 @@
 
 The Demo 1 presentation (CSCI 441), 20 slides, one presenter per section.
 
+## Online and PDF
+
+- **Present online:** https://bunkheang-heng.github.io/superask-slides/
+- **Download PDF (all 20 slides):** https://bunkheang-heng.github.io/superask-slides/SuperAsk-Demo1.pdf
+  — or `SuperAsk-Demo1.pdf` in this folder, or the **Download PDF** button / `D` key while presenting.
+
+The online copy is rebuilt from this folder on `main` by the workflow in
+[Bunkheang-heng/superask-slides](https://github.com/Bunkheang-heng/superask-slides)
+(every 3 hours, or run it by hand from its Actions tab).
+
 ## Present
 
 Double-click **`index.html`** (or `open slides/index.html`). It opens straight
@@ -17,6 +27,7 @@ so be online once; offline the text falls back to Arial.
 | `G` | Overview of all slides — click one to jump |
 | `7` `Enter` | Jump to slide 7 |
 | `B` | Black screen |
+| `D` | Download the PDF |
 | `?` | Shortcut list |
 | `Ctrl/⌘` `P` | Print or save as PDF, one slide per page |
 
@@ -29,7 +40,8 @@ window to the projector and press `F`.
 Change a slide file (or `deck.json` for order), then rebuild:
 
 ```
-python3 slides/build.py
+python3 slides/build.py          # rebuild index.html
+python3 slides/build.py --pdf    # also rebuild SuperAsk-Demo1.pdf (needs Chrome)
 ```
 
 `index.html` is generated — don't edit it by hand.

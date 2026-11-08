@@ -1,6 +1,7 @@
 """Build slides/index.html — a self-contained presentation of the Demo 1 deck.
 
-    python3 slides/build.py
+    python3 slides/build.py          # index.html
+    python3 slides/build.py --pdf    # index.html + SuperAsk-Demo1.pdf (needs Chrome)
 
 Reads deck.json (slide order, title, fonts) and every <id>.html slide in this
 folder, and writes index.html: one file, no server, no install. Open it in a
@@ -9,8 +10,13 @@ browser and it starts presenting. Edit the slide files, then re-run this.
 import html
 import json
 import os
+import shutil
+import subprocess
+import sys
+import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+PDF_NAME = "SuperAsk-Demo1.pdf"
 
 # Line icons (24×24, stroke = currentColor) for the deck format's <x-icon name>.
 ICONS = {
@@ -71,8 +77,11 @@ x-shape[kind="rounded"] { border-radius: 16px; }
 #counter { position: fixed; right: 20px; bottom: 16px; z-index: 5; font: 600 13px/1 Inter, Arial, sans-serif; color: #fff; background: rgba(23,25,54,.72); padding: 8px 12px; border-radius: 999px; letter-spacing: .02em; backdrop-filter: blur(6px); }
 #hint { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 5; font: 500 13px/1 Inter, Arial, sans-serif; color: #fff; background: rgba(23,25,54,.72); padding: 9px 14px; border-radius: 999px; transition: opacity .6s ease; backdrop-filter: blur(6px); }
 #hint.gone { opacity: 0; pointer-events: none; }
+#dl { position: fixed; right: 20px; top: 16px; z-index: 5; display: inline-flex; align-items: center; gap: 8px; font: 600 13px/1 Inter, Arial, sans-serif; color: #fff; text-decoration: none; background: rgba(79,63,168,.9); padding: 9px 14px; border-radius: 999px; transition: opacity .4s ease, background .15s; backdrop-filter: blur(6px); }
+#dl:hover { background: #4F3FA8; }
+#dl svg { width: 15px; height: 15px; }
 #counter, #progress { transition: opacity .4s ease; }
-body.idle #counter { opacity: 0; }
+body.idle #counter, body.idle #dl { opacity: 0; }
 
 /* ── Overlays ────────────────────────────────────────────────────────────── */
 .overlay { position: fixed; inset: 0; z-index: 20; }
@@ -118,9 +127,10 @@ kbd { font: 600 12px ui-monospace, Menlo, monospace; background: #F3F0FF; color:
 @page { size: 1920px 1080px; margin: 0; }
 @media print {
   html, body { overflow: visible; height: auto; background: #fff; }
+  #stage { position: static; }
   #deck { position: static; transform: none !important; height: auto; }
   .slide { position: relative; opacity: 1; visibility: visible; break-after: page; height: 1080px; }
-  #progress, #counter, #hint, .overlay, #presenter { display: none !important; }
+  #progress, #counter, #hint, #dl, .overlay, #presenter { display: none !important; }
 }
 """
 
@@ -255,6 +265,7 @@ JS = r"""
     else if (k === 'End') go(N - 1);
     else if (isPresenter) return;
     else if (k === 'f' || k === 'F') fullscreen();
+    else if (k === 'd' || k === 'D') document.getElementById('dl').click();
     else if (k === 'n' || k === 'N') toggle('notes');
     else if (k === 'g' || k === 'G' || k === 'o' || k === 'O') toggle('overview');
     else if (k === 's' || k === 'S') openPresenter();
@@ -284,7 +295,7 @@ JS = r"""
     addEventListener('resize', function () { scaleDeck(); if (!document.getElementById('overview').hidden) buildOverview(); });
     // Click: left third goes back, the rest goes forward. Links still work.
     document.getElementById('stage').addEventListener('click', function (e) {
-      if (e.target.closest('a')) return;
+      if (e.target.closest('a')) return; // links (and the PDF button) keep working
       (e.clientX < innerWidth * 0.3 ? prev : next)();
     });
     var x0 = null;
@@ -315,6 +326,7 @@ HELP_ROWS = [
     ("<kbd>S</kbd>", "Presenter view (notes, next slide, timer)"),
     ("<kbd>N</kbd>", "Show / hide speaker notes"),
     ("<kbd>G</kbd>", "Slide overview"),
+    ("<kbd>D</kbd>", "Download the slides as PDF"),
     ("<kbd>B</kbd>", "Black screen"),
     ("<kbd>Esc</kbd>", "Close overlays"),
     ("<kbd>Ctrl</kbd><kbd>P</kbd>", "Print / save as PDF, one slide per page"),
@@ -361,6 +373,7 @@ def main():
   </div></div>
   <div id="progress"><span></span></div>
   <div id="counter"></div>
+  <a id="dl" href="{PDF_NAME}" download title="Download all slides as PDF (D)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download PDF</a>
   <div id="hint">← → to move · F full screen · S presenter view · ? shortcuts</div>
   <div id="notes" class="overlay" hidden></div>
   <div id="overview" class="overlay" hidden><h2>{html.escape(title)} · {len(order)} slides</h2><div class="grid"></div></div>
@@ -385,6 +398,34 @@ var NOTES = {js_json(notes)};
     with open(out, "w", encoding="utf-8") as f:
         f.write(page)
     print(f"Wrote {out} — {len(order)} slides")
+    if "--pdf" in sys.argv:
+        make_pdf(out, len(order))
+
+
+def find_chrome():
+    for name in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "chrome"):
+        path = shutil.which(name)
+        if path:
+            return path
+    mac = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    return mac if os.path.exists(mac) else None
+
+
+def make_pdf(index_html, count):
+    """Print index.html with headless Chrome: the print stylesheet lays out
+    one 1920×1080 slide per page."""
+    chrome = find_chrome()
+    if not chrome:
+        sys.exit("Chrome not found — install Google Chrome or Chromium to make the PDF.")
+    pdf = os.path.join(HERE, PDF_NAME)
+    with tempfile.TemporaryDirectory() as profile:
+        subprocess.run(
+            [chrome, "--headless=new", "--disable-gpu", "--no-sandbox", f"--user-data-dir={profile}",
+             "--no-pdf-header-footer", "--virtual-time-budget=15000", f"--print-to-pdf={pdf}",
+             "file://" + os.path.abspath(index_html)],
+            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=180,
+        )
+    print(f"Wrote {pdf} — expected {count} pages")
 
 
 if __name__ == "__main__":
