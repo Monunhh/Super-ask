@@ -53,3 +53,9 @@ Conclusion
 ----------
 All 9 tests passed. The results show that the tested Demo 1 features work
 together in the cases covered by these tests.
+
+Other integration tests
+-----------------------
+The 33 API route integration tests in tests/api/routes.test.ts run with
+"npm test" (see 2_unit_testing/README2.txt). Together with the 9 tests here,
+SuperAsk has 42 integration tests and 610 unit tests (652 in total).

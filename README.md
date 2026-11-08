@@ -35,7 +35,7 @@ verification gate, decline logic, and the whole interface work unchanged.
 
 ```bash
 npm run check            # typecheck + test + build + every harness below. CI runs this
-npm test                 # 643 unit tests, no model calls
+npm test                 # 643 tests (610 unit + 33 API integration), no model calls
 npm run test:watch       # the same, on change
 npm run test:coverage    # the same, with v8 coverage and its thresholds enforced
 npm run test:integration # Demo 1 integration suites (docs/demo-1/3_integration_testing/)
@@ -209,7 +209,7 @@ one question wide. The floor's real job is catching out-of-domain questions the
 golden set does not contain, and that is untested. Widen the negatives before
 trusting the sweep.
 
-`npm run test` — 599 tests across 21 files, no model called, **89% line coverage**
+`npm run test` — 643 tests across 24 files (610 unit, 33 API route integration), no model called, **89.6% line coverage**
 over `lib/` and `app/api/`:
 
 | Suite | Covers |

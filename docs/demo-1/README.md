@@ -52,8 +52,8 @@ date, the video was due **7 Nov** and the e-archive is due **11 Nov 2026**.
 | Item | Status | Notes |
 |---|---|---|
 | `1_code` + README1.txt | ✅ | Points to the code at the repo root, with run steps |
-| `2_unit_testing` + README2.txt | ✅ | Points to `tests/`; 643 tests passing on 2026-11-09 |
-| `3_integration_testing` + README3.txt | ✅ | 9 tests passing; `npm run test:integration` |
+| `2_unit_testing` + README2.txt | ✅ | Points to `tests/`: 610 unit + 33 API route integration tests, all passing on 2026-11-09 |
+| `3_integration_testing` + README3.txt | ✅ | 9 cross-channel tests passing; `npm run test:integration` |
 | `4_data_collection` + README4.txt | ✅ | Registry builder, crawler, how to run |
 | Repo is public | ✅ | Graders must not need a login |
 
@@ -61,10 +61,10 @@ date, the video was due **7 Nov** and the e-archive is due **11 Nov 2026**.
 
 | Document | Status | What needs fixing |
 |---|---|---|
-| `technical_documentation.pdf` | ⚠️ | Has a cover page. Still says "slides/ and documentation/" and "README3.txt … after relocating", both now stale; should point to `docs/demo-1/`. Says the test counts "should be verified": replace with the real numbers (643 unit, 9 integration). Says Node.js 24; CI uses Node 22. "Codebase reviewed: … ZIP" reads like a review, not our own documentation. No table of contents. |
+| `technical_documentation.pdf` | ⚠️ | Has a cover page. Still says "slides/ and documentation/" and "README3.txt … after relocating", both now stale; should point to `docs/demo-1/`. Says the test counts "should be verified": state them plainly (610 unit, 33 API route integration, plus 9 more in `3_integration_testing`; 89.6% line coverage). Says Node.js 24; CI uses Node 22. "Codebase reviewed: … ZIP" reads like a review, not our own documentation. No table of contents. |
 | `user_documentation.pdf` | ⚠️ | Content is good. Needs a table of contents; the cover says "Codebase reviewed: … ZIP", which doesn't fit a user guide. |
-| `brochure.pdf` | ⚠️ | One page with title, date, team, features and URLs. **Missing "system requirements to run the system"** (required). Lists first names only: use full names. Add the GitHub URL. Says "610 unit tests and 33 integration tests", which doesn't match the archive (643 unit, 9 in `3_integration_testing`). |
-| `presentation_slides.pdf` | ⚠️ | **20 slides; the requirement is at most 5** (overview and roadmap), followed by a live demo of the use cases and a short plan. 8 slides are about unit/integration testing, and `b-example` shows test source code ("avoid showing source code"). Same 610/33 count mismatch. |
+| `brochure.pdf` | ⚠️ | One page with title, date, team, features and URLs. **Missing "system requirements to run the system"** (required). Lists first names only: use full names. Add the GitHub URL. Test numbers (610 unit, 33 integration) are correct. |
+| `presentation_slides.pdf` | ⚠️ | **20 slides; the requirement is at most 5** (overview and roadmap), followed by a live demo of the use cases and a short plan. 8 slides are about unit/integration testing, and `b-example` shows test source code ("avoid showing source code"). Test numbers are correct. |
 | `individual_contributions.pdf` | ⚠️ | Covers all 6 members and project management (coordination, plan of work, responsibilities, Gantt). **No cover page.** **No percentages** (or a statement that everyone agrees on equal contribution). **No note on non-applicable items** (code kept at the repo root) and how to reallocate those points. |
 
 ### Demo and presentation (not in the repo, so tick these off yourselves)

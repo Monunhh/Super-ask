@@ -16,7 +16,8 @@ The folder layout mirrors lib/:
     tests/llm/         model gateway, prompts, providers, SEA-LION adapter
     tests/kb/          knowledge-base corpus integrity
     tests/log/         audit log and answer trace
-    tests/api/         API route handlers
+    tests/api/         API route integration tests (33): drive the real
+                       /api/ask, /api/feedback and /api/health routes end to end
     tests/crawl/       soft-block detection
     tests/ui/          conversation history
 
@@ -45,4 +46,6 @@ Additional quality checks used in CI:
 Every push to main runs these automatically in GitHub Actions
 (.github/workflows/ci.yml).
 
-Last local run (2026-11-09): 24 test files, 643 tests, all passing.
+Last local run (2026-11-09): 24 test files, 643 tests, all passing:
+610 unit tests plus the 33 API route integration tests in tests/api/.
+Line coverage: 89.6%.
