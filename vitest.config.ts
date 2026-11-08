@@ -7,8 +7,9 @@ export default defineConfig({
     // The engine reads data/ from disk via lib/kb/loader. Node, not jsdom.
     environment: "node",
     include: ["tests/**/*.test.ts"],
-    // Integration suites run separately: npm run test:integration.
-    exclude: ["tests/integration/**", "node_modules/**"],
+    // Demo 1 integration suites live in docs/demo-1/3_integration_testing and
+    // run separately: npm run test:integration.
+    exclude: ["node_modules/**"],
     // Guardrails, curated matching and the glossary all resolve against the
     // real corpus. Keep the working directory at the repo root so that
     // getKb()'s join(process.cwd(), "data") resolves.

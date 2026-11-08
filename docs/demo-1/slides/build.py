@@ -1,7 +1,7 @@
-"""Build slides/index.html — a self-contained presentation of the Demo 1 deck.
+"""Build docs/demo-1/slides/index.html — a self-contained presentation of the Demo 1 deck.
 
     python3 docs/demo-1/slides/build.py          # index.html
-    python3 docs/demo-1/slides/build.py --pdf    # index.html + SuperAsk-Demo1.pdf (needs Chrome)
+    python3 docs/demo-1/slides/build.py --pdf    # index.html + ../5_documentation/presentation_slides.pdf (needs Chrome)
 
 Reads deck.json (slide order, title, fonts) and every <id>.html slide in this
 folder, and writes index.html: one file, no server, no install. Open it in a
@@ -16,9 +16,11 @@ import sys
 import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PDF_NAME = "SuperAsk-Demo1.pdf"
+# The submitted slides PDF lives in the e-archive documentation folder.
+PDF_NAME = "presentation_slides.pdf"
+PDF_REL = "../5_documentation/" + PDF_NAME
 # Where the PDF lives online; used when the page is not opened as a local file.
-PDF_URL = "https://github.com/Monunhh/Super-ask/raw/main/docs/demo-1/slides/" + PDF_NAME
+PDF_URL = "https://github.com/Monunhh/Super-ask/raw/main/docs/demo-1/5_documentation/" + PDF_NAME
 
 # Line icons (24×24, stroke = currentColor) for the deck format's <x-icon name>.
 ICONS = {
@@ -379,7 +381,7 @@ def main():
   </div></div>
   <div id="progress"><span></span></div>
   <div id="counter"></div>
-  <a id="dl" href="{PDF_NAME}" data-online="{PDF_URL}" download title="Download all slides as PDF (D)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download PDF</a>
+  <a id="dl" href="{PDF_REL}" data-online="{PDF_URL}" download title="Download all slides as PDF (D)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download PDF</a>
   <div id="hint">← → to move · F full screen · S presenter view · ? shortcuts</div>
   <div id="notes" class="overlay" hidden></div>
   <div id="overview" class="overlay" hidden><h2>{html.escape(title)} · {len(order)} slides</h2><div class="grid"></div></div>
@@ -423,7 +425,7 @@ def make_pdf(index_html, count):
     chrome = find_chrome()
     if not chrome:
         sys.exit("Chrome not found — install Google Chrome or Chromium to make the PDF.")
-    pdf = os.path.join(HERE, PDF_NAME)
+    pdf = os.path.normpath(os.path.join(HERE, PDF_REL))
     with tempfile.TemporaryDirectory() as profile:
         subprocess.run(
             [chrome, "--headless=new", "--disable-gpu", "--no-sandbox", f"--user-data-dir={profile}",

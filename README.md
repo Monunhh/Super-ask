@@ -13,9 +13,10 @@ Web, Next.js App Router, TypeScript.
 ## Course deliverables (CSCI441, Team AO3)
 
 Every submission (proposal, Report One, Report Two and its diagrams, and the
-Demo 1 slides, brochure and documentation) is in [`docs/`](docs/README.md),
-grouped by deliverable. The Demo 1 integration tests are in
-[`tests/integration/`](tests/integration/README.md).
+Demo 1 e-archive) is in [`docs/`](docs/README.md), grouped by deliverable.
+Demo 1 follows the course's required layout in
+[`docs/demo-1/`](docs/demo-1/README.md), with a checklist of what is still
+missing.
 
 ---
 
@@ -37,7 +38,7 @@ npm run check            # typecheck + test + build + every harness below. CI ru
 npm test                 # 643 unit tests, no model calls
 npm run test:watch       # the same, on change
 npm run test:coverage    # the same, with v8 coverage and its thresholds enforced
-npm run test:integration # Demo 1 integration suites (tests/integration/)
+npm run test:integration # Demo 1 integration suites (docs/demo-1/3_integration_testing/)
 npm run eval             # M-03 recall@8 and M-04 refusal precision, no model calls
 npm run verify-check     # proves the FR-15 gate blocks fabricated figures
 npm run curated-check    # Tier 1 matching, and that greetings do not swallow questions
@@ -682,8 +683,8 @@ scripts/
   schedule-weekly.ps1       Windows weekly task
   sync-from-bunkheang.ps1   mirror upstream code, keep docs/
 tests/                      unit tests (npm test), mirrors lib/
-  integration/              Demo 1 integration suites (npm run test:integration)
 docs/                       course deliverables (see docs/README.md)
+  demo-1/                   Demo 1 e-archive, incl. 3_integration_testing/
 ```
 
 ---

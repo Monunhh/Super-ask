@@ -10,8 +10,8 @@ docs/
   report-1/        Report One (both parts, full export, use cases)
   report-2/        Report Two (full report, diagram hand-off pages)
     diagrams/      Mermaid sources, PNGs, and the page build scripts
-  demo-1/          Demo 1 brochure, documentation, contributions
-    slides/        presentation source, built deck, and PDF
+  demo-1/          Demo 1 e-archive (1_code … 5_documentation) + checklist
+    slides/        presentation source and built deck
 ```
 
 ## Proposal: [`proposal/`](proposal/)
@@ -42,20 +42,16 @@ docs/
 The `.html` pages are self-contained (images embedded), so they open directly
 in a browser.
 
-## Demo 1: [`demo-1/`](demo-1/)
+## Demo 1: [`demo-1/`](demo-1/README.md)
 
-| Deliverable | File |
-|---|---|
-| Slides (present in a browser; see [`slides/README.md`](demo-1/slides/README.md)) | `slides/index.html` |
-| Slides as PDF | `slides/SuperAsk-Demo1.pdf` |
-| Brochure | `SuperAsk-Demo1-brochure.pdf` |
-| Technical documentation | `SuperAsk-Demo1-technical-documentation.pdf` |
-| User documentation | `SuperAsk-Demo1-user-documentation.pdf` |
-| Individual contributions | `SuperAsk-Demo1-individual-contributions.pdf` |
-| Integration tests (code, in the test tree) | [`../tests/integration/`](../tests/integration/README.md) |
+Laid out as the course's e-archive: `1_code/`, `2_unit_testing/`,
+`3_integration_testing/`, `4_data_collection/` and `5_documentation/`. The
+five required PDFs are in `5_documentation/`, and `slides/` holds the deck
+source. [`demo-1/README.md`](demo-1/README.md) has the requirement checklist
+and what is still missing.
 
 ## Keeping this folder safe
 
 `scripts/sync-from-bunkheang.ps1` resets `main` to the upstream code repo and
-restores only `docs/`, `tests/integration/` and the sync script itself. Put any
+restores only `docs/` and the sync script itself. Put any
 new course material under `docs/` or a sync will delete it.

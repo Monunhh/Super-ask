@@ -20,7 +20,6 @@ function Invoke-Git {
 # Demo 1 slides and documents) sits under docs/, so "docs" covers them.
 $keep = @(
   "docs",
-  "tests/integration",
   "scripts/sync-from-bunkheang.ps1"
 )
 

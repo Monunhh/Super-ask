@@ -7,7 +7,7 @@ The Demo 1 presentation (CSCI 441), 20 slides, one presenter per section.
 - **View / present online (anyone, no login):**
   https://htmlpreview.github.io/?https://github.com/Monunhh/Super-ask/blob/main/docs/demo-1/slides/index.html
 - **Download PDF (all 20 slides):**
-  https://github.com/Monunhh/Super-ask/raw/main/docs/demo-1/slides/SuperAsk-Demo1.pdf
+  https://github.com/Monunhh/Super-ask/raw/main/docs/demo-1/5_documentation/presentation_slides.pdf
   — or the **Download PDF** button / `D` key while presenting.
 
 Both follow `main`: push slide changes (and the rebuilt `index.html` / PDF)
@@ -42,7 +42,7 @@ Change a slide file (or `deck.json` for order), then rebuild:
 
 ```
 python3 docs/demo-1/slides/build.py          # rebuild index.html
-python3 docs/demo-1/slides/build.py --pdf    # also rebuild SuperAsk-Demo1.pdf (needs Chrome)
+python3 docs/demo-1/slides/build.py --pdf    # also rebuild ../5_documentation/presentation_slides.pdf (needs Chrome)
 ```
 
 `index.html` is generated — don't edit it by hand.

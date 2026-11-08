@@ -1,6 +1,8 @@
-# SuperAsk Demo 1 integration tests
+SuperAsk.AI - Demo 1 integration tests (Team AO3)
+==================================================
 
-## Purpose
+Purpose
+-------
 These tests check that the main parts of SuperAsk work together. They cover
 the web API, answer engine, sample knowledge base, feedback route, audit writer,
 and Telegram webhook and client.
@@ -9,14 +11,17 @@ The answer engine, knowledge base, audit writer, and Telegram client are real.
 Only file writes and Telegram's HTTP requests are mocked, so the tests do not
 write project data or contact Telegram.
 
-## How to run
+How to run
+----------
 From the repository root, run:
 
     npm run test:integration
 
-These suites are excluded from `npm test` (and so from CI); run them on their own.
+This uses vitest.integration.config.ts in this folder. These suites are not
+part of "npm test"; run them with the command above.
 
-## What we test
+What we test
+------------
 1. Web Q&A and citations: Check that the API and answer engine find an answer
    in the knowledge base, return source details, and create the expected audit
    record.
@@ -31,7 +36,8 @@ These suites are excluded from `npm test` (and so from CI); run them on their ow
    and Khmer replies, and sends them through the Telegram client. Also check
    the webhook secret and the Mini App launch button.
 
-## Results
+Results
+-------
 Test files passed: 2
 Tests passed: 9
 Tests failed: 0
