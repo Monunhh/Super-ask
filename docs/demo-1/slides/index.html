@@ -109,555 +109,119 @@ kbd { font: 600 12px ui-monospace, Menlo, monospace; background: #F3F0FF; color:
 <div id="app">
   <div id="stage"><div id="deck">
 <div class="slide" data-id="cover" aria-label="Slide 1"><div class="canvas">
-<section id="cover" data-transition="fade" style="background:linear-gradient(135deg, #14122E 0%, #2A2160 100%);color:#F5F8FB;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between">
+<section id="cover" data-transition="fade" style="background:linear-gradient(135deg, #14122E 0%, #2A2160 100%);color:#F5F8FB;font-family:'Inter', Arial, sans-serif;padding:128px 128px 144px;display:flex;flex-direction:column;justify-content:space-between">
 <div style="position:absolute;left:0;top:0;width:1920px;height:16px;background:linear-gradient(90deg, #4F3FA8 0%, #B8ACF7 100%)"></div>
 <div style="display:flex;flex-direction:column;gap:24px">
-<p style="font-size:28px;font-weight:600;color:#B8ACF7;letter-spacing:4px;text-transform:uppercase">CSCI 441 · Demo 1</p>
+<p style="font-size:28px;font-weight:600;color:#B8ACF7;letter-spacing:4px;text-transform:uppercase">CSCI 441 · Demo 1 · Team AO3</p>
 <h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1.05;color:#F5F8FB">SuperAsk.AI</h1>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:400;line-height:1.1;color:#D4CCF7">Sourced answers about Cambodian public services, in Khmer and English</h2>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:400;line-height:1.15;color:#D4CCF7">Answers about Cambodian government services, in Khmer and English, with the official source attached</h2>
 </div>
-<div style="display:flex;flex-direction:column;gap:8px">
-<p style="font-size:24px;color:#8FA3BA;text-transform:uppercase;letter-spacing:2px">Presented by</p>
-<p style="font-size:32px;font-weight:600;color:#F5F8FB">Yean · Prophea · Monunhh · Bunkheang · Heejae · Doungkhe</p>
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:64px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;color:#8FA3BA;text-transform:uppercase;letter-spacing:2px">Team</p>
+<p style="font-size:32px;font-weight:600;color:#F5F8FB;line-height:1.5">Chun Phallamonunhh · Fong Yean · Sarin Sereyprophea<br>Heng Bunkheang · Choi Heejae · Neang Doungkhe</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;text-align:right">
+<p style="font-size:24px;color:#8FA3BA;text-transform:uppercase;letter-spacing:2px">9 November 2026</p>
+<p style="font-size:28px;color:#D4CCF7;line-height:1.5">superask.vercel.app<br>Telegram @superask168_bot</p>
+</div>
 </div>
 
 </section>
 </div></div>
-<div class="slide" data-id="agenda" aria-label="Slide 2"><div class="canvas">
-<section id="agenda" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div class="slide" data-id="intro" aria-label="Slide 2"><div class="canvas">
+<section id="intro" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:104px 128px 168px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Agenda</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Who presents what</h2>
+<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Who it is for · what it is</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:600;line-height:1.1">Finding out what a procedure requires shouldn’t mean knowing someone</h2>
 </div>
-<table style="font-size:28px;color:#101828;font-family:'Inter', Arial, sans-serif">
-<tr style="background:#EFEBFC"><th style="width:8%;text-align:left">#</th><th style="width:24%;text-align:left">Presenter</th><th style="width:68%;text-align:left">Topic</th></tr>
-<tr style="background:#FFFFFF"><td>1</td><td><b>Yean</b></td><td>The problem, our scope and Phase 0 status</td></tr>
-<tr style="background:#FBFCFD"><td>2</td><td><b>Prophea</b></td><td>Using SuperAsk on the web and Telegram, live demo</td></tr>
-<tr style="background:#FFFFFF"><td>3</td><td><b>Monunhh</b></td><td>Architecture and the answer safety pipeline</td></tr>
-<tr style="background:#FBFCFD"><td>4</td><td><b>Bunkheang</b></td><td>Unit testing</td></tr>
-<tr style="background:#FFFFFF"><td>5</td><td><b>Heejae</b></td><td>Integration testing and evaluation</td></tr>
-<tr style="background:#FBFCFD"><td>6</td><td><b>Doungkhe</b></td><td>Data collection and the knowledge base</td></tr>
-<tr style="background:#FFFFFF"><td>7</td><td><b>Yean</b></td><td>What’s next, then questions</td></tr>
-</table>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Yean</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 2</p></div>
+<div style="display:flex;gap:40px">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:36px 40px;border:1px solid #E3E9F0;border-left:6px solid #4F3FA8;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:600;line-height:1.2">For Cambodian citizens</h3>
+<p style="font-size:26px;line-height:1.42;color:#4A5565">who need the steps, documents, fees and office for a government service: a driving licence, a birth certificate, a vehicle, a trademark, a bank complaint.</p>
+<p style="font-size:26px;line-height:1.42;color:#4A5565">Today that information is scattered across ministry sites, Facebook and Telegram, often as undated images in Khmer, so people lose a day or pay a broker.</p>
+</div>
+<div style="flex:1.25;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:36px 40px;border:1px solid #E3E9F0;border-left:6px solid #6A55D6;border-radius:16px">
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:600;line-height:1.2">What is new about SuperAsk</h3>
+<div style="display:flex;flex-direction:column;gap:12px;font-size:26px;line-height:1.38;color:#101828">
+<p><b style="color:#4F3FA8">Source first.</b> It answers only from approved ministry content, and every answer carries its source and review date.</p>
+<p><b style="color:#4F3FA8">Declines instead of guessing.</b> A general chatbot invents a fee; SuperAsk refuses when no source supports the answer.</p>
+<p><b style="color:#4F3FA8">Khmer and English.</b> Ask in either language; the reply follows yours.</p>
+<p><b style="color:#4F3FA8">One engine, three doors.</b> Web chat, Telegram bot and Telegram Mini App.</p>
+</div>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Fong Yean</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 2</p></div>
 
 </section>
 </div></div>
-<div class="slide" data-id="y-problem" aria-label="Slide 3"><div class="canvas">
-<section id="y-problem" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<div class="slide" data-id="roadmap" aria-label="Slide 3"><div class="canvas">
+<section id="roadmap" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:112px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">The problem</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Finding what a procedure requires shouldn’t mean knowing someone</h2>
+<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Roadmap of this presentation</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">Each use case, shown live by its owner</h2>
 </div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-left:6px solid #4F3FA8;border-radius:16px">
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2">Scattered</h3>
-<p style="font-size:28px;line-height:1.45;color:#4A5565">Official information is spread across ministry sites, Facebook pages and Telegram channels.</p>
+<div style="display:flex;flex-direction:column;font-size:30px;line-height:1.3">
+<div style="display:grid;grid-template-columns:72px 1fr 520px 120px;gap:24px;padding:12px 0;border-bottom:2px solid #101828;font-size:22px;font-weight:600;color:#4A5565;text-transform:uppercase;letter-spacing:2px"><p>#</p><p>Part</p><p>Presenter</p><p style="text-align:right">Time</p></div>
+<div style="display:grid;grid-template-columns:72px 1fr 520px 120px;gap:24px;padding:16px 0;border-bottom:1px solid #DCE4EE;align-items:center"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-weight:700;color:#4F3FA8">1</p><p>Overview and roadmap</p><p>Fong Yean</p><p style="text-align:right;color:#4A5565">2 min</p></div>
+<div style="display:grid;grid-template-columns:72px 1fr 520px 120px;gap:24px;padding:16px 0;border-bottom:1px solid #DCE4EE;align-items:center;background:#EEEAFD"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-weight:700;color:#4F3FA8">2</p><p><b>UC-1 Ask a question</b> + UC-2 retrieve official sources</p><p><b>Chun Phallamonunhh</b></p><p style="text-align:right;color:#4A5565">4 min</p></div>
+<div style="display:grid;grid-template-columns:72px 1fr 520px 120px;gap:24px;padding:16px 0;border-bottom:1px solid #DCE4EE;align-items:center;background:#EEEAFD"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-weight:700;color:#4F3FA8">3</p><p><b>UC-3 View the source citation</b></p><p>Choi Heejae</p><p style="text-align:right;color:#4A5565">2 min</p></div>
+<div style="display:grid;grid-template-columns:72px 1fr 520px 120px;gap:24px;padding:16px 0;border-bottom:1px solid #DCE4EE;align-items:center;background:#EEEAFD"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-weight:700;color:#4F3FA8">4</p><p><b>UC-4 Decline an unsupported question</b></p><p>Sarin Sereyprophea</p><p style="text-align:right;color:#4A5565">2 min</p></div>
+<div style="display:grid;grid-template-columns:72px 1fr 520px 120px;gap:24px;padding:16px 0;border-bottom:1px solid #DCE4EE;align-items:center;background:#EEEAFD"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-weight:700;color:#4F3FA8">5</p><p><b>UC-7 Office contact and location</b>, in Telegram</p><p>Heng Bunkheang</p><p style="text-align:right;color:#4A5565">3 min</p></div>
+<div style="display:grid;grid-template-columns:72px 1fr 520px 120px;gap:24px;padding:16px 0;border-bottom:1px solid #DCE4EE;align-items:center;background:#EEEAFD"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-weight:700;color:#4F3FA8">6</p><p><b>UC-11 Refresh official content</b></p><p>Neang Doungkhe</p><p style="text-align:right;color:#4A5565">2 min</p></div>
+<div style="display:grid;grid-template-columns:72px 1fr 520px 120px;gap:24px;padding:16px 0;border-bottom:1px solid #DCE4EE;align-items:center"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-weight:700;color:#4F3FA8">7</p><p>Plan for the rest of the semester</p><p>Fong Yean</p><p style="text-align:right;color:#4A5565">2 min</p></div>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-left:6px solid #6A55D6;border-radius:16px">
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2">Unsearchable</h3>
-<p style="font-size:28px;line-height:1.45;color:#4A5565">Much Khmer guidance is posted as images, often undated and without an owner.</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-left:6px solid #7C6CD8;border-radius:16px">
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2">Paid for</h3>
-<p style="font-size:28px;line-height:1.45;color:#4A5565">People lose a day with the wrong documents, or pay a broker for free information.</p>
-</div>
-</div>
-<p style="font-size:32px;line-height:1.5;color:#101828"><b>SuperAsk:</b> ask in your own words, get the answer with its official source attached, or an honest “we have no verified source.”</p>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Yean</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 3</p></div>
+<p style="font-size:26px;color:#4A5565">Highlighted rows are the live demo. About 17 minutes, then questions.</p>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Fong Yean</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 3</p></div>
 
 </section>
 </div></div>
-<div class="slide" data-id="y-status" aria-label="Slide 4"><div class="canvas">
-<section id="y-status" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div class="slide" data-id="demo" aria-label="Slide 4"><div class="canvas">
+<section id="demo" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:88px 128px 140px;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:14px">
+<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Live demo · superask.vercel.app</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1">Five use cases, four business goals</h2>
+</div>
+<div style="display:flex;flex-direction:column;font-size:24px;line-height:1.32">
+<div style="display:grid;grid-template-columns:400px 300px 1fr;gap:28px;padding:10px 0;border-bottom:2px solid #101828;font-size:20px;font-weight:600;color:#4A5565;text-transform:uppercase;letter-spacing:2px"><p>Use case · owner</p><p>Business goal</p><p>What you will see</p></div>
+<div style="display:grid;grid-template-columns:400px 300px 1fr;gap:28px;padding:11px 0;border-bottom:1px solid #DCE4EE"><p><b>UC-1 Ask · UC-2 Retrieve</b><br><span style="color:#4F3FA8">Chun Phallamonunhh</span></p><p>Bilingual access<br>Comprehensive information</p><p>“How do I renew my driving licence?” in English, then in Khmer: the answer quotes the ministry page in the language asked. Follow-up: “How much does it cost?”</p></div>
+<div style="display:grid;grid-template-columns:400px 300px 1fr;gap:28px;padding:11px 0;border-bottom:1px solid #DCE4EE"><p><b>UC-3 View citation</b><br><span style="color:#4F3FA8">Choi Heejae</span></p><p>Trustworthy answers</p><p>The source card: ministry, Prakas No. 047, effective and last-verified dates, review status, link to the official page.</p></div>
+<div style="display:grid;grid-template-columns:400px 300px 1fr;gap:28px;padding:11px 0;border-bottom:1px solid #DCE4EE"><p><b>UC-4 Decline</b><br><span style="color:#4F3FA8">Sarin Sereyprophea</span></p><p>Trustworthy answers</p><p>“What is the weather in Phnom Penh tomorrow?” It declines and says what it does cover, instead of guessing.</p></div>
+<div style="display:grid;grid-template-columns:400px 300px 1fr;gap:28px;padding:11px 0;border-bottom:1px solid #DCE4EE"><p><b>UC-7 Office contact</b><br><span style="color:#4F3FA8">Heng Bunkheang</span></p><p>Ministry contact and location</p><p>In Telegram: “Where do I apply for a driving licence?” Service centres, hotline 1275, email, office hours.</p></div>
+<div style="display:grid;grid-template-columns:400px 300px 1fr;gap:28px;padding:11px 0;border-bottom:1px solid #DCE4EE"><p><b>UC-11 Refresh content</b><br><span style="color:#4F3FA8">Neang Doungkhe</span></p><p>Comprehensive, current information</p><p>The monitor checks moc.gov.kh page by page. Changes go to a reviewer, never straight into answers.</p></div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:52px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenters · Phallamonunhh · Heejae · Sereyprophea · Bunkheang · Doungkhe</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 4</p></div>
+
+</section>
+</div></div>
+<div class="slide" data-id="next" aria-label="Slide 5"><div class="canvas">
+<section id="next" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:112px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Phase 0 status</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">A working prototype on web and Telegram</h2>
-</div>
-<div style="display:flex;gap:32px;align-items:start">
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-radius:16px">
-<div style="display:flex;gap:16px;align-items:center"><x-icon name="CheckCircle" style="color:#0A7D63;width:44px;height:44px"></x-icon><h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">Working now</h3></div>
-<ul style="font-size:28px;line-height:1.5;color:#4A5565">
-<li>Landing page and web chat, English and Khmer</li>
-<li>Ask API with retrieval, citations and guardrails</li>
-<li>Telegram bot and Telegram Mini App</li>
-<li>Feedback, honest declines and audit logs</li>
-<li>Deployed on Vercel, with CI on every push</li>
-</ul>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-radius:16px">
-<div style="display:flex;gap:16px;align-items:center"><x-icon name="Wrench" style="color:#B54708;width:44px;height:44px"></x-icon><h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">In progress</h3></div>
-<ul style="font-size:28px;line-height:1.5;color:#4A5565">
-<li>Real login (today it is a UI stub)</li>
-<li>Stronger retrieval models</li>
-<li>A larger, steward-approved knowledge base</li>
-<li>Follow-up memory in Telegram chats</li>
-<li>Content portal for ministry stewards</li>
-</ul>
-</div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Yean</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 4</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="p-channels" aria-label="Slide 5"><div class="canvas">
-<section id="p-channels" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Using SuperAsk</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">One answer engine, three ways in</h2>
-</div>
-<div style="display:flex;gap:32px;align-items:stretch">
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:16px">
-<x-icon name="Globe" style="color:#4F3FA8;width:56px;height:56px"></x-icon>
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2">Web</h3>
-<p style="font-size:28px;line-height:1.45;color:#4A5565">Landing page plus the chat at /chat. Switch between ខ្មែរ and English at any time.</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-top:6px solid #2AABEE;border-radius:16px">
-<x-icon name="PaperPlane" style="color:#1C93D1;width:56px;height:56px"></x-icon>
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2">Telegram bot</h3>
-<p style="font-size:28px;line-height:1.45;color:#4A5565">Type a question in Telegram and get the same sourced answer as a chat reply.</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:16px">
-<x-icon name="Chat" style="color:#6D5BD0;width:56px;height:56px"></x-icon>
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2">Mini App</h3>
-<p style="font-size:28px;line-height:1.45;color:#4A5565">Open the full SuperAsk chat inside Telegram from the bot’s menu button.</p>
-</div>
-</div>
-<p style="font-size:28px;line-height:1.5;color:#4A5565">Free to use, no account needed. Answers follow the language of the question.</p>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Prophea</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 5</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="p-demo" aria-label="Slide 6"><div class="canvas">
-<section id="p-demo" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Live demo</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Five things we’ll show you</h2>
-</div>
-<div style="display:flex;flex-direction:column">
-<div style="display:flex;gap:32px;align-items:center;padding:20px 0;border-top:1px solid #DCE4EE"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:700;color:#4F3FA8;min-width:64px">1</p><p style="font-size:32px;line-height:1.4"><b>Ask on the web:</b> tap “Driving licence renewal” on the landing page</p></div>
-<div style="display:flex;gap:32px;align-items:center;padding:20px 0;border-top:1px solid #DCE4EE"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:700;color:#4F3FA8;min-width:64px">2</p><p style="font-size:32px;line-height:1.4"><b>Read the answer:</b> ministry header, steps, and every source with its review status</p></div>
-<div style="display:flex;gap:32px;align-items:center;padding:20px 0;border-top:1px solid #DCE4EE"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:700;color:#4F3FA8;min-width:64px">3</p><p style="font-size:32px;line-height:1.4"><b>Ask in Khmer:</b> the reply comes back in Khmer</p></div>
-<div style="display:flex;gap:32px;align-items:center;padding:20px 0;border-top:1px solid #DCE4EE"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:700;color:#4F3FA8;min-width:64px">4</p><p style="font-size:32px;line-height:1.4"><b>Ask something off-topic:</b> it politely declines instead of guessing</p></div>
-<div style="display:flex;gap:32px;align-items:center;padding:20px 0;border-top:1px solid #DCE4EE;border-bottom:1px solid #DCE4EE"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:700;color:#4F3FA8;min-width:64px">5</p><p style="font-size:32px;line-height:1.4"><b>Switch to Telegram:</b> open the Mini App from @superask168_bot</p></div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Prophea</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 6</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="m-pipeline" aria-label="Slide 7"><div class="canvas">
-<section id="m-pipeline" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Architecture</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Every question passes eight gates, in order</h2>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px">
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:28px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px"><p style="font-size:24px;font-weight:600;color:#4F3FA8">1 · Before model</p><h3 style="font-size:32px;font-weight:600;line-height:1.2">Guardrails</h3><p style="font-size:24px;line-height:1.4;color:#4A5565">Refusal policy runs before any search</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:28px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px"><p style="font-size:24px;font-weight:600;color:#4F3FA8">2 · Before model</p><h3 style="font-size:32px;font-weight:600;line-height:1.2">Curated</h3><p style="font-size:24px;line-height:1.4;color:#4A5565">Approved answers served word for word</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:28px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px"><p style="font-size:24px;font-weight:600;color:#4F3FA8">3 · Before model</p><h3 style="font-size:32px;font-weight:600;line-height:1.2">Retrieval</h3><p style="font-size:24px;line-height:1.4;color:#4A5565">BM25 + dense search, fused, reranked</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:28px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px"><p style="font-size:24px;font-weight:600;color:#4F3FA8">4 · Before model</p><h3 style="font-size:32px;font-weight:600;line-height:1.2">Confidence</h3><p style="font-size:24px;line-height:1.4;color:#4A5565">Weak matches decline, never guess</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:28px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px"><p style="font-size:24px;font-weight:600;color:#6D5BD0">5 · Model</p><h3 style="font-size:32px;font-weight:600;line-height:1.2">Generate</h3><p style="font-size:24px;line-height:1.4;color:#4A5565">Writes only from the retrieved sources</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:28px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px"><p style="font-size:24px;font-weight:600;color:#6D5BD0">6 · After model</p><h3 style="font-size:32px;font-weight:600;line-height:1.2">Verify</h3><p style="font-size:24px;line-height:1.4;color:#4A5565">Withholds any unsupported claim</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:28px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px"><p style="font-size:24px;font-weight:600;color:#6D5BD0">7 · After model</p><h3 style="font-size:32px;font-weight:600;line-height:1.2">Moderate</h3><p style="font-size:24px;line-height:1.4;color:#4A5565">Checks the finished answer</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:28px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px"><p style="font-size:24px;font-weight:600;color:#6D5BD0">8 · After model</p><h3 style="font-size:32px;font-weight:600;line-height:1.2">Cite</h3><p style="font-size:24px;line-height:1.4;color:#4A5565">Ministry, document, dates, freshness</p></div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Monunhh</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 7</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="m-stack" aria-label="Slide 8"><div class="canvas">
-<section id="m-stack" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Tech stack</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Swap the AI model with one setting</h2>
-</div>
-<div style="display:flex;gap:48px;align-items:start">
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-radius:16px">
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">Built with</h3>
-<ul style="font-size:28px;line-height:1.55;color:#4A5565">
-<li>Next.js 15 and React 19, TypeScript</li>
-<li>Tailwind CSS 4</li>
-<li>Telegram Bot API webhook</li>
-<li>Hosted on Vercel</li>
-<li>Only the server talks to a model; no key reaches the browser</li>
-</ul>
-</div>
-<div style="flex:1.3;display:flex;flex-direction:column;gap:20px">
-<table style="font-size:26px;color:#101828;font-family:'Inter', Arial, sans-serif">
-<tr style="background:#EFEBFC"><th style="width:52%;text-align:left">Model provider</th><th style="width:48%;text-align:left">Runs where</th></tr>
-<tr style="background:#FFFFFF"><td><b>SEA-LION</b> (in use)</td><td>AI Singapore API</td></tr>
-<tr style="background:#FBFCFD"><td>AI gateway</td><td>Third-party service</td></tr>
-<tr style="background:#FFFFFF"><td>Claude API</td><td>External, outside Cambodia</td></tr>
-<tr style="background:#FBFCFD"><td>Qwen via vLLM</td><td>Self-hosted in Cambodia</td></tr>
-<tr style="background:#FFFFFF"><td>Extractive fallback</td><td>In-process, no model</td></tr>
-</table>
-<p style="font-size:24px;line-height:1.5;color:#4A5565">All model code lives in lib/llm/. If a provider fails, answers fall back to extraction from the sources.</p>
-</div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Monunhh</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 8</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="m-refusals" aria-label="Slide 9"><div class="canvas">
-<section id="m-refusals" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Honest refusals</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">When it won’t answer, the trace says why</h2>
-</div>
-<table style="font-size:28px;color:#101828;font-family:'Inter', Arial, sans-serif">
-<tr style="background:#EFEBFC"><th style="width:26%;text-align:left">Reason</th><th style="width:74%;text-align:left">What it means</th></tr>
-<tr style="background:#FFFFFF"><td><b>policy</b></td><td>Not allowed: emergencies, legal advice, personal cases, politics</td></tr>
-<tr style="background:#FBFCFD"><td><b>scope</b></td><td>Not a government-service question at all</td></tr>
-<tr style="background:#FFFFFF"><td><b>retrieval</b></td><td>No approved source covers it, so it’s a content gap</td></tr>
-<tr style="background:#FBFCFD"><td><b>verification</b></td><td>A written answer was withheld for an unsupported claim</td></tr>
-<tr style="background:#FFFFFF"><td><b>moderation</b></td><td>The finished answer failed the output check</td></tr>
-</table>
-<p style="font-size:28px;line-height:1.5;color:#4A5565">No hand-off: SuperAsk says “No approved source covers this” and stops.</p>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Monunhh</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 9</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="b-numbers" aria-label="Slide 10"><div class="canvas">
-<section id="b-numbers" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Unit testing</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Every function checked on every push</h2>
-</div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:48px 40px;border:1px solid #E3E9F0;border-radius:16px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;color:#4F3FA8">610</p>
-<p style="font-size:28px;line-height:1.4;color:#4A5565">unit tests, all passing</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:48px 40px;border:1px solid #E3E9F0;border-radius:16px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;color:#4F3FA8">89.6%</p>
-<p style="font-size:28px;line-height:1.4;color:#4A5565">line coverage; CI fails below 85%</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:48px 40px;border:1px solid #E3E9F0;border-radius:16px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;color:#4F3FA8">0</p>
-<p style="font-size:28px;line-height:1.4;color:#4A5565">paid model calls: CI runs with no AI credential</p>
-</div>
-</div>
-<p style="font-size:28px;line-height:1.5;color:#4A5565">24 test files written with Vitest. Run locally with <b>npm test</b>; GitHub Actions runs them on every push and pull request.</p>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Bunkheang</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 10</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="b-map" aria-label="Slide 11"><div class="canvas">
-<section id="b-map" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Unit testing · Test map</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Every stage of the answer pipeline has its own tests</h2>
-</div>
-<div style="display:flex;align-items:stretch;gap:8px">
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px">
-<p style="font-size:28px;font-weight:700;color:#101828">Screen</p>
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#4F3FA8">141</p>
-<p style="font-size:24px;line-height:1.45;color:#4A5565">guardrails 89<br>topicality 21<br>glossary 16<br>curated 15</p>
-</div>
-<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px">
-<p style="font-size:28px;font-weight:700;color:#101828">Retrieve</p>
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#4F3FA8">148</p>
-<p style="font-size:24px;line-height:1.45;color:#4A5565">query 33<br>fusion 30<br>normalize 26<br>content 25<br>romanize 23<br>stem 11</p>
-</div>
-<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px">
-<p style="font-size:28px;font-weight:700;color:#101828">Decide</p>
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#4F3FA8">86</p>
-<p style="font-size:24px;line-height:1.45;color:#4A5565">tiers 53<br>rationale 33</p>
-</div>
-<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px">
-<p style="font-size:28px;font-weight:700;color:#101828">Generate</p>
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#6D5BD0">96</p>
-<p style="font-size:24px;line-height:1.45;color:#4A5565">prompt 31<br>provider 27<br>gateway 22<br>sealion 16</p>
-</div>
-<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px">
-<p style="font-size:28px;font-weight:700;color:#101828">Verify</p>
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#6D5BD0">21</p>
-<p style="font-size:24px;line-height:1.45;color:#4A5565">verify 21</p>
-</div>
-<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px">
-<p style="font-size:28px;font-weight:700;color:#101828">Cite + log</p>
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#6D5BD0">74</p>
-<p style="font-size:24px;line-height:1.45;color:#4A5565">corpus 32<br>audit 21<br>freshness 13<br>trace 8</p>
-</div>
-</div>
-<p style="font-size:26px;line-height:1.5;color:#4A5565">Plus 44 tests outside the pipeline: chat history 26, crawler 18. Total: <b>610 unit tests</b>.</p>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Bunkheang</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 11</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="b-example" aria-label="Slide 12"><div class="canvas">
-<section id="b-example" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Unit testing · One test up close</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Catching an invented fee before a citizen sees it</h2>
-</div>
-<div style="display:flex;gap:40px;align-items:stretch">
-<div style="flex:1.65;display:flex;flex-direction:column;gap:4px;background:#14122E;padding:32px 36px;border-radius:16px">
-<p style="font-size:24px;color:#8FA3BA;font-family:'Courier New', monospace">// tests/engine/verify.test.ts</p>
-<p style="font-size:24px;color:#D4CCF7;font-family:'Courier New', monospace;white-space:nowrap">it("catches an invented fee", () =&gt; {</p>
-<p style="font-size:24px;color:#F5F8FB;font-family:'Courier New', monospace;white-space:nowrap">&#160;&#160;const result = verify(</p>
-<p style="font-size:24px;color:#FFD08A;font-family:'Courier New', monospace;white-space:nowrap">&#160;&#160;&#160;&#160;"The fee is 45,000 riel.",</p>
-<p style="font-size:24px;color:#F5F8FB;font-family:'Courier New', monospace;white-space:nowrap">&#160;&#160;&#160;&#160;["X-1"],</p>
-<p style="font-size:24px;color:#9FF0DB;font-family:'Courier New', monospace;white-space:nowrap">&#160;&#160;&#160;&#160;[source("X-1", "A fee of 30,000 riel</p>
-<p style="font-size:24px;color:#9FF0DB;font-family:'Courier New', monospace;white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;applies on renewal.")],</p>
-<p style="font-size:24px;color:#F5F8FB;font-family:'Courier New', monospace;white-space:nowrap">&#160;&#160;&#160;&#160;["X-1"],</p>
-<p style="font-size:24px;color:#F5F8FB;font-family:'Courier New', monospace;white-space:nowrap">&#160;&#160;);</p>
-<p style="font-size:24px;color:#D4CCF7;font-family:'Courier New', monospace;white-space:nowrap">&#160;&#160;expect(result.passed).toBe(false);</p>
-<p style="font-size:24px;color:#D4CCF7;font-family:'Courier New', monospace;white-space:nowrap">&#160;&#160;expect(result.unsupported).toContain("45000");</p>
-<p style="font-size:24px;color:#D4CCF7;font-family:'Courier New', monospace;white-space:nowrap">});</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px">
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:24px 28px;border:1px solid #E3E9F0;border-left:6px solid #B54708;border-radius:12px">
-<p style="font-size:24px;font-weight:700;color:#B54708;text-transform:uppercase;letter-spacing:2px">Arrange</p>
-<p style="font-size:26px;line-height:1.4">The answer says <b>45,000</b> riel; the source says <b>30,000</b></p>
-</div>
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:24px 28px;border:1px solid #E3E9F0;border-left:6px solid #4F3FA8;border-radius:12px">
-<p style="font-size:24px;font-weight:700;color:#4F3FA8;text-transform:uppercase;letter-spacing:2px">Act</p>
-<p style="font-size:26px;line-height:1.4">Run the verification gate on the answer</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:24px 28px;border:1px solid #E3E9F0;border-left:6px solid #0A7D63;border-radius:12px">
-<p style="font-size:24px;font-weight:700;color:#0A7D63;text-transform:uppercase;letter-spacing:2px">Assert</p>
-<p style="font-size:26px;line-height:1.4">It fails, and names 45000 as unsupported</p>
-</div>
-</div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Bunkheang</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 12</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="b-coverage" aria-label="Slide 13"><div class="canvas">
-<section id="b-coverage" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Unit testing · Coverage by folder</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Eight of nine folders clear the 85% floor</h2>
-</div>
-<div style="display:flex;gap:48px;align-items:start">
-<div style="position:relative;display:flex;flex-direction:column;gap:14px;width:1120px">
-<div style="position:absolute;left:918px;top:0;width:4px;height:454px;background:#B54708"></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:24px;min-width:220px;font-family:'Courier New', monospace">lib/retrieval</p><div style="width:800px;height:38px;background:#4F3FA8;border-radius:4px"></div><p style="font-size:24px;font-weight:600">100%</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:24px;min-width:220px;font-family:'Courier New', monospace">lib/lang</p><div style="width:800px;height:38px;background:#4F3FA8;border-radius:4px"></div><p style="font-size:24px;font-weight:600">100%</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:24px;min-width:220px;font-family:'Courier New', monospace">lib/ui</p><div style="width:800px;height:38px;background:#4F3FA8;border-radius:4px"></div><p style="font-size:24px;font-weight:600">100%</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:24px;min-width:220px;font-family:'Courier New', monospace">app/api</p><div style="width:800px;height:38px;background:#4F3FA8;border-radius:4px"></div><p style="font-size:24px;font-weight:600">100%</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:24px;min-width:220px;font-family:'Courier New', monospace">lib/khmer</p><div style="width:794px;height:38px;background:#4F3FA8;border-radius:4px"></div><p style="font-size:24px;font-weight:600">99.2%</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:24px;min-width:220px;font-family:'Courier New', monospace">lib/log</p><div style="width:748px;height:38px;background:#4F3FA8;border-radius:4px"></div><p style="font-size:24px;font-weight:600">93.5%</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:24px;min-width:220px;font-family:'Courier New', monospace">lib/kb</p><div style="width:734px;height:38px;background:#4F3FA8;border-radius:4px"></div><p style="font-size:24px;font-weight:600">91.8%</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:24px;min-width:220px;font-family:'Courier New', monospace">lib/engine</p><div style="width:726px;height:38px;background:#4F3FA8;border-radius:4px"></div><p style="font-size:24px;font-weight:600">90.8%</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:24px;min-width:220px;font-family:'Courier New', monospace">lib/llm</p><div style="width:547px;height:38px;background:#C3B8F2;border-radius:4px"></div><p style="font-size:24px;font-weight:600">68.4%</p></div>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px">
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 28px;border:1px solid #E3E9F0;border-left:6px solid #B54708;border-radius:12px">
-<p style="font-size:24px;font-weight:700;color:#B54708">Orange line = 85%</p>
-<p style="font-size:24px;line-height:1.45;color:#4A5565">CI fails the build below it. Overall: 89.6% lines, 94.1% branches, 96.0% functions.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 28px;border:1px solid #E3E9F0;border-left:6px solid #C3B8F2;border-radius:12px">
-<p style="font-size:24px;font-weight:700;color:#101828">Why lib/llm is lower</p>
-<p style="font-size:24px;line-height:1.45;color:#4A5565">The Claude and vLLM adapters aren’t in use yet. We test them when one becomes the provider.</p>
-</div>
-</div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Bunkheang</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 13</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="b-ci" aria-label="Slide 14"><div class="canvas">
-<section id="b-ci" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Unit testing · From push to merge</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Nothing reaches main without passing CI</h2>
-</div>
-<div style="display:flex;align-items:stretch;gap:12px">
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px">
-<x-icon name="Code" style="color:#4F3FA8;width:40px;height:40px"></x-icon>
-<p style="font-size:26px;font-weight:700;line-height:1.3">1 · Write code + tests</p>
-<p style="font-size:24px;line-height:1.4;color:#4A5565">On a feature branch</p>
-</div>
-<x-shape kind="arrow-right" style="width:40px;height:24px;background:#C3B8F2;align-self:center"></x-shape>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px">
-<x-icon name="Play" style="color:#4F3FA8;width:40px;height:40px"></x-icon>
-<p style="font-size:26px;font-weight:700;line-height:1.3">2 · npm test</p>
-<p style="font-size:24px;line-height:1.4;color:#4A5565">All 643 pass locally</p>
-</div>
-<x-shape kind="arrow-right" style="width:40px;height:24px;background:#C3B8F2;align-self:center"></x-shape>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px">
-<x-icon name="PaperPlane" style="color:#4F3FA8;width:40px;height:40px"></x-icon>
-<p style="font-size:26px;font-weight:700;line-height:1.3">3 · git push + PR</p>
-<p style="font-size:24px;line-height:1.4;color:#4A5565">Pull request to main</p>
-</div>
-<x-shape kind="arrow-right" style="width:40px;height:24px;background:#C3B8F2;align-self:center"></x-shape>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#14122E;padding:24px;border-radius:12px">
-<x-icon name="Settings" style="color:#B8ACF7;width:40px;height:40px"></x-icon>
-<p style="font-size:26px;font-weight:700;line-height:1.3;color:#F5F8FB">4 · GitHub Actions</p>
-<p style="font-size:24px;line-height:1.4;color:#D4CCF7">Runs CI automatically</p>
-</div>
-<x-shape kind="arrow-right" style="width:40px;height:24px;background:#C3B8F2;align-self:center"></x-shape>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px">
-<div style="flex:1;display:flex;gap:12px;align-items:center;background:#ECFDF7;padding:16px 20px;border:1px solid #A7E8D3;border-radius:12px"><x-icon name="CheckCircle" style="color:#0A7D63;width:36px;height:36px"></x-icon><p style="font-size:24px;font-weight:700;line-height:1.3;color:#0A6450">Pass: merge to main</p></div>
-<div style="flex:1;display:flex;gap:12px;align-items:center;background:#FFFAEB;padding:16px 20px;border:1px solid #FEDF89;border-radius:12px"><x-icon name="Warning" style="color:#B54708;width:36px;height:36px"></x-icon><p style="font-size:24px;font-weight:700;line-height:1.3;color:#93370D">Fail: blocked, fix and push</p></div>
-</div>
-</div>
-<div style="display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:28px 32px;border:1px solid #E3E9F0;border-radius:16px">
-<p style="font-size:24px;font-weight:600;color:#8A96A8;text-transform:uppercase;letter-spacing:2px">Inside step 4 · two jobs run in parallel</p>
-<div style="display:flex;gap:12px;align-items:center">
-<p style="font-size:24px;font-weight:700;min-width:190px;font-family:'Courier New', monospace">check</p>
-<p style="font-size:24px;background:#F3F0FF;color:#3F3289;padding:8px 16px;border-radius:8px">Install</p>
-<x-shape kind="arrow-right" style="width:28px;height:16px;background:#D4CCF7"></x-shape>
-<p style="font-size:24px;background:#F3F0FF;color:#3F3289;padding:8px 16px;border-radius:8px">Typecheck</p>
-<x-shape kind="arrow-right" style="width:28px;height:16px;background:#D4CCF7"></x-shape>
-<p style="font-size:24px;font-weight:700;background:#4F3FA8;color:#FFFFFF;padding:8px 16px;border-radius:8px">Tests, coverage ≥ 85%</p>
-<x-shape kind="arrow-right" style="width:28px;height:16px;background:#D4CCF7"></x-shape>
-<p style="font-size:24px;background:#F3F0FF;color:#3F3289;padding:8px 16px;border-radius:8px">Build</p>
-<x-shape kind="arrow-right" style="width:28px;height:16px;background:#D4CCF7"></x-shape>
-<p style="font-size:24px;background:#F3F0FF;color:#3F3289;padding:8px 16px;border-radius:8px">Eval</p>
-<x-shape kind="arrow-right" style="width:28px;height:16px;background:#D4CCF7"></x-shape>
-<p style="font-size:24px;background:#F3F0FF;color:#3F3289;padding:8px 16px;border-radius:8px">4 gate checks</p>
-</div>
-<div style="display:flex;gap:12px;align-items:center">
-<p style="font-size:24px;font-weight:700;min-width:190px;font-family:'Courier New', monospace">secrets-scan</p>
-<p style="font-size:24px;background:#F3F0FF;color:#3F3289;padding:8px 16px;border-radius:8px">No API keys committed</p>
-<x-shape kind="arrow-right" style="width:28px;height:16px;background:#D4CCF7"></x-shape>
-<p style="font-size:24px;background:#F3F0FF;color:#3F3289;padding:8px 16px;border-radius:8px">No .env file tracked</p>
-</div>
-</div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;gap:16px;align-items:center"><x-icon name="CheckCircle" style="color:#0A7D63;width:36px;height:36px"></x-icon><p style="font-size:24px;line-height:1.4;color:#4A5565"><b style="color:#101828">PR #1, 4 Nov:</b> secrets-scan passed in 4 s, check in 66 s, then merged</p></div>
-<div style="flex:1;display:flex;gap:16px;align-items:center"><x-icon name="Warning" style="color:#B54708;width:36px;height:36px"></x-icon><p style="font-size:24px;line-height:1.4;color:#4A5565"><b style="color:#101828">6 Oct:</b> CI went red on the rebrand commit; fixed and green 6 min later</p></div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Bunkheang</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 14</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="h-integration" aria-label="Slide 15"><div class="canvas">
-<section id="h-integration" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Integration testing</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">33 tests drive the real API routes end to end</h2>
-</div>
-<div style="display:flex;gap:48px;align-items:start">
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-radius:16px">
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">Routes tested</h3>
-<ul style="font-size:28px;line-height:1.55;color:#4A5565">
-<li><b>POST /api/ask</b>: full pipeline, follow-up questions, audit record</li>
-<li>Provider failure degrades to a plain decline, never an error</li>
-<li><b>POST /api/feedback</b></li>
-<li><b>GET /api/health</b></li>
-</ul>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-radius:16px">
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600">CI gate, every push</h3>
-<ol style="font-size:28px;line-height:1.55;color:#4A5565">
-<li>Typecheck</li>
-<li>All tests with coverage</li>
-<li>Production build</li>
-<li>Retrieval evaluation</li>
-<li>Corpus and scope checks</li>
-<li>Secrets scan</li>
-</ol>
-</div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Heejae</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 15</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="h-eval" aria-label="Slide 16"><div class="canvas">
-<section id="h-eval" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Evaluation · 44-question golden set</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Both targets met</h2>
-</div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:48px 40px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:16px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;color:#4F3FA8">94.1%</p>
-<p style="font-size:28px;line-height:1.4;color:#101828"><b>Right source found</b> in the top 8 (target 85%, passed)</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:48px 40px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:16px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;color:#0A7D63">100%</p>
-<p style="font-size:28px;line-height:1.4;color:#101828"><b>Off-limits questions refused</b> (target 98%, passed)</p>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:48px 40px;border:1px solid #E3E9F0;border-top:6px solid #B54708;border-radius:16px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1;color:#B54708">67.6%</p>
-<p style="font-size:28px;line-height:1.4;color:#101828"><b>Right source ranked first</b>, our next thing to improve</p>
-</div>
-</div>
-<p style="font-size:28px;line-height:1.5;color:#4A5565">34 in-scope and 10 out-of-scope questions. Run with <b>npm run eval</b>; it runs in CI on every push.</p>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Heejae</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 16</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="d-data" aria-label="Slide 17"><div class="canvas">
-<section id="d-data" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Data collection</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">We monitor 132 official government websites</h2>
-</div>
-<div style="display:flex;gap:48px;align-items:start">
-<div style="flex:1.4;display:flex;flex-direction:column;gap:18px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-radius:16px">
-<p style="font-size:24px;font-weight:600;color:#8A96A8;text-transform:uppercase;letter-spacing:2px">Last probe of 130 sites</p>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:28px;min-width:150px">Live</p><div style="width:594px;height:36px;background:#4F3FA8;border-radius:6px"></div><p style="font-size:28px;font-weight:600">66</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:28px;min-width:150px">Blocked</p><div style="width:279px;height:36px;background:#8E7FE0;border-radius:6px"></div><p style="font-size:28px;font-weight:600">31</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:28px;min-width:150px">Dead</p><div style="width:207px;height:36px;background:#C3B8F2;border-radius:6px"></div><p style="font-size:28px;font-weight:600">23</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:28px;min-width:150px">Empty</p><div style="width:81px;height:36px;background:#DDD6F7;border-radius:6px"></div><p style="font-size:28px;font-weight:600">9</p></div>
-<div style="display:flex;gap:20px;align-items:center"><p style="font-size:28px;min-width:150px">Redirect</p><div style="width:12px;height:36px;background:#DDD6F7;border-radius:6px"></div><p style="font-size:28px;font-weight:600">1</p></div>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:40px;border:1px solid #E3E9F0;border-left:6px solid #7C6CD8;border-radius:16px">
-<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.2">Watch, never publish</h3>
-<p style="font-size:28px;line-height:1.5;color:#4A5565">The crawler flags changes for a ministry steward to review. Nothing it fetches becomes an answer on its own.</p>
-<p style="font-size:24px;line-height:1.5;color:#4A5565">Ministries, regulators, 25 provinces, universities, hospitals and the two service portals.</p>
-</div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Doungkhe</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 17</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="d-kb" aria-label="Slide 18"><div class="canvas">
-<section id="d-kb" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">The knowledge base</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">What SuperAsk can answer from today</h2>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px">
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-radius:16px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#4F3FA8">45</p><p style="font-size:28px;line-height:1.4;color:#4A5565">source passages</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-radius:16px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#4F3FA8">5</p><p style="font-size:28px;line-height:1.4;color:#4A5565">curated answers</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-radius:16px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#4F3FA8">14</p><p style="font-size:28px;line-height:1.4;color:#4A5565">official terms explained</p></div>
-<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-radius:16px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#4F3FA8">37</p><p style="font-size:28px;line-height:1.4;color:#4A5565">search aliases</p></div>
-</div>
-<table style="font-size:26px;color:#101828;font-family:'Inter', Arial, sans-serif">
-<tr style="background:#EFEBFC"><th style="width:40%;text-align:left">Institution</th><th style="width:60%;text-align:left">Topics covered</th></tr>
-<tr style="background:#FFFFFF"><td>Public Works and Transport</td><td>Driving licence, vehicle registration</td></tr>
-<tr style="background:#FBFCFD"><td>Interior</td><td>Civil registration (birth certificates)</td></tr>
-<tr style="background:#FFFFFF"><td>Commerce · National Bank</td><td>Trademarks · consumer finance</td></tr>
-</table>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Doungkhe</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 18</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="y-next" aria-label="Slide 19"><div class="canvas">
-<section id="y-next" data-transition="fade" style="background:#F5F8FB;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
-<div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">What’s next</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">From prototype to a service people rely on</h2>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
-<div style="display:flex;gap:24px;align-items:start;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-radius:16px"><x-icon name="Search" style="color:#4F3FA8;width:48px;height:48px"></x-icon><div style="display:flex;flex-direction:column;gap:8px"><h3 style="font-size:32px;font-weight:600;line-height:1.2">Better ranking</h3><p style="font-size:26px;line-height:1.45;color:#4A5565">Put the right source first more than 67.6% of the time</p></div></div>
-<div style="display:flex;gap:24px;align-items:start;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-radius:16px"><x-icon name="Book" style="color:#4F3FA8;width:48px;height:48px"></x-icon><div style="display:flex;flex-direction:column;gap:8px"><h3 style="font-size:32px;font-weight:600;line-height:1.2">More approved content</h3><p style="font-size:26px;line-height:1.45;color:#4A5565">A content portal so ministry stewards can approve sources</p></div></div>
-<div style="display:flex;gap:24px;align-items:start;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-radius:16px"><x-icon name="Chat" style="color:#4F3FA8;width:48px;height:48px"></x-icon><div style="display:flex;flex-direction:column;gap:8px"><h3 style="font-size:32px;font-weight:600;line-height:1.2">Telegram memory</h3><p style="font-size:26px;line-height:1.45;color:#4A5565">Remember follow-up questions in Telegram chats</p></div></div>
-<div style="display:flex;gap:24px;align-items:start;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-radius:16px"><x-icon name="Lock" style="color:#4F3FA8;width:48px;height:48px"></x-icon><div style="display:flex;flex-direction:column;gap:8px"><h3 style="font-size:32px;font-weight:600;line-height:1.2">Real accounts</h3><p style="font-size:26px;line-height:1.45;color:#4A5565">Replace the prototype login with real authentication</p></div></div>
-</div>
-<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Yean</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 19</p></div>
-
-</section>
-</div></div>
-<div class="slide" data-id="qa" aria-label="Slide 20"><div class="canvas">
-<section id="qa" data-transition="fade" style="background:linear-gradient(135deg, #14122E 0%, #2A2160 100%);color:#F5F8FB;font-family:'Inter', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:32px">
-<div style="position:absolute;left:0;bottom:0;width:1920px;height:16px;background:linear-gradient(90deg, #4F3FA8 0%, #B8ACF7 100%)"></div>
-<p style="font-size:28px;font-weight:600;color:#B8ACF7;letter-spacing:4px;text-transform:uppercase">Thank you</p>
-<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1.05;color:#F5F8FB">Questions?</h1>
-<p style="font-size:32px;line-height:1.5;color:#C5D3E3">Yean · Prophea · Monunhh · Bunkheang · Heejae · Doungkhe</p>
-<p style="font-size:32px;line-height:1.5;color:#B8ACF7">Try it: superask.vercel.app · Telegram @superask168_bot</p>
+<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Plan for the rest of the semester</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">From working prototype to Demo 2</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px">
+<div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:16px">
+<p style="font-size:22px;font-weight:600;color:#4F3FA8;letter-spacing:2px;text-transform:uppercase">Nov 10 – 16</p>
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600;line-height:1.2">Apply Demo 1 feedback</h3>
+<p style="font-size:26px;line-height:1.45;color:#4A5565">Sharper relevance check, so a question on an uncovered topic is declined instead of matched to a nearby one.</p>
+<p style="font-size:22px;font-weight:600;color:#101828;margin-top:auto">Report 3 Part 1 · Nov 16</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-top:6px solid #6A55D6;border-radius:16px">
+<p style="font-size:22px;font-weight:600;color:#6A55D6;letter-spacing:2px;text-transform:uppercase">Nov 17 – 23</p>
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600;line-height:1.2">More services, better ranking</h3>
+<p style="font-size:26px;line-height:1.45;color:#4A5565">Add approved content for passports and business registration; put the right source first more often than today’s 67.6%.</p>
+<p style="font-size:22px;font-weight:600;color:#101828;margin-top:auto">Full Report 3 · Nov 23</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:16px">
+<p style="font-size:22px;font-weight:600;color:#7C6CD8;letter-spacing:2px;text-transform:uppercase">Nov 24 – Dec 3</p>
+<h3 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:600;line-height:1.2">Finish the remaining use cases</h3>
+<p style="font-size:26px;line-height:1.45;color:#4A5565">An office directory with map links for <span style="white-space:nowrap">UC-7</span>, follow-up memory in Telegram, real user accounts, a reviewer portal for monitored changes.</p>
+<p style="font-size:22px;font-weight:600;color:#101828;margin-top:auto">Demo 2 · Dec 4</p>
+</div>
+</div>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:44px;font-weight:600;color:#4F3FA8">Thank you. Questions?</p>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Fong Yean</p><p style="font-size:24px;color:#8A96A8">github.com/Monunhh/Super-ask · Demo 1 · 5</p></div>
 
 </section>
 </div></div>
@@ -667,7 +231,7 @@ kbd { font: 600 12px ui-monospace, Menlo, monospace; background: #F3F0FF; color:
   <a id="dl" href="../5_documentation/presentation_slides.pdf" data-online="https://github.com/Monunhh/Super-ask/raw/main/docs/demo-1/5_documentation/presentation_slides.pdf" download title="Download all slides as PDF (D)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download PDF</a>
   <div id="hint">← → to move · F full screen · S presenter view · ? shortcuts</div>
   <div id="notes" class="overlay" hidden></div>
-  <div id="overview" class="overlay" hidden><h2>SuperAsk.AI — Demo 1 · 20 slides</h2><div class="grid"></div></div>
+  <div id="overview" class="overlay" hidden><h2>SuperAsk.AI — Demo 1 · 5 slides</h2><div class="grid"></div></div>
   <div id="help" class="overlay" hidden><div class="card"><h2>Keyboard shortcuts</h2><table><tr><td><kbd>→</kbd><kbd>Space</kbd></td><td>Next slide</td></tr><tr><td><kbd>←</kbd><kbd>Backspace</kbd></td><td>Previous slide</td></tr><tr><td><kbd>Home</kbd><kbd>End</kbd></td><td>First / last slide</td></tr><tr><td><kbd>7</kbd><kbd>Enter</kbd></td><td>Jump to slide 7</td></tr><tr><td><kbd>F</kbd></td><td>Full screen</td></tr><tr><td><kbd>S</kbd></td><td>Presenter view (notes, next slide, timer)</td></tr><tr><td><kbd>N</kbd></td><td>Show / hide speaker notes</td></tr><tr><td><kbd>G</kbd></td><td>Slide overview</td></tr><tr><td><kbd>D</kbd></td><td>Download the slides as PDF</td></tr><tr><td><kbd>B</kbd></td><td>Black screen</td></tr><tr><td><kbd>Esc</kbd></td><td>Close overlays</td></tr><tr><td><kbd>Ctrl</kbd><kbd>P</kbd></td><td>Print / save as PDF, one slide per page</td></tr></table><p style="margin:14px 0 0;color:#4A5565">Click the right side of a slide to go forward, the left side to go back. Swipe on touch screens.</p></div></div>
   <div id="blackout" class="overlay" hidden></div>
 </div>
@@ -679,7 +243,7 @@ kbd { font: 600 12px ui-monospace, Menlo, monospace; background: #F3F0FF; color:
 </div>
 <script>
 var ICONS = {"Book": "<path d=\"M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z\"/><path d=\"M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z\"/>", "Chat": "<path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/>", "Check": "<polyline points=\"20 6 9 17 4 12\"/>", "CheckCircle": "<path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/>", "Clock": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/>", "Code": "<polyline points=\"16 18 22 12 16 6\"/><polyline points=\"8 6 2 12 8 18\"/>", "Globe": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"/>", "Lock": "<rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/>", "PaperPlane": "<line x1=\"22\" y1=\"2\" x2=\"11\" y2=\"13\"/><polygon points=\"22 2 15 22 11 13 2 9 22 2\"/>", "Play": "<polygon points=\"6 3 20 12 6 21 6 3\"/>", "Search": "<circle cx=\"11\" cy=\"11\" r=\"8\"/><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"/>", "Settings": "<circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z\"/>", "Users": "<path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75\"/>", "Warning": "<path d=\"M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z\"/><line x1=\"12\" y1=\"9\" x2=\"12\" y2=\"13\"/><line x1=\"12\" y1=\"17\" x2=\"12.01\" y2=\"17\"/>", "Wrench": "<path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"/>"};
-var NOTES = ["YEAN: Good morning. We are the SuperAsk.AI team, and this is our Demo 1. SuperAsk answers questions about Cambodian government services in Khmer and English, and every answer shows the official source it came from. Each of us will present the part we owned.", "YEAN: Here is the order. I start with the problem and where we are. Prophea shows the product live. Monunhh explains how it works inside. Bunkheang and Heejae cover testing. Doungkhe covers our data. I close with what comes next.", "YEAN: Government information in Cambodia is scattered across many sites and channels, a lot of it is posted as images, and people end up paying brokers for information the state publishes for free. SuperAsk lets anyone ask in their own words and get an answer with the official source attached. When we have no verified source, it says so instead of guessing.", "YEAN: Phase 0 is a working prototype. The landing page and web chat work in both languages, the ask API answers with citations and guardrails, and the same engine runs behind a Telegram bot and a Telegram Mini App. It is live on Vercel at superask.vercel.app. Still in progress: real login, stronger retrieval, a bigger approved knowledge base, follow-up memory in Telegram chats and a content portal. Over to Prophea.", "PROPHEA: Citizens can reach SuperAsk three ways, and all three use the same answer engine. On the web, there is a landing page and the chat. On Telegram, you can just type to the bot, or open the full chat as a Mini App from the menu button. It is free, there is no account to create, and it answers in the language you asked in.", "PROPHEA: Now the live demo. First, I tap Driving licence renewal on the landing page; it opens the chat and asks for me. Look at the answer: the ministry header, the steps, and each source with its review status. Then I ask the same thing in Khmer, and it answers in Khmer. Then something off-topic, like the weather, and it declines politely. Last, open the SuperAsk Mini App inside Telegram from @superask168_bot. Use superask.vercel.app for the web part. Backup if the network fails: show screenshots. Over to Monunhh for how this works inside.", "MONUNHH: Every question goes through lib/engine/tiers.ts in this order. Guardrails first, so an out-of-scope question never reaches a model. Then curated answers, served word for word. Then hybrid retrieval: BM25 keyword search plus dense search, fused with reciprocal rank fusion and reranked. A confidence gate runs before generation, so weak retrieval declines instead of producing a fluent wrong answer. The model writes only from the sources, then a verification gate can still withhold the answer, output moderation checks it, and citations are attached. The order is the safety design.", "MONUNHH: The app is Next.js 15 with React 19 and TypeScript, styled with Tailwind, hosted on Vercel, with a Telegram webhook. Only the server route /api/ask talks to a model, so no credential ever reaches the browser. All model-specific code is in lib/llm, behind one interface: today we use SEA-LION from AI Singapore, and moving to a self-hosted Qwen model in Cambodia is one environment variable. If a provider fails, we degrade to extracting text from the sources rather than breaking.", "MONUNHH: A refusal is not one thing. Policy means we are not permitted to answer, such as emergencies or legal advice. Scope means it is not a service question. Retrieval means we have no approved source, which is a content gap for the data team. Verification means the model wrote something the sources do not support, so we withheld it. The reason is recorded so the right team fixes the right problem. Over to Bunkheang for testing.", "BUNKHEANG: We have 610 unit tests, all passing, written with Vitest. Line coverage is 89.6 percent, and CI fails the build if it drops below 85. CI runs with no AI credential, so tests never make a paid model call: generation falls back to the deterministic extractive provider. Anyone can run them with npm test.", "BUNKHEANG: This is how our unit tests map onto the answer pipeline Monunhh showed. Screening has 141 tests, mostly the guardrails, because a refusal rule that silently stops working is the most dangerous bug we could have. Retrieval has 148, including Khmer normalisation and romanised Khmer, since a Khmer question typed differently must still find the same source. Deciding which tier answers has 86, generation has 96 covering prompts and every model provider, verification has 21, and citations plus audit logging have 74. Another 44 cover chat history and the crawler. Each number is the exact count from the test runner.", "BUNKHEANG: Here is one real test from our repo, so you can see the pattern every test follows: arrange, act, assert. We arrange an answer that says the fee is 45,000 riel while the cited source says 30,000. We act by running the verification gate. We assert that it fails and names 45000 as the unsupported number. An invented fee reaching a citizen is exactly the harm SuperAsk exists to prevent, so this is one of the most important tests we have. The same file also checks the reverse direction, so a correct answer is not blocked: for example, 30 days in the answer matches thirty days in the source, and Khmer digits match Arabic digits.", "BUNKHEANG: This chart is line coverage per folder. The orange line is our 85 percent floor: CI fails the build below it. Retrieval and language detection are fully covered, and eight of nine folders clear the floor. The exception is lib/llm at 68.4 percent, on purpose: it contains adapters for Claude and for Qwen on vLLM, which are not the provider we run today, so testing them now would only test mocks. We cover them when one becomes the live provider. Overall: 89.6 percent of lines, 94.1 percent of branches and 96.0 percent of functions. Next: how these tests run automatically on GitHub.", "BUNKHEANG: This is how tests protect our main branch. You write code and tests on a branch, run npm test locally, then push and open a pull request. GitHub Actions then runs two jobs in parallel. The check job installs, typechecks, runs every test with coverage and fails under 85 percent, builds the production app, runs the retrieval evaluation, and runs four answer-gate checks. The secrets-scan job makes sure no API key or .env file was committed. Green means we can merge to main; red blocks the merge until it is fixed. A real example: our redesign pull request this week passed both jobs in about a minute and was merged. And on 6 October, CI went red on a rebrand commit; we fixed it and it was green six minutes later, before it could break anything for users. Over to Heejae.", "HEEJAE: Integration tests check that the components work together. 33 tests call the real API routes: ask runs the whole pipeline, including follow-up questions and the audit record, and we verify that a failing model provider degrades to a plain decline instead of an error. Feedback and health are covered too. On every push and pull request, GitHub Actions runs typecheck, all tests, a production build, the retrieval evaluation, corpus and scope checks, and a secrets scan.", "HEEJAE: We also measure quality on a golden set of 44 questions: 34 we should answer and 10 we must refuse. The right source is in the top eight results 94.1 percent of the time, against an 85 percent target. All ten off-limits questions are refused, against a 98 percent target. The honest weak spot: the right source is ranked first only 67.6 percent of the time, so ordering is what we improve next. Mean reciprocal rank is 0.768. Over to Doungkhe.", "DOUNGKHE: Our registry lists 132 official organisations: ministries, regulators, all 25 provincial administrations, public universities, national hospitals and the two government service portals. In the last verification probe of 130 sites, 66 were live, 31 blocked automated access, 23 were dead, 9 returned empty pages and 1 redirected. That is why a 200 response alone is not proof of a real page. Most important: the crawler only flags changes for a ministry steward. Nothing it fetches is answerable until someone approves it.", "DOUNGKHE: Answers come only from the approved corpus: 45 source passages from five documents across four institutions, plus 5 curated answers, 14 explained official terms, and 37 aliases that map everyday wording to official terms. This is sample content for the prototype; no ministry steward has signed it off yet. Back to Yean.", "YEAN: Next, four priorities. Better ranking, so the right source comes first more often. A content portal so ministry stewards can approve more sources. Follow-up memory in Telegram chats. And real accounts instead of the prototype login. Further out, Phase 1 moves the model to a self-hosted Qwen in Cambodia.", "YEAN: Thank you. We are happy to take questions; each of us can answer on our own area."];
+var NOTES = ["YEAN: Good morning. We are Team AO3, and this is SuperAsk.AI. SuperAsk answers questions about Cambodian government services in Khmer and English, and every answer shows the official source it came from. I'll give a short overview and our roadmap for today; then each use case is presented live by the team member who owns it.", "YEAN: SuperAsk is for Cambodian citizens who need to know how a government procedure works: what documents to bring, what it costs, and which office handles it. Today that information is scattered across ministry websites, Facebook pages and Telegram channels, often posted as images, so people lose a day with the wrong documents or pay a broker. What is new: SuperAsk answers only from approved official content and shows the source and its review date with every answer. When there is no source, it says so instead of guessing, which general chatbots do not do. It works in Khmer and English, and the same engine serves the web chat, a Telegram bot and a Telegram Mini App.", "YEAN: Here is our plan for today. The highlighted rows are the live demo: the five use cases we planned for Demo 1 in Report One, each shown by the member who owns that part. Phallamonunhh starts with asking a question, the core use case. Then Heejae shows the source citation, Sereyprophea shows how SuperAsk declines, Bunkheang shows office contact details in Telegram, and Doungkhe shows how we keep content current. I'll close with our plan to Demo 2. Over to Phallamonunhh.", "Leave this slide up while switching to the browser. Every question below was tested on the live site on 9 Nov 2026. Type them exactly; do NOT use the landing-page topic buttons except “Driving licence renewal” in English and “Birth certificate”.\n\nPHALLAMONUNHH (UC-1, UC-2): Open superask.vercel.app/chat. Type “How do I renew my driving licence?”. Point out: the answer lists documents (old licence, ID card, fitness certificate, three 4x6 photos), the 30,000 riel fee and the service centres, all quoted from the Ministry of Public Works and Transport page that retrieval found (UC-2). Then switch to Khmer and type: តើការបន្តប័ណ្ណបើកបរត្រូវការឯកសារអ្វីខ្លះ? The reply comes back in Khmer from the same page. Then ask the follow-up “How much does it cost?”: it keeps the topic and answers 30,000 riel. Business goals: bilingual access and comprehensive information.\n\nHEEJAE (UC-3): On the same answer, open the source card. Show the ministry name in English and Khmer, the document, the legal instrument (Prakas No. 047, 27 January 2017), the effective date, the last-verified date and the link to the official page. The badge says “Past review date”: that is the system working. The sample source was last verified 31 July 2026 and its 90-day review is due, so SuperAsk tells the citizen to confirm with the ministry rather than hiding it. Business goal: trustworthy answers.\n\nSEREYPROPHEA (UC-4): New chat. Type “What is the weather in Phnom Penh tomorrow?”. SuperAsk declines, says it only answers government-service procedures, and suggests what it can do. Business goal: trustworthy answers. Do not use passport, business registration or land title questions: they are not in the knowledge base yet and retrieval returns an unrelated passage (known issue, being fixed for Demo 2).\n\nBUNKHEANG (UC-7): On a phone or Telegram Desktop, open @superask168_bot and send “Where do I apply for a driving licence?”. The reply lists the service centres (AEON Mall 1 and 2, the one-window units, the provincial departments), the free hotline 1275, info@mpwt.gov.kh and office hours, with the source. Then open the Mini App button to show the same chat inside Telegram. Test Telegram before the slot. Business goal: ministry contact and location.\n\nDOUNGKHE (UC-11): In a terminal at the project folder, run: npx tsx scripts/crawl.ts --mode=monitor --only=SRC-021 --dry-run. It takes about 30 seconds: talk while it runs. It checks 15 pages of moc.gov.kh and reports pages fetched and changes found; dry run means nothing is saved. Explain: we monitor 132 official sites; a change goes to a human reviewer and never becomes an answer on its own. Business goal: comprehensive, current information. Avoid the transport ministry site (SRC-034): it was too slow to answer during testing.", "YEAN: Our plan to Demo 2 follows the Plan of Work from Report One. This week we apply your feedback; the first fix is a sharper relevance check, so a question on a topic we do not cover yet, like passports, is declined instead of matched to a nearby passage. By Full Report 3 we add approved content for more services and improve ranking: today the right source is in the top eight 94.1% of the time but first only 67.6% of the time. Before Demo 2 on December 4 we finish the remaining use cases: an office directory with map links, follow-up memory in Telegram, real accounts, and a portal where reviewers approve monitored changes. Thank you; we are happy to take questions."];
 
 (function () {
   var slides = Array.prototype.slice.call(document.querySelectorAll('#deck .slide'));

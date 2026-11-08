@@ -1,17 +1,31 @@
 {
   "v": 4,
-  "createdOnFiles": { "v": 1, "at": "2026-11-07T09:00:00Z" },
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-07T09:00:00Z"
+  },
   "lists": "css",
   "title": "SuperAsk.AI — Demo 1",
-  "order": ["cover", "agenda", "y-problem", "y-status", "p-channels", "p-demo", "m-pipeline", "m-stack", "m-refusals", "b-numbers", "b-map", "b-example", "b-coverage", "b-ci", "h-integration", "h-eval", "d-data", "d-kb", "y-next", "qa"],
+  "order": [
+    "cover",
+    "intro",
+    "roadmap",
+    "demo",
+    "next"
+  ],
   "sections": {
-    "s1": { "description": "Yean: the problem, what SuperAsk is and where Phase 0 stands.", "start": "cover" },
-    "s2": { "description": "Prophea: how citizens use SuperAsk, with a live demo.", "start": "p-channels" },
-    "s3": { "description": "Monunhh: architecture, stack and the safety pipeline.", "start": "m-pipeline" },
-    "s4": { "description": "Bunkheang: unit testing.", "start": "b-numbers" },
-    "s5": { "description": "Heejae: integration testing and evaluation.", "start": "h-integration" },
-    "s6": { "description": "Doungkhe: data collection and the knowledge base.", "start": "d-data" },
-    "s7": { "description": "Yean: what is next, and questions.", "start": "y-next" }
+    "s1": {
+      "description": "Fong Yean: who SuperAsk is for, what it is, and the roadmap.",
+      "start": "cover"
+    },
+    "s2": {
+      "description": "Live demo of UC-1, 2, 3, 4, 7, 11 by their owners: Chun Phallamonunhh, Choi Heejae, Sarin Sereyprophea, Heng Bunkheang, Neang Doungkhe.",
+      "start": "demo"
+    },
+    "s3": {
+      "description": "Fong Yean: plan for the rest of the semester, and questions.",
+      "start": "next"
+    }
   },
   "faces": {
     "space-grotesk": {
