@@ -4,13 +4,14 @@ The Demo 1 presentation (CSCI 441), 20 slides, one presenter per section.
 
 ## Online and PDF
 
-- **Present online:** https://bunkheang-heng.github.io/superask-slides/
-- **Download PDF (all 20 slides):** https://bunkheang-heng.github.io/superask-slides/SuperAsk-Demo1.pdf
-  — or `SuperAsk-Demo1.pdf` in this folder, or the **Download PDF** button / `D` key while presenting.
+- **View / present online (anyone, no login):**
+  https://htmlpreview.github.io/?https://github.com/Monunhh/Super-ask/blob/main/slides/index.html
+- **Download PDF (all 20 slides):**
+  https://github.com/Monunhh/Super-ask/raw/main/slides/SuperAsk-Demo1.pdf
+  — or the **Download PDF** button / `D` key while presenting.
 
-The online copy is rebuilt from this folder on `main` by the workflow in
-[Bunkheang-heng/superask-slides](https://github.com/Bunkheang-heng/superask-slides)
-(every 3 hours, or run it by hand from its Actions tab).
+Both follow `main`: push slide changes (and the rebuilt `index.html` / PDF)
+and the links show the new version.
 
 ## Present
 
