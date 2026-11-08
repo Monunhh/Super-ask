@@ -35,7 +35,7 @@ Two kinds of content sit here and they are **not** interchangeable.
 | Status | A human signed it off | Nobody has looked at it |
 | Retrieval reads it | **Yes** | **Never** |
 
-`lib/retrieval/` reads `kb/` and nothing else. `lib/monitor/` writes `crawl/`
+`lib/retrieval/` reads `kb/` and nothing else. `lib/crawl/` writes `crawl/`
 and nothing else — there is no function in it that can write to `kb/`.
 
 That gap is FR-49 and §10.4: monitored content must not reach a citizen without

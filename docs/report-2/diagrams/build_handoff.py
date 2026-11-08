@@ -1,10 +1,10 @@
-# Builds docs/reports/SuperAsk-report2-interaction-diagrams.html with the five sequence
+# Builds docs/report-2/SuperAsk-report2-interaction-diagrams.html with the five sequence
 # diagram PNGs embedded as data URIs, so each image can be copied straight
-# into the Google Doc (same hand-off pattern as docs/reports/SuperAsk-3c-use-cases.html).
+# into the Google Doc (same hand-off pattern as docs/report-1/SuperAsk-3c-use-cases.html).
 import base64, pathlib
 
 HERE = pathlib.Path(__file__).parent
-OUT = HERE.parent / "reports" / "SuperAsk-report2-interaction-diagrams.html"
+OUT = HERE.parent / "SuperAsk-report2-interaction-diagrams.html"
 
 def img(name):
     data = base64.b64encode((HERE / name).read_bytes()).decode()
@@ -85,7 +85,7 @@ body{{font-family:"Times New Roman",serif;font-size:12pt;max-width:1100px;margin
 <b>How to use:</b> copy the text and images below and paste them under <b>1. Interaction Diagrams</b> in the
 Report 2 Part 1 tab of the Google Doc. To copy a diagram, right-click it and choose "Copy image".
 Figure numbers continue from Report One (which ended at Figure 7) &mdash; adjust if Report Two restarts numbering.
-The Mermaid source files for all five diagrams are in <code>docs/report2-diagrams/</code> if anything needs editing.
+The Mermaid source files for all five diagrams are in <code>docs/report-2/diagrams/</code> if anything needs editing.
 Delete this box before you paste.</div>
 <p><b>1. Interaction Diagrams</b></p>
 {INTRO}

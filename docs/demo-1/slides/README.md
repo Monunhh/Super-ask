@@ -5,9 +5,9 @@ The Demo 1 presentation (CSCI 441), 20 slides, one presenter per section.
 ## Online and PDF
 
 - **View / present online (anyone, no login):**
-  https://htmlpreview.github.io/?https://github.com/Monunhh/Super-ask/blob/main/slides/index.html
+  https://htmlpreview.github.io/?https://github.com/Monunhh/Super-ask/blob/main/docs/demo-1/slides/index.html
 - **Download PDF (all 20 slides):**
-  https://github.com/Monunhh/Super-ask/raw/main/slides/SuperAsk-Demo1.pdf
+  https://github.com/Monunhh/Super-ask/raw/main/docs/demo-1/slides/SuperAsk-Demo1.pdf
   — or the **Download PDF** button / `D` key while presenting.
 
 Both follow `main`: push slide changes (and the rebuilt `index.html` / PDF)
@@ -15,7 +15,7 @@ and the links show the new version.
 
 ## Present
 
-Double-click **`index.html`** (or `open slides/index.html`). It opens straight
+Double-click **`index.html`** (or `open docs/demo-1/slides/index.html`). It opens straight
 into presentation mode — no install, no server. Fonts load from Google Fonts,
 so be online once; offline the text falls back to Arial.
 
@@ -41,8 +41,8 @@ window to the projector and press `F`.
 Change a slide file (or `deck.json` for order), then rebuild:
 
 ```
-python3 slides/build.py          # rebuild index.html
-python3 slides/build.py --pdf    # also rebuild SuperAsk-Demo1.pdf (needs Chrome)
+python3 docs/demo-1/slides/build.py          # rebuild index.html
+python3 docs/demo-1/slides/build.py --pdf    # also rebuild SuperAsk-Demo1.pdf (needs Chrome)
 ```
 
 `index.html` is generated — don't edit it by hand.

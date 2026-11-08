@@ -12,9 +12,10 @@ Web, Next.js App Router, TypeScript.
 
 ## Course deliverables (CSCI441, Team AO3)
 
-The proposal, Report One, and the Report Two diagram pages are collected in
-[`docs/reports/`](docs/reports/README.md). Diagram sources and build scripts are
-in [`docs/report2-diagrams/`](docs/report2-diagrams/README.md).
+Every submission (proposal, Report One, Report Two and its diagrams, and the
+Demo 1 slides, brochure and documentation) is in [`docs/`](docs/README.md),
+grouped by deliverable. The Demo 1 integration tests are in
+[`tests/integration/`](tests/integration/README.md).
 
 ---
 
@@ -33,9 +34,10 @@ verification gate, decline logic, and the whole interface work unchanged.
 
 ```bash
 npm run check            # typecheck + test + build + every harness below. CI runs this
-npm test                 # 617 unit and integration tests, no model calls
+npm test                 # 643 unit tests, no model calls
 npm run test:watch       # the same, on change
 npm run test:coverage    # the same, with v8 coverage and its thresholds enforced
+npm run test:integration # Demo 1 integration suites (tests/integration/)
 npm run eval             # M-03 recall@8 and M-04 refusal precision, no model calls
 npm run verify-check     # proves the FR-15 gate blocks fabricated figures
 npm run curated-check    # Tier 1 matching, and that greetings do not swallow questions
@@ -327,7 +329,7 @@ crawling them, so they wait for a headless adapter.
 
 The crawler's change signal used to rest on one assumption — an HTTP 200
 carries the page — and on this infrastructure that assumption is wrong often
-enough to poison the review queue. `lib/monitor/soft-block.ts` is the check that
+enough to poison the review queue. `lib/crawl/soft-block.ts` is the check that
 was missing. Three shapes, all observed:
 
 | Shape | Where | What it looked like before |
@@ -353,7 +355,7 @@ config should be making.
 ### What a crawl can and cannot do
 
 It writes to `data/crawl/`. It cannot write to `data/kb/` — there is no function
-in `lib/monitor/` that could. A crawl raises change signals to
+in `lib/crawl/` that could. A crawl raises change signals to
 `data/crawl/review-queue.jsonl`; a steward publishes. That is FR-49 and §10.4's
 closing line, and it is why this can be pointed at live government
 infrastructure without any risk of unreviewed content reaching a citizen.
@@ -639,44 +641,49 @@ The brand palette follows the SuperAsk (StartUp) Figma: `#4F3FA8` (indigo — br
 
 ```
 app/
-  page.tsx                  citizen entry (server component)
+  page.tsx                  landing page; login/ and register/ are prototype stubs
+  chat/page.tsx             the chat interface
   api/ask/route.ts          the only model path
   api/feedback/route.ts     FR-50 / FR-67
   api/health/route.ts       provider + residency + per-ministry freshness
+  api/telegram/webhook/     Telegram bot channel
 components/
-  Chat.tsx                  conversation state
-  AnswerBlock.tsx           answer + sources + decline notice + notice
-  SourceCard.tsx            the source receipt (FR-62/63)
-  FreshnessBadge.tsx        FR-64
-  DiagnosticPanel.tsx       FR-72/73
-  Composer.tsx              FR-60, FR-69
-  Sidebar.tsx               FR-68 + provider/residency card
+  chat/                     Chat · AnswerBlock · SourceCard · FreshnessBadge ·
+                            DiagnosticPanel · Composer · Sidebar · ReportDialog
+  landing/                  landing page sections
+  site/                     header, footer, logo, marketing shell
+  telegram/                 Telegram Mini App boot
 lib/
   khmer/                    normalize · segment · romanize
-  lang/                     detect (reply script) · content (shared content words)
+  lang/                     detect (reply script) · content · stem
+  kb/loader.ts              reads the approved corpus from data/
   registry/csv.ts           RFC 4180 reader/writer for the source registry
   retrieval/                bm25 · embed · rrf · rerank · orchestration
-  engine/                   tiers · curated · glossary · guardrails · verify · freshness
-  llm/                      provider contract · gateway · anthropic · vllm · extractive
-  monitor/                  fetch · robots · extract · classify · store · verify · crawl
-  log/audit.ts              FR-55 / FR-56
-data/
-  kb/*.json                 sample chunks, FR-45 metadata, FR-44 questions
-  curated.json              Tier 1 bank
-  glossary.json             §6.1 official terminology
-  aliases.json              FR-06 alias set
-  facilities.json           FR-17 directory + emergency numbers
-  golden.json               starter golden set
-  sources.json              GENERATED monitored-source registry
-  registry/                 upstream registry (Python) + CSV deliverables
+  engine/                   tiers · curated · glossary · guardrails · verify ·
+                            freshness · topicality · rationale · citations
+  llm/                      provider contract · gateway · sealion · anthropic ·
+                            vllm · extractive
+  crawl/                    fetch · robots · extract · classify · soft-block ·
+                            store · verify · crawl
+  telegram/                 Bot API client · formatting · keyboards · history
+  ui/                       copy · theme · history · site language
+  log/                      audit (FR-55 / FR-56) · trace
+data/                       corpus, registry and crawl evidence (see data/README.md)
 scripts/
   eval.ts                   M-03 / M-04 + threshold sweep
   verify-check.ts           FR-15 evidence
   curated-check.ts          Tier 1 matching precision
   scope-check.ts            refusal-vs-answer routing
+  rationale-check.ts        rationale gate
   build-sources.ts          registry CSV → data/sources.json
   crawl.ts                  FR-47 monitoring CLI (verify · monitor)
+  provider-smoke.ts         live provider round-trip
+  telegram-webhook.ts       register the Telegram webhook
   schedule-weekly.ps1       Windows weekly task
+  sync-from-bunkheang.ps1   mirror upstream code, keep docs/
+tests/                      unit tests (npm test), mirrors lib/
+  integration/              Demo 1 integration suites (npm run test:integration)
+docs/                       course deliverables (see docs/README.md)
 ```
 
 ---

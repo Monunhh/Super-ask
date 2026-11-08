@@ -1,4 +1,4 @@
-# Builds docs/reports/SuperAsk-report2-class-diagram.html: Report 2 Part 2, Section 2
+# Builds docs/report-2/SuperAsk-report2-class-diagram.html: Report 2 Part 2, Section 2
 # (Class Diagram and Interface Specification) with the five class diagram PNGs
 # embedded as data URIs, so text and images can be copied straight into the
 # team Google Doc (same hand-off pattern as build_handoff.py).
@@ -9,7 +9,7 @@
 import base64, html, pathlib
 
 HERE = pathlib.Path(__file__).parent
-OUT = HERE.parent / "reports" / "SuperAsk-report2-class-diagram.html"
+OUT = HERE.parent / "SuperAsk-report2-class-diagram.html"
 
 
 def img(name):

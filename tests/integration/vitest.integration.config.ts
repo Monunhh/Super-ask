@@ -6,6 +6,6 @@ export default defineConfig({
   test: {
     root: process.cwd(),
     environment: "node",
-    include: ["Demo1/3_integration_testing/**/*.integration.test.ts"],
+    include: ["tests/integration/**/*.integration.test.ts"],
   },
 });

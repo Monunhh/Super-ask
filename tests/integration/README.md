@@ -1,8 +1,6 @@
-SuperAsk Demo 1 Integration Tests
-=================================
+# SuperAsk Demo 1 integration tests
 
-Purpose
--------
+## Purpose
 These tests check that the main parts of SuperAsk work together. They cover
 the web API, answer engine, sample knowledge base, feedback route, audit writer,
 and Telegram webhook and client.
@@ -11,14 +9,14 @@ The answer engine, knowledge base, audit writer, and Telegram client are real.
 Only file writes and Telegram's HTTP requests are mocked, so the tests do not
 write project data or contact Telegram.
 
-How to Run
-----------
-From the main Super-ask folder, run:
+## How to run
+From the repository root, run:
 
-    npx vitest run --config Demo1/3_integration_testing/vitest.integration.config.ts
+    npm run test:integration
 
-What We Test
-------------
+These suites are excluded from `npm test` (and so from CI); run them on their own.
+
+## What we test
 1. Web Q&A and citations: Check that the API and answer engine find an answer
    in the knowledge base, return source details, and create the expected audit
    record.
@@ -33,8 +31,7 @@ What We Test
    and Khmer replies, and sends them through the Telegram client. Also check
    the webhook secret and the Mini App launch button.
 
-Results
--------
+## Results
 Test files passed: 2
 Tests passed: 9
 Tests failed: 0

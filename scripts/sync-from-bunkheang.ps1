@@ -16,10 +16,11 @@ function Invoke-Git {
 }
 
 # Course material that lives in THIS repo (not in Bunkheang's) and must survive
-# every sync. All report deliverables sit under docs/reports and the diagram
-# sources under docs/report2-diagrams, so "docs" covers them.
+# every sync. Every course deliverable (proposal, reports, diagram sources,
+# Demo 1 slides and documents) sits under docs/, so "docs" covers them.
 $keep = @(
   "docs",
+  "tests/integration",
   "scripts/sync-from-bunkheang.ps1"
 )
 
