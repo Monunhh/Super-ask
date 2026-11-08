@@ -70,9 +70,9 @@ turns them into real line icons and arrows for the browser.
 
 | # | Slide file | Presenter | Content |
 |---|---|---|---|
-| 1 | `cover.html` | Fong Yean | Title, team, links |
-| 2 | `intro.html` | Fong Yean | Who it is for, what it is, what is new |
-| 3 | `roadmap.html` | Fong Yean | Roadmap of the presentation, presenter and time per part |
+| 1 | `cover.html` | Chun Phallamonunhh | Title, team, links |
+| 2 | `intro.html` | Chun Phallamonunhh | Who it is for, what it is, what is new |
+| 3 | `roadmap.html` | Chun Phallamonunhh | Roadmap of the presentation, presenter and time per part |
 | 4 | `demo.html` | Chun Phallamonunhh, Choi Heejae, Sarin Sereyprophea, Heng Bunkheang, Neang Doungkhe | Live demo: use case, business goal, what you will see |
 | 5 | `next.html` | Fong Yean | Plan to Demo 2, questions |
 
