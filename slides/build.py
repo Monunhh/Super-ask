@@ -17,6 +17,8 @@ import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PDF_NAME = "SuperAsk-Demo1.pdf"
+# Where the PDF lives online; used when the page is not opened as a local file.
+PDF_URL = "https://github.com/Monunhh/Super-ask/raw/main/slides/" + PDF_NAME
 
 # Line icons (24×24, stroke = currentColor) for the deck format's <x-icon name>.
 ICONS = {
@@ -139,6 +141,10 @@ JS = r"""
   var slides = Array.prototype.slice.call(document.querySelectorAll('#deck .slide'));
   var N = slides.length, cur = 0;
   var isPresenter = /[?&]presenter\b/.test(location.search);
+
+  // Online (any viewer or host) the PDF comes from GitHub; locally, from this folder.
+  var dl = document.getElementById('dl');
+  if (dl && location.protocol !== 'file:') dl.href = dl.getAttribute('data-online');
 
   // Real icons for <x-icon name="…">.
   document.querySelectorAll('x-icon').forEach(function (el) {
@@ -373,7 +379,7 @@ def main():
   </div></div>
   <div id="progress"><span></span></div>
   <div id="counter"></div>
-  <a id="dl" href="{PDF_NAME}" download title="Download all slides as PDF (D)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download PDF</a>
+  <a id="dl" href="{PDF_NAME}" data-online="{PDF_URL}" download title="Download all slides as PDF (D)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download PDF</a>
   <div id="hint">← → to move · F full screen · S presenter view · ? shortcuts</div>
   <div id="notes" class="overlay" hidden></div>
   <div id="overview" class="overlay" hidden><h2>{html.escape(title)} · {len(order)} slides</h2><div class="grid"></div></div>
