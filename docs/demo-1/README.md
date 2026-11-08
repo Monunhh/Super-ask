@@ -64,7 +64,7 @@ date, the video was due **7 Nov** and the e-archive is due **11 Nov 2026**.
 | `technical_documentation.pdf` | ⚠️ | Has a cover page. Still says "slides/ and documentation/" and "README3.txt … after relocating", both now stale; should point to `docs/demo-1/`. Says the test counts "should be verified": state them plainly (610 unit, 33 API route integration, plus 9 more in `3_integration_testing`; 89.6% line coverage). Says Node.js 24; CI uses Node 22. "Codebase reviewed: … ZIP" reads like a review, not our own documentation. No table of contents. |
 | `user_documentation.pdf` | ⚠️ | Content is good. Needs a table of contents; the cover says "Codebase reviewed: … ZIP", which doesn't fit a user guide. |
 | `brochure.pdf` | ✅ | One page: title, date, team number, full member names, features, website, Telegram and GitHub links, system requirements ("What you need"), test and evaluation results. |
-| `presentation_slides.pdf` | ✅ | 5 slides: who it's for and what it is (with what is new), roadmap with presenters and timing, live-demo plan (use case → business goal → what you will see), plan to Demo 2. No source code. Old 20-slide deck kept in `slides/backup/` for Q&A. |
+| `presentation_slides.pdf` | ✅ | 5 slides: cover; who it's for and how it works (flow diagram + chart of what it can answer); roadmap with timing; live-demo plan (use case → business goal → what you will see); results chart and plan to Demo 2. No source code. Old 20-slide deck kept in `slides/backup/` for Q&A. |
 | `individual_contributions.pdf` | ⚠️ | Covers all 6 members and project management (coordination, plan of work, responsibilities, Gantt). **No cover page.** **No percentages** (or a statement that everyone agrees on equal contribution). **No note on non-applicable items** (code kept at the repo root) and how to reallocate those points. |
 
 ### Demo and presentation (not in the repo, so tick these off yourselves)
@@ -78,7 +78,7 @@ date, the video was due **7 Nov** and the e-archive is due **11 Nov 2026**.
 | For each use case: what it does, which business goal it serves, a user scenario | ✅ slide 4 + speaker notes; tested questions in [`slides/README.md`](slides/README.md#demo-questions-tested-on-superaskvercelapp-2026-11-09) |
 | Short plan for the rest of the semester | ✅ slide 5 (from the Report 1 Plan of Work) |
 | Any accounts, profiles and sample records created **before** the demo; no live record creation; little time on login | ❌ to prepare |
-| Charts show labels and units on the axes | ✅ no charts in the 5-slide deck |
+| Charts show labels and units on the axes | ✅ slide 2 (approved passages per service, count) and slide 5 (evaluation results, %, with targets) both have labelled axes with units |
 | Every member can run the demo and answer questions; rehearsal done | ❌ to schedule |
 | Laptop + projector / Zoom tested before the slot | ❌ to do |
 | All members present at the demo (an absence needs a justified reason) | — |
