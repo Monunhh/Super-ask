@@ -1,0 +1,46 @@
+<section id="b-map" data-transition="fade" style="background:#FBFCFD;color:#101828;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;color:#4F3FA8;letter-spacing:3px;text-transform:uppercase">Unit testing · Test map</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1">Every stage of the answer pipeline has its own tests</h2>
+</div>
+<div style="display:flex;align-items:stretch;gap:8px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px">
+<p style="font-size:28px;font-weight:700;color:#101828">Screen</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#4F3FA8">141</p>
+<p style="font-size:24px;line-height:1.45;color:#4A5565">guardrails 89<br>topicality 21<br>glossary 16<br>curated 15</p>
+</div>
+<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px">
+<p style="font-size:28px;font-weight:700;color:#101828">Retrieve</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#4F3FA8">148</p>
+<p style="font-size:24px;line-height:1.45;color:#4A5565">query 33<br>fusion 30<br>normalize 26<br>content 25<br>romanize 23<br>stem 11</p>
+</div>
+<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #4F3FA8;border-radius:12px">
+<p style="font-size:28px;font-weight:700;color:#101828">Decide</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#4F3FA8">86</p>
+<p style="font-size:24px;line-height:1.45;color:#4A5565">tiers 53<br>rationale 33</p>
+</div>
+<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px">
+<p style="font-size:28px;font-weight:700;color:#101828">Generate</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#6D5BD0">96</p>
+<p style="font-size:24px;line-height:1.45;color:#4A5565">prompt 31<br>provider 27<br>gateway 22<br>sealion 16</p>
+</div>
+<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px">
+<p style="font-size:28px;font-weight:700;color:#101828">Verify</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#6D5BD0">21</p>
+<p style="font-size:24px;line-height:1.45;color:#4A5565">verify 21</p>
+</div>
+<x-shape kind="arrow-right" style="width:32px;height:20px;background:#C3B8F2;align-self:center"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 20px;border:1px solid #E3E9F0;border-top:6px solid #7C6CD8;border-radius:12px">
+<p style="font-size:28px;font-weight:700;color:#101828">Cite + log</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1;color:#6D5BD0">74</p>
+<p style="font-size:24px;line-height:1.45;color:#4A5565">corpus 32<br>audit 21<br>freshness 13<br>trace 8</p>
+</div>
+</div>
+<p style="font-size:26px;line-height:1.5;color:#4A5565">Plus 44 tests outside the pipeline: chat history 26, crawler 18. Total: <b>610 unit tests</b>.</p>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;justify-content:space-between;align-items:center"><p style="font-size:24px;font-weight:600;color:#4F3FA8">Presenter · Bunkheang</p><p style="font-size:24px;color:#8A96A8">SuperAsk.AI · Demo 1 · 11</p></div>
+<aside>BUNKHEANG: This is how our unit tests map onto the answer pipeline Monunhh showed. Screening has 141 tests, mostly the guardrails, because a refusal rule that silently stops working is the most dangerous bug we could have. Retrieval has 148, including Khmer normalisation and romanised Khmer, since a Khmer question typed differently must still find the same source. Deciding which tier answers has 86, generation has 96 covering prompts and every model provider, verification has 21, and citations plus audit logging have 74. Another 44 cover chat history and the crawler. Each number is the exact count from the test runner.</aside>
+</section>

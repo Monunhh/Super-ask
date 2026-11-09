@@ -1,0 +1,27 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-11-07T09:00:00Z" },
+  "lists": "css",
+  "title": "SuperAsk.AI — Demo 1",
+  "order": ["cover", "agenda", "y-problem", "y-status", "p-channels", "p-demo", "m-pipeline", "m-stack", "m-refusals", "b-numbers", "b-map", "b-example", "b-coverage", "b-ci", "h-integration", "h-eval", "d-data", "d-kb", "y-next", "qa"],
+  "sections": {
+    "s1": { "description": "Yean: the problem, what SuperAsk is and where Phase 0 stands.", "start": "cover" },
+    "s2": { "description": "Prophea: how citizens use SuperAsk, with a live demo.", "start": "p-channels" },
+    "s3": { "description": "Monunhh: architecture, stack and the safety pipeline.", "start": "m-pipeline" },
+    "s4": { "description": "Bunkheang: unit testing.", "start": "b-numbers" },
+    "s5": { "description": "Heejae: integration testing and evaluation.", "start": "h-integration" },
+    "s6": { "description": "Doungkhe: data collection and the knowledge base.", "start": "d-data" },
+    "s7": { "description": "Yean: what is next, and questions.", "start": "y-next" }
+  },
+  "faces": {
+    "space-grotesk": {
+      "family": "Space Grotesk",
+      "href": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@400;600&display=swap"
+    },
+    "inter": {
+      "family": "Inter",
+      "href": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@400;600&display=swap"
+    }
+  },
+  "designSystems": []
+}
