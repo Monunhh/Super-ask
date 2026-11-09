@@ -223,6 +223,12 @@ const OFF_DOMAIN: RegExp[] = [
 
   // Bare arithmetic.
   /^[\d\s+\-*/().=]+\??$/,
+
+  // Filler and acknowledgements: "hmm", "ok", "thanks", "?". These carry no
+  // question at all. Without this they counted as subjectless follow-ups after
+  // a service question, were rewritten onto the previous turn ("renewal drivers
+  // licence hmm") and re-served the previous answer as if newly asked.
+  /^[\s?!.…,]*((h+m+|u+h*m+|u+h+|e+r+m*|a+h+|o+h+|hu+h|ok(ay)?|kk?|alright|sure|fine|cool|nice|great|good|wow|lol|haha+|yes|yeah|yep|yup|no|nope|thanks?|thank you|thx|ty|got it|i see)[\s?!.…,]*)*$/i,
 ];
 
 /**
@@ -259,7 +265,7 @@ const OFF_DOMAIN: RegExp[] = [
  * about dealing with the state.
  */
 const SERVICE_TERMS =
-  /\b(passport|visa|immigration|citizenship|nationality|residence|residency|id ?card|identity|identification|birth|death|marriage|divorce|family (book|record)|certificate|licen[cs]e|permit|authorisation|authorization|register|registration|registry|deregister|renew|renewal|apply|application|applicant|submit|submission|document|documents|paperwork|form|fee|fees|charge|stamp duty|tax|taxation|customs|duty|excise|tariff|import|export|company|business|enterprise|sole proprietor|trademark|patent|copyright|land|title|deed|cadastral|property|vehicle|driving|driver|motorbike|motorcycle|car|truck|plate|inspection|ministry|department|authority|agency|municipality|province|provincial|district|khan|commune|sangkat|village|city hall|one ?window|counter|officer|official|government|state|public service|civil (status|registration)|notary|notari[sz]ed|legali[sz]ed|apostille|appeal|complaint|grievance|procedure|process|requirement|eligib|deadline|expiry|expire|validity|penalt(y|ies)|fine|fined|surcharge|late (fee|penalty|charge|payment|registration|submission)|overdue|arrears|exemption|waiver|refund|instal?ment|pension|social security|nssf|insurance|labour|labor|work permit|employment (card|book)|school|university|diploma|transcript|equivalence|health (certificate|card)|vaccination|police (clearance|record)|criminal record|court|bank account|construction|building permit|utility|water supply|electricity connection)\b/i;
+  /\b(passport|visa|immigration|citizenship|nationality|residence|residency|id ?card|identity|identification|birth|death|marriage|marry|married|wedding|divorce|divorced|family (book|record)|certificate|licen[cs]e|permit|authorisation|authorization|register|registration|registry|deregister|renew|renewal|apply|application|applicant|submit|submission|document|documents|paperwork|form|fee|fees|charge|stamp duty|tax|taxation|customs|duty|excise|tariff|import|export|company|business|enterprise|sole proprietor|trademark|patent|copyright|land|title|deed|cadastral|property|vehicle|driving|driver|motorbike|motorcycle|car|truck|plate|inspection|ministry|department|authority|agency|municipality|province|provincial|district|khan|commune|sangkat|village|city hall|one ?window|counter|officer|official|government|state|public service|civil (status|registration)|notary|notari[sz]ed|legali[sz]ed|apostille|appeal|complaint|grievance|procedure|process|requirement|eligib|deadline|expiry|expire|validity|penalt(y|ies)|fine|fined|surcharge|late (fee|penalty|charge|payment|registration|submission)|overdue|arrears|exemption|waiver|refund|instal?ment|pension|social security|nssf|insurance|labour|labor|work permit|employment (card|book)|school|university|diploma|transcript|equivalence|health (certificate|card)|vaccination|police (clearance|record)|criminal record|court|bank account|construction|building permit|utility|water supply|electricity connection)\b/i;
 
 /**
  * Procedural framing aimed at an institution. Catches in-scope questions whose

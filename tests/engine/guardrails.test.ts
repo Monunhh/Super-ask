@@ -384,3 +384,29 @@ describe("moderateOutput — NFR-04 output moderation", () => {
     expect(hit?.message.en).toBe(screen("can i sue")?.message.en);
   });
 });
+
+describe("filler turns are not follow-ups (web chat repeat bug)", () => {
+  const licence = [
+    { role: "user", text: "renewal drivers licence" },
+    { role: "assistant", text: "To exchange or renew a driving licence..." },
+  ];
+
+  it.each(["hmm", "Hmm...", "ok", "okay!", "yes", "no", "lol", "?", "uhm", "ok thanks"])(
+    "does not carry the previous topic: %s",
+    (q) => {
+      expect(isOffDomain(q, licence)).toBe(true);
+    },
+  );
+
+  it("still treats a real follow-up as in scope", () => {
+    expect(isOffDomain("where in phnom penh?", licence)).toBe(false);
+    expect(isOffDomain("what about the fee?", licence)).toBe(false);
+  });
+
+  it.each(["can i get married", "how do i get married?", "we want a wedding certificate"])(
+    "treats marriage phrasing as a service question: %s",
+    (q) => {
+      expect(looksLikeServiceQuestion(q)).toBe(true);
+    },
+  );
+});
