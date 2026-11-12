@@ -7,7 +7,7 @@
     "url": "https://cambodia.gov.kh",
     "priority": 1,
     "claimed": "search",
-    "httpStatus": 200,
+    "httpStatus": 403,
     "finalUrl": "https://cambodia.gov.kh/",
     "redirected": false,
     "offHost": false,
@@ -18,8 +18,8 @@
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
-    "outcome": "empty",
-    "checkedAt": "2026-09-07T09:00:58.560Z"
+    "outcome": "dead",
+    "checkedAt": "2026-11-12T17:47:40.133Z"
   },
   {
     "sourceId": "SRC-002",
@@ -35,7 +35,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "PRU I អង្គភាព​ព័ត៌មាន​ និងប្រតិកម្មរហ័ស | PRU",
-    "textLength": 10073,
+    "textLength": 9378,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -43,7 +43,7 @@
       "https://pressocm.gov.kh/wp-sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:00:58.561Z"
+    "checkedAt": "2026-11-12T17:47:40.134Z"
   },
   {
     "sourceId": "SRC-003",
@@ -53,21 +53,20 @@
     "url": "https://ocm.gov.kh",
     "priority": 1,
     "claimed": "unconfirmed",
-    "httpStatus": 200,
-    "finalUrl": "https://www.ocm.gov.kh/",
-    "redirected": true,
+    "httpStatus": 0,
+    "finalUrl": "",
+    "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "ទីស្តីការគណៈរដ្ឋមន្ត្រី – Office of the Council of Ministers",
-    "textLength": 8075,
-    "robotsExists": true,
-    "robotsAllowsUs": true,
+    "homepageTitle": "",
+    "textLength": 0,
+    "robotsExists": false,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
-    "sitemapUrls": [
-      "https://www.ocm.gov.kh/wp-sitemap.xml"
-    ],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:00:58.561Z"
+    "sitemapUrls": [],
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:47:40.134Z",
+    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
     "sourceId": "SRC-004",
@@ -89,7 +88,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:00:58.561Z",
+    "checkedAt": "2026-11-12T17:47:40.134Z",
     "softBlock": "robots.txt served a non-robots body; treated as absent"
   },
   {
@@ -112,7 +111,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:00:58.561Z",
+    "checkedAt": "2026-11-12T17:47:40.134Z",
     "error": "fetch failed"
   },
   {
@@ -123,21 +122,20 @@
     "url": "https://senate.gov.kh",
     "priority": 1,
     "claimed": "directory",
-    "httpStatus": 200,
-    "finalUrl": "https://senate.gov.kh/",
+    "httpStatus": 0,
+    "finalUrl": "",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "គេហទំព័រ ព្រឹទ្ធសភា នៃព្រះរាជាណាចក្រកម្ពុជា",
-    "textLength": 6887,
-    "robotsExists": true,
-    "robotsAllowsUs": true,
+    "homepageTitle": "",
+    "textLength": 0,
+    "robotsExists": false,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
-    "sitemapUrls": [
-      "https://senate.gov.kh/wp-sitemap.xml"
-    ],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:00:58.561Z"
+    "sitemapUrls": [],
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:47:40.134Z",
+    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
     "sourceId": "SRC-007",
@@ -159,7 +157,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:01:02.603Z",
+    "checkedAt": "2026-11-12T17:47:42.207Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -176,13 +174,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ទំព័រដើម - Supreme Court and Prosecutor",
-    "textLength": 1515,
+    "textLength": 1512,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:02.734Z"
+    "checkedAt": "2026-11-12T17:47:42.231Z"
   },
   {
     "sourceId": "SRC-009",
@@ -204,7 +202,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:02.952Z"
+    "checkedAt": "2026-11-12T17:47:44.152Z"
   },
   {
     "sourceId": "SRC-010",
@@ -226,7 +224,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "empty",
-    "checkedAt": "2026-09-07T09:01:03.686Z"
+    "checkedAt": "2026-11-12T17:47:44.278Z"
   },
   {
     "sourceId": "SRC-011",
@@ -248,7 +246,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:01:03.989Z",
+    "checkedAt": "2026-11-12T17:47:44.351Z",
     "error": "fetch failed"
   },
   {
@@ -265,7 +263,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ទំព័រដើម | គណៈកម្មាធិការជាតិរៀបចំការបោះឆ្នោត (គ.ជ.ប)",
-    "textLength": 5381,
+    "textLength": 5453,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 10000,
@@ -273,7 +271,7 @@
       "https://www.nec.gov.kh/khmer/sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:04.658Z"
+    "checkedAt": "2026-11-12T17:47:45.272Z"
   },
   {
     "sourceId": "SRC-013",
@@ -289,13 +287,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Untitled Document",
-    "textLength": 3173,
+    "textLength": 2596,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:06.807Z"
+    "checkedAt": "2026-11-12T17:47:46.306Z"
   },
   {
     "sourceId": "SRC-014",
@@ -311,13 +309,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "",
-    "textLength": 4297,
+    "textLength": 4180,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:08.032Z",
+    "checkedAt": "2026-11-12T17:47:48.546Z",
     "softBlock": "robots.txt served a non-robots body; treated as absent"
   },
   {
@@ -327,28 +325,6 @@
     "host": "interior.gov.kh",
     "url": "https://interior.gov.kh",
     "priority": 1,
-    "claimed": "directory",
-    "httpStatus": 200,
-    "finalUrl": "https://interior.gov.kh/",
-    "redirected": false,
-    "offHost": false,
-    "https": true,
-    "homepageTitle": "ទំព័រដើម | ក្រសួងមហាផ្ទៃ",
-    "textLength": 1212,
-    "robotsExists": true,
-    "robotsAllowsUs": true,
-    "crawlDelayMs": 2000,
-    "sitemapUrls": [],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:08.335Z"
-  },
-  {
-    "sourceId": "SRC-016",
-    "registryId": 16,
-    "org": "Ministry of National Defence",
-    "host": "mod.gov.kh",
-    "url": "https://mod.gov.kh",
-    "priority": 2,
     "claimed": "directory",
     "httpStatus": 0,
     "finalUrl": "",
@@ -362,8 +338,30 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:01:10.869Z",
+    "checkedAt": "2026-11-12T17:47:48.808Z",
     "softBlock": "robots.txt refused with HTTP 403"
+  },
+  {
+    "sourceId": "SRC-016",
+    "registryId": 16,
+    "org": "Ministry of National Defence",
+    "host": "mod.gov.kh",
+    "url": "https://mod.gov.kh",
+    "priority": 2,
+    "claimed": "directory",
+    "httpStatus": 200,
+    "finalUrl": "https://mod.gov.kh/",
+    "redirected": false,
+    "offHost": false,
+    "https": true,
+    "homepageTitle": "ក្រសួងការពារជាតិ",
+    "textLength": 14386,
+    "robotsExists": true,
+    "robotsAllowsUs": true,
+    "crawlDelayMs": 200000,
+    "sitemapUrls": [],
+    "outcome": "live",
+    "checkedAt": "2026-11-12T17:47:50.347Z"
   },
   {
     "sourceId": "SRC-017",
@@ -385,7 +383,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:01:12.776Z",
+    "checkedAt": "2026-11-12T17:47:50.886Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -408,7 +406,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:01:12.957Z",
+    "checkedAt": "2026-11-12T17:47:52.977Z",
     "softBlock": "robots.txt refused with HTTP 403"
   },
   {
@@ -425,13 +423,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ - ទំព័រដើម",
-    "textLength": 5280,
+    "textLength": 5482,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:14.824Z"
+    "checkedAt": "2026-11-12T17:47:55.032Z"
   },
   {
     "sourceId": "SRC-020",
@@ -447,7 +445,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ក្រសួងអភិវឌ្ឍន៍ជនបទ",
-    "textLength": 5789,
+    "textLength": 6334,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -455,7 +453,7 @@
       "https://www.mrd.gov.kh/sitemap_index.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:15.469Z"
+    "checkedAt": "2026-11-12T17:47:55.587Z"
   },
   {
     "sourceId": "SRC-021",
@@ -479,7 +477,7 @@
       "https://moc.gov.kh/sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:16.332Z"
+    "checkedAt": "2026-11-12T17:47:57.460Z"
   },
   {
     "sourceId": "SRC-022",
@@ -495,7 +493,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Home: Ministry of Mines and Energy",
-    "textLength": 5555,
+    "textLength": 5534,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -504,7 +502,7 @@
       "https://mme.gov.kh/km/sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:17.057Z"
+    "checkedAt": "2026-11-12T17:47:59.471Z"
   },
   {
     "sourceId": "SRC-023",
@@ -514,20 +512,20 @@
     "url": "https://misti.gov.kh",
     "priority": 1,
     "claimed": "wikipedia",
-    "httpStatus": 200,
-    "finalUrl": "https://misti.gov.kh/",
+    "httpStatus": 0,
+    "finalUrl": "",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "ក្រសួងឧស្សាហកម្ម វិទ្យាសាស្រ្ត បច្ចេកវិទ្យា និងនវានុវត្តន៏ | Ministry of Industry, Science, Technology & Innovation",
-    "textLength": 115,
+    "homepageTitle": "",
+    "textLength": 0,
     "robotsExists": false,
-    "robotsAllowsUs": true,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
-    "outcome": "empty",
-    "checkedAt": "2026-09-07T09:01:19.752Z",
-    "softBlock": "robots.txt served a non-robots body; treated as absent"
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:47:59.899Z",
+    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
     "sourceId": "SRC-024",
@@ -551,7 +549,7 @@
       "https://mop.gov.kh/wp-sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:19.924Z"
+    "checkedAt": "2026-11-12T17:48:01.975Z"
   },
   {
     "sourceId": "SRC-025",
@@ -573,7 +571,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:01:21.258Z",
+    "checkedAt": "2026-11-12T17:48:02.024Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -590,13 +588,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ក្រសួងសង្គមកិច្ច អតីតយុទ្ធជន និងយុវនីតិសម្បទា – Ministry of Social Affairs Veterans and Youth Rehabilitation",
-    "textLength": 8055,
+    "textLength": 6646,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:21.416Z"
+    "checkedAt": "2026-11-12T17:48:03.678Z"
   },
   {
     "sourceId": "SRC-027",
@@ -612,15 +610,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ក្រសួងរៀបចំដែនដី នគរូបនីយកម្ម និងសំណង់ – Ministry of Land Management, Urban Planning and Construction",
-    "textLength": 15633,
-    "robotsExists": true,
+    "textLength": 16287,
+    "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
-    "sitemapUrls": [
-      "https://mlmupc.gov.kh/wp-sitemap.xml"
-    ],
+    "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:21.651Z"
+    "checkedAt": "2026-11-12T17:48:04.102Z"
   },
   {
     "sourceId": "SRC-028",
@@ -636,7 +632,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ទំព័រដើម | ក្រសួងបរិស្ថាន",
-    "textLength": 13699,
+    "textLength": 13790,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -644,7 +640,7 @@
       "https://moe.gov.kh/sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:23.353Z"
+    "checkedAt": "2026-11-12T17:48:08.278Z"
   },
   {
     "sourceId": "SRC-029",
@@ -660,13 +656,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "HOME - MOWRAM",
-    "textLength": 2916,
+    "textLength": 2932,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:23.929Z"
+    "checkedAt": "2026-11-12T17:48:09.093Z"
   },
   {
     "sourceId": "SRC-030",
@@ -688,7 +684,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:25.749Z"
+    "checkedAt": "2026-11-12T17:48:14.829Z"
   },
   {
     "sourceId": "SRC-031",
@@ -710,7 +706,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:01:26.476Z",
+    "checkedAt": "2026-11-12T17:48:15.566Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -727,13 +723,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ទំព័រដើម – ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍",
-    "textLength": 4640,
+    "textLength": 4537,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:27.104Z"
+    "checkedAt": "2026-11-12T17:48:17.615Z"
   },
   {
     "sourceId": "SRC-033",
@@ -749,13 +745,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ក្រសួងសុខាភិបាល​​",
-    "textLength": 4678,
+    "textLength": 5120,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:28.557Z"
+    "checkedAt": "2026-11-12T17:48:18.950Z"
   },
   {
     "sourceId": "SRC-034",
@@ -771,13 +767,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ស្វាគមន៍មកកាន់ក្រសួងសាធារណការនិងដឹកជញ្ជូន",
-    "textLength": 8546,
+    "textLength": 8891,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:29.856Z"
+    "checkedAt": "2026-11-12T17:48:22.045Z"
   },
   {
     "sourceId": "SRC-035",
@@ -793,13 +789,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Ministry of Culture and Fine Arts – The Kingdom of Cambodia",
-    "textLength": 4593,
+    "textLength": 5137,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:31.463Z"
+    "checkedAt": "2026-11-12T17:48:26.632Z"
   },
   {
     "sourceId": "SRC-036",
@@ -821,7 +817,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "empty",
-    "checkedAt": "2026-09-07T09:01:32.789Z",
+    "checkedAt": "2026-11-12T17:48:27.181Z",
     "softBlock": "robots.txt served a non-robots body; treated as absent"
   },
   {
@@ -838,13 +834,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Ministry of Labour and Vocational Training",
-    "textLength": 4976,
+    "textLength": 5144,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:35.548Z"
+    "checkedAt": "2026-11-12T17:48:31.393Z"
   },
   {
     "sourceId": "SRC-038",
@@ -866,7 +862,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:01:35.637Z",
+    "checkedAt": "2026-11-12T17:48:32.418Z",
     "error": "fetch failed"
   },
   {
@@ -889,7 +885,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:01:36.847Z",
+    "checkedAt": "2026-11-12T17:48:36.040Z",
     "error": "fetch failed"
   },
   {
@@ -906,7 +902,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ក្រសួងកិច្ចការនារី – ដើម្បីសមភាពយេនឌ័រនិងការបង្កើនភាពអង់អាចដល់ស្ត្រី",
-    "textLength": 2755,
+    "textLength": 2731,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -914,7 +910,7 @@
       "https://mowa.gov.kh/wp-sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:37.001Z"
+    "checkedAt": "2026-11-12T17:49:25.454Z"
   },
   {
     "sourceId": "SRC-041",
@@ -936,7 +932,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:01:39.965Z",
+    "checkedAt": "2026-11-12T17:49:30.069Z",
     "error": "fetch failed"
   },
   {
@@ -953,7 +949,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "GDT Cambodia | អគ្គនាយកដ្ឋានពន្ធដារ",
-    "textLength": 9455,
+    "textLength": 8379,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -961,7 +957,7 @@
       "https://www.tax.gov.kh/sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:43.279Z"
+    "checkedAt": "2026-11-12T17:49:32.665Z"
   },
   {
     "sourceId": "SRC-043",
@@ -983,7 +979,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:43.361Z"
+    "checkedAt": "2026-11-12T17:49:36.663Z"
   },
   {
     "sourceId": "SRC-044",
@@ -999,13 +995,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "GDNT - Home",
-    "textLength": 3045,
+    "textLength": 3007,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:47.425Z"
+    "checkedAt": "2026-11-12T17:49:37.288Z"
   },
   {
     "sourceId": "SRC-045",
@@ -1015,19 +1011,19 @@
     "url": "https://gdpp.gov.kh",
     "priority": 2,
     "claimed": "unconfirmed",
-    "httpStatus": 403,
+    "httpStatus": 200,
     "finalUrl": "https://gdpp.gov.kh/",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "",
-    "textLength": 0,
+    "homepageTitle": "អគ្គនាយកដ្ឋានលទ្ធកម្មសាធារណៈ | General Department of Public Procurement",
+    "textLength": 7798,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
-    "outcome": "dead",
-    "checkedAt": "2026-09-07T09:01:47.726Z"
+    "outcome": "live",
+    "checkedAt": "2026-11-12T17:49:40.805Z"
   },
   {
     "sourceId": "SRC-046",
@@ -1049,7 +1045,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:51.817Z"
+    "checkedAt": "2026-11-12T17:49:42.588Z"
   },
   {
     "sourceId": "SRC-047",
@@ -1071,7 +1067,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:01:52.909Z"
+    "checkedAt": "2026-11-12T17:49:46.202Z"
   },
   {
     "sourceId": "SRC-048",
@@ -1093,7 +1089,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:01:57.403Z",
+    "checkedAt": "2026-11-12T17:49:48.325Z",
     "error": "fetch failed"
   },
   {
@@ -1110,7 +1106,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Home - Cambodia IP",
-    "textLength": 3596,
+    "textLength": 3679,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -1119,7 +1115,7 @@
       "https://www.cambodiaip.gov.kh/sitemap.rss"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:01:58.116Z"
+    "checkedAt": "2026-11-12T17:50:11.260Z"
   },
   {
     "sourceId": "SRC-051",
@@ -1141,7 +1137,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:01:59.494Z"
+    "checkedAt": "2026-11-12T17:50:17.963Z"
   },
   {
     "sourceId": "SRC-052",
@@ -1157,13 +1153,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "អគ្គនាយកដ្ឋានអន្តោប្រវេសន៍",
-    "textLength": 854,
+    "textLength": 26,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:02.484Z"
+    "outcome": "empty",
+    "checkedAt": "2026-11-12T17:50:24.672Z"
   },
   {
     "sourceId": "SRC-053",
@@ -1173,19 +1169,20 @@
     "url": "https://gdi.gov.kh",
     "priority": 1,
     "claimed": "unconfirmed",
-    "httpStatus": 200,
-    "finalUrl": "https://gdi.gov.kh/",
+    "httpStatus": 0,
+    "finalUrl": "https://gdi.gov.kh",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "Welcome to nginx!",
-    "textLength": 291,
+    "homepageTitle": "",
+    "textLength": 0,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:03.707Z"
+    "outcome": "dead",
+    "checkedAt": "2026-11-12T17:50:27.171Z",
+    "error": "fetch failed"
   },
   {
     "sourceId": "SRC-054",
@@ -1207,7 +1204,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:02:06.697Z"
+    "checkedAt": "2026-11-12T17:50:28.723Z"
   },
   {
     "sourceId": "SRC-055",
@@ -1223,7 +1220,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "The Council for the Development of Cambodia (CDC)",
-    "textLength": 4505,
+    "textLength": 4497,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -1231,7 +1228,7 @@
       "https://cdc.gov.kh/wp-sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:07.740Z"
+    "checkedAt": "2026-11-12T17:50:32.735Z"
   },
   {
     "sourceId": "SRC-056",
@@ -1253,7 +1250,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:02:10.743Z",
+    "checkedAt": "2026-11-12T17:50:37.372Z",
     "error": "fetch failed"
   },
   {
@@ -1276,7 +1273,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:02:12.285Z",
+    "checkedAt": "2026-11-12T17:50:49.403Z",
     "error": "fetch failed"
   },
   {
@@ -1299,7 +1296,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:02:21.140Z",
+    "checkedAt": "2026-11-12T17:51:00.192Z",
     "softBlock": "robots.txt refused with HTTP 403"
   },
   {
@@ -1322,7 +1319,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:02:23.201Z",
+    "checkedAt": "2026-11-12T17:51:02.247Z",
     "error": "fetch failed"
   },
   {
@@ -1345,7 +1342,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:33.589Z"
+    "checkedAt": "2026-11-12T17:51:03.105Z"
   },
   {
     "sourceId": "SRC-061",
@@ -1355,21 +1352,21 @@
     "url": "https://trc.gov.kh",
     "priority": 2,
     "claimed": "unconfirmed",
-    "httpStatus": 403,
-    "finalUrl": "https://www.trc.gov.kh/",
+    "httpStatus": 200,
+    "finalUrl": "https://www.trc.gov.kh/en/",
     "redirected": true,
     "offHost": false,
     "https": true,
-    "homepageTitle": "",
-    "textLength": 0,
+    "homepageTitle": "Telecommunication Regulator of Cambodia | Telecommunication Regulator of Cambodia",
+    "textLength": 3158,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [
       "https://trc.gov.kh/sitemap-index.xml"
     ],
-    "outcome": "dead",
-    "checkedAt": "2026-09-07T09:02:35.262Z"
+    "outcome": "live",
+    "checkedAt": "2026-11-12T17:51:07.372Z"
   },
   {
     "sourceId": "SRC-062",
@@ -1391,7 +1388,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:02:39.269Z"
+    "checkedAt": "2026-11-12T17:51:11.782Z"
   },
   {
     "sourceId": "SRC-063",
@@ -1413,7 +1410,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "empty",
-    "checkedAt": "2026-09-07T09:02:39.433Z"
+    "checkedAt": "2026-11-12T17:51:11.993Z"
   },
   {
     "sourceId": "SRC-064",
@@ -1429,13 +1426,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "គ.ជ.អ.ប.",
-    "textLength": 31747,
+    "textLength": 30266,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:41.338Z"
+    "checkedAt": "2026-11-12T17:51:13.777Z"
   },
   {
     "sourceId": "SRC-065",
@@ -1451,7 +1448,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "គណៈកម្មាធិការសេដ្ឋកិច្ច និងធុរកិច្ចឌីជីថល - គ.ស.ធ.ឌ.",
-    "textLength": 3277,
+    "textLength": 8951,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -1461,7 +1458,7 @@
       "https://example.com/posts-sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:42.400Z"
+    "checkedAt": "2026-11-12T17:51:13.836Z"
   },
   {
     "sourceId": "SRC-066",
@@ -1483,7 +1480,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:43.457Z"
+    "checkedAt": "2026-11-12T17:51:16.014Z"
   },
   {
     "sourceId": "SRC-067",
@@ -1499,7 +1496,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "វិទ្យាស្ថានជាតិស្ថិតិ ( NIS ) – វិទ្យាស្ថានជាតិស្ថិតិ ( NIS )",
-    "textLength": 2354,
+    "textLength": 2353,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -1507,7 +1504,7 @@
       "https://nis.gov.kh/wp-sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:45.587Z"
+    "checkedAt": "2026-11-12T17:51:18.003Z"
   },
   {
     "sourceId": "SRC-068",
@@ -1523,13 +1520,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "រាជបណ្ឌិត្យសភាកម្ពុជា",
-    "textLength": 8916,
+    "textLength": 8779,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:47.444Z"
+    "checkedAt": "2026-11-12T17:51:18.823Z"
   },
   {
     "sourceId": "SRC-069",
@@ -1539,21 +1536,21 @@
     "url": "https://apsaraauthority.gov.kh",
     "priority": 2,
     "claimed": "directory",
-    "httpStatus": 200,
+    "httpStatus": 403,
     "finalUrl": "https://apsaraauthority.gov.kh/",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "Home - APSARA National Authority",
-    "textLength": 8390,
+    "homepageTitle": "",
+    "textLength": 0,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [
       "https://apsaraauthority.gov.kh/sitemap_index.xml"
     ],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:48.987Z"
+    "outcome": "dead",
+    "checkedAt": "2026-11-12T17:51:21.338Z"
   },
   {
     "sourceId": "SRC-070",
@@ -1569,13 +1566,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Home - National Authority For Preahvihear",
-    "textLength": 4094,
+    "textLength": 4146,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:49.802Z"
+    "checkedAt": "2026-11-12T17:51:21.880Z"
   },
   {
     "sourceId": "SRC-071",
@@ -1591,13 +1588,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ទំព័រដើម | អាជ្ញាធរមីន",
-    "textLength": 12024,
+    "textLength": 12057,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:50.426Z"
+    "checkedAt": "2026-11-12T17:51:22.270Z"
   },
   {
     "sourceId": "SRC-072",
@@ -1613,13 +1610,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "National Authority for Combating Drug",
-    "textLength": 2457,
+    "textLength": 2514,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:51.651Z"
+    "checkedAt": "2026-11-12T17:51:22.988Z"
   },
   {
     "sourceId": "SRC-073",
@@ -1641,7 +1638,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:02:51.742Z",
+    "checkedAt": "2026-11-12T17:51:25.447Z",
     "error": "fetch failed"
   },
   {
@@ -1652,19 +1649,20 @@
     "url": "https://pas.gov.kh",
     "priority": 3,
     "claimed": "unconfirmed",
-    "httpStatus": 200,
-    "finalUrl": "https://pas.gov.kh/",
+    "httpStatus": 0,
+    "finalUrl": "",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "ទំព័រដើម | កំពង់​ផែ​ស្វយ័ត​ក្រុងព្រះសីហនុ",
-    "textLength": 6175,
-    "robotsExists": true,
-    "robotsAllowsUs": true,
+    "homepageTitle": "",
+    "textLength": 0,
+    "robotsExists": false,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:54.874Z"
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:51:25.451Z",
+    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
     "sourceId": "SRC-075",
@@ -1674,21 +1672,21 @@
     "url": "https://akp.gov.kh",
     "priority": 1,
     "claimed": "search",
-    "httpStatus": 200,
-    "finalUrl": "https://akp.gov.kh/",
+    "httpStatus": 0,
+    "finalUrl": "",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "Agence Kampuchea Presse - AKP",
-    "textLength": 7462,
+    "homepageTitle": "",
+    "textLength": 0,
     "robotsExists": true,
-    "robotsAllowsUs": true,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
     "sitemapUrls": [
       "https://akp.gov.kh/sitemap.xml"
     ],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:55.782Z"
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:51:26.997Z"
   },
   {
     "sourceId": "SRC-076",
@@ -1710,7 +1708,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:56.062Z"
+    "checkedAt": "2026-11-12T17:51:27.332Z"
   },
   {
     "sourceId": "SRC-077",
@@ -1732,7 +1730,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "empty",
-    "checkedAt": "2026-09-07T09:02:59.728Z"
+    "checkedAt": "2026-11-12T17:51:27.523Z"
   },
   {
     "sourceId": "SRC-078",
@@ -1747,16 +1745,17 @@
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "Registration Services – Online Business Registration",
-    "textLength": 14478,
+    "homepageTitle": "ទំព័រដើម | Home",
+    "textLength": 14531,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [
-      "https://registrationservices.gov.kh/wp-sitemap.xml"
+      "https://registrationservices.gov.kh/sitemap.xml",
+      "https://registrationservices.gov.kh/sitemap.rss"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:02:59.873Z"
+    "checkedAt": "2026-11-12T17:51:27.638Z"
   },
   {
     "sourceId": "SRC-079",
@@ -1778,7 +1777,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:00.938Z"
+    "checkedAt": "2026-11-12T17:51:29.049Z"
   },
   {
     "sourceId": "SRC-080",
@@ -1800,7 +1799,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:03:01.003Z",
+    "checkedAt": "2026-11-12T17:51:31.724Z",
     "error": "fetch failed"
   },
   {
@@ -1823,7 +1822,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "empty",
-    "checkedAt": "2026-09-07T09:03:04.847Z",
+    "checkedAt": "2026-11-12T17:51:31.955Z",
     "softBlock": "robots.txt served a non-robots body; treated as absent"
   },
   {
@@ -1834,20 +1833,19 @@
     "url": "https://owp.tax.gov.kh",
     "priority": 2,
     "claimed": "directory",
-    "httpStatus": 0,
-    "finalUrl": "",
+    "httpStatus": 503,
+    "finalUrl": "https://owp.tax.gov.kh/",
     "redirected": false,
     "offHost": false,
     "https": true,
     "homepageTitle": "",
     "textLength": 0,
     "robotsExists": false,
-    "robotsAllowsUs": false,
+    "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
-    "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:05.147Z",
-    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
+    "outcome": "dead",
+    "checkedAt": "2026-11-12T17:51:32.475Z"
   },
   {
     "sourceId": "SRC-084",
@@ -1869,7 +1867,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:03:05.304Z",
+    "checkedAt": "2026-11-12T17:51:33.250Z",
     "error": "fetch failed"
   },
   {
@@ -1892,7 +1890,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:03:07.393Z",
+    "checkedAt": "2026-11-12T17:51:36.059Z",
     "error": "fetch failed"
   },
   {
@@ -1915,7 +1913,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "empty",
-    "checkedAt": "2026-09-07T09:03:08.998Z"
+    "checkedAt": "2026-11-12T17:51:48.181Z"
   },
   {
     "sourceId": "SRC-087",
@@ -1937,7 +1935,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:13.216Z"
+    "checkedAt": "2026-11-12T17:51:52.262Z"
   },
   {
     "sourceId": "SRC-088",
@@ -1959,7 +1957,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:14.687Z",
+    "checkedAt": "2026-11-12T17:51:54.277Z",
     "softBlock": "robots.txt refused with HTTP 403"
   },
   {
@@ -1982,7 +1980,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:15.231Z",
+    "checkedAt": "2026-11-12T17:51:55.497Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2026,7 +2024,7 @@
       "https://demo.battambang.gov.kh/sitemap_index.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:17.295Z"
+    "checkedAt": "2026-11-12T17:51:56.220Z"
   },
   {
     "sourceId": "SRC-091",
@@ -2048,7 +2046,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:19.442Z",
+    "checkedAt": "2026-11-12T17:51:57.577Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2065,13 +2063,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Home 1 - Kampong Cham Website",
-    "textLength": 3200,
+    "textLength": 3340,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:21.521Z"
+    "checkedAt": "2026-11-12T17:51:58.140Z"
   },
   {
     "sourceId": "SRC-093",
@@ -2081,40 +2079,20 @@
     "url": "https://kampongchhnang.gov.kh",
     "priority": 2,
     "claimed": "unconfirmed",
-    "httpStatus": 200,
-    "finalUrl": "https://kampongchhnang.gov.kh/",
+    "httpStatus": 0,
+    "finalUrl": "",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "Kampongchhnang Home Page (KM) - រដ្ឋបាលខេត្តកំពង់ឆ្នាំង",
-    "textLength": 6703,
-    "robotsExists": true,
-    "robotsAllowsUs": true,
+    "homepageTitle": "",
+    "textLength": 0,
+    "robotsExists": false,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
-    "sitemapUrls": [
-      "https://www.kampongchhnang.gov.kh/sitemap_index.xml",
-      "https://www.battambang.gov.kh/sitemap_index.xml",
-      "https://www.takeo.gov.kh/sitemap_index.xml",
-      "https://www.kampot.gov.kh/sitemap_index.xml",
-      "https://www.kratie.gov.kh/sitemap_index.xml",
-      "https://www.stungtreng.gov.kh/sitemap_index.xml",
-      "https://www.tboungkhmum.gov.kh/sitemap_index.xml",
-      "https://www.ratanakiri.gov.kh/sitemap_index.xml",
-      "https://www.preahvihear.gov.kh/sitemap_index.xml",
-      "https://www.mondulkiri.gov.kh/sitemap_index.xml",
-      "https://www.oddarmeanchey.gov.kh/sitemap_index.xml",
-      "https://www.pailin.gov.kh/sitemap_index.xml",
-      "https://www.pursat.gov.kh/sitemap_index.xml",
-      "https://siemreap.gov.kh/sitemap_index.xml",
-      "https://www.svayrieng.gov.kh/sitemap_index.xml",
-      "https://www.preyveng.gov.kh/sitemap_index.xml",
-      "https://www.banteaymeanchey.gov.kh/sitemap_index.xml",
-      "https://www.kandal.gov.kh/sitemap_index.xml",
-      "https://provincial.cambodia.gov.kh/sitemap_index.xml",
-      "https://demo.battambang.gov.kh/sitemap_index.xml"
-    ],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:23.894Z"
+    "sitemapUrls": [],
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:51:59.656Z",
+    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
     "sourceId": "SRC-094",
@@ -2136,7 +2114,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:25.719Z",
+    "checkedAt": "2026-11-12T17:52:01.752Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2159,7 +2137,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:26.090Z",
+    "checkedAt": "2026-11-12T17:52:02.276Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2170,40 +2148,20 @@
     "url": "https://kampot.gov.kh",
     "priority": 2,
     "claimed": "wikipedia",
-    "httpStatus": 200,
-    "finalUrl": "https://kampot.gov.kh/",
+    "httpStatus": 0,
+    "finalUrl": "",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "Kampot Home Page KM - រដ្ឋបាលខេត្តកំពត",
-    "textLength": 5091,
-    "robotsExists": true,
-    "robotsAllowsUs": true,
+    "homepageTitle": "",
+    "textLength": 0,
+    "robotsExists": false,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
-    "sitemapUrls": [
-      "https://www.kampot.gov.kh/sitemap_index.xml",
-      "https://www.battambang.gov.kh/sitemap_index.xml",
-      "https://www.takeo.gov.kh/sitemap_index.xml",
-      "https://www.kratie.gov.kh/sitemap_index.xml",
-      "https://www.kampongchhnang.gov.kh/sitemap_index.xml",
-      "https://www.stungtreng.gov.kh/sitemap_index.xml",
-      "https://www.tboungkhmum.gov.kh/sitemap_index.xml",
-      "https://www.ratanakiri.gov.kh/sitemap_index.xml",
-      "https://www.preahvihear.gov.kh/sitemap_index.xml",
-      "https://www.mondulkiri.gov.kh/sitemap_index.xml",
-      "https://www.oddarmeanchey.gov.kh/sitemap_index.xml",
-      "https://www.pailin.gov.kh/sitemap_index.xml",
-      "https://www.pursat.gov.kh/sitemap_index.xml",
-      "https://siemreap.gov.kh/sitemap_index.xml",
-      "https://www.svayrieng.gov.kh/sitemap_index.xml",
-      "https://www.preyveng.gov.kh/sitemap_index.xml",
-      "https://www.banteaymeanchey.gov.kh/sitemap_index.xml",
-      "https://www.kandal.gov.kh/sitemap_index.xml",
-      "https://provincial.cambodia.gov.kh/sitemap_index.xml",
-      "https://demo.battambang.gov.kh/sitemap_index.xml"
-    ],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:27.803Z"
+    "sitemapUrls": [],
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:52:03.869Z",
+    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
     "sourceId": "SRC-097",
@@ -2219,7 +2177,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Home Page រដ្ឋបាលខេត្តកណ្តាល - រដ្ឋបាលខេត្តកណ្តាល",
-    "textLength": 5055,
+    "textLength": 5051,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -2246,7 +2204,7 @@
       "https://demo.battambang.gov.kh/sitemap_index.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:28.056Z"
+    "checkedAt": "2026-11-12T17:52:04.397Z"
   },
   {
     "sourceId": "SRC-098",
@@ -2256,19 +2214,20 @@
     "url": "https://kohkong.gov.kh",
     "priority": 2,
     "claimed": "wikipedia",
-    "httpStatus": 200,
-    "finalUrl": "https://kohkong.gov.kh/",
+    "httpStatus": 0,
+    "finalUrl": "",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "Koh Kong Province — រដ្ឋបាលខេត្តកោះកុង",
-    "textLength": 7993,
+    "homepageTitle": "",
+    "textLength": 0,
     "robotsExists": false,
-    "robotsAllowsUs": true,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:28.171Z"
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:52:05.451Z",
+    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
     "sourceId": "SRC-099",
@@ -2290,7 +2249,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:30.045Z",
+    "checkedAt": "2026-11-12T17:52:05.987Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2313,7 +2272,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:30.081Z",
+    "checkedAt": "2026-11-12T17:52:07.533Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2336,7 +2295,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:32.094Z",
+    "checkedAt": "2026-11-12T17:52:08.062Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2359,7 +2318,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:32.172Z",
+    "checkedAt": "2026-11-12T17:52:09.598Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2382,7 +2341,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:32.672Z",
+    "checkedAt": "2026-11-12T17:52:10.145Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2405,7 +2364,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:34.000Z",
+    "checkedAt": "2026-11-12T17:52:11.069Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2428,7 +2387,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:34.138Z",
+    "checkedAt": "2026-11-12T17:52:11.680Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2451,7 +2410,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:34.243Z",
+    "checkedAt": "2026-11-12T17:52:12.220Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2474,7 +2433,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:34.316Z",
+    "checkedAt": "2026-11-12T17:52:13.152Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2497,7 +2456,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:34.732Z",
+    "checkedAt": "2026-11-12T17:52:13.761Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2520,7 +2479,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:36.087Z",
+    "checkedAt": "2026-11-12T17:52:14.274Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2543,7 +2502,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:36.207Z",
+    "checkedAt": "2026-11-12T17:52:15.209Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2566,7 +2525,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:36.319Z",
+    "checkedAt": "2026-11-12T17:52:15.842Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -2577,40 +2536,20 @@
     "url": "https://pailin.gov.kh",
     "priority": 2,
     "claimed": "unconfirmed",
-    "httpStatus": 200,
-    "finalUrl": "https://pailin.gov.kh/",
+    "httpStatus": 0,
+    "finalUrl": "",
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "Pailin Home Page (KM) - រដ្ឋបាលខេត្តប៉ៃលិន",
-    "textLength": 5052,
-    "robotsExists": true,
-    "robotsAllowsUs": true,
+    "homepageTitle": "",
+    "textLength": 0,
+    "robotsExists": false,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
-    "sitemapUrls": [
-      "https://www.pailin.gov.kh/sitemap_index.xml",
-      "https://www.battambang.gov.kh/sitemap_index.xml",
-      "https://www.takeo.gov.kh/sitemap_index.xml",
-      "https://www.kampot.gov.kh/sitemap_index.xml",
-      "https://www.kratie.gov.kh/sitemap_index.xml",
-      "https://www.kampongchhnang.gov.kh/sitemap_index.xml",
-      "https://www.stungtreng.gov.kh/sitemap_index.xml",
-      "https://www.tboungkhmum.gov.kh/sitemap_index.xml",
-      "https://www.ratanakiri.gov.kh/sitemap_index.xml",
-      "https://www.preahvihear.gov.kh/sitemap_index.xml",
-      "https://www.mondulkiri.gov.kh/sitemap_index.xml",
-      "https://www.oddarmeanchey.gov.kh/sitemap_index.xml",
-      "https://www.pursat.gov.kh/sitemap_index.xml",
-      "https://siemreap.gov.kh/sitemap_index.xml",
-      "https://www.svayrieng.gov.kh/sitemap_index.xml",
-      "https://www.preyveng.gov.kh/sitemap_index.xml",
-      "https://www.banteaymeanchey.gov.kh/sitemap_index.xml",
-      "https://www.kandal.gov.kh/sitemap_index.xml",
-      "https://provincial.cambodia.gov.kh/sitemap_index.xml",
-      "https://demo.battambang.gov.kh/sitemap_index.xml"
-    ],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:36.383Z"
+    "sitemapUrls": [],
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:52:16.325Z",
+    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
     "sourceId": "SRC-113",
@@ -2620,40 +2559,20 @@
     "url": "https://tboungkhmum.gov.kh",
     "priority": 2,
     "claimed": "wikipedia",
-    "httpStatus": 200,
-    "finalUrl": "https://www.tboungkhmum.gov.kh/",
-    "redirected": true,
+    "httpStatus": 0,
+    "finalUrl": "",
+    "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "Tboungkhmum Home Page KM - រដ្ឋបាលខេត្តត្បូងឃ្មុំ",
-    "textLength": 5220,
-    "robotsExists": true,
-    "robotsAllowsUs": true,
+    "homepageTitle": "",
+    "textLength": 0,
+    "robotsExists": false,
+    "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
-    "sitemapUrls": [
-      "https://www.tboungkhmum.gov.kh/sitemap_index.xml",
-      "https://www.battambang.gov.kh/sitemap_index.xml",
-      "https://www.takeo.gov.kh/sitemap_index.xml",
-      "https://www.kampot.gov.kh/sitemap_index.xml",
-      "https://www.kratie.gov.kh/sitemap_index.xml",
-      "https://www.kampongchhnang.gov.kh/sitemap_index.xml",
-      "https://www.stungtreng.gov.kh/sitemap_index.xml",
-      "https://www.ratanakiri.gov.kh/sitemap_index.xml",
-      "https://www.preahvihear.gov.kh/sitemap_index.xml",
-      "https://www.mondulkiri.gov.kh/sitemap_index.xml",
-      "https://www.oddarmeanchey.gov.kh/sitemap_index.xml",
-      "https://www.pailin.gov.kh/sitemap_index.xml",
-      "https://www.pursat.gov.kh/sitemap_index.xml",
-      "https://siemreap.gov.kh/sitemap_index.xml",
-      "https://www.svayrieng.gov.kh/sitemap_index.xml",
-      "https://www.preyveng.gov.kh/sitemap_index.xml",
-      "https://www.banteaymeanchey.gov.kh/sitemap_index.xml",
-      "https://www.kandal.gov.kh/sitemap_index.xml",
-      "https://provincial.cambodia.gov.kh/sitemap_index.xml",
-      "https://demo.battambang.gov.kh/sitemap_index.xml"
-    ],
-    "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:36.822Z"
+    "sitemapUrls": [],
+    "outcome": "blocked",
+    "checkedAt": "2026-11-12T17:52:17.289Z",
+    "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
     "sourceId": "SRC-114",
@@ -2668,14 +2587,14 @@
     "redirected": false,
     "offHost": false,
     "https": true,
-    "homepageTitle": "RUPP",
-    "textLength": 16071,
-    "robotsExists": true,
+    "homepageTitle": "Royal University of Phnom Penh (RUPP)",
+    "textLength": 16898,
+    "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:38.165Z"
+    "checkedAt": "2026-11-12T17:52:17.955Z"
   },
   {
     "sourceId": "SRC-115",
@@ -2691,7 +2610,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "INSTITUTE OF TECHNOLOGY OF CAMBODIA – សាលាតិចណូ",
-    "textLength": 9752,
+    "textLength": 9878,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -2699,7 +2618,7 @@
       "https://itc.edu.kh/wp-sitemap.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:38.263Z"
+    "checkedAt": "2026-11-12T17:52:18.495Z"
   },
   {
     "sourceId": "SRC-116",
@@ -2714,14 +2633,14 @@
     "redirected": true,
     "offHost": true,
     "https": true,
-    "homepageTitle": "NUM – National University of Management",
-    "textLength": 9917,
+    "homepageTitle": "សាកលវិទ្យាល័យជាតិគ្រប់គ្រង (NUM) – National University of Management",
+    "textLength": 14694,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "redirect",
-    "checkedAt": "2026-09-07T09:03:38.405Z"
+    "checkedAt": "2026-11-12T17:52:19.461Z"
   },
   {
     "sourceId": "SRC-117",
@@ -2737,13 +2656,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Royal University of Agriculture",
-    "textLength": 13359,
+    "textLength": 13844,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:42.584Z"
+    "checkedAt": "2026-11-12T17:52:22.070Z"
   },
   {
     "sourceId": "SRC-118",
@@ -2759,13 +2678,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Home - Royal University of Law and Economics",
-    "textLength": 3964,
+    "textLength": 4530,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:42.697Z",
+    "checkedAt": "2026-11-12T17:52:22.926Z",
     "softBlock": "robots.txt served a non-robots body; treated as absent"
   },
   {
@@ -2782,13 +2701,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "UHS WEBSITE",
-    "textLength": 6988,
+    "textLength": 7009,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 10000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:42.807Z"
+    "checkedAt": "2026-11-12T17:52:24.212Z"
   },
   {
     "sourceId": "SRC-120",
@@ -2805,13 +2724,12 @@
     "https": true,
     "homepageTitle": "",
     "textLength": 0,
-    "robotsExists": false,
+    "robotsExists": true,
     "robotsAllowsUs": false,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:44.109Z",
-    "softBlock": "robots.txt refused with HTTP 403"
+    "checkedAt": "2026-11-12T17:52:26.383Z"
   },
   {
     "sourceId": "SRC-121",
@@ -2833,7 +2751,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:03:45.547Z",
+    "checkedAt": "2026-11-12T17:52:26.563Z",
     "error": "fetch failed"
   },
   {
@@ -2850,7 +2768,7 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "CADT - Cambodia Academy of Digital Technology",
-    "textLength": 6448,
+    "textLength": 6186,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
@@ -2858,7 +2776,7 @@
       "https://cadt.edu.kh/sitemap_index.xml"
     ],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:46.171Z"
+    "checkedAt": "2026-11-12T17:52:27.490Z"
   },
   {
     "sourceId": "SRC-123",
@@ -2880,7 +2798,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:03:47.120Z",
+    "checkedAt": "2026-11-12T17:52:28.451Z",
     "softBlock": "robots.txt refused with HTTP 403"
   },
   {
@@ -2897,13 +2815,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "National Technical Training Institute",
-    "textLength": 8578,
+    "textLength": 8732,
     "robotsExists": false,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:48.279Z"
+    "checkedAt": "2026-11-12T17:52:30.549Z"
   },
   {
     "sourceId": "SRC-125",
@@ -2919,13 +2837,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "Calmette Hospital | University Hospital in Cambodia",
-    "textLength": 7704,
+    "textLength": 15191,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:49.326Z"
+    "checkedAt": "2026-11-12T17:52:33.135Z"
   },
   {
     "sourceId": "SRC-126",
@@ -2947,7 +2865,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:03:52.566Z",
+    "checkedAt": "2026-11-12T17:52:34.883Z",
     "error": "fetch failed"
   },
   {
@@ -2970,7 +2888,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:03:52.579Z",
+    "checkedAt": "2026-11-12T17:52:37.196Z",
     "error": "fetch failed"
   },
   {
@@ -2993,7 +2911,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:03:55.923Z",
+    "checkedAt": "2026-11-12T17:52:38.872Z",
     "error": "fetch failed"
   },
   {
@@ -3010,15 +2928,13 @@
     "offHost": false,
     "https": true,
     "homepageTitle": "ទំព័រដើម - មជ្ឈមណ្ឌលជាតិគាំពារមាតា និងទារក",
-    "textLength": 3323,
+    "textLength": 3279,
     "robotsExists": true,
     "robotsAllowsUs": true,
     "crawlDelayMs": 2000,
-    "sitemapUrls": [
-      "https://nmchc.gov.kh/sitemap_index.xml"
-    ],
+    "sitemapUrls": [],
     "outcome": "live",
-    "checkedAt": "2026-09-07T09:03:56.578Z"
+    "checkedAt": "2026-11-12T17:52:48.994Z"
   },
   {
     "sourceId": "SRC-130",
@@ -3040,7 +2956,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "dead",
-    "checkedAt": "2026-09-07T09:04:01.207Z",
+    "checkedAt": "2026-11-12T17:52:53.514Z",
     "error": "fetch failed"
   },
   {
@@ -3063,7 +2979,7 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "blocked",
-    "checkedAt": "2026-09-07T09:04:08.152Z",
+    "checkedAt": "2026-11-12T17:53:25.278Z",
     "softBlock": "robots.txt returned a WAF page (F5 BIG-IP ASM rejection page)"
   },
   {
@@ -3086,7 +3002,121 @@
     "crawlDelayMs": 2000,
     "sitemapUrls": [],
     "outcome": "empty",
-    "checkedAt": "2026-09-07T09:04:10.224Z",
+    "checkedAt": "2026-11-12T17:53:27.363Z",
+    "softBlock": "robots.txt served a non-robots body; treated as absent"
+  },
+  {
+    "sourceId": "SRC-133",
+    "registryId": 133,
+    "org": "Business Registration (MoC)",
+    "host": "businessregistration.moc.gov.kh",
+    "url": "https://businessregistration.moc.gov.kh",
+    "priority": 2,
+    "claimed": "search",
+    "httpStatus": 200,
+    "finalUrl": "https://businessregistration.moc.gov.kh/kh",
+    "redirected": true,
+    "offHost": false,
+    "https": true,
+    "homepageTitle": "Business Registration",
+    "textLength": 2311,
+    "robotsExists": false,
+    "robotsAllowsUs": true,
+    "crawlDelayMs": 2000,
+    "sitemapUrls": [],
+    "outcome": "live",
+    "checkedAt": "2026-11-12T17:53:31.386Z"
+  },
+  {
+    "sourceId": "SRC-134",
+    "registryId": 134,
+    "org": "Commercial Gambling Management Commission of Cambodia",
+    "host": "cgmc.gov.kh",
+    "url": "https://cgmc.gov.kh",
+    "priority": 3,
+    "claimed": "search",
+    "httpStatus": 0,
+    "finalUrl": "https://cgmc.gov.kh",
+    "redirected": false,
+    "offHost": false,
+    "https": true,
+    "homepageTitle": "",
+    "textLength": 0,
+    "robotsExists": false,
+    "robotsAllowsUs": true,
+    "crawlDelayMs": 2000,
+    "sitemapUrls": [],
+    "outcome": "dead",
+    "checkedAt": "2026-11-12T17:53:35.759Z",
+    "error": "fetch failed"
+  },
+  {
+    "sourceId": "SRC-135",
+    "registryId": 135,
+    "org": "Cambodia Community Tech Center",
+    "host": "ctc.edu.kh",
+    "url": "https://ctc.edu.kh",
+    "priority": 3,
+    "claimed": "search",
+    "httpStatus": 200,
+    "finalUrl": "https://ctc.edu.kh/",
+    "redirected": false,
+    "offHost": false,
+    "https": true,
+    "homepageTitle": "",
+    "textLength": 0,
+    "robotsExists": true,
+    "robotsAllowsUs": true,
+    "crawlDelayMs": 2000,
+    "sitemapUrls": [
+      "https://ctc.edu.kh/sitemap-index.xml"
+    ],
+    "outcome": "empty",
+    "checkedAt": "2026-11-12T17:53:58.293Z"
+  },
+  {
+    "sourceId": "SRC-136",
+    "registryId": 136,
+    "org": "Education Licence and Permit System (DELP, MoEYS)",
+    "host": "delp.moeys.gov.kh",
+    "url": "https://delp.moeys.gov.kh",
+    "priority": 3,
+    "claimed": "search",
+    "httpStatus": 200,
+    "finalUrl": "https://delp.moeys.gov.kh/",
+    "redirected": false,
+    "offHost": false,
+    "https": true,
+    "homepageTitle": "| MoEYS",
+    "textLength": 7,
+    "robotsExists": false,
+    "robotsAllowsUs": true,
+    "crawlDelayMs": 2000,
+    "sitemapUrls": [],
+    "outcome": "empty",
+    "checkedAt": "2026-11-12T17:54:02.781Z"
+  },
+  {
+    "sourceId": "SRC-137",
+    "registryId": 137,
+    "org": "QIP Registration (CDC)",
+    "host": "qip.cdc.gov.kh",
+    "url": "https://qip.cdc.gov.kh",
+    "priority": 3,
+    "claimed": "search",
+    "httpStatus": 200,
+    "finalUrl": "https://ipm.cdc.gov.kh/landing",
+    "redirected": true,
+    "offHost": true,
+    "https": true,
+    "homepageTitle": "cdcIPM | ប្រព័ន្ធគ្រប់គ្រងគម្រោងវិនិយោគកម្ពុជា",
+    "textLength": 46,
+    "robotsExists": false,
+    "robotsAllowsUs": true,
+    "crawlDelayMs": 2000,
+    "sitemapUrls": [],
+    "outcome": "redirect",
+    "checkedAt": "2026-11-12T17:54:06.802Z",
     "softBlock": "robots.txt served a non-robots body; treated as absent"
   }
 ]

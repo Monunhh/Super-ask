@@ -1,0 +1,273 @@
+{
+  "_note": "Crawled material, not steward-approved. Not read by SuperAsk retrieval (see data/README.md).",
+  "institution": {
+    "name": "The King of the Kingdom of Cambodia",
+    "onOfficialList": false,
+    "order": null
+  },
+  "source": {
+    "id": "SRC-004",
+    "registryId": 4,
+    "organization": "The King of the Kingdom of Cambodia",
+    "organizationKm": "ព្រះមហាក្សត្រ នៃព្រះរាជាណាចក្រកម្ពុជា",
+    "abbreviation": null,
+    "category": "Constitutional Body",
+    "parentMinistry": null,
+    "url": "https://norodomsihamoni.org",
+    "host": "norodomsihamoni.org",
+    "priority": 3,
+    "provenance": "directory",
+    "notes": "Royal household site, not .gov.kh. Listed in official GDT directory."
+  },
+  "reachability": {
+    "outcome": "live",
+    "httpStatus": 200,
+    "homepageTitle": "His Majesty King Norodom Sihamoni - Home",
+    "checkedAt": "2026-11-12T17:47:40.134Z"
+  },
+  "crawl": {
+    "pageCount": 10,
+    "documentLinks": 0,
+    "firstFetched": "2026-11-12T17:59:55.819Z",
+    "lastFetched": "2026-11-12T18:00:13.020Z",
+    "builtAt": "2026-11-12T18:30:47.313Z"
+  },
+  "chrome": [
+    "His Majesty King Norodom Sihamoni - Home O f f i c i a l W e b s i t e x ទំព័រដើម ព្រះរាជសកម្មភាព ព្រះរាជជីវប្រវត្តិ ព្រះរាជសារ សង្គមកិច្ច វីដេអូ Royal Cabinet @2013 - 2026, All Rights Reserved. អំពីយើងខ្ញុំ Visitor:",
+    "This site requires Khmer Unicode. Please click here to download . Ce site requiert la Khmer Unicode. Cliquez ici pour télécharger .",
+    "2014 2013 2012 2011 2010 2009 2008 2007 2006"
+  ],
+  "pages": [
+    {
+      "url": "https://norodomsihamoni.org",
+      "title": "His Majesty King Norodom Sihamoni - Home",
+      "fetchedAt": "2026-11-12T17:59:55.819Z",
+      "sha256": "4d48e891dd265e21dcb7372f51281b010bf3f8e1e4633cd82365b431f7c448e4",
+      "rawPath": "data/crawl/raw/SRC-004/d6d3f2001518b69a-4d48e891dd26.html",
+      "textLength": 8,
+      "text": "23910681",
+      "links": [
+        "https://norodomsihamoni.org/fr/",
+        "https://norodomsihamoni.org/en/",
+        "https://norodomsihamoni.org/kh/news",
+        "https://norodomsihamoni.org/kh/biography",
+        "https://norodomsihamoni.org/kh/correspondance",
+        "https://norodomsihamoni.org/kh/social",
+        "https://norodomsihamoni.org/kh/video",
+        "https://norodomsihamoni.org/kh/about"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://norodomsihamoni.org/en/",
+      "title": "His Majesty King Norodom Sihamoni - Home",
+      "fetchedAt": "2026-11-12T17:59:58.933Z",
+      "sha256": "455b6f3fa973396247f4ad746961c9e4886fb724fb1770e1d0dbb41ebaaad9e8",
+      "rawPath": "data/crawl/raw/SRC-004/551d02545e8819fb-455b6f3fa973.html",
+      "textLength": 95,
+      "text": "Home Royal Activities Biography Correspondance Social Activity Video About us Visitor: 23910684",
+      "links": [
+        "https://norodomsihamoni.org/kh/",
+        "https://norodomsihamoni.org/fr/",
+        "https://norodomsihamoni.org/en/news",
+        "https://norodomsihamoni.org/en/biography",
+        "https://norodomsihamoni.org/en/correspondance",
+        "https://norodomsihamoni.org/en/social",
+        "https://norodomsihamoni.org/en/video",
+        "https://norodomsihamoni.org/en/about"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://norodomsihamoni.org/fr/",
+      "title": "His Majesty King Norodom Sihamoni - Home",
+      "fetchedAt": "2026-11-12T17:59:56.970Z",
+      "sha256": "b08516e312a9f646482bdcc2273a12ba4224f82b94d55820021322c363989311",
+      "rawPath": "data/crawl/raw/SRC-004/340cf09a99dc1545-b08516e312a9.html",
+      "textLength": 123,
+      "text": "Accueil Activit&eacute;s Royales Biographie Correspondance Activit&eacute; Sociales Video Qui sommes-nous Visitor: 23910682",
+      "links": [
+        "https://norodomsihamoni.org/kh/",
+        "https://norodomsihamoni.org/en/",
+        "https://norodomsihamoni.org/fr/news",
+        "https://norodomsihamoni.org/fr/biography",
+        "https://norodomsihamoni.org/fr/correspondance",
+        "https://norodomsihamoni.org/fr/social",
+        "https://norodomsihamoni.org/fr/video",
+        "https://norodomsihamoni.org/fr/about"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://norodomsihamoni.org/kh/",
+      "title": "His Majesty King Norodom Sihamoni - Home",
+      "fetchedAt": "2026-11-12T18:00:13.020Z",
+      "sha256": "f1f7c7bf38d7641e6268acf4c4fcd98dea2455ffd05b8fcd9e05036f26e94286",
+      "rawPath": "data/crawl/raw/SRC-004/08a5a9825da836a2-f1f7c7bf38d7.html",
+      "textLength": 8,
+      "text": "23910693",
+      "links": [
+        "https://norodomsihamoni.org/fr/",
+        "https://norodomsihamoni.org/en/",
+        "https://norodomsihamoni.org/kh/news",
+        "https://norodomsihamoni.org/kh/biography",
+        "https://norodomsihamoni.org/kh/correspondance",
+        "https://norodomsihamoni.org/kh/social",
+        "https://norodomsihamoni.org/kh/video",
+        "https://norodomsihamoni.org/kh/about"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://norodomsihamoni.org/kh/about",
+      "title": "His Majesty King Norodom Sihamoni - About",
+      "fetchedAt": "2026-11-12T18:00:11.012Z",
+      "sha256": "9200f90ec3a23d0a39ce16093154cbef53dd6beb993c770c33c2f8d89cf87ed4",
+      "rawPath": "data/crawl/raw/SRC-004/5b8f56ccb11f7a76-9200f90ec3a2.html",
+      "textLength": 863,
+      "text": "About អំពីគេហទំព័រនេះ នេះជាវេបសាយផ្លូវការនៃព្រះករុណាព្រះបាទសម្តេចព្រះបរមនាថ នរោត្ត សីហមុនី ព្រះមហាក្សត្រ នៃព្រះរាជាណាចក្រកម្ពុជា គ្រប់គ្រងដោយព្រះរាជខុទ្ធកាល័យព្រះមហាក្សត្រ ដែលមានរចនាសម្ព័ន្ធដូចខាងក្រោម៖ ព័ត៌មាន : មានបញ្ចូលថែមនូវព្រះរាជសកម្មភាពប្រចាំថ្ងៃបង្ហាញនៅក្នុងផ្នែកនេះ ព្រះរាជជីវប្រវត្តិ : មានអត្ថបទ និង ព្រះឆាយាលក្ខណ៏នៃព្រះមហាក្សត្រ ព្រះរាជសារ : ព្រះរាជសារផ្លូវការ នៃព្រះមហាក្សត្រត្រូវបានបង្ហាញនៅក្នុងផ្នែកនេះ សង្គមកិច្ច : មានបញ្ចូលថែមនូវព្រះរាជសកម្មភាពសង្គមកិច្ច និង មនុស្សធម៏នៃព្រះមហាក្សត្រ ភាពយន្តឯកសារ : ព្រះរាជសកម្មភាពសំខាន់ៗនៃព្រះមហាក្សត្រ នឹងមានបង្ហាញនៅក្នុងផ្នែកនេះ ៕ ព័ត៌មានបន្ថែម សូមទំនាក់ទំនងព្រះរាជខុទ្ធកាល័យព្រះមហាក្សត្រៈ អាសយដ្ឋានៈ ព្រះបរមរាជវាំង ទូរស័ព្វៈ ០២៣ ៤២៦ ៨០១ វេបសាយនេះត្រូវបានអភិវឌ្ឍន៏ឡើងវិញដោយ ITEC Technology #16E0, St. 215, សង្កាត់ មិត្តភាព ខណ្ឌ ៧មករា, ភ្នំពេញ. ទូរស័ព្ទៈ ០១៦ ២២ ២៥ ២៨ អី៊មែ៉លៈ [email protected] Visitor: 23910692",
+      "links": [
+        "https://norodomsihamoni.org/kh/news",
+        "https://norodomsihamoni.org/kh/biography",
+        "https://norodomsihamoni.org/kh/correspondance",
+        "https://norodomsihamoni.org/kh/social",
+        "https://norodomsihamoni.org/kh/video",
+        "https://norodomsihamoni.org/cdn-cgi/l/email-protection",
+        "https://norodomsihamoni.org/fr/about",
+        "https://norodomsihamoni.org/en/about",
+        "https://norodomsihamoni.org/kh/home"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://norodomsihamoni.org/kh/biography",
+      "title": "His Majesty King Norodom Sihamoni - Biography",
+      "fetchedAt": "2026-11-12T18:00:04.762Z",
+      "sha256": "4cd59b5d3b4513d4c6c5ecd737b3b29c1e63d0d6d3d97e3d592a0c2e41f23a6f",
+      "rawPath": "data/crawl/raw/SRC-004/cf5b4a2f6eb203da-4cd59b5d3b45.html",
+      "textLength": 18,
+      "text": "Biography 23910687",
+      "links": [
+        "https://norodomsihamoni.org/fr/biography",
+        "https://norodomsihamoni.org/en/biography",
+        "https://norodomsihamoni.org/kh/home",
+        "https://norodomsihamoni.org/kh/news",
+        "https://norodomsihamoni.org/kh/correspondance",
+        "https://norodomsihamoni.org/kh/social",
+        "https://norodomsihamoni.org/kh/video",
+        "https://norodomsihamoni.org/kh/about"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://norodomsihamoni.org/kh/correspondance",
+      "title": "His Majesty King Norodom Sihamoni - Correspondance",
+      "fetchedAt": "2026-11-12T18:00:05.162Z",
+      "sha256": "46334cd8b816fdd930841d48bb43f5f58fc23a550a808e7dc8301f09fb08d3cd",
+      "rawPath": "data/crawl/raw/SRC-004/54fe1c065e4e3941-46334cd8b816.html",
+      "textLength": 892,
+      "text": "Correspondance មករា កុម្ភៈ មីនា មេសា ឧសភា មិថុនា កក្កដា សីហា កញ្ញា តុលា វិច្ឆិកា ធ្នូ 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2005 ព្រះរាជសារ » វិច្ឆិកា - 2026 ព្រះរាជសារផ្ញើជូន ឯកឧត្តម JOÃO MANUEL GONÇALVES LOURENÇO ប្រធានាធិបតីនៃសាធារណរដ្ឋអង់ហ្គោឡា ព្រះរាជសារផ្ញើថ្វាយព្រះករុណាព្រះបាទ CARL GUSTAF ព្រះមហាក្សត្រនៃប្រទេសសុ៊យអែ៊ត ព្រះរាជសារផ្ញើជូន ឯកឧត្តម LEE JAE-MYUNG ប្រធានាធិបតីនៃសាធារណរដ្ឋកូរេ៉ ព្រះរាជសារផ្ញើថ្វាយ NARUHITO ព្រះចៅអធិរាជជបុ៉ន ព្រះរាជសារផ្ញើជូន ឯកឧត្តមបណ្ឌិត FRANK-WALTER STEINMEIER ប្រធានាធិបតីនៃសាធារណរដ្ឋសហព័ន្ធអាល្លឺម៉ង់ ព្រះរាជសារផ្ញើជូន ឯកឧត្តមបណ្ឌិត Kao Kim Hourn អគ្គលេខាធិការអាសា៊ន ព្រះរាជសារផ្ញើជូនឯកឧត្តម ឆាំង យុ ឯកអគ្គរាជទូតអមព្រះរាជខុទ្ទកាល័យព្រះមហាក្សត្រ , នាយកប្រតិបត្តិនៃព្រះរាជបណ្ណាល័យហ្លួងមែ៉ និង មជ្ឈមណ្ឌលឯកសារកម្ពុជា ព្រះរាជសារផ្ញើជូន ឯកឧត្តម JOÃO MANUEL GONÇALVES LOURENÇO ប្រធានាធិបតីនៃសាធារណរដ្ឋអង់ហ្គោឡា 2026-11-06 ទាញយក 23910689",
+      "links": [
+        "https://norodomsihamoni.org/kh/correspondance/2026-1",
+        "https://norodomsihamoni.org/kh/correspondance/2026-2",
+        "https://norodomsihamoni.org/kh/correspondance/2026-3",
+        "https://norodomsihamoni.org/kh/correspondance/2026-4",
+        "https://norodomsihamoni.org/kh/correspondance/2026-5",
+        "https://norodomsihamoni.org/kh/correspondance/2026-6",
+        "https://norodomsihamoni.org/kh/correspondance/2026-7",
+        "https://norodomsihamoni.org/kh/correspondance/2026-8",
+        "https://norodomsihamoni.org/kh/correspondance/2026-9",
+        "https://norodomsihamoni.org/kh/correspondance/2026-10",
+        "https://norodomsihamoni.org/kh/correspondance/2026-11-05_6",
+        "https://norodomsihamoni.org/kh/correspondance/2026-11-05_5",
+        "https://norodomsihamoni.org/kh/correspondance/2026-11-05_4",
+        "https://norodomsihamoni.org/kh/correspondance/2026-11-05_3",
+        "https://norodomsihamoni.org/kh/correspondance/2026-11-05_2",
+        "https://norodomsihamoni.org/kh/correspondance/2026-11-05_1",
+        "https://norodomsihamoni.org/download.php",
+        "https://norodomsihamoni.org/fr/correspondance",
+        "https://norodomsihamoni.org/en/correspondance",
+        "https://norodomsihamoni.org/kh/home",
+        "https://norodomsihamoni.org/kh/news",
+        "https://norodomsihamoni.org/kh/biography",
+        "https://norodomsihamoni.org/kh/social",
+        "https://norodomsihamoni.org/kh/video",
+        "https://norodomsihamoni.org/kh/about"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://norodomsihamoni.org/kh/news",
+      "title": "His Majesty King Norodom Sihamoni - News",
+      "fetchedAt": "2026-11-12T18:00:01.027Z",
+      "sha256": "ac913ea673174b8e45dc2f76223b7ccd4bf56b639559db596376f700c85a795c",
+      "rawPath": "data/crawl/raw/SRC-004/24040b7246e0eb20-ac913ea67317.html",
+      "textLength": 887,
+      "text": "News ឯកអគ្គរដ្ឋទូតនៃសាធារណរដ្ឋហ្វីលីពីន ថ្វាយសារតាំង 2026-10-21 នៅវេលាព្រឹក ថ្ងៃទី ២១ ខែ តុលា ឆ្នាំ ២០២៦ ព្រះករុណាព្រះបាទ សម្តេចព្រះបរមនាថ នរោត្តម សីហមុនី ព្រះមហាក្សត្រនៃព្រះរាជាណាចក្រកម្ពុជា ជាទីគោរពសក្ការ:ដ៏ខ្ពង់ខ្ពស់បំផុត សព្វព្រះរាជហឬទ័យប្រោសព្រះរាជទាន ឯកឧត្តម Senen T. Mangalile ឯកអគ្គរដ្ឋទូតវិសាមញ្ញ និងពេញសមត្ថភាពតែងតាំងថ្មី នៃសាធារណរដ្ឋហ្វីលីពីន ប្រចាំព្រះរាជាណាចក្រកម្ពុជា អញ្ជើញចូលក្រាបបង្គំគាល់ថ្វាយសារតាំង នៅព្រះទីនាំងទេវាវិនិច្ឆ័យ។ មករា កុម្ភៈ មីនា មេសា ឧសភា មិថុនា កក្កដា សីហា កញ្ញា តុលា វិច្ឆិកា ធ្នូ 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2005 1/ 8 1 2 3 4 5 6 7 8 ព្រះរាជសកម្មភាព » តុលា - 2026 ឯកអគ្គរដ្ឋទូតនៃសាធារណរដ្ឋហ្វីលីពីន ថ្វាយសារតាំង ឯកឧត្តមបណ្ឌិត Gordan Grlić Radman ថ្វាយបង្គំគាល់ ឯកអគ្គរាជទូតនៃប្រទេសជបុ៉ន ថ្វាយសារតាំង ព្រះរាជពិធីចាក់ទឹកដូង និងរៀបតង្វាយ ថ្វាយព្រះបិតរ ឯកឧត្តម Le Minh Hung ថ្វាយបង្គំគាល់ ព្រះរាជពិធីបុណ្យកាន់បិណ្ឌ 23910686",
+      "links": [
+        "https://norodomsihamoni.org/kh/news/2026-1",
+        "https://norodomsihamoni.org/kh/news/2026-2",
+        "https://norodomsihamoni.org/kh/news/2026-7",
+        "https://norodomsihamoni.org/kh/news/2026-8",
+        "https://norodomsihamoni.org/kh/news/2026-10-19_1",
+        "https://norodomsihamoni.org/kh/news/2026-10-16_1",
+        "https://norodomsihamoni.org/kh/news/2026-10-10_2",
+        "https://norodomsihamoni.org/kh/news/2026-10-10_1",
+        "https://norodomsihamoni.org/kh/news/2026-10-09_1",
+        "https://norodomsihamoni.org/fr/news",
+        "https://norodomsihamoni.org/en/news",
+        "https://norodomsihamoni.org/kh/home",
+        "https://norodomsihamoni.org/kh/biography",
+        "https://norodomsihamoni.org/kh/correspondance",
+        "https://norodomsihamoni.org/kh/social",
+        "https://norodomsihamoni.org/kh/video",
+        "https://norodomsihamoni.org/kh/about"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://norodomsihamoni.org/kh/social",
+      "title": "His Majesty King Norodom Sihamoni - Social Activity",
+      "fetchedAt": "2026-11-12T18:00:07.602Z",
+      "sha256": "1698a6ce725e15b0fe1c64cd50f05760c4b66e1e6f6089cf95a2d899611fa84d",
+      "rawPath": "data/crawl/raw/SRC-004/5ba2c9b447b7f318-1698a6ce725e.html",
+      "textLength": 1006,
+      "text": "Social Activity ការចុះពិនិត្យ សកម្មភាពបូមទឹក ស្រោចស្រពសង្គ្រោះស្រូវស្រែប្រាំង នៅ ស្រុកពញឭ ខេត្តកណ្តាល 2014-04-25 យោងតាមព្រះរាជតំរិះដ៏ខ្ពង់ខ្ពស់បំផុតរបស់ ព្រះករុណាព្រះបាទ សម្តេចព្រះបរមនាថ នរោត្តម សីហមុនី ព្រះមហាក្សត្រ នៃព្រះរាជាណាចក្រកម្ពុជា ជាទីគោរពសក្ការ:ដ៏ខ្ពង់ខ្ពស់បំផុត សម្តេចចៅហ្វាវាំង គង់ សំអុល ឧបនាយករដ្ឋមន្រ្តី និងជារដ្ឋមន្រ្តីក្រសួងព្រះបរមរាជវាំង បានអញ្ជើញចុះទៅពិនិត្យសកម្មភាព បូមទឹក ស្រោចស្រពសង្គ្រោះស្រូវស្រែប្រាំងជួបប្រទះរាំងស្ងួត នៅក្នុងភូមិ ថ្មស និងភូមិកំពង់ក្រសាំង ឃុំភ្នំបាតស្រុកពញឭ ខេត្តកណ្តាល (ដោយប្រើប្រាសមា៉សី៊នបូមទឹកចំនួន ០៥គ្រឿងបូមស្រោចស្រពសម្រេចបានលើផ្ទៃដី ចំនួន ៣៩៣.២០ហ.ត)។ មករា កុម្ភៈ មីនា មេសា ឧសភា មិថុនា កក្កដា សីហា កញ្ញា តុលា វិច្ឆិកា ធ្នូ 2005 2004 1/ 12 1 2 3 4 5 6 7 8 9 10 11 12 សង្គមកិច្ច » 2014 ការចុះពិនិត្យ សកម្មភាពបូមទឹក ស្រោចស្រពសង្គ្រោះស្រូវស្រែប្រាំង នៅ ស្រុកពញឭ ខេត្តកណ្តាល ការចុះពិនិត្យ សកម្មភាពបូមទឹក ស្រោចស្រពសង្គ្រោះស្រូវស្រែប្រាំង នៅ ស្រុករលាប្អៀរ ខេត្តកំពង់ឆ្នាំង ការចុះពិនិត្យ សកម្មភាពបូមទឹក ស្រោចស្រពសង្គ្រោះស្រូវស្រែប្រាំង នៅ ស្រុកបាទី ខេត្តតាកែវ 23910690",
+      "links": [
+        "https://norodomsihamoni.org/kh/social/2014-9",
+        "https://norodomsihamoni.org/kh/social/2014-04-25_2",
+        "https://norodomsihamoni.org/kh/social/2014-04-25_1",
+        "https://norodomsihamoni.org/fr/social",
+        "https://norodomsihamoni.org/en/social",
+        "https://norodomsihamoni.org/kh/home",
+        "https://norodomsihamoni.org/kh/news",
+        "https://norodomsihamoni.org/kh/biography",
+        "https://norodomsihamoni.org/kh/correspondance",
+        "https://norodomsihamoni.org/kh/video",
+        "https://norodomsihamoni.org/kh/about"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://norodomsihamoni.org/kh/video",
+      "title": "His Majesty King Norodom Sihamoni - Video",
+      "fetchedAt": "2026-11-12T18:00:09.052Z",
+      "sha256": "cf3f60edca759cc0dce805cddceec979e31b52b85156eb01abac6b93808848a1",
+      "rawPath": "data/crawl/raw/SRC-004/e3352ee450d14699-cf3f60edca75.html",
+      "textLength": 209,
+      "text": "Video វីដេអូ » 2014 Date Title 2014-09-04 ព្រះរាជពិធីតម្កល់ព្រះបរមអដ្ឋិព្រះបរមរតនកោដ្ឋ 2014-09-04 ព្រះរាជពិធីដង្ហែព្រះបរមអដ្ឋិ ព្រះបរមរតនកោដ្ឋ 2014-06-17 ព្រះរាជសកម្មភាពសំខាន់ៗរយ:ពេលមួយឆ្នាំ ២០១៣-២០១៤ 23910691",
+      "links": [
+        "https://norodomsihamoni.org/download.php",
+        "https://norodomsihamoni.org/fr/video",
+        "https://norodomsihamoni.org/en/video",
+        "https://norodomsihamoni.org/kh/home",
+        "https://norodomsihamoni.org/kh/news",
+        "https://norodomsihamoni.org/kh/biography",
+        "https://norodomsihamoni.org/kh/correspondance",
+        "https://norodomsihamoni.org/kh/social",
+        "https://norodomsihamoni.org/kh/about"
+      ],
+      "documents": []
+    }
+  ]
+}

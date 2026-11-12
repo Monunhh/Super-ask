@@ -1,0 +1,236 @@
+{
+  "_note": "Crawled material, not steward-approved. Not read by SuperAsk retrieval (see data/README.md).",
+  "institution": {
+    "name": "Anti-Corruption Unit",
+    "onOfficialList": false,
+    "order": null
+  },
+  "source": {
+    "id": "SRC-013",
+    "registryId": 13,
+    "organization": "Anti-Corruption Unit",
+    "organizationKm": "អង្គភាពប្រឆាំងអំពើពុករលួយ",
+    "abbreviation": "ACU",
+    "category": "Authority",
+    "parentMinistry": null,
+    "url": "https://acu.gov.kh",
+    "host": "acu.gov.kh",
+    "priority": 2,
+    "provenance": "unconfirmed",
+    "notes": "Candidate domain - verify."
+  },
+  "reachability": {
+    "outcome": "live",
+    "httpStatus": 200,
+    "homepageTitle": "Untitled Document",
+    "checkedAt": "2026-11-12T17:47:46.306Z"
+  },
+  "crawl": {
+    "pageCount": 11,
+    "documentLinks": 0,
+    "firstFetched": "2026-11-12T18:13:03.986Z",
+    "lastFetched": "2026-11-12T18:13:25.949Z",
+    "builtAt": "2026-11-12T18:30:47.490Z"
+  },
+  "chrome": [
+    "អង្គភាពប្រឆាំងអំពើពុករលួយ (អ.ប.ព.) ANTI-CORRUPTION UNIT (A.C.U.) ទំព័រដើម អំពីយើង បេសកកម្ម ចក្ខុវិស័យ ផែនការសកម្មភាព ច្បាប់ស្តីពីការប្រឆាំងអំពើពុករលួយ និងច្បាប់ពាក់ព័ន្ធដោយសង្ខេប ផែនការយុទ្ធសាស្ត្រ ព្រះរាជក្រម ព្រះរាជក្រឹត្យ អនុក្រឹត្យ ប្រកាស រចនាសម្ព័ន្ធ គោលដៅ ទំនាក់ទំនង ច្បាប់ ច្បាប់ប្រឆាំងអំពើពុករលួយ ច្បាប់អុ៊នតាក់ ក្រមព្រហ្មទណ្ឌថ្មី ច្បាប់ និងលិខិតបទដ្ឋានគតិយុត្ត សៀវភៅអប់រំស្ពីពីការប្រឆាំងអំពើពុករលួយ ឯកសារផ្សេងៗ បទបញ្ញត្តិ ព្រឹត្តិការណ៍ ការប្រកាសទ្រព្យសម្បត្តិ និងបំណុល ការប្រកាសទ្រព្យសម្បត្តិ និងបំណុលតាមរបប ២ ឆ្នាំ សេចក្តីបំភ្លឺពិការប្រកាសទ្រព្យសម្បត្តិ និងបំណុល អំពីទម្រង់ប្រកាសទ្រព្យ កម្រងសេវាសាធារណៈ ក.វ.ត.ផ យោបល់ English Untitled Document រក្សាសិទ្ធិ &copy; ២០២៥ ដោយ អង្គភាពប្រឆាំងអំពើពុករលួយ (អ.ប.ព.)",
+    "អង្គភាពប្រឆាំងអំពើពុករលួយ (អ.ប.ព.) ANTI-CORRUPTION UNIT (A.C.U.) Home About Us Mission Vision Action Plan Anti-corruption laws and related legislation in brief Strategic Plan KRAM KRET Sub Decree Declaration Structure Goal Contact Laws Anti-Corruption Laws Other Documents Provisions Events Asset And Liability Declaration Form Clarification on declaration of asset and liability On form of asset and liability declaration Comment ភាសាខ្មែរ Untitled Document Copyright &copy; By ANTI-CORRUPTION UNIT (A.C.U.)"
+  ],
+  "pages": [
+    {
+      "url": "https://acu.gov.kh",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:03.986Z",
+      "sha256": "0aee8cf8d946df3f60c609c678e310799f1eb1ec8bf0f57c37a23c87e89d6ed8",
+      "rawPath": "data/crawl/raw/SRC-013/dda621ca6a0f3e52-0aee8cf8d946.html",
+      "textLength": 1880,
+      "text": "មតិស្វាគមន៍របស់ថ្នាក់ដឹកនាំ ប្រវត្តិនៃអង្គភាពប្រឆាំងអំពើពុករលួយ ទំនាក់ទំនង ព្រឹត្តិការណ៍ថ្មី សេចក្តីប្រកាសព័ត៌មាន សិក្ខាសាលា ស្តីពីការទាមទារយកទ្រព្យសម្បត្តិត្រឡប់មកវិញ ឆ្នាំ២០២៦(Workshop on Asset Recovery 2026) ដែលត្រូវបានរៀបចំឡើង ដោយបណ្ឌិត្យសភាប្រឆាំងអំពើពុករលួយមា៉ឡេសី៊ ពីថ្ងៃទី២-៥ ខែវិច្ឆិកា ឆ្នាំ២០២៦ នៅទីក្រុងកូឡាឡាំពួ ប្រទេសមា៉ឡេសី៊។ NEW សារលិខិតជូនពរ របស់កិត្តិនីតិកោសលបណ្ឌិត ឱម យិ៉នទៀង ទេសរដ្ឋមន្រ្តី ប្រធានអង្គភាពប្រឆាំងអំពើពុករលួយ ព្រមទាំងថ្នាក់ដឹកនាំ និងមន្រ្ដីរាជការអង្គភាពប្រឆាំងអំពើពុករលួយ នៃស្ថាប័នប្រឆាំងអំពើពុករលួយ សូមគោរពជូន សម្តេចពិជ័យសេនា ទៀ បាញ់ ឧត្តមប្រឹក្សាផ្ទាល់ព្រះមហាក្សត្រ នៃព្រះរាជាណាចក្រកម្ពុជា ក្នុងឱកាសដ៏នក្ខត្តឫក្សវិសេសវិសាល នៃខួបចម្រើនជន្មាយុរបស់ សម្តេចពិជ័យសេនា គម្រប់ ៨១ ឆ្នាំ ឈានចូល ៨២ ឆ្នាំ ដែលនឹងប្រព្រឹត្តទៅនៅថ្ងៃទី៥ ខែវិច្ឆិកា ឆ្នាំ២០២៦ ។ NEW ប្រតិភូអង្គភាពប្រឆាំងអំពើពុករលួយ (អ.ប.ព.) ចូលរួមសន្និបាតលើកទី១៥ នៃរដ្ឋភាគី របស់បណ្ឌិតសភាអន្តរជាតិប្រឆាំងអំពើពុករលួយ (IACA) នៅថ្ងៃទី៣០ ខែតុលា ឆ្នាំ២០២៦ នាទីក្រុងវីយែន ប្រទេសអូទ្រីស ព្រះរាជសារថ្លែងអំណរគុណរបស់ព្រះករុណាព្រះបាទសម្តេចព្រះបរមនាថ នរោត្ដម សីហមុនី ព្រះមហាក្សត្រ នៃព្រះរាជាណាចក្រកម្ពុជា ជាទីសក្ការៈដ៏ខ្ពង់ខ្ពស់បំផុត ទ្រង់សព្វព្រះរាជហឫទ័យ ជូនចំពោះ ឯកឧត្តមកិត្តិនីតិកោសលបណ្ឌិត ឱម យិ៉នទៀង ទេសរដ្ឋមន្ត្រី ប្រធានអង្គភាពប្រឆាំងអំពើពុករលួយ ដែលឯកឧត្តម បានថ្វាយព្រះពរ ថ្វាយសព្ទសាធុការពរជ័យ ក្នុងឱកាសប្រារព្ធព្រះរាជពិធីខួបលើកទី២២ នៃការយាងគ្រងព្រះបរមសិរីរាជសម្បត្តិ។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួល និងបំពេញបន្ថែមកម្រងសេវាសាធារណៈរបស់ក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងសាធារណការ និងដឹកជញ្ជូន។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងទេសចរណ៍។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងរែ៉និងថាមពល។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងរៀបចំដែនដី នគរូបនីយកម្ម និងសំណង់។ ចំនួនអ្នកចូលទស្សនា",
+      "links": [
+        "https://acu.gov.kh/index.php",
+        "https://acu.gov.kh/kh_sub_index.php",
+        "https://acu.gov.kh/kh_event_all.php",
+        "https://acu.gov.kh/kh_comment.php",
+        "https://acu.gov.kh/member.php",
+        "https://acu.gov.kh/en_index.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/en_comment.php",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:24.012Z",
+      "sha256": "cb09fad7405e26ebd65ad1526a37da37f3c7b06f9e8e0783ca02423f2af1b743",
+      "rawPath": "data/crawl/raw/SRC-013/be3f2c000534ecc8-cb09fad7405e.html",
+      "textLength": 38,
+      "text": "Name E-mail Subject Comment Attachment",
+      "links": [
+        "https://acu.gov.kh/en_index.php",
+        "https://acu.gov.kh/en_sub_index.php",
+        "https://acu.gov.kh/en_event_all.php",
+        "https://acu.gov.kh/en_comment.php",
+        "https://acu.gov.kh/index.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/en_event_all_detail.php",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:25.949Z",
+      "sha256": "4a5469c3cc94505a937c59fda7ddbe3a1805f962c45a11b596e5b956e31b9c93",
+      "rawPath": "data/crawl/raw/SRC-013/044e17a1982c7f0f-4a5469c3cc94.html",
+      "textLength": 0,
+      "text": "",
+      "links": [
+        "https://acu.gov.kh/en_index.php",
+        "https://acu.gov.kh/en_sub_index.php",
+        "https://acu.gov.kh/en_event_all.php",
+        "https://acu.gov.kh/en_comment.php",
+        "https://acu.gov.kh/index.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/en_event_all.php",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:21.945Z",
+      "sha256": "1721f49923d05243432c6e5488068b3b4cb25f03ef35f0c70489bcd02ad6fbae",
+      "rawPath": "data/crawl/raw/SRC-013/d3b2a6f2363444aa-1721f49923d0.html",
+      "textLength": 4040,
+      "text": "Press Release on the Outcomes of ACU's delegation participation at the 15th Session of the Assembly of Parties of the International Anti-Corruption Academy (IACA). NEW Press Release on the Outcomes of ACU's delegation participation at the 15th Session of the Assembly of Parties of the International Anti-Corruption Academy (IACA). .. Read more .. Letter from Mr. Drago KOS, Interim Dean and Executive Secretary of the International Academy Against Corruption (IACA), thanking the Anti-Corruption Unit of the Kingdom of Cambodia for contributing €15,000 to the IACA general budget for 2025. This contribution is to foster the effective implementation of IACA’s work program for the shared goal of global integrity and good governance. Letter from Mr. Drago KOS, Interim Dean and Executive Secretary of the International Academy Against Corruption (IACA), thanking the Anti-Corruption Unit of the Kingdom of Cambodia for contributing €15,000 to the IACA general budget for 2025. This contribution is to foster the effective implementation of IACA’s work program for the shared goal of global integrity and good governance. .. Read more .. Press Release on the outcomes of the Anti-Corruption Unit's participation in the Side Event on \"integrity and anti-Corruption in sport: Modern challenges and good practices\". Press Release on the outcomes of the Anti-Corruption Unit's participation in the Side Event on \"integrity and anti-Corruption in sport: Modern challenges and good practices\". .. Read more .. Press Release on the outcome of the Workshop on Anti-Corruption and Responsible Business Conduct in Free Trade Agreements On 24-25 February 2025 Held in Jakarta, Indonesia. Press Release on the outcome of the Workshop on Anti-Corruption and Responsible Business Conduct in Free Trade Agreements On 24-25 February 2025 Held in Jakarta, Indonesia. .. Read more .. Press Release on the 14th General Meeting Of the International Association of Anti-Corruption Authorities (IAACA) Thursday, February 06, 2025 at 15:30 (Online). Press Release on the 14th General Meeting Of the International Association of Anti-Corruption Authorities (IAACA) Thursday, February 06, 2025 at 15:30 (Online). .. Read more .. Thanks Letter to the Anti-Corruption Unit for its contribution to the International Anti-Corruption Academy (IACA). Thanks Letter to the Anti-Corruption Unit for its contribution to the International Anti-Corruption Academy (IACA). .. Read more .. New Year Greeting Letter of International Anti-Corruption Academy (IACA) for New Year Greetings 2025 and thank all IACA parties for their contribution to the past joint mission of Global Anti-Corruption. New Year Greeting Letter of International Anti-Corruption Academy (IACA) for New Year Greetings 2025 and thank all IACA parties for their contribution to the past joint mission of Global Anti-Corruption. .. Read more .. Press Release on the ACU Cambodia Representatives Share Experiences and Give Recommendations on the Review of the Implementation of the United Nations Convention against Corruption to 124 States Parties. Press Release on the ACU Cambodia Representatives Share Experiences and Give Recommendations on the Review of the Implementation of the United Nations Convention against Corruption to 124 States Parties. .. Read more .. Press Release on the Outcomes of ACU's delegation participation at the 13th Session of the Assembly of Parties of the International Anti-Corruption Academy (IACA). Press Release on the Outcomes of ACU's delegation participation at the 13th Session of the Assembly of Parties of the International Anti-Corruption Academy (IACA). .. Read more .. Press Release on the Outcomes of Regional Dialogue on 1. Human Rights and Anti-Corruption & 2. Corruption and Gender in Kuala Lumpur, Malaysia. Press Release on the Outcomes of Regional Dialogue on 1. Human Rights and Anti-Corruption & 2. Corruption and Gender in Kuala Lumpur, Malaysia. .. Read more .. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34",
+      "links": [
+        "https://acu.gov.kh/en_index.php",
+        "https://acu.gov.kh/en_sub_index.php",
+        "https://acu.gov.kh/en_event_all.php",
+        "https://acu.gov.kh/en_comment.php",
+        "https://acu.gov.kh/index.php",
+        "https://acu.gov.kh/en_event_all_detail.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/en_index.php",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:15.948Z",
+      "sha256": "e5b9ab59a5b03e61b4c7529095354a2c63fcce8a87341598dc88ee48d7e61631",
+      "rawPath": "data/crawl/raw/SRC-013/70abbe2928281462-e5b9ab59a5b0.html",
+      "textLength": 2006,
+      "text": "Welcome Message Background on the establishment of ACU Contact New Events Press Release on the Outcomes of ACU's delegation participation at the 15th Session of the Assembly of Parties of the International Anti-Corruption Academy (IACA). NEW Letter from Mr. Drago KOS, Interim Dean and Executive Secretary of the International Academy Against Corruption (IACA), thanking the Anti-Corruption Unit of the Kingdom of Cambodia for contributing €15,000 to the IACA general budget for 2025. This contribution is to foster the effective implementation of IACA’s work program for the shared goal of global integrity and good governance. Press Release on the outcomes of the Anti-Corruption Unit's participation in the Side Event on \"integrity and anti-Corruption in sport: Modern challenges and good practices\". Press Release on the outcome of the Workshop on Anti-Corruption and Responsible Business Conduct in Free Trade Agreements On 24-25 February 2025 Held in Jakarta, Indonesia. Press Release on the 14th General Meeting Of the International Association of Anti-Corruption Authorities (IAACA) Thursday, February 06, 2025 at 15:30 (Online). Thanks Letter to the Anti-Corruption Unit for its contribution to the International Anti-Corruption Academy (IACA). New Year Greeting Letter of International Anti-Corruption Academy (IACA) for New Year Greetings 2025 and thank all IACA parties for their contribution to the past joint mission of Global Anti-Corruption. Press Release on the ACU Cambodia Representatives Share Experiences and Give Recommendations on the Review of the Implementation of the United Nations Convention against Corruption to 124 States Parties. Press Release on the Outcomes of ACU's delegation participation at the 13th Session of the Assembly of Parties of the International Anti-Corruption Academy (IACA). Press Release on the Outcomes of Regional Dialogue on 1. Human Rights and Anti-Corruption & 2. Corruption and Gender in Kuala Lumpur, Malaysia. Visitors Total Brother HL-5240 Today",
+      "links": [
+        "https://acu.gov.kh/en_index.php",
+        "https://acu.gov.kh/en_sub_index.php",
+        "https://acu.gov.kh/en_event_all.php",
+        "https://acu.gov.kh/en_comment.php",
+        "https://acu.gov.kh/index.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/en_sub_index.php",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:20.054Z",
+      "sha256": "f1d8881d4fe7d365383b6e720017e1709d376f7aa1c41ccfce43c7660035ca13",
+      "rawPath": "data/crawl/raw/SRC-013/253144d231a3dd44-f1d8881d4fe7.html",
+      "textLength": 1,
+      "text": "‿",
+      "links": [
+        "https://acu.gov.kh/en_index.php",
+        "https://acu.gov.kh/en_sub_index.php",
+        "https://acu.gov.kh/en_event_all.php",
+        "https://acu.gov.kh/en_comment.php",
+        "https://acu.gov.kh/index.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/kh_comment.php",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:11.948Z",
+      "sha256": "2ae906ae7fbcb0c654801a6ebbec98bf209537842911aa2427f3c7bdcbab000c",
+      "rawPath": "data/crawl/raw/SRC-013/eb22a4edfc0e642d-2ae906ae7fbc.html",
+      "textLength": 41,
+      "text": "ឈ្មោះ អី៊មេល ប្រធានបទ យោបល់ ភ្ជាប់មកជាមួយ",
+      "links": [
+        "https://acu.gov.kh/index.php",
+        "https://acu.gov.kh/kh_sub_index.php",
+        "https://acu.gov.kh/kh_event_all.php",
+        "https://acu.gov.kh/kh_comment.php",
+        "https://acu.gov.kh/member.php",
+        "https://acu.gov.kh/en_index.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/kh_event_all_detail.php",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:18.006Z",
+      "sha256": "ae4945e5e1e46f3ca958ad69b6af1941d4af1b793fc615db21f4dc44eca74942",
+      "rawPath": "data/crawl/raw/SRC-013/324d8d306c67f732-ae4945e5e1e4.html",
+      "textLength": 0,
+      "text": "",
+      "links": [
+        "https://acu.gov.kh/index.php",
+        "https://acu.gov.kh/kh_sub_index.php",
+        "https://acu.gov.kh/kh_event_all.php",
+        "https://acu.gov.kh/kh_comment.php",
+        "https://acu.gov.kh/member.php",
+        "https://acu.gov.kh/en_index.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/kh_event_all.php",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:09.957Z",
+      "sha256": "fde7f67df51e832e6febbb4246400d39875f43b247cb0cc3a8a2c34fcb80a9c5",
+      "rawPath": "data/crawl/raw/SRC-013/de71680758df61b3-fde7f67df51e.html",
+      "textLength": 4429,
+      "text": "សេចក្តីប្រកាសព័ត៌មាន សិក្ខាសាលា ស្តីពីការទាមទារយកទ្រព្យសម្បត្តិត្រឡប់មកវិញ ឆ្នាំ២០២៦(Workshop on Asset Recovery 2026) ដែលត្រូវបានរៀបចំឡើង ដោយបណ្ឌិត្យសភាប្រឆាំងអំពើពុករលួយមា៉ឡេសី៊ ពីថ្ងៃទី២-៥ ខែវិច្ឆិកា ឆ្នាំ២០២៦ នៅទីក្រុងកូឡាឡាំពួ ប្រទេសមា៉ឡេសី៊។ NEW សេចក្តីប្រកាសព័ត៌មាន សិក្ខាសាលា ស្តីពីការទាមទារយកទ្រព្យសម្បត្តិត្រឡប់មកវិញ ឆ្នាំ២០២៦(Workshop on Asset Recovery 2026) ដែលត្រូវបានរៀបចំឡើង ដោយបណ្ឌិត្យសភាប្រឆាំងអំពើពុករលួយមា៉ឡេសី៊ ពីថ្ងៃទី២-៥ ខែវិច្ឆិកា ឆ្នាំ២០២៦ នៅទីក្រុងកូឡាឡាំពួ ប្រទេសមា៉ឡេសី៊។ .. អានបន្ត .. សារលិខិតជូនពរ របស់កិត្តិនីតិកោសលបណ្ឌិត ឱម យិ៉នទៀង ទេសរដ្ឋមន្រ្តី ប្រធានអង្គភាពប្រឆាំងអំពើពុករលួយ ព្រមទាំងថ្នាក់ដឹកនាំ និងមន្រ្ដីរាជការអង្គភាពប្រឆាំងអំពើពុករលួយ នៃស្ថាប័នប្រឆាំងអំពើពុករលួយ សូមគោរពជូន សម្តេចពិជ័យសេនា ទៀ បាញ់ ឧត្តមប្រឹក្សាផ្ទាល់ព្រះមហាក្សត្រ នៃព្រះរាជាណាចក្រកម្ពុជា ក្នុងឱកាសដ៏នក្ខត្តឫក្សវិសេសវិសាល នៃខួបចម្រើនជន្មាយុរបស់ សម្តេចពិជ័យសេនា គម្រប់ ៨១ ឆ្នាំ ឈានចូល ៨២ ឆ្នាំ ដែលនឹងប្រព្រឹត្តទៅនៅថ្ងៃទី៥ ខែវិច្ឆិកា ឆ្នាំ២០២៦ ។ NEW សារលិខិតជូនពរ របស់កិត្តិនីតិកោសលបណ្ឌិត ឱម យិ៉នទៀង ទេសរដ្ឋមន្រ្តី ប្រធានអង្គភាពប្រឆាំងអំពើពុករលួយ ព្រមទាំងថ្នាក់ដឹកនាំ និងមន្រ្ដីរាជការអង្គភាពប្រឆាំងអំពើពុករលួយ នៃស្ថាប័នប្រឆាំងអំពើពុករលួយ សូមគោរពជូន សម្តេចពិជ័យសេនា ទៀ បាញ់ ឧត្តមប្រឹក្សាផ្ទាល់ព្រះមហាក្សត្រ នៃព្រះរាជាណាចក្រកម្ពុជា ក្នុងឱកាសដ៏នក្ខត្តឫក្សវិសេសវិសាល នៃខួបចម្រើនជន្មាយុរបស់ សម្តេចពិជ័យសេនា គម្រប់ ៨១ ឆ្នាំ ឈានចូល ៨២ ឆ្នាំ ដែលនឹងប្រព្រឹត្តទៅនៅថ្ងៃទី៥ ខែវិច្ឆិកា ឆ្នាំ២០២៦ ។ .. អានបន្ត .. ប្រតិភូអង្គភាពប្រឆាំងអំពើពុករលួយ (អ.ប.ព.) ចូលរួមសន្និបាតលើកទី១៥ នៃរដ្ឋភាគី របស់បណ្ឌិតសភាអន្តរជាតិប្រឆាំងអំពើពុករលួយ (IACA) នៅថ្ងៃទី៣០ ខែតុលា ឆ្នាំ២០២៦ នាទីក្រុងវីយែន ប្រទេសអូទ្រីស ប្រតិភូអង្គភាពប្រឆាំងអំពើពុករលួយ (អ.ប.ព.) ចូលរួមសន្និបាតលើកទី១៥ នៃរដ្ឋភាគី របស់បណ្ឌិតសភាអន្តរជាតិប្រឆាំងអំពើពុករលួយ (IACA) នៅថ្ងៃទី៣០ ខែតុលា ឆ្នាំ២០២៦ នាទីក្រុងវីយែន ប្រទេសអូទ្រីស .. អានបន្ត .. ព្រះរាជសារថ្លែងអំណរគុណរបស់ព្រះករុណាព្រះបាទសម្តេចព្រះបរមនាថ នរោត្ដម សីហមុនី ព្រះមហាក្សត្រ នៃព្រះរាជាណាចក្រកម្ពុជា ជាទីសក្ការៈដ៏ខ្ពង់ខ្ពស់បំផុត ទ្រង់សព្វព្រះរាជហឫទ័យ ជូនចំពោះ ឯកឧត្តមកិត្តិនីតិកោសលបណ្ឌិត ឱម យិ៉នទៀង ទេសរដ្ឋមន្ត្រី ប្រធានអង្គភាពប្រឆាំងអំពើពុករលួយ ដែលឯកឧត្តម បានថ្វាយព្រះពរ ថ្វាយសព្ទសាធុការពរជ័យ ក្នុងឱកាសប្រារព្ធព្រះរាជពិធីខួបលើកទី២២ នៃការយាងគ្រងព្រះបរមសិរីរាជសម្បត្តិ។ ព្រះរាជសារថ្លែងអំណរគុណរបស់ព្រះករុណាព្រះបាទសម្តេចព្រះបរមនាថ នរោត្ដម សីហមុនី ព្រះមហាក្សត្រ នៃព្រះរាជាណាចក្រកម្ពុជា ជាទីសក្ការៈដ៏ខ្ពង់ខ្ពស់បំផុត ទ្រង់សព្វព្រះរាជហឫទ័យ ជូនចំពោះ ឯកឧត្តមកិត្តិនីតិកោសលបណ្ឌិត ឱម យិ៉នទៀង ទេសរដ្ឋមន្ត្រី ប្រធានអង្គភាពប្រឆាំងអំពើពុករលួយ ដែលឯកឧត្តម បានថ្វាយព្រះពរ ថ្វាយសព្ទសាធុការពរជ័យ ក្នុងឱកាសប្រារព្ធព្រះរាជពិធីខួបលើកទី២២ នៃការយាងគ្រងព្រះបរមសិរីរាជសម្បត្តិ។ .. អានបន្ត .. ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួល និងបំពេញបន្ថែមកម្រងសេវាសាធារណៈរបស់ក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួល និងបំពេញបន្ថែមកម្រងសេវាសាធារណៈរបស់ក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ .. អានបន្ត .. ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍។ .. អានបន្ត .. ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងសាធារណការ និងដឹកជញ្ជូន។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងសាធារណការ និងដឹកជញ្ជូន។ .. អានបន្ត .. ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងទេសចរណ៍។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងទេសចរណ៍។ .. អានបន្ត .. ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងរែ៉និងថាមពល។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងរែ៉និងថាមពល។ .. អានបន្ត .. ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងរៀបចំដែនដី នគរូបនីយកម្ម និងសំណង់។ ប្រកាសអន្តរក្រសួង ស្តីពីការកែសម្រួលកម្រងសេវាសាធារណៈរបស់ក្រសួងរៀបចំដែនដី នគរូបនីយកម្ម និងសំណង់។ .. អានបន្ត .. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217",
+      "links": [
+        "https://acu.gov.kh/index.php",
+        "https://acu.gov.kh/kh_sub_index.php",
+        "https://acu.gov.kh/kh_event_all.php",
+        "https://acu.gov.kh/kh_comment.php",
+        "https://acu.gov.kh/member.php",
+        "https://acu.gov.kh/en_index.php",
+        "https://acu.gov.kh/kh_event_all_detail.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/kh_sub_index.php",
+      "title": "Untitled Document",
+      "fetchedAt": "2026-11-12T18:13:07.946Z",
+      "sha256": "136537649d6ab29bd0c0e1994d964332999ae487efef5e443292bed5feff8112",
+      "rawPath": "data/crawl/raw/SRC-013/cb99c4b1d514b78d-136537649d6a.html",
+      "textLength": 0,
+      "text": "",
+      "links": [
+        "https://acu.gov.kh/index.php",
+        "https://acu.gov.kh/kh_sub_index.php",
+        "https://acu.gov.kh/kh_event_all.php",
+        "https://acu.gov.kh/kh_comment.php",
+        "https://acu.gov.kh/member.php",
+        "https://acu.gov.kh/en_index.php"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://acu.gov.kh/member.php",
+      "title": "",
+      "fetchedAt": "2026-11-12T18:13:13.936Z",
+      "sha256": "0dc3219fd1705feb7d7eca0be63d423f2733c9e4c4ee4f6e4bf1cf687931796b",
+      "rawPath": "data/crawl/raw/SRC-013/fe70c96da3d1a539-0dc3219fd170.html",
+      "textLength": 96,
+      "text": "Untitled Document ព័ត៌មានផ្ទៃក្នុង Internal News វេទិកាសេរី Free Forum អត្ថបទវិភាគ Analysis Text",
+      "links": [
+        "https://acu.gov.kh/index.php",
+        "https://acu.gov.kh/kh_sub_index.php",
+        "https://acu.gov.kh/kh_event_all.php",
+        "https://acu.gov.kh/kh_comment.php",
+        "https://acu.gov.kh/member.php",
+        "https://acu.gov.kh/en_index.php"
+      ],
+      "documents": []
+    }
+  ]
+}

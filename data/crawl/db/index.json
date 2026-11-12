@@ -1,0 +1,1463 @@
+{
+  "builtAt": "2026-11-12T18:30:47.680Z",
+  "institutions": [
+    {
+      "order": 1,
+      "institution": "The Senate",
+      "onOfficialList": true,
+      "folder": "01-the-senate",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-006",
+          "organization": "Senate of the Kingdom of Cambodia",
+          "host": "senate.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "institution": "National Assembly",
+      "onOfficialList": true,
+      "folder": "02-national-assembly",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-005",
+          "organization": "National Assembly of the Kingdom of Cambodia",
+          "host": "national-assembly.org.kh"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "institution": "Office of the Council of Ministers",
+      "onOfficialList": true,
+      "folder": "03-office-of-the-council-of-ministers",
+      "registeredSites": 2,
+      "crawledSites": 1,
+      "pages": 59,
+      "sites": [
+        {
+          "institution": "Office of the Council of Ministers",
+          "folder": "03-office-of-the-council-of-ministers",
+          "id": "SRC-002",
+          "organization": "Office of the Council of Ministers - Press and Quick Reaction Unit",
+          "host": "pressocm.gov.kh",
+          "file": "03-office-of-the-council-of-ministers/SRC-002-pressocm.gov.kh.json",
+          "pages": 59,
+          "documentLinks": 1,
+          "lastFetched": "2026-11-12T17:59:52.690Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-002",
+          "organization": "Office of the Council of Ministers - Press and Quick Reaction Unit",
+          "host": "pressocm.gov.kh"
+        },
+        {
+          "id": "SRC-003",
+          "organization": "Office of the Council of Ministers",
+          "host": "ocm.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "institution": "Ministry of Interior",
+      "onOfficialList": true,
+      "folder": "04-ministry-of-interior",
+      "registeredSites": 6,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-015",
+          "organization": "Ministry of Interior",
+          "host": "interior.gov.kh"
+        },
+        {
+          "id": "SRC-052",
+          "organization": "General Department of Immigration",
+          "host": "immigration.gov.kh"
+        },
+        {
+          "id": "SRC-053",
+          "organization": "General Department of Identification",
+          "host": "gdi.gov.kh"
+        },
+        {
+          "id": "SRC-054",
+          "organization": "Cambodian National Police",
+          "host": "police.gov.kh"
+        },
+        {
+          "id": "SRC-064",
+          "organization": "National Committee for Sub-National Democratic Development",
+          "host": "ncdd.gov.kh"
+        },
+        {
+          "id": "SRC-072",
+          "organization": "National Authority for Combating Drugs",
+          "host": "nacd.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "institution": "Constitutional Council of Cambodia",
+      "onOfficialList": true,
+      "folder": "05-constitutional-council-of-cambodia",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-007",
+          "organization": "Constitutional Council of Cambodia",
+          "host": "ccc.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "institution": "Ministry of National Defense",
+      "onOfficialList": true,
+      "folder": "06-ministry-of-national-defense",
+      "registeredSites": 1,
+      "crawledSites": 1,
+      "pages": 1,
+      "sites": [
+        {
+          "institution": "Ministry of National Defense",
+          "folder": "06-ministry-of-national-defense",
+          "id": "SRC-016",
+          "organization": "Ministry of National Defence",
+          "host": "mod.gov.kh",
+          "file": "06-ministry-of-national-defense/SRC-016-mod.gov.kh.json",
+          "pages": 1,
+          "documentLinks": 9,
+          "lastFetched": "2026-11-12T18:17:43.621Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-016",
+          "organization": "Ministry of National Defence",
+          "host": "mod.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "institution": "Ministry of Foreign Affairs and International Cooperation",
+      "onOfficialList": true,
+      "folder": "07-ministry-of-foreign-affairs-and-international-cooperation",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-017",
+          "organization": "Ministry of Foreign Affairs and International Cooperation",
+          "host": "mfaic.gov.kh"
+        },
+        {
+          "id": "SRC-080",
+          "organization": "Cambodia e-Visa",
+          "host": "evisa.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "institution": "Ministry of Civil Service",
+      "onOfficialList": true,
+      "folder": "08-ministry-of-civil-service",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-038",
+          "organization": "Ministry of Civil Service",
+          "host": "mcs.gov.kh"
+        },
+        {
+          "id": "SRC-131",
+          "organization": "Public Service Information Portal",
+          "host": "www.service.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "institution": "Ministry of Economy and Finance",
+      "onOfficialList": true,
+      "folder": "09-ministry-of-economy-and-finance",
+      "registeredSites": 10,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-018",
+          "organization": "Ministry of Economy and Finance",
+          "host": "mef.gov.kh"
+        },
+        {
+          "id": "SRC-044",
+          "organization": "General Department of National Treasury",
+          "host": "treasury.gov.kh"
+        },
+        {
+          "id": "SRC-045",
+          "organization": "General Department of Public Procurement",
+          "host": "gdpp.gov.kh"
+        },
+        {
+          "id": "SRC-059",
+          "organization": "Securities and Exchange Regulator of Cambodia",
+          "host": "secc.gov.kh"
+        },
+        {
+          "id": "SRC-060",
+          "organization": "Insurance Regulator of Cambodia",
+          "host": "irc.gov.kh"
+        },
+        {
+          "id": "SRC-065",
+          "organization": "Digital Economy and Business Committee",
+          "host": "digitaleconomy.gov.kh"
+        },
+        {
+          "id": "SRC-076",
+          "organization": "Cambodia Data Exchange",
+          "host": "camdx.gov.kh"
+        },
+        {
+          "id": "SRC-077",
+          "organization": "CamDigiKey",
+          "host": "camdigikey.gov.kh"
+        },
+        {
+          "id": "SRC-079",
+          "organization": "Business Information Portal",
+          "host": "business.gov.kh"
+        },
+        {
+          "id": "SRC-084",
+          "organization": "Cambodia National Single Window",
+          "host": "cnsw.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "institution": "Ministry of Agriculture, Forestry and Fisheries",
+      "onOfficialList": true,
+      "folder": "10-ministry-of-agriculture-forestry-and-fisheries",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-019",
+          "organization": "Ministry of Agriculture, Forestry and Fisheries",
+          "host": "maff.gov.kh"
+        },
+        {
+          "id": "SRC-117",
+          "organization": "Royal University of Agriculture",
+          "host": "rua.edu.kh"
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "institution": "Ministry of Planning",
+      "onOfficialList": true,
+      "folder": "11-ministry-of-planning",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-024",
+          "organization": "Ministry of Planning",
+          "host": "mop.gov.kh"
+        },
+        {
+          "id": "SRC-067",
+          "organization": "National Institute of Statistics",
+          "host": "nis.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "institution": "Ministry of Rural Development",
+      "onOfficialList": true,
+      "folder": "12-ministry-of-rural-development",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-020",
+          "organization": "Ministry of Rural Development",
+          "host": "mrd.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "institution": "Ministry of Commerce",
+      "onOfficialList": true,
+      "folder": "13-ministry-of-commerce",
+      "registeredSites": 9,
+      "crawledSites": 1,
+      "pages": 13,
+      "sites": [
+        {
+          "institution": "Ministry of Commerce",
+          "folder": "13-ministry-of-commerce",
+          "id": "SRC-021",
+          "organization": "Ministry of Commerce",
+          "host": "moc.gov.kh",
+          "file": "13-ministry-of-commerce/SRC-021-moc.gov.kh.json",
+          "pages": 13,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-08T21:55:46.307Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-021",
+          "organization": "Ministry of Commerce",
+          "host": "moc.gov.kh"
+        },
+        {
+          "id": "SRC-046",
+          "organization": "Consumer Protection, Competition and Fraud Repression Directorate-General",
+          "host": "ccfdg.gov.kh"
+        },
+        {
+          "id": "SRC-047",
+          "organization": "General Directorate of Trade Promotion",
+          "host": "gdtp.gov.kh"
+        },
+        {
+          "id": "SRC-048",
+          "organization": "Department of Legal Affairs - Secured Transaction Filing Office",
+          "host": "setfo.gov.kh"
+        },
+        {
+          "id": "SRC-049",
+          "organization": "Department of Intellectual Property Rights",
+          "host": "www.cambodiaip.gov.kh"
+        },
+        {
+          "id": "SRC-050",
+          "organization": "Cambodia Digital IP (Trademark e-Service)",
+          "host": "digitalip.cambodiaip.gov.kh"
+        },
+        {
+          "id": "SRC-051",
+          "organization": "Department of Intellectual Property Rights (legacy portal)",
+          "host": "dip.cambodiaip.gov.kh"
+        },
+        {
+          "id": "SRC-078",
+          "organization": "Online Business Registration / Registration Services",
+          "host": "registrationservices.gov.kh"
+        },
+        {
+          "id": "SRC-133",
+          "organization": "Business Registration (MoC)",
+          "host": "businessregistration.moc.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 14,
+      "institution": "Ministry of Education, Youth and Sport",
+      "onOfficialList": true,
+      "folder": "14-ministry-of-education-youth-and-sport",
+      "registeredSites": 8,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-025",
+          "organization": "Ministry of Education, Youth and Sport",
+          "host": "moeys.gov.kh"
+        },
+        {
+          "id": "SRC-114",
+          "organization": "Royal University of Phnom Penh",
+          "host": "rupp.edu.kh"
+        },
+        {
+          "id": "SRC-115",
+          "organization": "Institute of Technology of Cambodia",
+          "host": "itc.edu.kh"
+        },
+        {
+          "id": "SRC-116",
+          "organization": "National University of Management",
+          "host": "num.edu.kh"
+        },
+        {
+          "id": "SRC-118",
+          "organization": "Royal University of Law and Economics",
+          "host": "rule.edu.kh"
+        },
+        {
+          "id": "SRC-120",
+          "organization": "Svay Rieng University",
+          "host": "sru.edu.kh"
+        },
+        {
+          "id": "SRC-123",
+          "organization": "National University of Battambang",
+          "host": "nubb.edu.kh"
+        },
+        {
+          "id": "SRC-136",
+          "organization": "Education Licence and Permit System (DELP, MoEYS)",
+          "host": "delp.moeys.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "institution": "Ministry of Health",
+      "onOfficialList": true,
+      "folder": "15-ministry-of-health",
+      "registeredSites": 8,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-033",
+          "organization": "Ministry of Health",
+          "host": "moh.gov.kh"
+        },
+        {
+          "id": "SRC-119",
+          "organization": "University of Health Sciences",
+          "host": "uhs.edu.kh"
+        },
+        {
+          "id": "SRC-125",
+          "organization": "Calmette Hospital",
+          "host": "calmette.gov.kh"
+        },
+        {
+          "id": "SRC-126",
+          "organization": "Khmer-Soviet Friendship Hospital",
+          "host": "kshospital.gov.kh"
+        },
+        {
+          "id": "SRC-127",
+          "organization": "National Pediatric Hospital",
+          "host": "nph.gov.kh"
+        },
+        {
+          "id": "SRC-128",
+          "organization": "Preah Kossamak Hospital",
+          "host": "kossamak.gov.kh"
+        },
+        {
+          "id": "SRC-129",
+          "organization": "National Maternal and Child Health Center",
+          "host": "nmchc.gov.kh"
+        },
+        {
+          "id": "SRC-130",
+          "organization": "National Institute of Public Health",
+          "host": "niph.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "institution": "Ministry of Public Works and Transport",
+      "onOfficialList": true,
+      "folder": "16-ministry-of-public-works-and-transport",
+      "registeredSites": 2,
+      "crawledSites": 1,
+      "pages": 56,
+      "sites": [
+        {
+          "institution": "Ministry of Public Works and Transport",
+          "folder": "16-ministry-of-public-works-and-transport",
+          "id": "SRC-034",
+          "organization": "Ministry of Public Works and Transport",
+          "host": "mpwt.gov.kh",
+          "file": "16-ministry-of-public-works-and-transport/SRC-034-mpwt.gov.kh.json",
+          "pages": 56,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-08T21:55:08.526Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-034",
+          "organization": "Ministry of Public Works and Transport",
+          "host": "mpwt.gov.kh"
+        },
+        {
+          "id": "SRC-074",
+          "organization": "Sihanoukville Autonomous Port",
+          "host": "pas.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "institution": "Ministry of Justice",
+      "onOfficialList": true,
+      "folder": "17-ministry-of-justice",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-031",
+          "organization": "Ministry of Justice",
+          "host": "moj.gov.kh"
+        },
+        {
+          "id": "SRC-081",
+          "organization": "Criminal Record Requesting System",
+          "host": "cr.moj.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "institution": "Ministry of Post and Telecommunications",
+      "onOfficialList": true,
+      "folder": "18-ministry-of-post-and-telecommunications",
+      "registeredSites": 8,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-032",
+          "organization": "Ministry of Post and Telecommunications",
+          "host": "mptc.gov.kh"
+        },
+        {
+          "id": "SRC-061",
+          "organization": "Telecommunication Regulator of Cambodia",
+          "host": "trc.gov.kh"
+        },
+        {
+          "id": "SRC-066",
+          "organization": "Digital Government Committee",
+          "host": "dgc.gov.kh"
+        },
+        {
+          "id": "SRC-087",
+          "organization": "Sarika",
+          "host": "sarika.gov.kh"
+        },
+        {
+          "id": "SRC-088",
+          "organization": "Verify",
+          "host": "verify.gov.kh"
+        },
+        {
+          "id": "SRC-121",
+          "organization": "National Institute of Posts, Telecoms and ICT",
+          "host": "niptict.edu.kh"
+        },
+        {
+          "id": "SRC-122",
+          "organization": "Cambodia Academy of Digital Technology",
+          "host": "cadt.edu.kh"
+        },
+        {
+          "id": "SRC-135",
+          "organization": "Cambodia Community Tech Center",
+          "host": "ctc.edu.kh"
+        }
+      ]
+    },
+    {
+      "order": 19,
+      "institution": "Ministry of Social Affairs, Veterans and Youth Rehabilitation",
+      "onOfficialList": true,
+      "folder": "19-ministry-of-social-affairs-veterans-and-youth-rehabilitation",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-026",
+          "organization": "Ministry of Social Affairs, Veterans and Youth Rehabilitation",
+          "host": "mosvy.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "institution": "Ministry of Labour and Vocational Training",
+      "onOfficialList": true,
+      "folder": "20-ministry-of-labour-and-vocational-training",
+      "registeredSites": 3,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-037",
+          "organization": "Ministry of Labour and Vocational Training",
+          "host": "mlvt.gov.kh"
+        },
+        {
+          "id": "SRC-063",
+          "organization": "National Social Security Fund",
+          "host": "nssf.gov.kh"
+        },
+        {
+          "id": "SRC-124",
+          "organization": "National Technical Training Institute",
+          "host": "ntti.edu.kh"
+        }
+      ]
+    },
+    {
+      "order": 21,
+      "institution": "Ministry of Information",
+      "onOfficialList": true,
+      "folder": "21-ministry-of-information",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-030",
+          "organization": "Ministry of Information",
+          "host": "information.gov.kh"
+        },
+        {
+          "id": "SRC-075",
+          "organization": "Agence Kampuchea Presse",
+          "host": "akp.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 22,
+      "institution": "Ministry of Environment",
+      "onOfficialList": true,
+      "folder": "22-ministry-of-environment",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-028",
+          "organization": "Ministry of Environment",
+          "host": "moe.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 23,
+      "institution": "Ministry of Tourism",
+      "onOfficialList": true,
+      "folder": "23-ministry-of-tourism",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-036",
+          "organization": "Ministry of Tourism",
+          "host": "tourism.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 24,
+      "institution": "Ministry of Culture and Fine Arts",
+      "onOfficialList": true,
+      "folder": "24-ministry-of-culture-and-fine-arts",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-035",
+          "organization": "Ministry of Culture and Fine Arts",
+          "host": "mcfa.gov.kh"
+        },
+        {
+          "id": "SRC-069",
+          "organization": "APSARA National Authority",
+          "host": "apsaraauthority.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 25,
+      "institution": "Ministry of Cult and Religion",
+      "onOfficialList": true,
+      "folder": "25-ministry-of-cult-and-religion",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-039",
+          "organization": "Ministry of Cults and Religion",
+          "host": "mcr.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 26,
+      "institution": "Ministry of Mines and Energy",
+      "onOfficialList": true,
+      "folder": "26-ministry-of-mines-and-energy",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-022",
+          "organization": "Ministry of Mines and Energy",
+          "host": "mme.gov.kh"
+        },
+        {
+          "id": "SRC-062",
+          "organization": "Electricity Authority of Cambodia",
+          "host": "eac.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 27,
+      "institution": "Ministry of Land Management, Urban Planning and Construction",
+      "onOfficialList": true,
+      "folder": "27-ministry-of-land-management-urban-planning-and-construction",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-027",
+          "organization": "Ministry of Land Management, Urban Planning and Construction",
+          "host": "mlmupc.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 28,
+      "institution": "Ministry of Industry, Science, Technology & Innovation",
+      "onOfficialList": true,
+      "folder": "28-ministry-of-industry-science-technology-and-innovation",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-023",
+          "organization": "Ministry of Industry, Science, Technology and Innovation",
+          "host": "misti.gov.kh"
+        },
+        {
+          "id": "SRC-132",
+          "organization": "MISTI Online Services Portal",
+          "host": "services.misti.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 29,
+      "institution": "Ministry of Water Resources and Meteorology",
+      "onOfficialList": true,
+      "folder": "29-ministry-of-water-resources-and-meteorology",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-029",
+          "organization": "Ministry of Water Resources and Meteorology",
+          "host": "mowram.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 30,
+      "institution": "Ministry of Women's Affairs",
+      "onOfficialList": true,
+      "folder": "30-ministry-of-women-s-affairs",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-040",
+          "organization": "Ministry of Women's Affairs",
+          "host": "mowa.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 31,
+      "institution": "State Secretariat Of Civil Aviation",
+      "onOfficialList": true,
+      "folder": "31-state-secretariat-of-civil-aviation",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-073",
+          "organization": "State Secretariat of Civil Aviation",
+          "host": "ssca.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 32,
+      "institution": "Council for the Development of Cambodia",
+      "onOfficialList": true,
+      "folder": "32-council-for-the-development-of-cambodia",
+      "registeredSites": 3,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-055",
+          "organization": "Council for the Development of Cambodia",
+          "host": "cdc.gov.kh"
+        },
+        {
+          "id": "SRC-056",
+          "organization": "Cambodia Investment Board Portal",
+          "host": "cambodiainvestment.gov.kh"
+        },
+        {
+          "id": "SRC-137",
+          "organization": "QIP Registration (CDC)",
+          "host": "qip.cdc.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 33,
+      "institution": "National Bank of Cambodia",
+      "onOfficialList": true,
+      "folder": "33-national-bank-of-cambodia",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-058",
+          "organization": "National Bank of Cambodia",
+          "host": "nbc.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 34,
+      "institution": "General Department of Customs and Excise",
+      "onOfficialList": true,
+      "folder": "34-general-department-of-customs-and-excise",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-043",
+          "organization": "General Department of Customs and Excise",
+          "host": "customs.gov.kh"
+        },
+        {
+          "id": "SRC-083",
+          "organization": "Customs Document Tracking System",
+          "host": "apps.customs.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": 35,
+      "institution": "Electricite Du Cambodge",
+      "onOfficialList": true,
+      "folder": "35-electricite-du-cambodge",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-138",
+          "organization": "Electricite du Cambodge",
+          "host": "edc.com.kh"
+        }
+      ]
+    },
+    {
+      "order": 36,
+      "institution": "General Department of Taxation",
+      "onOfficialList": true,
+      "folder": "36-general-department-of-taxation",
+      "registeredSites": 2,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-042",
+          "organization": "General Department of Taxation",
+          "host": "tax.gov.kh"
+        },
+        {
+          "id": "SRC-082",
+          "organization": "GDT e-Tax Portal (Online Web Portal)",
+          "host": "owp.tax.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Anti-Corruption Unit",
+      "onOfficialList": false,
+      "folder": "other/anti-corruption-unit",
+      "registeredSites": 1,
+      "crawledSites": 1,
+      "pages": 11,
+      "sites": [
+        {
+          "institution": "Anti-Corruption Unit",
+          "folder": "other/anti-corruption-unit",
+          "id": "SRC-013",
+          "organization": "Anti-Corruption Unit",
+          "host": "acu.gov.kh",
+          "file": "other/anti-corruption-unit/SRC-013-acu.gov.kh.json",
+          "pages": 11,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T18:13:25.949Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-013",
+          "organization": "Anti-Corruption Unit",
+          "host": "acu.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Appeal Court of Cambodia",
+      "onOfficialList": false,
+      "folder": "other/appeal-court-of-cambodia",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-011",
+          "organization": "Appeal Court of Cambodia",
+          "host": "appealcourt.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Cambodia Open Data Portal",
+      "onOfficialList": false,
+      "folder": "other/cambodia-open-data-portal",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-085",
+          "organization": "Cambodia Open Data Portal",
+          "host": "data.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Cambodian Mine Action and Victim Assistance Authority",
+      "onOfficialList": false,
+      "folder": "other/cambodian-mine-action-and-victim-assistance-authority",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-071",
+          "organization": "Cambodian Mine Action and Victim Assistance Authority",
+          "host": "cmaa.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Commercial Gambling Management Commission of Cambodia",
+      "onOfficialList": false,
+      "folder": "other/commercial-gambling-management-commission-of-cambodia",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-134",
+          "organization": "Commercial Gambling Management Commission of Cambodia",
+          "host": "cgmc.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Extraordinary Chambers in the Courts of Cambodia",
+      "onOfficialList": false,
+      "folder": "other/extraordinary-chambers-in-the-courts-of-cambodia",
+      "registeredSites": 1,
+      "crawledSites": 1,
+      "pages": 23,
+      "sites": [
+        {
+          "institution": "Extraordinary Chambers in the Courts of Cambodia",
+          "folder": "other/extraordinary-chambers-in-the-courts-of-cambodia",
+          "id": "SRC-009",
+          "organization": "Extraordinary Chambers in the Courts of Cambodia",
+          "host": "eccc.gov.kh",
+          "file": "other/extraordinary-chambers-in-the-courts-of-cambodia/SRC-009-eccc.gov.kh.json",
+          "pages": 23,
+          "documentLinks": 203,
+          "lastFetched": "2026-11-12T18:03:10.873Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-009",
+          "organization": "Extraordinary Chambers in the Courts of Cambodia",
+          "host": "eccc.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Government Service Portal",
+      "onOfficialList": false,
+      "folder": "other/government-service-portal",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-086",
+          "organization": "Government Service Portal",
+          "host": "go.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Ministry of Relations with the National Assembly, Senate and Inspection",
+      "onOfficialList": false,
+      "folder": "other/ministry-of-relations-with-the-national-assembly-senate-and-inspection",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-041",
+          "organization": "Ministry of Relations with the National Assembly, Senate and Inspection",
+          "host": "mnasri.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "National Audit Authority",
+      "onOfficialList": false,
+      "folder": "other/national-audit-authority",
+      "registeredSites": 1,
+      "crawledSites": 1,
+      "pages": 21,
+      "sites": [
+        {
+          "institution": "National Audit Authority",
+          "folder": "other/national-audit-authority",
+          "id": "SRC-014",
+          "organization": "National Audit Authority",
+          "host": "naa.gov.kh",
+          "file": "other/national-audit-authority/SRC-014-naa.gov.kh.json",
+          "pages": 21,
+          "documentLinks": 148,
+          "lastFetched": "2026-11-12T18:14:22.081Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-014",
+          "organization": "National Audit Authority",
+          "host": "naa.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "National Authority for Preah Vihear",
+      "onOfficialList": false,
+      "folder": "other/national-authority-for-preah-vihear",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-070",
+          "organization": "National Authority for Preah Vihear",
+          "host": "napv.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "National Election Committee",
+      "onOfficialList": false,
+      "folder": "other/national-election-committee",
+      "registeredSites": 1,
+      "crawledSites": 1,
+      "pages": 59,
+      "sites": [
+        {
+          "institution": "National Election Committee",
+          "folder": "other/national-election-committee",
+          "id": "SRC-012",
+          "organization": "National Election Committee",
+          "host": "nec.gov.kh",
+          "file": "other/national-election-committee/SRC-012-nec.gov.kh.json",
+          "pages": 59,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T18:13:01.910Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-012",
+          "organization": "National Election Committee",
+          "host": "nec.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Provincial and Capital Administrations",
+      "onOfficialList": false,
+      "folder": "other/provincial-and-capital-administrations",
+      "registeredSites": 25,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-089",
+          "organization": "Phnom Penh Capital Administration",
+          "host": "phnompenh.gov.kh"
+        },
+        {
+          "id": "SRC-090",
+          "organization": "Banteay Meanchey Provincial Administration",
+          "host": "banteaymeanchey.gov.kh"
+        },
+        {
+          "id": "SRC-091",
+          "organization": "Battambang Provincial Administration",
+          "host": "battambang.gov.kh"
+        },
+        {
+          "id": "SRC-092",
+          "organization": "Kampong Cham Provincial Administration",
+          "host": "kampongcham.gov.kh"
+        },
+        {
+          "id": "SRC-093",
+          "organization": "Kampong Chhnang Provincial Administration",
+          "host": "kampongchhnang.gov.kh"
+        },
+        {
+          "id": "SRC-094",
+          "organization": "Kampong Speu Provincial Administration",
+          "host": "kampongspeu.gov.kh"
+        },
+        {
+          "id": "SRC-095",
+          "organization": "Kampong Thom Provincial Administration",
+          "host": "kampongthom.gov.kh"
+        },
+        {
+          "id": "SRC-096",
+          "organization": "Kampot Provincial Administration",
+          "host": "kampot.gov.kh"
+        },
+        {
+          "id": "SRC-097",
+          "organization": "Kandal Provincial Administration",
+          "host": "kandal.gov.kh"
+        },
+        {
+          "id": "SRC-098",
+          "organization": "Koh Kong Provincial Administration",
+          "host": "kohkong.gov.kh"
+        },
+        {
+          "id": "SRC-099",
+          "organization": "Kratie Provincial Administration",
+          "host": "kratie.gov.kh"
+        },
+        {
+          "id": "SRC-100",
+          "organization": "Mondulkiri Provincial Administration",
+          "host": "mondulkiri.gov.kh"
+        },
+        {
+          "id": "SRC-101",
+          "organization": "Preah Vihear Provincial Administration",
+          "host": "preahvihear.gov.kh"
+        },
+        {
+          "id": "SRC-102",
+          "organization": "Prey Veng Provincial Administration",
+          "host": "preyveng.gov.kh"
+        },
+        {
+          "id": "SRC-103",
+          "organization": "Pursat Provincial Administration",
+          "host": "pursat.gov.kh"
+        },
+        {
+          "id": "SRC-104",
+          "organization": "Ratanakiri Provincial Administration",
+          "host": "ratanakiri.gov.kh"
+        },
+        {
+          "id": "SRC-105",
+          "organization": "Siem Reap Provincial Administration",
+          "host": "siemreap.gov.kh"
+        },
+        {
+          "id": "SRC-106",
+          "organization": "Preah Sihanouk Provincial Administration",
+          "host": "sihanoukville.gov.kh"
+        },
+        {
+          "id": "SRC-107",
+          "organization": "Stung Treng Provincial Administration",
+          "host": "stungtreng.gov.kh"
+        },
+        {
+          "id": "SRC-108",
+          "organization": "Svay Rieng Provincial Administration",
+          "host": "svayrieng.gov.kh"
+        },
+        {
+          "id": "SRC-109",
+          "organization": "Takeo Provincial Administration",
+          "host": "takeo.gov.kh"
+        },
+        {
+          "id": "SRC-110",
+          "organization": "Oddar Meanchey Provincial Administration",
+          "host": "oddarmeanchey.gov.kh"
+        },
+        {
+          "id": "SRC-111",
+          "organization": "Kep Provincial Administration",
+          "host": "kep.gov.kh"
+        },
+        {
+          "id": "SRC-112",
+          "organization": "Pailin Provincial Administration",
+          "host": "pailin.gov.kh"
+        },
+        {
+          "id": "SRC-113",
+          "organization": "Tboung Khmum Provincial Administration",
+          "host": "tboungkhmum.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Royal Academy of Cambodia",
+      "onOfficialList": false,
+      "folder": "other/royal-academy-of-cambodia",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-068",
+          "organization": "Royal Academy of Cambodia",
+          "host": "rac.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Royal Government of Cambodia (National Portal)",
+      "onOfficialList": false,
+      "folder": "other/royal-government-of-cambodia-national-portal",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-001",
+          "organization": "Royal Government of Cambodia (National Portal)",
+          "host": "cambodia.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Supreme Council of Magistracy",
+      "onOfficialList": false,
+      "folder": "other/supreme-council-of-magistracy",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-010",
+          "organization": "Supreme Council of Magistracy",
+          "host": "scm.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Supreme Court of Cambodia",
+      "onOfficialList": false,
+      "folder": "other/supreme-court-of-cambodia",
+      "registeredSites": 1,
+      "crawledSites": 1,
+      "pages": 55,
+      "sites": [
+        {
+          "institution": "Supreme Court of Cambodia",
+          "folder": "other/supreme-court-of-cambodia",
+          "id": "SRC-008",
+          "organization": "Supreme Court of Cambodia",
+          "host": "supremecourt.gov.kh",
+          "file": "other/supreme-court-of-cambodia/SRC-008-supremecourt.gov.kh.json",
+          "pages": 55,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T18:02:13.292Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-008",
+          "organization": "Supreme Court of Cambodia",
+          "host": "supremecourt.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "Supreme National Economic Council",
+      "onOfficialList": false,
+      "folder": "other/supreme-national-economic-council",
+      "registeredSites": 1,
+      "crawledSites": 0,
+      "pages": 0,
+      "sites": [],
+      "registry": [
+        {
+          "id": "SRC-057",
+          "organization": "Supreme National Economic Council",
+          "host": "snec.gov.kh"
+        }
+      ]
+    },
+    {
+      "order": null,
+      "institution": "The King of the Kingdom of Cambodia",
+      "onOfficialList": false,
+      "folder": "other/the-king-of-the-kingdom-of-cambodia",
+      "registeredSites": 1,
+      "crawledSites": 1,
+      "pages": 10,
+      "sites": [
+        {
+          "institution": "The King of the Kingdom of Cambodia",
+          "folder": "other/the-king-of-the-kingdom-of-cambodia",
+          "id": "SRC-004",
+          "organization": "The King of the Kingdom of Cambodia",
+          "host": "norodomsihamoni.org",
+          "file": "other/the-king-of-the-kingdom-of-cambodia/SRC-004-norodomsihamoni.org.json",
+          "pages": 10,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T18:00:13.020Z"
+        }
+      ],
+      "registry": [
+        {
+          "id": "SRC-004",
+          "organization": "The King of the Kingdom of Cambodia",
+          "host": "norodomsihamoni.org"
+        }
+      ]
+    }
+  ]
+}
