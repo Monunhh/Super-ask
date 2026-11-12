@@ -1,0 +1,312 @@
+{
+  "_note": "Crawled material, not steward-approved. Not read by SuperAsk retrieval (see data/README.md).",
+  "institution": {
+    "name": "General Department of Customs and Excise",
+    "onOfficialList": true,
+    "order": 34
+  },
+  "source": {
+    "id": "SRC-043",
+    "registryId": 43,
+    "organization": "General Department of Customs and Excise",
+    "organizationKm": "អគ្គនាយកដ្ឋានគយ និងរដ្ឋាករកម្ពុជា",
+    "abbreviation": "GDCE",
+    "category": "General Department",
+    "parentMinistry": "Ministry of Economy and Finance",
+    "url": "https://customs.gov.kh",
+    "host": "customs.gov.kh",
+    "priority": 1,
+    "provenance": "directory",
+    "notes": "Also runs apps.customs.gov.kh (Document Tracking System, JS-rendered)."
+  },
+  "reachability": {
+    "outcome": "live",
+    "httpStatus": 200,
+    "homepageTitle": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+    "checkedAt": "2026-11-12T17:49:36.663Z"
+  },
+  "crawl": {
+    "pageCount": 12,
+    "documentLinks": 0,
+    "firstFetched": "2026-11-12T19:19:00.826Z",
+    "lastFetched": "2026-11-12T19:19:24.727Z",
+    "builtAt": "2026-11-12T22:07:09.507Z"
+  },
+  "chrome": [
+    "សេវាកម្មអេឡិចត្រូនិក វីដេអូ វីដេអូជាច្រើនទៀត ទាញយកកម្មវិធីទូរស័ព្ទ តំណភ្ជាប់អាសា៊ន គេហទំព័រអាសា៊ន តារាងពន្ធគយអាសា៊ន សំណួរដែលសួរញឹកញាប់ សំណួរជាច្រើនទៀត តំណភ្ជាប់ អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា អគរ ត្រូវបានបង្កើតឡើងក្នុងសម័យសង្គមរាស្ត្រនិយម ដោយព្រះរាជក្រមលេខ ៦៦១ ចុះថ្ងៃទី២៩ ខែមិថុនា ឆ្នាំ១៩៥១ ហើយបច្ចុប្បន្នកំពុងដំណើរការ នៅក្រោមឱវាទក្រសួងសេដ្ឋកិច្ច និងហិរញ្ញវត្ថុ។ អគរ មានតួនាទី និង ភារកិច្ចគ្រប់គ្រងត្រួតពិនិត្យ និង ប្រមូលពន្ធអាករគ្រប់ប្រភេទ លើទំនិញនាំចេញ និង នាំចូល, បង្ការ និង បង្ក្រាបបទល្មើសគ្រប់ប្រភេទជាពិសេសបទល្មើសគយ, បង្កភាព ងាយស្រួលដល់ពាណិជ្ជកម្មអន្តរជាតិ។ ស្វែងយល់បន្ថែម ទំព័រ ទំព័រដើម អំពី អគរ ច្បាប់ និង បទប្បញ្ញត្តិ ការបោះពុម្ព និង ធនធាន ព័ត៌មាន និង ព្រឹត្តិការណ៍ នីតិវិធីគយ សេចក្តីប្រកាស ស្ថិតិពាណិជ្ជកម្ម សំណួរនានា អី៊មែ៉ល អង្គភាពទំនាក់ទំនងសាធារណៈ #៦-៨ ផ្លូវ ព្រះនរោត្តម សង្កាត់ ផ្សារថ្មី ១ ខណ្ឌ ដូនពេញ រាជធានីភ្នំពេញ សូមចូលទៅកាន់ទំព័រ មន្ត្រីទំនាក់ទំនងតាមអង្គភាព info@customs.gov.kh បណ្ដាញសង្គម គោលការណ៍ភាពឯកជន ©2026 អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា រក្សាសិទ្ធិគ្រប់យា៉ង",
+    "សេវាកម្មអេឡិចត្រូនិក វីដេអូ វីដេអូជាច្រើនទៀត ទាញយកកម្មវិធីទូរស័ព្ទ តំណភ្ជាប់អាសា៊ន គេហទំព័រអាសា៊ន តារាងពន្ធគយអាសា៊ន តំណភ្ជាប់ អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា អគរ ត្រូវបានបង្កើតឡើងក្នុងសម័យសង្គមរាស្ត្រនិយម ដោយព្រះរាជក្រមលេខ ៦៦១ ចុះថ្ងៃទី២៩ ខែមិថុនា ឆ្នាំ១៩៥១ ហើយបច្ចុប្បន្នកំពុងដំណើរការ នៅក្រោមឱវាទក្រសួងសេដ្ឋកិច្ច និងហិរញ្ញវត្ថុ។ អគរ មានតួនាទី និង ភារកិច្ចគ្រប់គ្រងត្រួតពិនិត្យ និង ប្រមូលពន្ធអាករគ្រប់ប្រភេទ លើទំនិញនាំចេញ និង នាំចូល, បង្ការ និង បង្ក្រាបបទល្មើសគ្រប់ប្រភេទជាពិសេសបទល្មើសគយ, បង្កភាព ងាយស្រួលដល់ពាណិជ្ជកម្មអន្តរជាតិ។ ស្វែងយល់បន្ថែម ទំព័រ ទំព័រដើម អំពី អគរ ច្បាប់ និង បទប្បញ្ញត្តិ ការបោះពុម្ព និង ធនធាន ព័ត៌មាន និង ព្រឹត្តិការណ៍ នីតិវិធីគយ សេចក្តីប្រកាស ស្ថិតិពាណិជ្ជកម្ម សំណួរនានា អី៊មែ៉ល អង្គភាពទំនាក់ទំនងសាធារណៈ #៦-៨ ផ្លូវ ព្រះនរោត្តម សង្កាត់ ផ្សារថ្មី ១ ខណ្ឌ ដូនពេញ រាជធានីភ្នំពេញ សូមចូលទៅកាន់ទំព័រ មន្ត្រីទំនាក់ទំនងតាមអង្គភាព info@customs.gov.kh បណ្ដាញសង្គម គោលការណ៍ភាពឯកជន ©2026 អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា រក្សាសិទ្ធិគ្រប់យា៉ង",
+    "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា ភាសាខ្មែរ English ទំព័រដើម អំពី អគរ កំពុងផ្ទុក.. ច្បាប់ និង បទប្បញ្ញត្តិ ការបោះពុម្ព និង ធនធាន កំពុងផ្ទុក.. ព័ត៌មាន និង ព្រឹត្តិការណ៍ នីតិវិធីគយ កំពុងផ្ទុក.. សេចក្តីប្រកាស ស្ថិតិពាណិជ្ជកម្ម សំណួរនានា អី៊មែ៉ល"
+  ],
+  "pages": [
+    {
+      "url": "https://customs.gov.kh",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:00.826Z",
+      "sha256": "9cab833b08b7850732a09ded0139b8d21877059ed8956bb2662a7df5c8371557",
+      "rawPath": "data/crawl/raw/SRC-043/95dd46897f903ee2-9cab833b08b7.html",
+      "textLength": 393,
+      "text": "ឧបករណ៍ស្វែងរក ស្ថានភាពប្រតិវេទន៍ ស្ថានភាព CO អត្រាពន្ធនិងអាករ ពិនិត្យមើល សម្អាត ពិនិត្យមើល សម្អាត ពិនិត្យមើល សម្អាត ព្រឹត្តិការណ៍ថ្មីៗ នីតិវិធីគយ ច្បាប់ និង បទប្បញ្ញត្តិ ច្បាប់និងបទប្បញ្ញត្តិជាច្រើនទៀត សេចក្ដីប្រកាសព័ត៌មានថ្មីៗ កាលបរិច្ឆេទ ចំណងជើង សេចក្ដីប្រកាសព័ត៌មានជាច្រើនទៀត អត្រាប្ដូរប្រាក់ សុពលភាព ល.រ រូបិយប័ណ្ណ ឯកតា អត្រាប្ដូរ ឯកតា អត្រាប្ដូរ អត្រាប្ដូរប្រាក់ជាច្រើនទៀត ប្រធានបទពេញនិយម",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/publications/1566-exchange-rate-km",
+        "https://customs.gov.kh/videos",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/about",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:04.728Z",
+      "sha256": "181ad1ff6dafa0e30df6fa55f0477b3937c54777ba6eecf3944d11f4b9ab270e",
+      "rawPath": "data/crawl/raw/SRC-043/9738031f0c27842a-181ad1ff6daf.html",
+      "textLength": 8,
+      "text": "អំពី អគរ",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:24.727Z",
+      "sha256": "19a5786b3cbfb8d810f1b3497554cd3e3a1d72db045722e43c3ddc5ffda42e78",
+      "rawPath": "data/crawl/raw/SRC-043/5d4fd780e53f0cb6-19a5786b3cbf.html",
+      "textLength": 8,
+      "text": "អំពី អគរ",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:22.746Z",
+      "sha256": "42fe135e789a9c4f379ce3800be273d773bd6e1cfbaab9619dcca4d0b61f9e5e",
+      "rawPath": "data/crawl/raw/SRC-043/77621a7c77fd62e8-42fe135e789a.html",
+      "textLength": 8,
+      "text": "អំពី អគរ",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/announcements",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:14.719Z",
+      "sha256": "8fa7bfbe58ccf2f2b1afac38d8aefcf96644d8191db36fecf67ce14d317123be",
+      "rawPath": "data/crawl/raw/SRC-043/597d9bcda6ba80ef-8fa7bfbe58cc.html",
+      "textLength": 20,
+      "text": "សេចក្តីប្រកាសព័ត៌មាន",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/videos",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/customs-procedures",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:12.739Z",
+      "sha256": "77659f41482f82dd1426886eb77f7dc1a0b0ab5d52992c07ed8aec584fc7fc78",
+      "rawPath": "data/crawl/raw/SRC-043/3f5515eecf09261e-77659f41482f.html",
+      "textLength": 10,
+      "text": "នីតិវិធីគយ",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/faqs",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:16.777Z",
+      "sha256": "c15ed9383bba22e932672765e4838b178c620fa1799a3f3807d4b1db80ea857e",
+      "rawPath": "data/crawl/raw/SRC-043/9e49487afb3b19db-c15ed9383bba.html",
+      "textLength": 34,
+      "text": "សំណួរដែលសួរញឹកញាប់ ប្រធានបទពេញនិយម",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/videos",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/laws-and-regulations",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:06.745Z",
+      "sha256": "cb806aea8d03a829fe54455768ce344b4413f6ea13baa900902c80a591acdc19",
+      "rawPath": "data/crawl/raw/SRC-043/f6d5ddcab7640d95-cb806aea8d03.html",
+      "textLength": 31,
+      "text": "ច្បាប់ និង បទប្បញ្ញត្តិ ទាំងអស់",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/videos",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/news-and-events",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:10.729Z",
+      "sha256": "4c98c7ee64616ab995bf1809490b429a1fd323a10fb06f2ec262188065aab6c5",
+      "rawPath": "data/crawl/raw/SRC-043/e2ee820167259ad0-4c98c7ee6461.html",
+      "textLength": 33,
+      "text": "ព័ត៌មាន និង ព្រឹត្តិការណ៍ ទាំងអស់",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/videos",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/publications",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:08.730Z",
+      "sha256": "871464169c90609817aece2d21ee7ca2ccdda118d533f8bdee06aff6fe92caef",
+      "rawPath": "data/crawl/raw/SRC-043/32040155e32cffea-871464169c90.html",
+      "textLength": 21,
+      "text": "ការបោះពុម្ព និង ធនធាន",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/publications/1566-exchange-rate-km",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:18.728Z",
+      "sha256": "1225c5efd5a8a6f3a312ec4deb5cf7c0626a33a9f56af93201b75bb9f829748e",
+      "rawPath": "data/crawl/raw/SRC-043/985ba45fff9b9375-1225c5efd5a8.html",
+      "textLength": 21,
+      "text": "ការបោះពុម្ព និង ធនធាន",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://customs.gov.kh/videos",
+      "title": "អគ្គនាយកដ្ឋានគយនិងរដ្ឋាករកម្ពុជា",
+      "fetchedAt": "2026-11-12T19:19:20.750Z",
+      "sha256": "11ef04a42e835af377ee018f36c81e20538912cae40e3bf23800b48868268002",
+      "rawPath": "data/crawl/raw/SRC-043/efc3e624a52a6079-11ef04a42e83.html",
+      "textLength": 43,
+      "text": "វីដេអូ ប្រធានបទពេញនិយម សេវាកម្មអេឡិចត្រូនិក",
+      "links": [
+        "https://customs.gov.kh/",
+        "https://customs.gov.kh/about",
+        "https://customs.gov.kh/laws-and-regulations",
+        "https://customs.gov.kh/publications",
+        "https://customs.gov.kh/news-and-events",
+        "https://customs.gov.kh/customs-procedures",
+        "https://customs.gov.kh/announcements",
+        "https://customs.gov.kh/faqs",
+        "https://customs.gov.kh/about/13023-%E1%9E%98%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%B6%E1%9E%80%E1%9F%8B%E1%9E%91%E1%9F%86%E1%9E%93%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%98%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%97%E1%9E%B6%E1%9E%96",
+        "https://customs.gov.kh/about/10415-%E1%9E%82%E1%9F%84%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8E%E1%9F%8D%E1%9E%AF%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%97%E1%9E%B6%E1%9E%96"
+      ],
+      "documents": []
+    }
+  ]
+}

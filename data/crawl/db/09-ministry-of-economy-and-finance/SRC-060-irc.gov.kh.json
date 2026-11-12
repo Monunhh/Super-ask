@@ -1,0 +1,49 @@
+{
+  "_note": "Crawled material, not steward-approved. Not read by SuperAsk retrieval (see data/README.md).",
+  "institution": {
+    "name": "Ministry of Economy and Finance",
+    "onOfficialList": true,
+    "order": 9
+  },
+  "source": {
+    "id": "SRC-060",
+    "registryId": 60,
+    "organization": "Insurance Regulator of Cambodia",
+    "organizationKm": "និយ័តករធានារ៉ាប់រងកម្ពុជា",
+    "abbreviation": "IRC",
+    "category": "Regulator",
+    "parentMinistry": "Ministry of Economy and Finance",
+    "url": "https://irc.gov.kh",
+    "host": "irc.gov.kh",
+    "priority": 3,
+    "provenance": "unconfirmed",
+    "notes": "Candidate domain - verify."
+  },
+  "reachability": {
+    "outcome": "live",
+    "httpStatus": 200,
+    "homepageTitle": "និយ័តករធានារ៉ាប់រងកម្ពុជា - Insurance Regulator of Cambodia",
+    "checkedAt": "2026-11-12T17:51:03.105Z"
+  },
+  "crawl": {
+    "pageCount": 1,
+    "documentLinks": 0,
+    "firstFetched": "2026-11-12T19:56:52.322Z",
+    "lastFetched": "2026-11-12T19:56:52.322Z",
+    "builtAt": "2026-11-12T22:07:09.711Z"
+  },
+  "chrome": [],
+  "pages": [
+    {
+      "url": "https://irc.gov.kh",
+      "title": "និយ័តករធានារ៉ាប់រងកម្ពុជា - Insurance Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:56:52.322Z",
+      "sha256": "53cac4a5a4182c20d0fe6f8e47a979cc6f4e2ae8223fabe01c178005a2f2a457",
+      "rawPath": "data/crawl/raw/SRC-060/7de6d64f89698a1e-53cac4a5a418.html",
+      "textLength": 1332,
+      "text": "និយ័តករធានារា៉ប់រងកម្ពុជា - Insurance Regulator of Cambodia Sandbox Publication Insurance Institutions Insurance Agent Registration Company Submission/Request Complaint INSURANCE REGULATOR of CAMBODIA HOME LAW & REGULATION Laws Sub Decrees Prakas Guidance AML & PF UNSC Resolutions UNSC Consolidated List UNSC DPRK Other STATISTICS Monthly Quarterly Annually PUBLIC SERVICE ភាសាខ្មែរ ភាសាខ្មែរ និយ័តករធានារា៉ប់រងកម្ពុជា - Insurance Regulator of Cambodia (ន.ធ.ក. - IRC) News Total Gross Premium Management Structure Other Websites Ministry of Economy and Finance Accounting and Auditing Regulator Social Security Regulator Trust Regulator Securities and Exchange Regulator of Cambodia Real Estate Business & Pawnshop Regulator Internal Audit Unit Ministry of Justice Ministry of Commerce National Bank of Cambodia INSURANCE REGULATOR of CAMBODIA FOLLOW US 071 258 0896 gad@irc.gov.kh Building # 168 (6th Floor), St. 598, Sangkat Chraing Chamres 1, Khan Russey Keo, Phnom Penh, Cambodia About Us Contact Us ©2022, INSURANCE REGULATOR of CAMBODIA. All rights reserved. We accept : INSURANCE REGULATOR of CAMBODIA 071 258 0896 gad@irc.gov.kh Building # 168 (6th Floor), St. 598, Sangkat Chraing Chamres 1, Khan Russey Keo, Phnom Penh, Cambodia About Us Contact Us We accept : ©2022, INSURANCE REGULATOR of CAMBODIA. All rights reserved.",
+      "links": [],
+      "documents": []
+    }
+  ]
+}

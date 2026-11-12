@@ -1,0 +1,188 @@
+{
+  "_note": "Crawled material, not steward-approved. Not read by SuperAsk retrieval (see data/README.md).",
+  "institution": {
+    "name": "Ministry of Economy and Finance",
+    "onOfficialList": true,
+    "order": 9
+  },
+  "source": {
+    "id": "SRC-076",
+    "registryId": 76,
+    "organization": "Cambodia Data Exchange",
+    "organizationKm": "វេទិកាផ្លាស់ប្តូរទិន្នន័យកម្ពុជា",
+    "abbreviation": "CamDX",
+    "category": "Digital Platform",
+    "parentMinistry": "Ministry of Economy and Finance",
+    "url": "https://camdx.gov.kh",
+    "host": "camdx.gov.kh",
+    "priority": 1,
+    "provenance": "search",
+    "notes": "National API/data-exchange layer. Membership portal at registration.camdx.gov.kh. Likely source of live APIs for SuperAsk."
+  },
+  "reachability": {
+    "outcome": "live",
+    "httpStatus": 200,
+    "homepageTitle": "CamDX - Cambodia Data Exchange",
+    "checkedAt": "2026-11-12T17:51:27.332Z"
+  },
+  "crawl": {
+    "pageCount": 11,
+    "documentLinks": 7,
+    "firstFetched": "2026-11-12T20:07:10.812Z",
+    "lastFetched": "2026-11-12T20:07:36.581Z",
+    "builtAt": "2026-11-12T22:07:10.211Z"
+  },
+  "chrome": [],
+  "pages": [
+    {
+      "url": "https://camdx.gov.kh",
+      "title": "CamDX - Cambodia Data Exchange",
+      "fetchedAt": "2026-11-12T20:07:10.812Z",
+      "sha256": "c113d13ce59056d3315a5f172a44d881400a40d7a7e0fe85bb443b21fd8e8d64",
+      "rawPath": "data/crawl/raw/SRC-076/b9e59628f9c9c2d2-c113d13ce590.html",
+      "textLength": 8985,
+      "text": "CamDX - Cambodia Data Exchange CamDX Home CamDX Principles CamDigiKey Services F.A.Q Contact Us Tools Cambodia Data Exchange Platform Securely allow multi-lateral data exchange between different information systems over the Internet. Get Started Monitoring Tool What is CamDX? CamDX stands for Cambodia Data eXchange, which adopts the model of X-Road of Estonia. CamDX is a unified yet decentralized data exchange layer between information systems that offers a standardized and secure way to provide and consume services. CamDX ensures confidentiality , integrity , and interoperability between a multitude of different data exchange parties. The main goal of CamDX is to build an infrastructure that allows for establishing effortless access to data in government databases (public services) without compromising the security and ownership of the data and with minimal technical changes in the existing information systems. CamDX is: A unified way of data exchange A distributed system based on collaboration A platform that handles data security, authenticity and integrity A unified APIs for easing interoperability A platform designed to be scaled CamDX is also founded on The Once-Only Principle (TOOP) concept which ensure that the data will be collected from citizen, business and government once adhering to data protection laws/regulations with user consent. The collected data will be shared among authorized institutions. By sharing the data among only authorized authorities, the TOOP reduces the administrative burden and improves data consistency. Rule and Procedure of CamDX Member Read Document Decision as Operator of CamDX Read Document API Catalogue Read Document CamDX Sub-Decree Read Document Unofficial Translation of CamDX Sub-Decree Read Document [Khmer Version] The Application Process of Becoming a CamDX Member Read Document [English Version] The Application Process of Becoming a CamDX Member Read Document e-KYC Fee Scheme Read Document How to Join CamDX? Fill in the Application Form Online 1 Waiting for review and approval from Techo Startup Center 2 Fulfill the Technical and Testing requirements Complete the Security Server Installation Prepare the API Catalog for listing in CamDX Ecosystem (Provider) or prepare the preferred API list to consume (Consumer) Submit the Information Security Guideline Checklist Submit the SIT & UAT documents 3 Sign the contract after having fulfilled all the requirements 4 Make an official membership announcement 5 CamDX Membership Registration Design Principles The design principle of CamDX adhering to the design concept of X-Road. Distributed CamDX is a distributed system with no central database performing only data exchange. Secure Enterprise-class security at the application level by ensuring the authenticity, integrity and non-repudiation of the exchanged data. Reliable No single point of failure. Failure could be partial. Each registry owner can employ proactive measures against any kinds of attack. Do Not Own Data CamDX neither store nore see the exchanged data. CamDX only captures meta-data for monitoring and reporting purpose. Ease Of Use All communications in CamDX are based on web services, preferably REST API, and therefore can be used by all developers. Heterogeneous CamDX connects systems built on any platforms and technologies of choice. CamDX Components CamDX comprises three main components namely core components, trusted components and its members. Core components provide registry service of information systems, service health monitoring, transaction log and proxying with information systems about the data exchange. Trusted components provide trusted services such as identification, authentication, and Public Key Infrastructure (PKI) functionality. CamDX members are entities that wish to communicate with each other through CamDX. Each member connects with information systems of other members through a security server. Thus, all CamDX members need to add a security server, signed to CamDX's PKI, to their infrastructure. Characteristics of Security Server Security Server acts as a bridge between two or more information systems engaging in secure data exchange. Establishing a secure channel between two Security Servers in a manner that messages are encrypted, digitally signed and time-stamped to ensure the long-term authenticity value of the transaction Creating an overlay network among its peers over the Internet. Secured by Public Key Infrastructure (PKI). An API gateway with organizational-level access control. Handle multiple secure connections with its peers. Security of Data Exchange A CamDX member does not require to develop its own solution ensuring the security and privacy of the data. In CamDX, security of data exchange is ensured by distributed architecture, security server and the use of standard technology. Confidentiality is guaranteed with the condition that encrypted data are exchange directly between members and do not pass through any third parties. Availability of data exchange is practically independent of CamDX and its core components. Integrity and no repudiation of data is ensured by a digital signature and timestamping of all exchanged messages. CamDigiKey, a Mobile Authentication Application CamDigiKey is a secure yet easy mobile application to authenticate oneself digitally to access to various government digital services running through CamDX. Users must register to obtain valid digital identity. To login, users simply use the application to scan the QR code appeared in the login screen of the government portals. Online Business Registration is the first government portal that uses CamDigiKey to authenticate the user digital identity. User Guide New Features Liveness face detection Machine readable zone (MRZ) code reading App-to-app integration Web-to-web integration Google Play App Store Development integration guides: Documentation Android iOS Web Online Business Registration Online Business Registration is a new business registration platform that combines at least four main relevant information systems into a single portal allowing business owners to register and get the licenses to operate their business efficiently and effectively. The platform is backed by a Subdecree and serveral Prakases to lower the registering time and cost. The single portal distributed the data registered by business owners to respective information system of Ministry of Commerce, General Department of Taxation and Ministry of Labour and Vocational Training, through CamDX. The single portal relies on CamDigiKey as its authentication service. The benefits of Online Business Registration are: Taking only 8 working days to get the business licenses/certificates. Spending less. Eliminating the same data entry at various government agencies. Paying the registration fee online once. Issuing licenses/certificates in a verifiable digital form. In the first step, Online Business Registration covers only the forefront government agencies who offers the business service registration. Those key actors are Ministry of Commerce , General Department of Taxation and Ministry of Labour and Vocational Training . Other relevant ministries will join in the next step. In this step, Ministry of Interior allows CamDX to verify the data of Khmer National Identification with their own system to improve the consistency of the personal data. Among those, Ministry of Economy and Finance facilitates the inter-ministry working group to regulate and simplify the business registration process. Council for the Development of Cambodia is also join the workforce in order to blend the investment data with company registration data. Frequently Asked Questions How can we help you? Does CamDX store the data? No. Security Servers at both side of communication do asymetric key encryption and digital signature that even CamDX cannot see or temper the content of the data exchange between two systems. Why do I have to use CamDX if VPN can secure the channel? Where is CamDX? What kind of services that CamDX can offer? How to join CamDX? What are the benefits of joining CamDX? Contact Us We are happy to discuss with you whether you want to find more information or you want to join CamDX. Address Techo Startup Center 11th Floor of Business Development Center, OCIC Blvd, 12110, Sangkat Chrouy Changva, Khan Chrouy Changva, Phnom Penh, Kingdom of Cambodia. Call Us +855 81 888 296 Email Us [email protected] [email protected] Working Hour Mon - Fri: 8AM to 5PM Except Public Holiday CamDX Techo Startup Center 11th Floor of Business Development Center, OCIC Blvd, 12110, Sangkat Chrouy Changva, Khan Chrouy Changva, Phnom Penh, Kingdom of Cambodia. +855 81 888 296 [email protected] CamDX Principles CamDigiKey Services F.A.Q Contact Us Stay Connected ©2020-2026 CamDX. All Rights Reserved. Terms of Use | Privacy Policy Menu Home CamDX Principles CamDigiKey Services F.A.Q Contact Us Monitoring Monitoring Open APIs eKYC eKYB",
+      "links": [
+        "https://camdx.gov.kh/",
+        "https://camdx.gov.kh/docs/open-api/ekyc",
+        "https://camdx.gov.kh/cdn-cgi/l/email-protection",
+        "https://camdx.gov.kh/terms",
+        "https://camdx.gov.kh/privacy",
+        "https://camdx.gov.kh/docs/open-api/ekyb"
+      ],
+      "documents": [
+        "https://camdx.gov.kh/documents/files/Rule_&amp;_Procedure_to_be_CamDX_Membership.pdf",
+        "https://camdx.gov.kh/documents/files/20220728-Decision%20on%20TSC%20as%20operator%20of%20CamDX.pdf",
+        "https://camdx.gov.kh/documents/files/CamDX%20Subdecree.pdf",
+        "https://camdx.gov.kh/documents/files/Unofficial%20Translation%20of%20CamDX%20Subdecree.pdf",
+        "https://camdx.gov.kh/documents/files/CamDX%20User%20Guide%20Book%20Khmer.pdf",
+        "https://camdx.gov.kh/documents/files/CamDX%20User%20Guide%20Book%20English.pdf",
+        "https://camdx.gov.kh/documents/files/e-KYCFeeScheme.pdf"
+      ]
+    },
+    {
+      "url": "https://camdx.gov.kh/docs/open-api/ekyb",
+      "title": "CamDX - Cambodia Data Exchange",
+      "fetchedAt": "2026-11-12T20:07:36.581Z",
+      "sha256": "c74835a0851d0ddc9885a90e94ab15a21e0ec64b466788f31a957e9ae9e2d381",
+      "rawPath": "data/crawl/raw/SRC-076/098abdd69ed9ec10-c74835a0851d.html",
+      "textLength": 30,
+      "text": "CamDX - Cambodia Data Exchange",
+      "links": [],
+      "documents": []
+    },
+    {
+      "url": "https://camdx.gov.kh/docs/open-api/ekyc",
+      "title": "CamDX - Cambodia Data Exchange",
+      "fetchedAt": "2026-11-12T20:07:18.573Z",
+      "sha256": "0c11af1d96081d5557550a063e6cc2431f85c66c26f9ad3c8ebf182cbf515c4c",
+      "rawPath": "data/crawl/raw/SRC-076/bd7b17acb561db43-0c11af1d9608.html",
+      "textLength": 30,
+      "text": "CamDX - Cambodia Data Exchange",
+      "links": [],
+      "documents": []
+    },
+    {
+      "url": "https://camdx.gov.kh/documents/files/20220728-Decision%20on%20TSC%20as%20operator%20of%20CamDX.pdf",
+      "title": "",
+      "fetchedAt": "2026-11-12T20:07:16.633Z",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rawPath": "data/crawl/raw/SRC-076/918adcffa42ed011-e3b0c44298fc.html",
+      "textLength": 0,
+      "text": "",
+      "links": [],
+      "documents": []
+    },
+    {
+      "url": "https://camdx.gov.kh/documents/files/CamDX%20Subdecree.pdf",
+      "title": "",
+      "fetchedAt": "2026-11-12T20:07:21.018Z",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rawPath": "data/crawl/raw/SRC-076/b0281e555abc032a-e3b0c44298fc.html",
+      "textLength": 0,
+      "text": "",
+      "links": [],
+      "documents": []
+    },
+    {
+      "url": "https://camdx.gov.kh/documents/files/CamDX%20User%20Guide%20Book%20English.pdf",
+      "title": "",
+      "fetchedAt": "2026-11-12T20:07:26.646Z",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rawPath": "data/crawl/raw/SRC-076/ef243f2ba4c69fec-e3b0c44298fc.html",
+      "textLength": 0,
+      "text": "",
+      "links": [],
+      "documents": []
+    },
+    {
+      "url": "https://camdx.gov.kh/documents/files/CamDX%20User%20Guide%20Book%20Khmer.pdf",
+      "title": "",
+      "fetchedAt": "2026-11-12T20:07:26.035Z",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rawPath": "data/crawl/raw/SRC-076/476bb3787f7a2784-e3b0c44298fc.html",
+      "textLength": 0,
+      "text": "",
+      "links": [],
+      "documents": []
+    },
+    {
+      "url": "https://camdx.gov.kh/documents/files/e-KYCFeeScheme.pdf",
+      "title": "",
+      "fetchedAt": "2026-11-12T20:07:28.533Z",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rawPath": "data/crawl/raw/SRC-076/ef1c2732045a7362-e3b0c44298fc.html",
+      "textLength": 0,
+      "text": "",
+      "links": [],
+      "documents": []
+    },
+    {
+      "url": "https://camdx.gov.kh/documents/files/Unofficial%20Translation%20of%20CamDX%20Subdecree.pdf",
+      "title": "",
+      "fetchedAt": "2026-11-12T20:07:22.647Z",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rawPath": "data/crawl/raw/SRC-076/883424cdd744ae81-e3b0c44298fc.html",
+      "textLength": 0,
+      "text": "",
+      "links": [],
+      "documents": []
+    },
+    {
+      "url": "https://camdx.gov.kh/privacy",
+      "title": "CamDX - Cambodia Data Exchange",
+      "fetchedAt": "2026-11-12T20:07:34.665Z",
+      "sha256": "53194db0df68a3fb417dd0fc35e0b6cc109e5b608b22edae5cc2f0cd53480b04",
+      "rawPath": "data/crawl/raw/SRC-076/642c86fdec9359c3-53194db0df68.html",
+      "textLength": 4861,
+      "text": "CamDX - Cambodia Data Exchange CamDX Home CamDX Principles CamDigiKey Services F.A.Q Contact Us Tools Privacy Policy CamDX is a data exchange platform of the Royal Government of Cambodia operated by Ministry of Economy and Finance. Ministry of Economy and Finance of Cambodia (“ we ”, “ us ”, or “ our ”) has built CamDX to allow two or more information systems exchange their data securely over the Internet. We operate this website, https://camdx.gov.kh . In providing our Services, we take your privacy seriously and are committed to providing a safe online experience. We believe in being transparent about our practices, which is why we have provided this Privacy & Cookies Policy (“Policy”) to explain how we collect, use and disclose your information. This updated Policy gives you more control over your information and more clearly explains how we use it. The contents of personal data obtained by us are your name, name of your company, title, your address, address of your company, e-mail address, mobile phone number, etc. The purposes of processing are to provide you with feedback on incidents (including, but not limited to, questions, bugs or complaints) you raise when using our services, to provide you with updates on changes to our services (including bug fixes, new features and revised content) where you have already engaged with us by raising an incident, and to inform you when we launch new services that address the same capability as previous our services where you have engaged with us in the past. The legal basis for processing of your personal data includes that (i) processing is necessary for the performance of a contract to which the data subject is a party, (ii) processing is necessary for compliance with a legal obligation to which the data controller is subject, and (iii) processing is necessary for the legitimate interests of the data controller unless such interests are overridden by the interests or rights of the data subject. To be more precise, we have the purposes of the legitimate interests of notifying you of any troubles (including but not limited to any security incidents). We only retain collected information for as long as necessary to provide you with your requested service or comply with statutory retention period. What data we store, we will protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification. In case where we provide third parties with personal data to the extent permissible by applicable laws, the recipients or the types of recipients are our group companies and service providers. Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies. You are free to refuse our request for your personal data and are not subject to a legal obligation to provide such data, with the understanding that we may be unable to provide you with some of your desired services. You can demand access to an information on collected personal data concerning you, and you have the right to receive, in a commonly used and machine-readable format, the information you have provided. You can also demand that your personal data be erased or rectified and processing of it restricted in cases where you have legitimate grounds. If you have consented to your personal data being processed by us, you can withdraw that consent at any time. Such withdrawal of consent shall not affect the lawfulness of processing based on the consent before its withdrawal. You have the right to object to processing of your personal data if we use it based on a weighing of interest. In that case, we no longer use your personal information, unless we have an overriding interest in doing so. You have the right to request the correction, deletion, or restricted processing of your personal information. Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us at the following address. Ministry of Economy and Finance [email protected] St.92, Sangkat Wat Phnom, Khan Daun Penh, Phnom Penh, Cambodia This policy is effective as of 1 May 2020. CamDX Techo Startup Center 11th Floor of Business Development Center, OCIC Blvd, 12110, Sangkat Chrouy Changva, Khan Chrouy Changva, Phnom Penh, Kingdom of Cambodia. +855 81 888 296 [email protected] CamDX Principles CamDigiKey Services F.A.Q Contact Us Stay Connected ©2020-2026 CamDX. All Rights Reserved. Terms of Use | Privacy Policy Menu Home CamDX Principles CamDigiKey Services F.A.Q Contact Us Monitoring Monitoring Open APIs eKYC eKYB",
+      "links": [
+        "https://camdx.gov.kh/",
+        "https://camdx.gov.kh/cdn-cgi/l/email-protection",
+        "https://camdx.gov.kh/terms",
+        "https://camdx.gov.kh/privacy",
+        "https://camdx.gov.kh/docs/open-api/ekyc",
+        "https://camdx.gov.kh/docs/open-api/ekyb"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://camdx.gov.kh/terms",
+      "title": "CamDX - Cambodia Data Exchange",
+      "fetchedAt": "2026-11-12T20:07:32.666Z",
+      "sha256": "f192b55a7fff52c90398445dfa7c4b1f415b8aec8000539afe761e240f54cdf5",
+      "rawPath": "data/crawl/raw/SRC-076/5d37c690057f28ed-f192b55a7fff.html",
+      "textLength": 6426,
+      "text": "CamDX - Cambodia Data Exchange CamDX Home CamDX Principles CamDigiKey Services F.A.Q Contact Us Tools Terms of Use CamDX is a data exchange platform of the Royal Government of Cambodia operated by Ministry of Economy and Finance. Please read the Terms of Use contained herein carefully. By accessing and using any part of https://camdx.gov.kh website (“ Site ”), you shall be deemed to have accepted to be legally bound by these Terms of Use without limitation or qualification. If you do not agree to these Terms of Use, please do not access or use the Site. Any continued access or use of the Site (whether this time or in future) will imply that you have accepted these Terms of Use. 1. General These Terms of Use may be changed from time to time. All changes will be posted on this page, and your access or use of the Site after such changes have been posted will constitute your agreement to the modified Terms of Use and all of the changes. You should therefore read this page carefully each time you visit the Site. 2. Proprietary Rights The Site is owned and operated by CamDX team (“ we ”, “ our ”, or “ us ”) who works under Ministry of Economy and Finance of Cambodia. The materials located on this Site and on our social media channels, including the information, images, videos as well as any software programs available on or through the Site (collectively “ Content ”), are protected by copyright, trademark and other forms of proprietary rights. Unless expressly stated, all rights, title, benefit and interest in the Content are owned by, licensed to or controlled by CamDX. 3. Restrictions on Use of Content The Content made available on this Site is property of CamDX an may not be disclosed, disseminated, or distributed to any unauthorized party. Except as otherwise permitted by us, you shall not reproduce, retransmit, disseminate, sell, distribute, republish, broadcast, circulate or commercially exploit any part of this Site or the Content in any manner for any public or commercial purpose without our express written consent. 4. Other Restrictions on Use of Site You may not attempt to gain unauthorized access to any portion or feature of the Site, or any other systems or networks connected to the Site or to any servers of CamDX, or to any of the services offered on or through the Site, by hacking, password “mining” or any other illegitimate means. 5. Social Media We reserve all rights relating to our social media channels, including but not limited to: (i) adding, removing, or modifying any content, (ii) blocking disruptive users; and (iii) discontinuing any of our social media channels at any time. We do not create, control, represent, or endorse any opinions or statements expressed by others within its social media channels, including those that follow or “like” us and those followed or “liked” by us and that any content posted by anyone other than us is the responsibility of the submitter and not us. In addition, if we follow another user’s account, “like” another page, re-tweets, “favorites,” shares, or otherwise re-posts another user’s content, such an action does not constitute an endorsement by us. 6. Disclaimer of Warranties and Liability Nothing in this Site or on our social media channels constitutes a representation or an offer or otherwise, and shall not bind CamDX in any way. The Content is provided on an “as-is, where-is” basis without any warranties of any kind, express or implied. We specifically disclaim implied warranties of title, merchantability, fitness for a particular purpose, expectation of privacy and non-infringement. To the fullest extent permitted by law, we do not warrant and hereby disclaim any warranty: a. as to the accuracy, correctness, reliability, update, timeliness, non-infringement, title, merchantability or fitness for any particular purpose of the Content; or b. that the Content or any functions associated with the Site will be uninterrupted or error-free, or that defects will be corrected or that the Site and the Site server are and will be free of all viruses and / or other harmful elements. We shall also not be liable for any damage or loss of any kind, howsoever caused as a result (direct or indirect) of the access or use of the Site, including but not limited to any damage or loss suffered as a result of reliance on the Content. 7.Reserved Rights We reserve the right to update or modify the Site from time to time. We further reserve all rights to deny or restrict access to the Site or any part(s) thereof to any particular person (whether such person is in our networks or a subscriber or otherwise), or to block access to the Site, at any time, for any reasons whatsoever and without ascribing any reasons whatsoever. 8. Links from the Site to Other Sites The Site may contain hyper-links to websites which are not produced or maintained by us. We make no representation and are not responsible for the Content of those websites and shall not be liable for any damages or loss arising from access to those websites. Any content, services, representations made on such websites are solely the responsibility of the operator of those websites and we assume no responsibility for any content, the operation or the services provided thereon. Use of the hyper-links and access to such linked websites are entirely at your own risk. 9. Links to the Site from Other Sites In no circumstances shall CamDX be considered to be associated or affiliated in whatever manner with the websites that link to the Site or any part(s) of the Site. We reserve the right to disable any unauthorized links or frames and disclaims any responsibility for the content on any other sites reached by links to or from the Site or any of the Content. 10. Applicable Law These Terms of Use are governed by the laws and regulations of the Kingdom of Cambodia. 11. Privacy Policy By accessing or using the Site, you are deemed to have also accepted our Data Protection and Privacy Policy here . CamDX Techo Startup Center 11th Floor of Business Development Center, OCIC Blvd, 12110, Sangkat Chrouy Changva, Khan Chrouy Changva, Phnom Penh, Kingdom of Cambodia. +855 81 888 296 [email protected] CamDX Principles CamDigiKey Services F.A.Q Contact Us Stay Connected ©2020-2026 CamDX. All Rights Reserved. Terms of Use | Privacy Policy Menu Home CamDX Principles CamDigiKey Services F.A.Q Contact Us Monitoring Monitoring Open APIs eKYC eKYB",
+      "links": [
+        "https://camdx.gov.kh/",
+        "https://camdx.gov.kh/privacy",
+        "https://camdx.gov.kh/cdn-cgi/l/email-protection",
+        "https://camdx.gov.kh/terms",
+        "https://camdx.gov.kh/docs/open-api/ekyc",
+        "https://camdx.gov.kh/docs/open-api/ekyb"
+      ],
+      "documents": []
+    }
+  ]
+}

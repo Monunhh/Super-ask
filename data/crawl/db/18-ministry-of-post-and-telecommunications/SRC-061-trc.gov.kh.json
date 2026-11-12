@@ -1,0 +1,533 @@
+{
+  "_note": "Crawled material, not steward-approved. Not read by SuperAsk retrieval (see data/README.md).",
+  "institution": {
+    "name": "Ministry of Post and Telecommunications",
+    "onOfficialList": true,
+    "order": 18
+  },
+  "source": {
+    "id": "SRC-061",
+    "registryId": 61,
+    "organization": "Telecommunication Regulator of Cambodia",
+    "organizationKm": "និយ័តករទូរគមនាគមន៍កម្ពុជា",
+    "abbreviation": "TRC",
+    "category": "Regulator",
+    "parentMinistry": "Ministry of Post and Telecommunications",
+    "url": "https://trc.gov.kh",
+    "host": "trc.gov.kh",
+    "priority": 2,
+    "provenance": "unconfirmed",
+    "notes": "Candidate domain - verify."
+  },
+  "reachability": {
+    "outcome": "live",
+    "httpStatus": 200,
+    "homepageTitle": "Telecommunication Regulator of Cambodia | Telecommunication Regulator of Cambodia",
+    "checkedAt": "2026-11-12T17:51:07.372Z"
+  },
+  "crawl": {
+    "pageCount": 23,
+    "documentLinks": 0,
+    "firstFetched": "2026-11-12T19:56:54.828Z",
+    "lastFetched": "2026-11-12T19:57:40.984Z",
+    "builtAt": "2026-11-12T22:07:09.739Z"
+  },
+  "chrome": [
+    "Previous Next Telecommunication Regulator of Cambodia 6789 [email protected] Street 102, Sangkat Wat Phnom, Khan Daun Penh, Phnom Penh Spokesman: Mr. Sithy Sieng +855 11 809 888 [email protected] Street 102, Sangkat Wat Phnom, Khan Daun Penh, Phnom Penh Quick Links Contact Us Mobile Phone Prefixes Common Codes Short Codes Follow Us © All Rights Reserved by Telecommunication Regulator of Cambodia",
+    "| Telecommunication Regulator of Cambodia Skip Navigation About Us Services Laws & Regulations Media Resources Complaint",
+    "Published: Telecommunication Regulator of Cambodia Date:"
+  ],
+  "pages": [
+    {
+      "url": "https://trc.gov.kh",
+      "title": "Telecommunication Regulator of Cambodia | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:56:54.828Z",
+      "sha256": "529887dce65d02f52408f2cb3d41dba1c7e3b95641c0beab329a95f35ec220eb",
+      "rawPath": "data/crawl/raw/SRC-061/6b4a087f39fcf27e-529887dce65d.html",
+      "textLength": 2652,
+      "text": "Telecommunication Regulator of Cambodia Telecommunication Regular of Cambodia (TRC) website ព័ត៌មាន TRC and OFCA Sign MoU to Combat Scam and Spam Communications 1 សកម្មភាព The Signing of a New MoU with the Telecommunication Regulator of Cambodia (TRC) to Strengthen Cooperation in Tackling Phone Scams 2 សកម្មភាព Minister Vandeth Chea Participates in the TRC Leadership Transfer Ceremony 3 Previous slide Next slide Services សាធារណជន ប្រតិបត្តិករ ឈ្មោះដែនជាតិ សាលបម្រើសេវាអី៉នធឺណិត ហាងបើកលក់និងជួសជុលគ្រឿងសម្ភារបរិក្ខារទូរគមនាគមន៍ Media Announcement on Prohibiting the Importation, Supply, and Distribution of Counterfeit and/or Second-Hand Mobile Phones, Tablets, Computers, Walkie-Talkies, and Other Telecommunications Equipment from Abroad September 22, 2026 News Release News Release Announcement on Prohibiting the Importation, Supply, and Distribution of Counterfeit and/or Second-Hand Mobile Phones, Tablets, Computers, Walkie-Talkies, and Other Telecommunications Equipment from Abroad September 22, 2026 Announcement On Vigilance against Fraudulent Schemes Involving the Advertising and Provision of Purported \"Account and Page Protection\" Services on Social Media in Exchange for a Fee August 21, 2026 News Release News Release Announcement On Vigilance against Fraudulent Schemes Involving the Advertising and Provision of Purported \"Account and Page Protection\" Services on Social Media in Exchange for a Fee August 21, 2026 Public Notification On Resolving Issues Related on Internet Services Usage August 20, 2026 News Release News Release Public Notification On Resolving Issues Related on Internet Services Usage August 20, 2026 Public Notification On The Case of Viettel (Cambodia) Selling Mobile Phone SIM Cards Without Properly Accepting the User's Identification Documents in Accordance with Applicable Regulations June 15, 2026 News Release News Release Public Notification On The Case of Viettel (Cambodia) Selling Mobile Phone SIM Cards Without Properly Accepting the User's Identification Documents in Accordance with Applicable Regulations June 15, 2026 Announcement on Progress of the Construction and the Provision of 5G Mobile Services in Cambodia June 9, 2026 News Release News Release Announcement on Progress of the Construction and the Provision of 5G Mobile Services in Cambodia June 9, 2026 See more media MPTC Speed Test App Measure mobile boardhand performance anywhere and anytime with accurate results and user-friendly. For more related information, please visit mbc.gov.kh Ministry and Autonomous Units Ministry of Post and Telecommunications Telecom Cambodia Cambodia Post Cambodia Academy of Digital Technology",
+      "links": [
+        "https://trc.gov.kh/en/",
+        "https://trc.gov.kh/en/complaint",
+        "https://trc.gov.kh/en/media/news-releases/12-news-release",
+        "https://trc.gov.kh/en/media/activities/5-activity",
+        "https://trc.gov.kh/en/media/activities/1-activity",
+        "https://trc.gov.kh/en/media/news-releases/24-news-release",
+        "https://trc.gov.kh/en/media/news-releases/23-news-release",
+        "https://trc.gov.kh/en/media/news-releases/22-news-release",
+        "https://trc.gov.kh/en/media/news-releases/21-news-release",
+        "https://trc.gov.kh/en/media/news-releases/19-news-release",
+        "https://trc.gov.kh/en/media/news-releases",
+        "https://trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://trc.gov.kh/en/contactusform",
+        "https://trc.gov.kh/en/resources/mobile-prefixes",
+        "https://trc.gov.kh/en/resources/common-codes",
+        "https://trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/complaint",
+      "title": "Complaint | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:56:56.965Z",
+      "sha256": "b90bfe293073c7da5a90714ddffe9969ce86824ba21adc198dcf3d6b3bece886",
+      "rawPath": "data/crawl/raw/SRC-061/4de61d1d00b9cfca-b90bfe293073.html",
+      "textLength": 111,
+      "text": "Complaint Redirecting to the external complaint portal... If you are not redirected automatically, click here .",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/contactusform",
+      "title": "Contact Us TRC | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:18.984Z",
+      "sha256": "89c9daea988c1a236b2fd5073e4464354a2e898d26d0a5e30f761e95a9bc38e7",
+      "rawPath": "data/crawl/raw/SRC-061/23f99dd74e48319e-89c9daea988c.html",
+      "textLength": 342,
+      "text": "Contact Us TRC Contact If you have any complaints regarding internet or telecommunications issues, kindly refer to mbc.gov.kh We are welcomed for any questions and feedback. Please fill in the form below and we will get back to you shortly. Submit Telecommunication Regulator of Cambodia 6789 [email protected] 7:30 AM - 4:30 PM / (Mon - Fri)",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/activities/1-activity",
+      "title": "Minister Vandeth Chea Participates in the TRC Leadership Transfer Ceremony | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:03.008Z",
+      "sha256": "c0afc4953b528c0ab6251f3419fea966446bcd01404f5530d302461c23e3f1fa",
+      "rawPath": "data/crawl/raw/SRC-061/47d09e899a78b34e-c0afc4953b52.html",
+      "textLength": 2495,
+      "text": "Minister Vandeth Chea Participates in the TRC Leadership Transfer Ceremony Minister Vandeth Chea Participates in the TRC Leadership Transfer Ceremony Minister Vandeth Chea Participates in the TRC Leadership Transfer Ceremony Published: Semtararath Date: November 26, 2020 Phnom Penh, 26 November 2020, Minister of Post and Telecommunications Vandeth Chea participated in the leadership transfer ceremony of Telecommunication Regulator of Cambodia (TRC) held at the TRC premises. Present at the ceremony were MPTC leadership, TRC leadership and officials. Secretary of State Chakrya Moa highlighted some of TRC’s past achievements, particularly the modernization of equipment, increasing effectiveness of the telecommunications and ICT infrastructure, and crime prevention. TRC has also provided capacity building and livelihood support programs for officials and employees as a way to promote team spirit. Speaking at the ceremony, H.E. Chenda Thong, the newly appointed chairman of TRC, expressed gratitude towards the government and Minister Chea for placing trust and confidence in his ability to lead TRC. Chairman Thong also took the opportunity to commend Secretary Moa for his leadership of TRC, bringing about noticeable development of the telecoms sector. Under the new administration, Chairman Thong stated his commitment to implementing restructuring policies to the highest standards, in line with Minister Chea’s steadfast, strategic leadership and government policies in advancing the quality and effectiveness of the sector and ensuring fair competition among telecoms operators. On this occasion, Minister Chea praised Secretary Moa for his past contribution to the sector and TRC. However, H.E. Minister stated that there remained key and urgent tasks for Chairman Thong to focus on to enforce the regulations, license regime management and revenue mobilization. In addition, Minister Chea urged Chairman Thong to draft relevant laws and regulations to guarantee fair business practice, consumer protection, and reliable telecoms services and equipment. H.E. Minister also advised TRC to improve their administrative process in carrying out duties, strengthening human capital and fostering technical capability. In his closing remarks, Minister Chea once again expressed his confidence in the leadership and energy of Chairman Thong and thanked MPTC and TRC leaderships, officials, and employees for their contribution to TRC’s missions and goals as well as to the public good.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/activities/2-activity",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/activities/2-activity",
+      "title": "Telecommunication Regulator of Cambodia (TRC) and the Securities Exchange Regulator of Cambodia (SERC) organized a collaborative Capacity Building Training on \"Cybersecurity” | Telecommunication Regul",
+      "fetchedAt": "2026-11-12T19:57:33.255Z",
+      "sha256": "beaa9ea08e702da697b8e28c0ac1d719cc5edfb0dcf97e00a788deecc5efb036",
+      "rawPath": "data/crawl/raw/SRC-061/c63c304b15a45ef3-beaa9ea08e70.html",
+      "textLength": 1558,
+      "text": "Telecommunication Regulator of Cambodia (TRC) and the Securities Exchange Regulator of Cambodia (SERC) organized a collaborative Capacity Building Training on \"Cybersecurity” Telecommunication Regulator of Cambodia (TRC) and the Securities Exchange Regulator of Cambodia (SERC) organized a collaborative Capacity Building Training on \"Cybersecurity” Telecommunication Regulator of Cambodia (TRC) and the Securities Exchange Regulator of Cambodia (SERC) organized a collaborative Capacity Building Training on \"Cybersecurity” May 31, 2023 On May 31, 2023, the Telecommunication Regulator of Cambodia (TRC) and the Securities Exchange Regulator of Cambodia (SERC) organized a collaborative Capacity Building Training on “Cybersecurity”. The training aimed to equip officials from regulatory bodies and relevant stakeholders with the necessary knowledge and skills to effectively respond to cyber risks arising from the use of technology. During the Capacity Building Training, participants had the opportunity to engage in interactive sessions with speakers on emerging cyber threats, incident response strategies, and the importance of robust cybersecurity frameworks. The TRC and SERC remain steadfast in their commitment to promoting cybersecurity awareness and resilience in Cambodia’s telecommunications and securities sectors. By organizing such capacity-building initiatives and knowledge-sharing platforms, we aim to facilitate a safe and secure digital environment that fosters innovation, protects consumers, and supports sustainable economic growth.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/activities/1-activity",
+        "https://www.trc.gov.kh/en/media/activities/3-activity",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/activities/4-activity",
+      "title": "TRC commissioners joined the opening ceremony \"Project of 5G and Digital Future of Cambodia\" hosted by the US Embassy | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:31.832Z",
+      "sha256": "596443fbb6403a4e32afbe04122dbfe439e5e46e2857b25f1150b6076fdf0ad2",
+      "rawPath": "data/crawl/raw/SRC-061/297b36d4301a26a5-596443fbb640.html",
+      "textLength": 492,
+      "text": "TRC commissioners joined the opening ceremony \"Project of 5G and Digital Future of Cambodia\" hosted by the US Embassy TRC commissioners joined the opening ceremony \"Project of 5G and Digital Future of Cambodia\" hosted by the US Embassy TRC commissioners joined the opening ceremony \"Project of 5G and Digital Future of Cambodia\" hosted by the US Embassy December 7, 2022 TRC commissioners joined the opening ceremony of “Project of 5G and Digital Future of Cambodia” hosted by the US Embassy.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/activities/6-activity",
+        "https://www.trc.gov.kh/en/media/activities/5-activity",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/activities/5-activity",
+      "title": "The Signing of a New MoU with the Telecommunication Regulator of Cambodia (TRC) to Strengthen Cooperation in Tackling Phone Scams | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:00.970Z",
+      "sha256": "3657c898031adccb23184f84cd5ba432938e0a79929c8db33720b6868b12e4f0",
+      "rawPath": "data/crawl/raw/SRC-061/b838f3745eb48836-3657c898031a.html",
+      "textLength": 1398,
+      "text": "The Signing of a New MoU with the Telecommunication Regulator of Cambodia (TRC) to Strengthen Cooperation in Tackling Phone Scams The Signing of a New MoU with the Telecommunication Regulator of Cambodia (TRC) to Strengthen Cooperation in Tackling Phone Scams The Signing of a New MoU with the Telecommunication Regulator of Cambodia (TRC) to Strengthen Cooperation in Tackling Phone Scams Published: Infocomm Media Development Authority Date: December 4, 2024 Scams often cross borders, which makes international collaboration essential in tackling them effectively. We’re proud to announce the signing of a new MOU with the Telecommunication Regulator of Cambodia (TRC) to strengthen cooperation in tackling phone scams across the region. Why it matters: ● Regional Collaboration: TRC is a vital partner in mitigating scam-related activities in Southeast Asia ● Knowledge Exchange: Both authorities will enhance the exchange of technical expertise and insights into scam traffic trends ● Data Sharing: Facilitating the identification of telecom operators contributing to scam calls, enabling faster action and improved scam prevention The new MOU marks a key step in combating phone scams, with a focus on the mutual exchange of information, and regulatory cooperation to develop robust anti-scam initiatives. Find out how we’re keeping everyone safe from scams: https://lnkd.in/gN-fxGV4 Previous",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/activities/4-activity",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases",
+      "title": "News Releases | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:14.982Z",
+      "sha256": "a8fcc06458f9e2aa228a8c7bc433959fd08643c82e3303318ae86893c3763cb3",
+      "rawPath": "data/crawl/raw/SRC-061/7984562cbc37f249-a8fcc06458f9.html",
+      "textLength": 2900,
+      "text": "News Releases News Releases Search Announcement on Prohibiting the Importation, Supply, and Distribution of Counterfeit and/or Second-Hand Mobile Phones, Tablets, Computers, Walkie-Talkies, and Other Telecommunications Equipment from Abroad TRC warns against illegal telecom sales and requires traders to obtain valid permits within 60 days. published on: September 22, 2026 Announcement On Vigilance against Fraudulent Schemes Involving the Advertising and Provision of Purported \"Account and Page Protection\" Services on Social Media in Exchange for a Fee TRC announcement warning public against fraudulent paid social media account protection services. published on: August 21, 2026 Public Notification On Resolving Issues Related on Internet Services Usage Escalate unresolved telecom complaints to the TRC (Hotline 6789) for official action. published on: August 20, 2026 Public Notification On The Case of Viettel (Cambodia) Selling Mobile Phone SIM Cards Without Properly Accepting the User's Identification Documents in Accordance with Applicable Regulations TRC penalized Viettel Cambodia for selling SIM cards without proper ID, leading to a fraud case. published on: June 15, 2026 Announcement on Progress of the Construction and the Provision of 5G Mobile Services in Cambodia Cambodian telcos deploy 2,091 5G base stations, boosting the digital economy. published on: June 9, 2026 Announcement On Delay in Connecting Calls via the Telegram TRC is fixing a 5-10s Telegram call delay with Telegram's team published on: June 9, 2026 Announcement on Extension of the Deadline for Receiving Input until 25 June 2026 for Public Consultation on Prakas on Technical Standards of Telecommunications Equipment and Draft Prakas on Type Approval and Conformity Assessment of Telecommunications Equipment Cambodia's MPTC and TRC extend the public input deadline for telecom draft Prakas to June 25, 2026. published on: May 25, 2026 Guidelines On Short Message Service Notifications Related to the Use of Mobile Telephone Services TRC guidelines for mobile operators on clear SMS alerts for services and advertising. published on: May 22, 2026 Announcement on The Importation, Supply, and Distribution of Illegal Mobile Phones, Tablets and Smartwatches Bearing the Trademarks Xiaomi, Redmi, POCO, TECNO, Infinix, itel, Nubia, RedMagic, ASUS, Nothing, OnePlus, Google Pixel, Blackview, Black Shark, and KOSPET Illegal mobile device import, supply, and distribution warning; compliance mandatory. published on: May 12, 2026 Announcement on Invitation for Public Consultation on Draft Prakas on Technical Standards of Telecommunication Equipment and Draft Prakas on Type Approval and Conformity Assessment of Telecommunication Equipment MPTC/TRC public consultation on draft telecom standards. Submit feedback by May 25, 2026. published on: April 23, 2026 No matching results. Showing 1 to 10 of 24 1 2 3",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/news-releases/24-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/23-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/22-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/21-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/19-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/20-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/18-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/17-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/16-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/15-news-release",
+        "https://www.trc.gov.kh/",
+        "https://www.trc.gov.kh/en/media/news-releases/2",
+        "https://www.trc.gov.kh/en/media/news-releases//3",
+        "https://www.trc.gov.kh/en/media/news-releases/3",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/12-news-release",
+      "title": "TRC and OFCA Sign MoU to Combat Scam and Spam Communications | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:56:58.960Z",
+      "sha256": "063dc4dbb873464946f3e3d6de05731cebdd545e6c0725702f51a8b90833943d",
+      "rawPath": "data/crawl/raw/SRC-061/dc5c6ba17ff558bd-063dc4dbb873.html",
+      "textLength": 1115,
+      "text": "TRC and OFCA Sign MoU to Combat Scam and Spam Communications TRC and OFCA Sign MoU to Combat Scam and Spam Communications TRC and OFCA Sign MoU to Combat Scam and Spam Communications January 26, 2026 Hong Kong, January 26, 2026 – The Telecommunication Regulator of Cambodia (TRC), chaired by Chenda Thong, and the Office of the Communications Authority (OFCA) of the Hong Kong Special Administrative Region of the People’s Republic of China, headed by Director-General Chaucer Leung, signed a Memorandum of Understanding (MoU) to enhance bilateral cooperation in addressing scam and spam-related challenges in telecommunications. The MoU promotes the exchange of regulatory best practices, timely sharing of insights on emerging trends, and coordinated efforts to protect users and sustain trust in telecommunications services. Alongside the signing, the two regulators held a bilateral meeting to discuss regulatory updates and ongoing initiatives. Chairman Thong stated that the partnership will significantly strengthen sectoral resilience and advance consumer protection and digital trust in both jurisdictions.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/news-releases/14-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/15-news-release",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/14-news-release",
+      "title": "Guidelines On Minimum Information Disclosure Requirements for Internet Service Provision and Complaint Handling Mechanism | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:27.194Z",
+      "sha256": "7aa4f2a3102f99736a8467c302fdf698ff3c6a68bcb78d22063b1d97ea0af935",
+      "rawPath": "data/crawl/raw/SRC-061/ac14558db82f347d-7aa4f2a3102f.html",
+      "textLength": 2609,
+      "text": "Guidelines On Minimum Information Disclosure Requirements for Internet Service Provision and Complaint Handling Mechanism Guidelines On Minimum Information Disclosure Requirements for Internet Service Provision and Complaint Handling Mechanism Guidelines On Minimum Information Disclosure Requirements for Internet Service Provision and Complaint Handling Mechanism February 20, 2026 To strengthen transparency, accountability, and the protection of consumers’ lawful interest, in accordance with the Telecommunications Law, the Telecommunications Regulator of Cambodia (TRC) here by instructs all Internet Service Providers (ISPs) to publicly disclose information on their official websites, official social media platforms, and service locations as follows: Information on Services and Connections ISPs should provide clear, detailed, and easily accessible information on following key points: • Display pricing tables for each service package, initial installation fees, rental or purchase fees for requirement (Modem/ Router), and relocation charges. All displayed prices must clearly specify whether they are “inclusive of taxes and/or value-added tax (VAT)” or not. • Specify required documents such as national ID card or passport, application procedures, the service coverage area, and the maximum waiting period for connection. • Clearly indicate billing date, payment methods, and how users can receive invoices (paper or electronic) and payment receipts. • In cases of scheduled maintenance or unexpected service interruptions, ISPs must notify users in advance or immediately, starting the reason, affected locations, and the estimated time for service restoration. Complaint Receiving and Resolution Mechanism To ensure consumer protection, ISPs shall establish a complaint-handling system as follows: • Provide multiple contact channels, including a 24/7 customer service hotline, email, and/or chat systems. • Clearly specify the complaint-handling process and the maximum timeframe for resolution. ISPs must provide a complaint reference number (Ticket ID) to users for tracking purposes. • All complaint resolutions must be based on technical evidence and confirmed to the users in writing or via electronic communication. Right to File a Complaint with TRC If users are not satisfied with the resolution provided by the ISP, or if their complaint is not resolved within a reasonable timeframe, they have the right to file a complaint with the TRC through the following channels: • Telephone number: 6789 (every working hour) • MPTC Speed Test App • Website: www.trc.gov.kh • In person: Penh.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/",
+        "https://www.trc.gov.kh/en/media/news-releases/11-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/12-news-release",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/15-news-release",
+      "title": "Announcement on Invitation for Public Consultation on Draft Prakas on Technical Standards of Telecommunication Equipment and Draft Prakas on Type Approval and Conformity Assessment of Telecommunicatio",
+      "fetchedAt": "2026-11-12T19:57:29.013Z",
+      "sha256": "dd452dbd6e4353b1637cb31f40ac4e92b8a5a58a228feff73a234817fd31102e",
+      "rawPath": "data/crawl/raw/SRC-061/90777679bdee3396-dd452dbd6e43.html",
+      "textLength": 2115,
+      "text": "Announcement on Invitation for Public Consultation on Draft Prakas on Technical Standards of Telecommunication Equipment and Draft Prakas on Type Approval and Conformity Assessment of Telecommunication Equipment Announcement on Invitation for Public Consultation on Draft Prakas on Technical Standards of Telecommunication Equipment and Draft Prakas on Type Approval and Conformity Assessment of Telecommunication Equipment Announcement on Invitation for Public Consultation on Draft Prakas on Technical Standards of Telecommunication Equipment and Draft Prakas on Type Approval and Conformity Assessment of Telecommunication Equipment April 23, 2026 The Ministry of Post and Telecommunications (MPTC) and the Telecommunication Regulator of Cambodia (TRC) hereby inform all operators, relevant stakeholders and the public that the MPTC and TRC have prepared 1) Draft Prakas on Technical Standards of Telecommunication Equipment and 2) Draft Prakas on Type Approval and Conformity Assessment of Telecommunications Equipment. In order to ensure these regulations are comprehensive and effective, MPTC and TRC invite the operators, relevant stakeholders and the public to provide comments and input as follows: A. Draft Prakas on Technical Standards of Telecommunication Equipment Please visit https://go.gov.kh/mptc/pk-trc-ts-26 or scan the attached QR Code to download the draft Prakas. Please visit https://go.gov.kh/mptc/cm-ts-26 or scan the attached QR Code to download the comment template form. Submit your comments via https://go.gov.kh/mptc/trc-ts-26-form or scan the attached QR Code no later than 25 May 2026. B. Draft Prakas on Type Approval and Conformity Assessment of Telecommunication Equipment Please visit https://go.gov.kh/mptc/pk-trc-ta-26 or scan the attached QR Code to download the draft Prakas. Please visit https://go.gov.kh/mptc/cm-ta-26 or scan the attached QR Code to download the comment template form. Submit your comments via https://go.gov.kh/mptc/trc-ta-26-form or scan the attached QR Code no later than 25 May 2026. Please scan the QR Code to download the documents and provide input",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/news-releases/12-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/13-news-release",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/17-news-release",
+      "title": "Guidelines On Short Message Service Notifications Related to the Use of Mobile Telephone Services | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:40.984Z",
+      "sha256": "f0ff4fcb34fce90e23e200977b24966e0c97a89f81a07f5b4cdda6c8d5e9a87c",
+      "rawPath": "data/crawl/raw/SRC-061/935aec2e35aa653d-f0ff4fcb34fc.html",
+      "textLength": 3661,
+      "text": "Guidelines On Short Message Service Notifications Related to the Use of Mobile Telephone Services Guidelines On Short Message Service Notifications Related to the Use of Mobile Telephone Services Guidelines On Short Message Service Notifications Related to the Use of Mobile Telephone Services May 22, 2026 The Telecommunication Regulator of Cambodia (TRC) would like to inform all mobile operators that, to ensure consumers receive accurate, clear, and easily understandable information related to the use of mobile telephone services, all Short Message Service (SMS) notifications shall be provided in Khmer language and/or other languages selected by consumers at the time of their initial mobile SIM registration. In this regard, TRC hereby provides the following guidelines to all mobile operators: A. SMS Related to the Use of Mobile Services Upon successful SIM activation, mobile operators shall send a welcome SMS to consumers confirming that the SIM has been successfully activated and is ready for use. These SMS shall include important information for first-time usage, such as how to check the main account balance or access basic services including voice calls, SMS, and mobile data. Every time consumers successfully top up their main account balance, or successfully subscribe, unsubscribe, or automatically renew a plan or service. Every time consumers fail to subscribe, automatically renew, or fail to automatically renew a plan or service, both before and after the expiry of the plan or service validity. Prior to the expiry of the validity of the main account balance, internet data, plans, or services. When consumers use roaming services abroad, mobile operators shall send SMS notifications containing important information, including welcome messages for roaming services, notifications whenever roaming services are activated or deactivated, and standard roaming charges such as voice call rates and internet data usage charges. When the usage balance, such as internet data, calling, SMS, or main account balance, reaches 90% and 100% of usage before the expiry of the main account balance, plans, or services. This requirement shall apply to both domestic usage and international roaming usage. Upon temporary suspension and permanent termination of mobile number usage in accordance with TRC Announcement No. 10827 dated 22 December 2025. In cases where users make requests through short codes, including balance inquiries, subscription or un-subscription of plans or services, and/or user identity verification. In cases of mobile service disruptions or disconnection, whether planned or unplanned, force majeure events, and/or upon request from TRC. B. SMS Related to Commercial Advertising All SMS related to commercial advertising concerning mobile plans, services, or other commercial advertisements may only be sent between 8:00 AM and 9:00 PM. The content of all advertising SMS shall comply with TRC Instruction No. 9452 dated 26 December 2024 on Telecommunications Service Advertising, along with relevant laws and regulations. Advertising SMS shall be sent separately from SMS related to mobile service usage as specified under Section (A) of this guideline. The heading of such SMS shall clearly state “Advertisement” to enable users to easily distinguish the type of message. In cases where advertising SMS are sent by third parties through the network of a mobile operator, all SMS shall clearly identify the sender. All advertising SMS shall provide consumers with a means, such as through short code 1204 or other appropriate methods, to choose whether to continue or discontinue receiving such advertising messages.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/news-releases/18-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/19-news-release",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/19-news-release",
+      "title": "Announcement on Progress of the Construction and the Provision of 5G Mobile Services in Cambodia | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:12.988Z",
+      "sha256": "eb7d8c3613029df64187e8310711bb43d206c91b58ed04559da05b7e891cc12a",
+      "rawPath": "data/crawl/raw/SRC-061/d90432439447ee8a-eb7d8c361302.html",
+      "textLength": 2449,
+      "text": "Announcement on Progress of the Construction and the Provision of 5G Mobile Services in Cambodia Announcement on Progress of the Construction and the Provision of 5G Mobile Services in Cambodia Announcement on Progress of the Construction and the Provision of 5G Mobile Services in Cambodia June 9, 2026 The Telecommunication Regulator of Cambodia (TRC) would like to inform the public that, from the official launch of 5G mobile services on January 1, 2026, to June 8, 2026, the three operators, namely Smart Axiata Co., Ltd., CamGSM Plc. and Viettel (Cambodia), have achieved notable progress as follows: Smart Axiata Co., Ltd. has deployed 748 5G base stations in key areas in Phnom Penh and other provincial capitals, including Kratie, Kandal, Kep, Kampot, Kampong Cham, Kampong Chhnang, Kampong Thom, Kampong Speu, Koh Kong, Takeo, Tboung Khmum, Battambang, Banteay Meanchey, Prey Veng, Preah Sihanouk, Mondul Kiri, Svay Rieng, Siemreap, Otdar Meanchey and Preah Vihear. CamGSM Plc. has deployed 742 5G base stations in key areas in Phnom Penh and other provincial capitals, including Kandal, Kampong Speu, Siemreap and Takeo. Viettel (Cambodia) has deployed 601 5G base stations in key areas in Phnom Penh and other provincial capitals, including Kratie, Kandal, Kampot, Kampong Cham, Kampong Chhnang, Kampong Thom, Kampong Speu, Koh Kong, Takeo, Battambang, Banteay Meanchey, Prey Veng, Pursat, Preah Sihanouk, Mondul Kiri, Ratanak Kiri, Svay Rieng, Stung Treng, Siemreap, Otdar Meanchey, Kep, Tboung Khmum, Preah Vihear, and Pailin. (A list of locations of 5G base stations and the coverage areas of each operator where users can access 5G services is attached in the Annex) Currently, all three operators are actively accelerating the rollout of 5G services, with a primary focus on high-speed internet services for both mobile users and home users (5G Home Broadband), as well as providing high-level entertainment experiences and technological solutions for enterprises and high-bandwidth connectivity for digital businesses, and continuing to expand 4G coverage. These developments will enhance Cambodia’s competitiveness in the era of the digital economy. In parallel with this progress, the TRC will continue to encourage all operators to build additional 5G base stations to ensure broader nationwide coverage. The TRC will also continue to monitor and strengthen 4G service quality to ensure stable and highly efficient connectivity.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/news-releases/17-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/2-news-release",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/20-news-release",
+      "title": "Announcement On Delay in Connecting Calls via the Telegram | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:38.974Z",
+      "sha256": "0d75f6c6b17bf83ef10f10376a4eb0807adb332581ae811b4416e9757715377c",
+      "rawPath": "data/crawl/raw/SRC-061/fb9b98ad6e581c50-0d75f6c6b17b.html",
+      "textLength": 1222,
+      "text": "Announcement On Delay in Connecting Calls via the Telegram Announcement On Delay in Connecting Calls via the Telegram Announcement On Delay in Connecting Calls via the Telegram June 9, 2026 Recently, the Telecommunication Regulator of Cambodia (TRC) has observed that some users have experienced disruptions when using Telegram. These disruptions are mainly related to the connection of voice and/or video calls, where users may experience a delay of approximately 5 to 10 seconds before the call connection is fully established. This may affect the quality of conversations, particularly for those who use Telegram for business, work, and daily communication. In response to this matter, TRC has been working closely with Telegram’s technical team to identify the cause of the issue and find appropriate solutions, with the aim of restoring the quality of voice and video call services to normal as soon as possible. Members of the public who have further questions or experience issues related to the use of Telegram may contact TRC by telephone at 6789 during business hours, by email at [email protected] , or through TRC’s official Facebook page: “និយ័តករទូរគមនាគមន៍កម្ពុជា - Telecommunication Regulator of Cambodia”.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/media/news-releases/2-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/21-news-release",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/21-news-release",
+      "title": "Public Notification On The Case of Viettel (Cambodia) Selling Mobile Phone SIM Cards Without Properly Accepting the User's Identification Documents in Accordance with Applicable Regulations | Telecomm",
+      "fetchedAt": "2026-11-12T19:57:10.983Z",
+      "sha256": "c71525d4f81c7da22b27cb2dc644e033768f5eddbeaebfb7882eb07ddaa638a2",
+      "rawPath": "data/crawl/raw/SRC-061/880a6e1d56999ca6-c71525d4f81c.html",
+      "textLength": 2786,
+      "text": "Public Notification On The Case of Viettel (Cambodia) Selling Mobile Phone SIM Cards Without Properly Accepting the User's Identification Documents in Accordance with Applicable Regulations Public Notification On The Case of Viettel (Cambodia) Selling Mobile Phone SIM Cards Without Properly Accepting the User's Identification Documents in Accordance with Applicable Regulations Public Notification On The Case of Viettel (Cambodia) Selling Mobile Phone SIM Cards Without Properly Accepting the User's Identification Documents in Accordance with Applicable Regulations June 15, 2026 The Telecommunication Regulator of Cambodia (TRC) would like to inform the public that it has received a complaint from a consumer whose identity card was used by an unknown individual to register three mobile SIM numbers under Viettel (Cambodia). As a result, one of the three numbers was allegedly used by a fraudster to commit a financial scam, causing the owner of the identity card to become unknowingly involved in the case. Following an investigation, TRC found that the incident resulted from negligence of Viettel (Cambodia), which failed to properly comply with the applicable legal and regulatory requirements governing SIM card sales. Evidence collected by TRC shows that on 8 May 2024, the consumer was residing in Cheung Teuk Village, Kanhchriech Commune, Kanhchriech District, Prey Veng Province, which contradicts the information provided by Viettel (Cambodia) to TRC, which stated that, on that date, the consumer had purchased mobile SIM cards from a shop located in Sangkat Tuol Tompoung I, Khan Chamkar Mon, Phnom Penh. The above findings regarding non-compliance by Viettel (Cambodia) have led to the imposition of penalties in accordance with the applicable laws and regulations. TRC has consistently reminded Viettel (Cambodia) and all Mobile Network Operators regarding the sale, distribution, and use of SIM cards, requiring them to obtain and verify valid identification documents before activating any service. This is because the sale, distribution, or use of SIM cards without proper identification documents constitutes a fraudulent act for which the responsible parties may be held accountable and subject to liability under applicable laws and regulations. To help prevent and avoid similar irregularities and to promote public security and social order, TRC calls upon the public to report any known or suspected irregularities related to the sale, distribution, or use of SIM cards. The public may contact TRC through the hotline 6789 during business hours, or send an email to [email protected] , or reach out via TRC’s official Facebook page, “Telecommunication Regulator of Cambodia – និយ័តករទូរគមនាគមន៍កម្ពុជា” TRC will maintain the confidentiality of all reports.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/media/news-releases/20-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/23-news-release",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/22-news-release",
+      "title": "Public Notification On Resolving Issues Related on Internet Services Usage | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:08.984Z",
+      "sha256": "67a22a11e1d2d23b7c1427f6def4990967604c294f255847f86b32eef07d28c2",
+      "rawPath": "data/crawl/raw/SRC-061/79a6fd641a6bfd9f-67a22a11e1d2.html",
+      "textLength": 2214,
+      "text": "Public Notification On Resolving Issues Related on Internet Services Usage Public Notification On Resolving Issues Related on Internet Services Usage Public Notification On Resolving Issues Related on Internet Services Usage August 20, 2026 The Telecommunication Regulator of Cambodia (TRC) would like to inform the public that the TRC has consistently encouraged telecommunications operators to strengthen the quality and efficiency of their services, as well as to improve their mechanisms for receiving and resolving users’ issues and complaints promptly, transparently, and in accordance with applicable laws and regulations. Despite these efforts, the TRC continues to receive complaints from users regarding poor service quality, service disruptions, service disconnections, and delays by telecommunications operators in addressing reported issues, which adversely affect the legitimate interests of users. In this regard, the TRC would like to reiterate that, in cases involving poor service quality, service disruptions or disconnections, equipment-related problems, or other issues concerning the use of Internet services, users are encouraged to first contact their telecommunications operators to report the issue and request that the telecommunications operators investigate and resolve the matter in a timely manner, in accordance with the terms and conditions of the service agreement and applicable law and regulations. However, if the telecommunications operators fail to resolve the issue, or if the user is not satisfied with the resolution provided, the user may report the matter to, or submit a formal complaint to, the TRC for review and appropriate action in accordance with TRC’s mandate and applicable procedures. Users can contact TRC via the hotline 6789 during business hours, by email at [email protected] , or through TRC’s official Facebook page, “និយតករទូរគមនាគមន៍កម្ពុជា - Telecommunication Regulator of Cambodia” . TRC will closely monitor such cases and take strict action, in accordance with applicable laws and regulations, against any telecommunications operators that intentionally avoids or fails to cooperate in resolving users’ issues, without discrimination or exception.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/media/news-releases/3-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/4-news-release",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/23-news-release",
+      "title": "Announcement On Vigilance against Fraudulent Schemes Involving the Advertising and Provision of Purported \"Account and Page Protection\" Services on Social Media in Exchange for a Fee | Telecommunicati",
+      "fetchedAt": "2026-11-12T19:57:06.997Z",
+      "sha256": "d69687618f4f232f54314a26002a019b95cdb44886d5a69312860a74a235c219",
+      "rawPath": "data/crawl/raw/SRC-061/79ab082cb678a69b-d69687618f4f.html",
+      "textLength": 3447,
+      "text": "Announcement On Vigilance against Fraudulent Schemes Involving the Advertising and Provision of Purported \"Account and Page Protection\" Services on Social Media in Exchange for a Fee Announcement On Vigilance against Fraudulent Schemes Involving the Advertising and Provision of Purported \"Account and Page Protection\" Services on Social Media in Exchange for a Fee Announcement On Vigilance against Fraudulent Schemes Involving the Advertising and Provision of Purported \"Account and Page Protection\" Services on Social Media in Exchange for a Fee August 21, 2026 The Telecommunication Regulator of Cambodia (TRC) would like to inform the public as follows: Recently, the TRC has observed that a number of individuals have been advertising and providing services described as “account protection services” or “page protection services” on social media in exchange for the payment of a fee, claiming that they are able to protect or guarantee that a user’s account or page will not be disabled, suspended, deleted, or lost. In many cases, such individuals further claim to have direct connections with the platform companies, or to possess special technical tools, in order to appear more credible. The TRC would like to clarify that any claim to be able to guarantee the protection of an account or page in exchange for a fee constitutes the dissemination of false information, which may contain the elements of the offence of fraud and may give rise to liability under the laws in force. Such advertising generally aims to create fear in order to induce users to pay money or to disclose confidential information — such as telephone numbers, email addresses, passwords, OTP codes, or page administration rights — which may lead to serious consequences, including: Permanent loss of control over the account or page; Loss of money with no possibility of recovering compensation; Theft of personal or financial information; Use of the stolen account or page to carry out further fraud against the victim’s family, friends, and other followers. To protect themselves, the TRC advises members of the public to observe the following: Do not disclose passwords or OTP codes to any other person; Do not pay money to any person claiming to be able to protect, restore, or guarantee an account or page; Do not grant Admin or Editor rights over a page to any person who is not well known to you; Do not click on suspicious links or install applications from unknown sources; Do enable Two-Factor Authentication and clearly designate the administrators of your page. The use of social media accounts and pages must comply with the laws and regulations in force in the Kingdom of Cambodia. In parallel, users must also comply with the terms of use and community standards of each platform company, which constitute an agreement between the user and that platform company. Accordingly, the payment of a fee to any person cannot substitute for, exempt from, or reduce either of the above obligations. Should members of the public suspect that they have encountered fraudulent activity, or the provision of irregular services relating to the protection of social media accounts and pages, they are requested to report the matter to the TRC by telephone at 6789 during business hours, by email to [email protected] , or via the Facebook page “និយ័តករទូរគមនាគមន៍កម្ពុជា - Telecommunication Regulator of Cambodia” . The TRC will treat all reports as confidential.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/media/news-releases/21-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/24-news-release",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/24-news-release",
+      "title": "Announcement on Prohibiting the Importation, Supply, and Distribution of Counterfeit and/or Second-Hand Mobile Phones, Tablets, Computers, Walkie-Talkies, and Other Telecommunications Equipment from A",
+      "fetchedAt": "2026-11-12T19:57:04.968Z",
+      "sha256": "28e628deab0e7f2cc603ded2bddf3237428b8196f1adff2e89587b20278cee71",
+      "rawPath": "data/crawl/raw/SRC-061/3f81f632ebc9e0b7-28e628deab0e.html",
+      "textLength": 5799,
+      "text": "Announcement on Prohibiting the Importation, Supply, and Distribution of Counterfeit and/or Second-Hand Mobile Phones, Tablets, Computers, Walkie-Talkies, and Other Telecommunications Equipment from Abroad Announcement on Prohibiting the Importation, Supply, and Distribution of Counterfeit and/or Second-Hand Mobile Phones, Tablets, Computers, Walkie-Talkies, and Other Telecommunications Equipment from Abroad Announcement on Prohibiting the Importation, Supply, and Distribution of Counterfeit and/or Second-Hand Mobile Phones, Tablets, Computers, Walkie-Talkies, and Other Telecommunications Equipment from Abroad September 22, 2026 The Telecommunication Regulator of Cambodia (TRC) would like to inform all companies, enterprises, and wholesale and/or retail shops engaged in the importation, supply, and distribution of telecommunications equipment in the Kingdom of Cambodia that TRC has identified certain traders that have been illegally importing, supplying, distributing, advertising, purchasing and reselling through their websites and various social media platforms counterfeit and/or second-hand telecommunications equipment from abroad, including mobile phones, tablets, computers, Walkie-Talkies, and other telecommunications equipment (as specified in the annexed list), into the Kingdom of Cambodia without obtaining a Qualified Agent (QA) Certificate, a Type Approval (TA) Certificate for each model of telecommunications equipment, or an Import Permit (IP) issued by TRC. These unauthorized activities are in violation of Articles 15 and 16 of the Law on Telecommunications and relevant regulations. Furthermore, counterfeit and/or second-hand telecommunications equipment from abroad, particularly mobile phones and Walkie-Talkies, poses a high risk of causing radio-frequency interference with essential national radiocommunication services, including public safety, emergency services, national security, aviation, maritime services, and radiocommunication services used by the national defense sector. Such equipment may cause radio-frequency interference with these services because radiocommunication equipment may have undergone unauthorized modifications to its radio frequency, transmitting power level, and other technical specifications, resulting in non-compliance with the prescribed standards before being imported into the Kingdom of Cambodia. In addition to the aforementioned risks, counterfeit and/or second-hand telecommunications equipment that has not undergone conformity testing in accordance with safety and technical standards by the competent authorities may pose serious hazards to users and risks to public order due to: Unsafe batteries and charging systems; Insufficient electrical safety; Overheating, resulting in a risk of fire; Electromagnetic field exposure (EMF Exposure) exceeding the prescribed standards, which may affect users’ health; Electromagnetic compatibility (EMC) performance that does not comply with the prescribed standards; Poor performance resulting from hardware or software modifications to equipment manufactured for other markets; Consumers suffering loss of money and time because the equipment is of poor quality; The possibility that unauthorized persons may use such equipment as tools to facilitate technology-related criminal activities, including online scams; and Environmental pollution, as these pieces of equipment constitute electronic waste imported from abroad. In order to promote public safety, prevent radio-frequency interference to essential services, ensure fair competition, protect consumers, and contribute to the protection of the Cambodian environment, TRC calls upon all companies, enterprises, and wholesale and/or retail shops that have been importing, supplying, distributing, advertising, purchasing and reselling counterfeit and/or second-hand telecommunications equipment from abroad, including mobile phones, tablets, computers, and Walkie-Talkies, to immediately cease these illegal activities and take immediate action to ensure compliance with the Laws and Regulations of the Kingdom of Cambodia by applying for a Qualified Agent (QA) Certificate from TRC within 60 (sixty) days from the date of this Announcement and shall import, supply, distribute, advertise, purchase and resell only brand-new telecommunications equipment of clear and lawful origin that has obtained a Type Approval (TA) Certificate from TRC. In the event that the companies, enterprises, and wholesale and/or retail shops continue to import, supply, distribute, advertise, purchase and resell counterfeit and/or second-hand telecommunications equipment from abroad, and/or fail to comply with the above legal requirements within the specified deadline, TRC will take strict measures, including confiscation of the illegal telecommunications equipment, imposition of fines, closure of advertising websites, and/or implementation of other measures in accordance with the applicable laws and regulations. TRC calls upon all companies, enterprises, and wholesale and/or retail shops that are legally engaged in the importation, supply, distribution, advertising, purchase, and resale of telecommunications equipment to cooperate and report the identities and addresses of individuals, companies, enterprises, or warehouses of traders or wholesale distributor representatives involved in illegal telecommunications equipment activities to TRC via hotline number 6789 during working hours or by email at [email protected] . Therefore, all companies, enterprises, and wholesale and/or retail shops that have been and are currently engaged in the business of importing, supplying, distributing, advertising, purchasing and reselling telecommunications equipment are hereby notified and requested to cooperate accordingly.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/media/news-releases/23-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/3-news-release",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/3-news-release",
+      "title": "Announcement on Deactivation and Resale of Consumers' Mobile Phone Numbers and Deductions from Mobile Phone Number Account Balances Contrary to Applicable Law and Regulation | Telecommunication Regula",
+      "fetchedAt": "2026-11-12T19:57:35.198Z",
+      "sha256": "646260f3728af0b73b9278aa24a9bb905171ef46cc87d30379ebf4fc3c8d3085",
+      "rawPath": "data/crawl/raw/SRC-061/478af63e9988d0e4-646260f3728a.html",
+      "textLength": 1343,
+      "text": "Announcement on Deactivation and Resale of Consumers' Mobile Phone Numbers and Deductions from Mobile Phone Number Account Balances Contrary to Applicable Law and Regulation Announcement on Deactivation and Resale of Consumers' Mobile Phone Numbers and Deductions from Mobile Phone Number Account Balances Contrary to Applicable Law and Regulation Announcement on Deactivation and Resale of Consumers' Mobile Phone Numbers and Deductions from Mobile Phone Number Account Balances Contrary to Applicable Law and Regulation August 1, 2024 The Telecommunication Regulator of Cambodia (TRC) has found irregularities among mobile network operators, leading to penalties for two main violations: Deactivating active mobile phone numbers and reselling them. Improperly deducting balances from customers’ accounts contrary to published tariffs and roaming service terms. To promote fair competition and protect consumer interests, the TRC encourages consumers to report the following cases: ● Deactivated or resold mobile numbers without the required grace period. ● Unauthorized deductions from mobile phone account balances. ● Subscriptions to plans or services resulting in balance deductions without prior consent. ● Lack of resolution of complaints from mobile network operators. For more details, please refer to the TRC’s official announcement.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/en/media/news-releases/24-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/22-news-release",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/media/news-releases/4-news-release",
+      "title": "Announcement on The irregularity of SMS sent by Mobile Network Operators That Causes Confusion to Mobile Users | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:36.994Z",
+      "sha256": "183aa11591f6a15a51aa6bff0270128250bb4389b9af8738e16a46858eb967ec",
+      "rawPath": "data/crawl/raw/SRC-061/05e5f59da8e5a6f8-183aa11591f6.html",
+      "textLength": 2134,
+      "text": "Announcement on The irregularity of SMS sent by Mobile Network Operators That Causes Confusion to Mobile Users Announcement on The irregularity of SMS sent by Mobile Network Operators That Causes Confusion to Mobile Users Announcement on The irregularity of SMS sent by Mobile Network Operators That Causes Confusion to Mobile Users June 30, 2025 The Telecommunication Regulator of Cambodia (TRC) would like to inform the public that, based on recent user complaints, TRC has identified irregular practices by certain mobile network operators related to the sending of Short Message Service (SMS) notifications to mobile users. These practices have caused confusion and concern among users. The following irregularities have been observed: Users have received SMS requesting and/or urging them to top up their main balance to maintain the validity periods of the main balance, services or plans, or other services, even though those main balance or services or plans, including internet data, were still valid and active. SMS containing important information regarding services or plans, and/or validity periods of services or plans have been significantly delayed, even after users successfully topped up their main balance and/or renewed their service or plans. Users have received confirmation SMS about the validity or terms and conditions of services or plans they never subscribed to or activated. To ensure the effective enforcement of consumer protection regulations, promote fair and transparent competition, and prevent irregular and misleading practices in the telecommunications sector, TRC urges all mobile users to report such incidents via the hotline number 6789 during business hours, or by emailing [email protected] , or by messaging the official Facebook page: “និយ័តករទូរគមនាគមន៍កម្ពុជា - Telecommunication Regulator of Cambodia”. TRC is committed to continuing its monitoring efforts and will take the strictest legal measures, in full accordance with the law, against any mobile network operator found to be in violation: These actions will be taken without discrimination, with fairness, and without exception.",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/media/news-releases/22-news-release",
+        "https://www.trc.gov.kh/en/media/news-releases/5-news-release",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/resources/common-codes",
+      "title": "Common Codes | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:22.979Z",
+      "sha256": "4b53cdcee923efa0403826043c8b0834506449510fbe31b66b30829f8087d0f7",
+      "rawPath": "data/crawl/raw/SRC-061/0edba0561720ff73-4b53cdcee923.html",
+      "textLength": 25,
+      "text": "Common Codes Common Codes",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/resources/emergency-numbers",
+      "title": "Emergency Numbers | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:25.008Z",
+      "sha256": "d73f4295d0906d150acf06b66365a98ae3f8e18f3cee1df34a9a90b4638fcb22",
+      "rawPath": "data/crawl/raw/SRC-061/3b5f10013cca77a1-d73f4295d090.html",
+      "textLength": 2924,
+      "text": "Emergency Numbers Short Codes Emergency codes Police 117 Fire Fighter 118 Ambulance 119 Common service codes No numbers found Try a different keyword (e.g., service name, number, or province). Clear search Ministry of Posts and Telecommunications Number Public services 123 / 1250 Ministry of Interior Number Provide public service for identification work 1271 Broadcast radio and interactive television stations 1276 Public Security 1283 Immigration 1284 Human Trafficking 1288 Monitoring of mail and registration list 1290 Ministry of Health Number Report Infectious Diseases 115 Mental Health Counseling Related to COVID-19 1293 Ministry of Commerce Number Call Center 1266 Ministry of Agricuture Forestry and Fisheries Number Avian Influenza 1287 / 1289 Ministry of Inspection Number Public Reporting System for Ministry of Inspection Inactivity 1268 Ministry of Social Affairs, Veterans, and Youth Rehabilitation Number Consulting services for citizens with disabilities 1270 Social Assistance Program 1274 Ministry of Public Works and Transport Number Public services 1275 Ministry of Labor and Vocational Training Number Occupational Accidents 1286 Labour Law 1297 Ministry of Industry, Science, Technology, and Innovation Number Inquiries about the informal economy registration digital platform 1264 Public services 1265 Bar Association of the Kingdom of Cambodia Number Legal services for the poor 1281 National Audit Authority Number Information about the Health Equity Fund 1273 Phnom Penh Capital Hall Number COVID-19 Hotline 1222 Receive complaints and other information 1299 Telecommunications and Information Technology Services Data Management Center Number Telecommunication Device Identity Registration System and Customer Service 1205 Used for testing EIRS services 1251 Other Number Royal Cambodian Army Headquarters 711 Takeo Provincial Royal Gendarmerie 1212 Ministry of Tourism 1221 General Department of Customs and Excise of Cambodia (GDCE) 1223 National Authority for Combating Drugs (NACD) 1233 Inter-Ministerial Committee for Inspecting and Resolving Issues of Cambodian Migrant Workers' Entry and Exit at Borders 1244 General Commissariat of National Police (GCNP) 1245 Ad-Hoc Committee for Combating Tech Scams 1246 / 1247 National Committee for Leading the Implementation of the Land Concession Program, Forest Protection for Joint Sustainable Development 1255 General Department of Taxation 1277 UNICEF Cambodia 1279 Child Helpline Cambodia 1280 Anti-Corruption Unit 1282 National Election committee 1285 Phnom Penh Gendarmerie 1291 Kampong Speu Provincial Gendarmerie 1292 National Committee for Disaster Management 1294 Family Health International 360 1295 Siem Reap Provincial Gendarmerie 1296 Electricite Du Cambodge (EDC) 1298 Expressway Service 1399 Cambodia Post 2888 Preah Vihear Provincial Administration 4333 Telecommunication Regulator of Cambodia (TRC) 6789 Telecom Cambodia 8888",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+      "title": "Mobile Prefixes | Telecommunication Regulator of Cambodia",
+      "fetchedAt": "2026-11-12T19:57:20.996Z",
+      "sha256": "bd3346a99ec72cad18bdeec8549f7e128c1b3ad377f7fe5a2d8fb7e129de86cf",
+      "rawPath": "data/crawl/raw/SRC-061/243b5c9fee192526-bd3346a99ec7.html",
+      "textLength": 307,
+      "text": "Mobile Prefixes Mobile Phone Prefixes Search prefixes No results found Try a different prefix or clear the search. Clear search * indicates prefixes with 7-digit numbers 011 012 014 017 061 077 078 085 089 092 095 099 076* 060 066 067 068 090 031* 071* 088* 097* 010 015 016 069 070 081 086 087 093 098 096*",
+      "links": [
+        "https://www.trc.gov.kh/en/",
+        "https://www.trc.gov.kh/en/complaint",
+        "https://www.trc.gov.kh/cdn-cgi/l/email-protection",
+        "https://www.trc.gov.kh/en/contactusform",
+        "https://www.trc.gov.kh/en/resources/mobile-prefixes",
+        "https://www.trc.gov.kh/en/resources/common-codes",
+        "https://www.trc.gov.kh/en/resources/emergency-numbers"
+      ],
+      "documents": []
+    }
+  ]
+}

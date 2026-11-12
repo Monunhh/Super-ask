@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-12T19:14:18.205Z",
+  "builtAt": "2026-11-12T22:07:10.997Z",
   "institutions": [
     {
       "order": 1,
@@ -75,9 +75,32 @@
       "onOfficialList": true,
       "folder": "04-ministry-of-interior",
       "registeredSites": 6,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 2,
+      "pages": 68,
+      "sites": [
+        {
+          "institution": "Ministry of Interior",
+          "folder": "04-ministry-of-interior",
+          "id": "SRC-064",
+          "organization": "National Committee for Sub-National Democratic Development",
+          "host": "ncdd.gov.kh",
+          "file": "04-ministry-of-interior/SRC-064-ncdd.gov.kh.json",
+          "pages": 59,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:59:41.192Z"
+        },
+        {
+          "institution": "Ministry of Interior",
+          "folder": "04-ministry-of-interior",
+          "id": "SRC-072",
+          "organization": "National Authority for Combating Drugs",
+          "host": "nacd.gov.kh",
+          "file": "04-ministry-of-interior/SRC-072-nacd.gov.kh.json",
+          "pages": 9,
+          "documentLinks": 26,
+          "lastFetched": "2026-11-12T20:07:08.428Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-015",
@@ -135,7 +158,7 @@
       "folder": "06-ministry-of-national-defense",
       "registeredSites": 1,
       "crawledSites": 1,
-      "pages": 3,
+      "pages": 23,
       "sites": [
         {
           "institution": "Ministry of National Defense",
@@ -144,9 +167,9 @@
           "organization": "Ministry of National Defence",
           "host": "mod.gov.kh",
           "file": "06-ministry-of-national-defense/SRC-016-mod.gov.kh.json",
-          "pages": 3,
-          "documentLinks": 9,
-          "lastFetched": "2026-11-12T18:41:03.317Z"
+          "pages": 23,
+          "documentLinks": 77,
+          "lastFetched": "2026-11-12T22:06:43.030Z"
         }
       ],
       "registry": [
@@ -207,9 +230,76 @@
       "onOfficialList": true,
       "folder": "09-ministry-of-economy-and-finance",
       "registeredSites": 10,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 6,
+      "pages": 134,
+      "sites": [
+        {
+          "institution": "Ministry of Economy and Finance",
+          "folder": "09-ministry-of-economy-and-finance",
+          "id": "SRC-044",
+          "organization": "General Department of National Treasury",
+          "host": "treasury.gov.kh",
+          "file": "09-ministry-of-economy-and-finance/SRC-044-treasury.gov.kh.json",
+          "pages": 22,
+          "documentLinks": 8,
+          "lastFetched": "2026-11-12T19:20:14.205Z"
+        },
+        {
+          "institution": "Ministry of Economy and Finance",
+          "folder": "09-ministry-of-economy-and-finance",
+          "id": "SRC-045",
+          "organization": "General Department of Public Procurement",
+          "host": "gdpp.gov.kh",
+          "file": "09-ministry-of-economy-and-finance/SRC-045-gdpp.gov.kh.json",
+          "pages": 23,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:21:06.283Z"
+        },
+        {
+          "institution": "Ministry of Economy and Finance",
+          "folder": "09-ministry-of-economy-and-finance",
+          "id": "SRC-060",
+          "organization": "Insurance Regulator of Cambodia",
+          "host": "irc.gov.kh",
+          "file": "09-ministry-of-economy-and-finance/SRC-060-irc.gov.kh.json",
+          "pages": 1,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:56:52.322Z"
+        },
+        {
+          "institution": "Ministry of Economy and Finance",
+          "folder": "09-ministry-of-economy-and-finance",
+          "id": "SRC-065",
+          "organization": "Digital Economy and Business Committee",
+          "host": "digitaleconomy.gov.kh",
+          "file": "09-ministry-of-economy-and-finance/SRC-065-digitaleconomy.gov.kh.json",
+          "pages": 54,
+          "documentLinks": 67,
+          "lastFetched": "2026-11-12T20:01:41.534Z"
+        },
+        {
+          "institution": "Ministry of Economy and Finance",
+          "folder": "09-ministry-of-economy-and-finance",
+          "id": "SRC-076",
+          "organization": "Cambodia Data Exchange",
+          "host": "camdx.gov.kh",
+          "file": "09-ministry-of-economy-and-finance/SRC-076-camdx.gov.kh.json",
+          "pages": 11,
+          "documentLinks": 7,
+          "lastFetched": "2026-11-12T20:07:36.581Z"
+        },
+        {
+          "institution": "Ministry of Economy and Finance",
+          "folder": "09-ministry-of-economy-and-finance",
+          "id": "SRC-079",
+          "organization": "Business Information Portal",
+          "host": "business.gov.kh",
+          "file": "09-ministry-of-economy-and-finance/SRC-079-business.gov.kh.json",
+          "pages": 23,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:10:28.115Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-018",
@@ -269,8 +359,8 @@
       "onOfficialList": true,
       "folder": "10-ministry-of-agriculture-forestry-and-fisheries",
       "registeredSites": 2,
-      "crawledSites": 1,
-      "pages": 59,
+      "crawledSites": 2,
+      "pages": 68,
       "sites": [
         {
           "institution": "Ministry of Agriculture, Forestry and Fisheries",
@@ -282,6 +372,17 @@
           "pages": 59,
           "documentLinks": 0,
           "lastFetched": "2026-11-12T18:53:37.772Z"
+        },
+        {
+          "institution": "Ministry of Agriculture, Forestry and Fisheries",
+          "folder": "10-ministry-of-agriculture-forestry-and-fisheries",
+          "id": "SRC-117",
+          "organization": "Royal University of Agriculture",
+          "host": "rua.edu.kh",
+          "file": "10-ministry-of-agriculture-forestry-and-fisheries/SRC-117-rua.edu.kh.json",
+          "pages": 9,
+          "documentLinks": 3,
+          "lastFetched": "2026-11-12T20:13:23.044Z"
         }
       ],
       "registry": [
@@ -303,8 +404,8 @@
       "onOfficialList": true,
       "folder": "11-ministry-of-planning",
       "registeredSites": 2,
-      "crawledSites": 1,
-      "pages": 28,
+      "crawledSites": 2,
+      "pages": 87,
       "sites": [
         {
           "institution": "Ministry of Planning",
@@ -316,6 +417,17 @@
           "pages": 28,
           "documentLinks": 0,
           "lastFetched": "2026-11-12T18:56:55.797Z"
+        },
+        {
+          "institution": "Ministry of Planning",
+          "folder": "11-ministry-of-planning",
+          "id": "SRC-067",
+          "organization": "National Institute of Statistics",
+          "host": "nis.gov.kh",
+          "file": "11-ministry-of-planning/SRC-067-nis.gov.kh.json",
+          "pages": 59,
+          "documentLinks": 259,
+          "lastFetched": "2026-11-12T20:04:31.271Z"
         }
       ],
       "registry": [
@@ -366,8 +478,8 @@
       "onOfficialList": true,
       "folder": "13-ministry-of-commerce",
       "registeredSites": 9,
-      "crawledSites": 1,
-      "pages": 13,
+      "crawledSites": 5,
+      "pages": 124,
       "sites": [
         {
           "institution": "Ministry of Commerce",
@@ -379,6 +491,50 @@
           "pages": 13,
           "documentLinks": 0,
           "lastFetched": "2026-11-12T18:54:56.811Z"
+        },
+        {
+          "institution": "Ministry of Commerce",
+          "folder": "13-ministry-of-commerce",
+          "id": "SRC-046",
+          "organization": "Consumer Protection, Competition and Fraud Repression Directorate-General",
+          "host": "ccfdg.gov.kh",
+          "file": "13-ministry-of-commerce/SRC-046-ccfdg.gov.kh.json",
+          "pages": 24,
+          "documentLinks": 1,
+          "lastFetched": "2026-11-12T19:21:56.690Z"
+        },
+        {
+          "institution": "Ministry of Commerce",
+          "folder": "13-ministry-of-commerce",
+          "id": "SRC-049",
+          "organization": "Department of Intellectual Property Rights",
+          "host": "www.cambodiaip.gov.kh",
+          "file": "13-ministry-of-commerce/SRC-049-www.cambodiaip.gov.kh.json",
+          "pages": 24,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:23:11.726Z"
+        },
+        {
+          "institution": "Ministry of Commerce",
+          "folder": "13-ministry-of-commerce",
+          "id": "SRC-078",
+          "organization": "Online Business Registration / Registration Services",
+          "host": "registrationservices.gov.kh",
+          "file": "13-ministry-of-commerce/SRC-078-registrationservices.gov.kh.json",
+          "pages": 58,
+          "documentLinks": 25,
+          "lastFetched": "2026-11-12T20:09:37.914Z"
+        },
+        {
+          "institution": "Ministry of Commerce",
+          "folder": "13-ministry-of-commerce",
+          "id": "SRC-133",
+          "organization": "Business Registration (MoC)",
+          "host": "businessregistration.moc.gov.kh",
+          "file": "13-ministry-of-commerce/SRC-133-businessregistration.moc.gov.kh.json",
+          "pages": 5,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:15:49.200Z"
         }
       ],
       "registry": [
@@ -435,9 +591,43 @@
       "onOfficialList": true,
       "folder": "14-ministry-of-education-youth-and-sport",
       "registeredSites": 8,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 3,
+      "pages": 24,
+      "sites": [
+        {
+          "institution": "Ministry of Education, Youth and Sport",
+          "folder": "14-ministry-of-education-youth-and-sport",
+          "id": "SRC-114",
+          "organization": "Royal University of Phnom Penh",
+          "host": "rupp.edu.kh",
+          "file": "14-ministry-of-education-youth-and-sport/SRC-114-rupp.edu.kh.json",
+          "pages": 8,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:12:42.166Z"
+        },
+        {
+          "institution": "Ministry of Education, Youth and Sport",
+          "folder": "14-ministry-of-education-youth-and-sport",
+          "id": "SRC-115",
+          "organization": "Institute of Technology of Cambodia",
+          "host": "itc.edu.kh",
+          "file": "14-ministry-of-education-youth-and-sport/SRC-115-itc.edu.kh.json",
+          "pages": 9,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:13:02.563Z"
+        },
+        {
+          "institution": "Ministry of Education, Youth and Sport",
+          "folder": "14-ministry-of-education-youth-and-sport",
+          "id": "SRC-118",
+          "organization": "Royal University of Law and Economics",
+          "host": "rule.edu.kh",
+          "file": "14-ministry-of-education-youth-and-sport/SRC-118-rule.edu.kh.json",
+          "pages": 7,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:13:43.451Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-025",
@@ -487,8 +677,8 @@
       "onOfficialList": true,
       "folder": "15-ministry-of-health",
       "registeredSites": 8,
-      "crawledSites": 1,
-      "pages": 58,
+      "crawledSites": 4,
+      "pages": 78,
       "sites": [
         {
           "institution": "Ministry of Health",
@@ -500,6 +690,39 @@
           "pages": 58,
           "documentLinks": 39,
           "lastFetched": "2026-11-12T19:11:06.321Z"
+        },
+        {
+          "institution": "Ministry of Health",
+          "folder": "15-ministry-of-health",
+          "id": "SRC-119",
+          "organization": "University of Health Sciences",
+          "host": "uhs.edu.kh",
+          "file": "15-ministry-of-health/SRC-119-uhs.edu.kh.json",
+          "pages": 2,
+          "documentLinks": 1,
+          "lastFetched": "2026-11-12T20:14:04.742Z"
+        },
+        {
+          "institution": "Ministry of Health",
+          "folder": "15-ministry-of-health",
+          "id": "SRC-125",
+          "organization": "Calmette Hospital",
+          "host": "calmette.gov.kh",
+          "file": "15-ministry-of-health/SRC-125-calmette.gov.kh.json",
+          "pages": 9,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:15:16.324Z"
+        },
+        {
+          "institution": "Ministry of Health",
+          "folder": "15-ministry-of-health",
+          "id": "SRC-129",
+          "organization": "National Maternal and Child Health Center",
+          "host": "nmchc.gov.kh",
+          "file": "15-ministry-of-health/SRC-129-nmchc.gov.kh.json",
+          "pages": 9,
+          "documentLinks": 4,
+          "lastFetched": "2026-11-12T20:15:36.957Z"
         }
       ],
       "registry": [
@@ -607,8 +830,8 @@
       "onOfficialList": true,
       "folder": "18-ministry-of-post-and-telecommunications",
       "registeredSites": 8,
-      "crawledSites": 1,
-      "pages": 58,
+      "crawledSites": 4,
+      "pages": 113,
       "sites": [
         {
           "institution": "Ministry of Post and Telecommunications",
@@ -620,6 +843,39 @@
           "pages": 58,
           "documentLinks": 0,
           "lastFetched": "2026-11-12T19:07:27.226Z"
+        },
+        {
+          "institution": "Ministry of Post and Telecommunications",
+          "folder": "18-ministry-of-post-and-telecommunications",
+          "id": "SRC-061",
+          "organization": "Telecommunication Regulator of Cambodia",
+          "host": "trc.gov.kh",
+          "file": "18-ministry-of-post-and-telecommunications/SRC-061-trc.gov.kh.json",
+          "pages": 23,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:57:40.984Z"
+        },
+        {
+          "institution": "Ministry of Post and Telecommunications",
+          "folder": "18-ministry-of-post-and-telecommunications",
+          "id": "SRC-066",
+          "organization": "Digital Government Committee",
+          "host": "dgc.gov.kh",
+          "file": "18-ministry-of-post-and-telecommunications/SRC-066-dgc.gov.kh.json",
+          "pages": 23,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:02:30.972Z"
+        },
+        {
+          "institution": "Ministry of Post and Telecommunications",
+          "folder": "18-ministry-of-post-and-telecommunications",
+          "id": "SRC-122",
+          "organization": "Cambodia Academy of Digital Technology",
+          "host": "cadt.edu.kh",
+          "file": "18-ministry-of-post-and-telecommunications/SRC-122-cadt.edu.kh.json",
+          "pages": 9,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:14:35.224Z"
         }
       ],
       "registry": [
@@ -700,8 +956,8 @@
       "onOfficialList": true,
       "folder": "20-ministry-of-labour-and-vocational-training",
       "registeredSites": 3,
-      "crawledSites": 1,
-      "pages": 6,
+      "crawledSites": 2,
+      "pages": 65,
       "sites": [
         {
           "institution": "Ministry of Labour and Vocational Training",
@@ -710,9 +966,20 @@
           "organization": "Ministry of Labour and Vocational Training",
           "host": "mlvt.gov.kh",
           "file": "20-ministry-of-labour-and-vocational-training/SRC-037-mlvt.gov.kh.json",
-          "pages": 6,
+          "pages": 55,
           "documentLinks": 2,
-          "lastFetched": "2026-11-12T19:14:17.199Z"
+          "lastFetched": "2026-11-12T19:16:09.310Z"
+        },
+        {
+          "institution": "Ministry of Labour and Vocational Training",
+          "folder": "20-ministry-of-labour-and-vocational-training",
+          "id": "SRC-124",
+          "organization": "National Technical Training Institute",
+          "host": "ntti.edu.kh",
+          "file": "20-ministry-of-labour-and-vocational-training/SRC-124-ntti.edu.kh.json",
+          "pages": 10,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:14:55.579Z"
         }
       ],
       "registry": [
@@ -984,9 +1251,21 @@
       "onOfficialList": true,
       "folder": "30-ministry-of-women-s-affairs",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 24,
+      "sites": [
+        {
+          "institution": "Ministry of Women's Affairs",
+          "folder": "30-ministry-of-women-s-affairs",
+          "id": "SRC-040",
+          "organization": "Ministry of Women's Affairs",
+          "host": "mowa.gov.kh",
+          "file": "30-ministry-of-women-s-affairs/SRC-040-mowa.gov.kh.json",
+          "pages": 24,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:16:59.813Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-040",
@@ -1018,9 +1297,21 @@
       "onOfficialList": true,
       "folder": "32-council-for-the-development-of-cambodia",
       "registeredSites": 3,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 59,
+      "sites": [
+        {
+          "institution": "Council for the Development of Cambodia",
+          "folder": "32-council-for-the-development-of-cambodia",
+          "id": "SRC-055",
+          "organization": "Council for the Development of Cambodia",
+          "host": "cdc.gov.kh",
+          "file": "32-council-for-the-development-of-cambodia/SRC-055-cdc.gov.kh.json",
+          "pages": 59,
+          "documentLinks": 221,
+          "lastFetched": "2026-11-12T19:56:50.134Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-055",
@@ -1062,9 +1353,21 @@
       "onOfficialList": true,
       "folder": "34-general-department-of-customs-and-excise",
       "registeredSites": 2,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 12,
+      "sites": [
+        {
+          "institution": "General Department of Customs and Excise",
+          "folder": "34-general-department-of-customs-and-excise",
+          "id": "SRC-043",
+          "organization": "General Department of Customs and Excise",
+          "host": "customs.gov.kh",
+          "file": "34-general-department-of-customs-and-excise/SRC-043-customs.gov.kh.json",
+          "pages": 12,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:19:24.727Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-043",
@@ -1084,9 +1387,21 @@
       "onOfficialList": true,
       "folder": "35-electricite-du-cambodge",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 22,
+      "sites": [
+        {
+          "institution": "Electricite Du Cambodge",
+          "folder": "35-electricite-du-cambodge",
+          "id": "SRC-138",
+          "organization": "Electricite du Cambodge",
+          "host": "edc.com.kh",
+          "file": "35-electricite-du-cambodge/SRC-138-edc.com.kh.json",
+          "pages": 22,
+          "documentLinks": 21,
+          "lastFetched": "2026-11-12T20:16:41.558Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-138",
@@ -1101,9 +1416,21 @@
       "onOfficialList": true,
       "folder": "36-general-department-of-taxation",
       "registeredSites": 2,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 57,
+      "sites": [
+        {
+          "institution": "General Department of Taxation",
+          "folder": "36-general-department-of-taxation",
+          "id": "SRC-042",
+          "organization": "General Department of Taxation",
+          "host": "tax.gov.kh",
+          "file": "36-general-department-of-taxation/SRC-042-tax.gov.kh.json",
+          "pages": 57,
+          "documentLinks": 1,
+          "lastFetched": "2026-11-12T19:18:58.585Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-042",
@@ -1186,9 +1513,21 @@
       "onOfficialList": false,
       "folder": "other/cambodian-mine-action-and-victim-assistance-authority",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 22,
+      "sites": [
+        {
+          "institution": "Cambodian Mine Action and Victim Assistance Authority",
+          "folder": "other/cambodian-mine-action-and-victim-assistance-authority",
+          "id": "SRC-071",
+          "organization": "Cambodian Mine Action and Victim Assistance Authority",
+          "host": "cmaa.gov.kh",
+          "file": "other/cambodian-mine-action-and-victim-assistance-authority/SRC-071-cmaa.gov.kh.json",
+          "pages": 22,
+          "documentLinks": 8,
+          "lastFetched": "2026-11-12T20:06:47.970Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-071",
@@ -1312,9 +1651,21 @@
       "onOfficialList": false,
       "folder": "other/national-authority-for-preah-vihear",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 9,
+      "sites": [
+        {
+          "institution": "National Authority for Preah Vihear",
+          "folder": "other/national-authority-for-preah-vihear",
+          "id": "SRC-070",
+          "organization": "National Authority for Preah Vihear",
+          "host": "napv.gov.kh",
+          "file": "other/national-authority-for-preah-vihear/SRC-070-napv.gov.kh.json",
+          "pages": 9,
+          "documentLinks": 6,
+          "lastFetched": "2026-11-12T20:05:41.597Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-070",
@@ -1358,9 +1709,43 @@
       "onOfficialList": false,
       "folder": "other/provincial-and-capital-administrations",
       "registeredSites": 25,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 3,
+      "pages": 50,
+      "sites": [
+        {
+          "institution": "Provincial and Capital Administrations",
+          "folder": "other/provincial-and-capital-administrations",
+          "id": "SRC-090",
+          "organization": "Banteay Meanchey Provincial Administration",
+          "host": "banteaymeanchey.gov.kh",
+          "file": "other/provincial-and-capital-administrations/SRC-090-banteaymeanchey.gov.kh.json",
+          "pages": 25,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:11:23.649Z"
+        },
+        {
+          "institution": "Provincial and Capital Administrations",
+          "folder": "other/provincial-and-capital-administrations",
+          "id": "SRC-092",
+          "organization": "Kampong Cham Provincial Administration",
+          "host": "kampongcham.gov.kh",
+          "file": "other/provincial-and-capital-administrations/SRC-092-kampongcham.gov.kh.json",
+          "pages": 24,
+          "documentLinks": 1,
+          "lastFetched": "2026-11-12T20:12:17.622Z"
+        },
+        {
+          "institution": "Provincial and Capital Administrations",
+          "folder": "other/provincial-and-capital-administrations",
+          "id": "SRC-097",
+          "organization": "Kandal Provincial Administration",
+          "host": "kandal.gov.kh",
+          "file": "other/provincial-and-capital-administrations/SRC-097-kandal.gov.kh.json",
+          "pages": 1,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:12:21.936Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-089",
@@ -1495,9 +1880,21 @@
       "onOfficialList": false,
       "folder": "other/royal-academy-of-cambodia",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 22,
+      "sites": [
+        {
+          "institution": "Royal Academy of Cambodia",
+          "folder": "other/royal-academy-of-cambodia",
+          "id": "SRC-068",
+          "organization": "Royal Academy of Cambodia",
+          "host": "rac.gov.kh",
+          "file": "other/royal-academy-of-cambodia/SRC-068-rac.gov.kh.json",
+          "pages": 22,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T20:05:21.448Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-068",

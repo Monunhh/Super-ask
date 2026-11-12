@@ -1,0 +1,114 @@
+{
+  "_note": "Crawled material, not steward-approved. Not read by SuperAsk retrieval (see data/README.md).",
+  "institution": {
+    "name": "Ministry of Commerce",
+    "onOfficialList": true,
+    "order": 13
+  },
+  "source": {
+    "id": "SRC-133",
+    "registryId": 133,
+    "organization": "Business Registration (MoC)",
+    "organizationKm": "ចុះបញ្ជីពាណិជ្ជកម្ម",
+    "abbreviation": null,
+    "category": "Digital Platform",
+    "parentMinistry": "Ministry of Commerce",
+    "url": "https://businessregistration.moc.gov.kh",
+    "host": "businessregistration.moc.gov.kh",
+    "priority": 2,
+    "provenance": "search",
+    "notes": "Business registry search and registration; Khmer and English; registration announcements and the 1266 hotline. Live per team spreadsheet, checked 2026-09-14."
+  },
+  "reachability": {
+    "outcome": "live",
+    "httpStatus": 200,
+    "homepageTitle": "Business Registration",
+    "checkedAt": "2026-11-12T17:53:31.386Z"
+  },
+  "crawl": {
+    "pageCount": 5,
+    "documentLinks": 0,
+    "firstFetched": "2026-11-12T20:15:39.360Z",
+    "lastFetched": "2026-11-12T20:15:49.200Z",
+    "builtAt": "2026-11-12T22:07:10.969Z"
+  },
+  "chrome": [
+    "Business Registration ចុះបញ្ជីពាណិជ្ជកម្ម Business Registration ព្រះរាជាណាចក្រកម្ពុជា Kingdom of Cambodia English Switch to Language Switch to English English Switch to Language Switch to English Loading... អំពីយើង សូមស្វាគមន៍មកកាន់គេហទំព័រចុះបញ្ជីពាណិជ្ជកម្ម នៃក្រសួងពាណិជ្ជកម្ម និងសូមអរគុណចូលមកកាន់គេហទំព័រយើងខ្ញុំ។ ខ្ញុំមានសេចក្ដីរីករាយសូមជម្រាបជូនថាបេសកម្មរបស់ក្រសួងពាណិជ្ជកម្មគឺផ្ដល់ជូនសេវាសាធារណៈរាល់សេវាសកម្មភាពទាក់ទង នឹងការធ្វើពាណិជ្ជកម្ម ទីផ្សារថ្មីៗ និងបន្តអនុវត្តគោលនយោបាយពាណិជ្ជកម្មរបស់ប្រទេសកម្ពុជាដើម្បីផលប្រយោជន៍ដ៏ ធំធេងនៃការអភិវឌ្ឍប្រទេសអោយបានរីកចម្រើន។ តំណផ្សេងៗ ក្រសួងពាណិជ្ជកម្ម អាជ្ញាប័ណ្ណពាណិជ្ជកម្មអេឡិចត្រូនិក ទំនាក់ទំនង 1266 (សូមចុចលេខ២ សម្រាប់ព័ត៌មានចុះបញ្ជីពាណិជ្ជកម្ម) [email protected] Second building, Third Floor, of Cambodian Ministry of Commerce © 2026 ចុះបញ្ជីពាណិជ្ជកម្ម។ រក្សាសិទ្ធិគ្រប់យា៉ងដោយក្រសួងពាណិជ្ជកម្ម"
+  ],
+  "pages": [
+    {
+      "url": "https://businessregistration.moc.gov.kh",
+      "title": "Business Registration",
+      "fetchedAt": "2026-11-12T20:15:39.360Z",
+      "sha256": "8fa5cbb42b0876f9edfc898477b1a8f0c036f86104c66ad22a8bd804be5afb93",
+      "rawPath": "data/crawl/raw/SRC-133/4533351ebe917484-8fa5cbb42b08.html",
+      "textLength": 1475,
+      "text": "សូមស្វាគមន៍មកកាន់គេហទំព័រចុះបញ្ជីពាណិជ្ជកម្ម ក្រសួងពាណិជ្ជកម្ម ឯកឧត្តម បួន សារៈមុនី រដ្ឋលេខាធិការក្រសួងពាណិជ្ជកម្ម តំណាងរបស់ លោកជំទាវ ចម និម្មល រដ្ឋមន្ត្រីក្រសួងពាណិជ្ជកម្ម បានអញ្ជើញជាអធិបតីក្នុងសិក្ខាសាលាផ្សព្វផ្សាយ ស្ដីពី «បច្ចុប្បន្នភាពនៃការធ្វើទំនើបកម្មការងារចុះបញ្ជីពាណិជ្ជកម្ម៖ ការតម្កល់ប្រតិវេទន៍ប្រចាំឆ្នាំតាមប្រព័ន្ធបច្ចេកវិទ្យាព័ត៌មាន និងការលើកលែងពិន័យ» ដែលមានការចូលរួមពីតំណាងសភាពាណិជ្ជកម្មកម្ពុជា សភាពាណិជ្ជកម្មរាជធានី-ខេត្ត សមាគមពាណិជ្ជកម្ម ភ្នាក់ងារចុះបញ្ជីពាណិជ្ជកម្ម និងមន្ត្រីជំនាញនៃនាយកដ្ឋានចុះបញ្ជីពាណិជ្ជកម្ម អានបន្ថែម (ផ្សាយឡើងវិញ) សេចក្តីជូនដំណឹងស្តីពី៖ ការបន្តលើកលែងការពិន័យចំពោះក្រុមហុ៊នខកខានតម្កល់ប្រតិវេទន៍ប្រចាំឆ្នាំ តាមរយៈការពិន័យត្រឹម ១ ឆ្នាំចុងក្រោយ សម្រាប់រយៈពេល ៦ ខែ។ អានបន្ថែម សេចក្តីជូនដំណឹង ស្តីពី ការធ្វើសាមញ្ញកម្មការងារចុះបញ្ជីពាណិជ្ជកម្ម \"ដំណាក់កាលទី២\" អានបន្ថែម ឯកឧត្តម បួន សារៈមុនី រដ្ឋលេខាធិការក្រសួងពាណិជ្ជកម្ម បានដឹកនាំវគ្គផ្សព្វផ្សាយប្រកាសស្ដីពីការធ្វើសាមញ្ញកម្មនៃការងារចុះបញ្ជីពាណិជ្ជកម្ម អានបន្ថែម ចូលប្រព័ន្ធ (Logon) ការចូលត្រូវបានប្រើដើម្បីចូលប្រើសេវាកម្មអនឡាញជាច្រើន អ្នកគ្រាន់តែចងចាំឈ្មោះអ្នកប្រើប្រាស់ និងពាក្យសម្ងាត់តែបុ៉ណ្ណោះ។ ការចូលគឺត្រូវបានរចនាឡើងដើម្បីការពារឯកជនភាព និងសុវត្ថិភាពរបស់អ្នក។ ប្រសិនបើអ្នកភ្លេចឈ្មោះអ្នកប្រើប្រាស់ ឬពាក្យសម្ងាត់របស់អ្នក ប្រព័ន្ធអាចរំលឹកអ្នកតាមរយៈអី៊មែលអំពីព័ត៌មានលម្អិតដែលអ្នកភ្លេច។ ចូលប្រព័ន្ធ វីដេអូស្ដីពីការតម្កល់ប្រតិវេទន៍ប្រចាំឆ្នាំរបស់ក្រុមហុ៊នតាមប្រព័ន្ធស្វ័យប្រវត្តកម្ម ប្រព័ន្ធទូរស័ព្ទសាធារណៈរបស់ក្រសួងពាណិជ្ជកម្ម លេខ “១២៦៦” (សូមចុចលេខ ២ សម្រាប់ព័ត៌មានចុះបញ្ជីពាណិជ្ជកម្ម) Documents",
+      "links": [
+        "https://businessregistration.moc.gov.kh/",
+        "https://businessregistration.moc.gov.kh/news/6ace3fedd24acefe550d59b5",
+        "https://businessregistration.moc.gov.kh/news/6a75908c2b131bba8ca6b546",
+        "https://businessregistration.moc.gov.kh/news/6a159d40a1a10c647a3d73b8",
+        "https://businessregistration.moc.gov.kh/news/696ef3ef2ba84bb75fe9c6a2",
+        "https://businessregistration.moc.gov.kh/cdn-cgi/l/email-protection"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://businessregistration.moc.gov.kh/news/696ef3ef2ba84bb75fe9c6a2",
+      "title": "Business Registration",
+      "fetchedAt": "2026-11-12T20:15:49.200Z",
+      "sha256": "dff428527502b565b59f9b24a07bc4e2f31b70f05c318878de1f7d1d119791bf",
+      "rawPath": "data/crawl/raw/SRC-133/3083d662a6547eee-dff428527502.html",
+      "textLength": 0,
+      "text": "",
+      "links": [
+        "https://businessregistration.moc.gov.kh/",
+        "https://businessregistration.moc.gov.kh/cdn-cgi/l/email-protection"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://businessregistration.moc.gov.kh/news/6a159d40a1a10c647a3d73b8",
+      "title": "Business Registration",
+      "fetchedAt": "2026-11-12T20:15:47.195Z",
+      "sha256": "b367a5fae57e190d3b1d8186a7cfb6a4906f6f474e647949d272d544a75c9e3b",
+      "rawPath": "data/crawl/raw/SRC-133/ba2e3b8bf5408b18-b367a5fae57e.html",
+      "textLength": 0,
+      "text": "",
+      "links": [
+        "https://businessregistration.moc.gov.kh/",
+        "https://businessregistration.moc.gov.kh/cdn-cgi/l/email-protection"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://businessregistration.moc.gov.kh/news/6a75908c2b131bba8ca6b546",
+      "title": "Business Registration",
+      "fetchedAt": "2026-11-12T20:15:45.188Z",
+      "sha256": "f4973ba18b91569b3401dab7233f6ca67852e8e8c121c8c294f0164f8b6d2e11",
+      "rawPath": "data/crawl/raw/SRC-133/2c12bd74c975b54d-f4973ba18b91.html",
+      "textLength": 0,
+      "text": "",
+      "links": [
+        "https://businessregistration.moc.gov.kh/",
+        "https://businessregistration.moc.gov.kh/cdn-cgi/l/email-protection"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://businessregistration.moc.gov.kh/news/6ace3fedd24acefe550d59b5",
+      "title": "Business Registration",
+      "fetchedAt": "2026-11-12T20:15:43.187Z",
+      "sha256": "f3234c407b368f13736d501d708229ffe0f16b710d91934f2afd6c4878a59a91",
+      "rawPath": "data/crawl/raw/SRC-133/6bef1daecad3e97c-f3234c407b36.html",
+      "textLength": 0,
+      "text": "",
+      "links": [
+        "https://businessregistration.moc.gov.kh/",
+        "https://businessregistration.moc.gov.kh/cdn-cgi/l/email-protection"
+      ],
+      "documents": []
+    }
+  ]
+}
