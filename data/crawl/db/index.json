@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-12T18:30:47.680Z",
+  "builtAt": "2026-11-12T19:14:18.205Z",
   "institutions": [
     {
       "order": 1,
@@ -135,7 +135,7 @@
       "folder": "06-ministry-of-national-defense",
       "registeredSites": 1,
       "crawledSites": 1,
-      "pages": 1,
+      "pages": 3,
       "sites": [
         {
           "institution": "Ministry of National Defense",
@@ -144,9 +144,9 @@
           "organization": "Ministry of National Defence",
           "host": "mod.gov.kh",
           "file": "06-ministry-of-national-defense/SRC-016-mod.gov.kh.json",
-          "pages": 1,
+          "pages": 3,
           "documentLinks": 9,
-          "lastFetched": "2026-11-12T18:17:43.621Z"
+          "lastFetched": "2026-11-12T18:41:03.317Z"
         }
       ],
       "registry": [
@@ -269,9 +269,21 @@
       "onOfficialList": true,
       "folder": "10-ministry-of-agriculture-forestry-and-fisheries",
       "registeredSites": 2,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 59,
+      "sites": [
+        {
+          "institution": "Ministry of Agriculture, Forestry and Fisheries",
+          "folder": "10-ministry-of-agriculture-forestry-and-fisheries",
+          "id": "SRC-019",
+          "organization": "Ministry of Agriculture, Forestry and Fisheries",
+          "host": "maff.gov.kh",
+          "file": "10-ministry-of-agriculture-forestry-and-fisheries/SRC-019-maff.gov.kh.json",
+          "pages": 59,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T18:53:37.772Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-019",
@@ -291,9 +303,21 @@
       "onOfficialList": true,
       "folder": "11-ministry-of-planning",
       "registeredSites": 2,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 28,
+      "sites": [
+        {
+          "institution": "Ministry of Planning",
+          "folder": "11-ministry-of-planning",
+          "id": "SRC-024",
+          "organization": "Ministry of Planning",
+          "host": "mop.gov.kh",
+          "file": "11-ministry-of-planning/SRC-024-mop.gov.kh.json",
+          "pages": 28,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T18:56:55.797Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-024",
@@ -313,9 +337,21 @@
       "onOfficialList": true,
       "folder": "12-ministry-of-rural-development",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 24,
+      "sites": [
+        {
+          "institution": "Ministry of Rural Development",
+          "folder": "12-ministry-of-rural-development",
+          "id": "SRC-020",
+          "organization": "Ministry of Rural Development",
+          "host": "mrd.gov.kh",
+          "file": "12-ministry-of-rural-development/SRC-020-mrd.gov.kh.json",
+          "pages": 24,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T18:54:26.615Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-020",
@@ -342,7 +378,7 @@
           "file": "13-ministry-of-commerce/SRC-021-moc.gov.kh.json",
           "pages": 13,
           "documentLinks": 0,
-          "lastFetched": "2026-11-08T21:55:46.307Z"
+          "lastFetched": "2026-11-12T18:54:56.811Z"
         }
       ],
       "registry": [
@@ -451,9 +487,21 @@
       "onOfficialList": true,
       "folder": "15-ministry-of-health",
       "registeredSites": 8,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 58,
+      "sites": [
+        {
+          "institution": "Ministry of Health",
+          "folder": "15-ministry-of-health",
+          "id": "SRC-033",
+          "organization": "Ministry of Health",
+          "host": "moh.gov.kh",
+          "file": "15-ministry-of-health/SRC-033-moh.gov.kh.json",
+          "pages": 58,
+          "documentLinks": 39,
+          "lastFetched": "2026-11-12T19:11:06.321Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-033",
@@ -504,7 +552,7 @@
       "folder": "16-ministry-of-public-works-and-transport",
       "registeredSites": 2,
       "crawledSites": 1,
-      "pages": 56,
+      "pages": 65,
       "sites": [
         {
           "institution": "Ministry of Public Works and Transport",
@@ -513,9 +561,9 @@
           "organization": "Ministry of Public Works and Transport",
           "host": "mpwt.gov.kh",
           "file": "16-ministry-of-public-works-and-transport/SRC-034-mpwt.gov.kh.json",
-          "pages": 56,
+          "pages": 65,
           "documentLinks": 0,
-          "lastFetched": "2026-11-08T21:55:08.526Z"
+          "lastFetched": "2026-11-12T19:13:10.640Z"
         }
       ],
       "registry": [
@@ -559,9 +607,21 @@
       "onOfficialList": true,
       "folder": "18-ministry-of-post-and-telecommunications",
       "registeredSites": 8,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 58,
+      "sites": [
+        {
+          "institution": "Ministry of Post and Telecommunications",
+          "folder": "18-ministry-of-post-and-telecommunications",
+          "id": "SRC-032",
+          "organization": "Ministry of Post and Telecommunications",
+          "host": "mptc.gov.kh",
+          "file": "18-ministry-of-post-and-telecommunications/SRC-032-mptc.gov.kh.json",
+          "pages": 58,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:07:27.226Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-032",
@@ -611,9 +671,21 @@
       "onOfficialList": true,
       "folder": "19-ministry-of-social-affairs-veterans-and-youth-rehabilitation",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 52,
+      "sites": [
+        {
+          "institution": "Ministry of Social Affairs, Veterans and Youth Rehabilitation",
+          "folder": "19-ministry-of-social-affairs-veterans-and-youth-rehabilitation",
+          "id": "SRC-026",
+          "organization": "Ministry of Social Affairs, Veterans and Youth Rehabilitation",
+          "host": "mosvy.gov.kh",
+          "file": "19-ministry-of-social-affairs-veterans-and-youth-rehabilitation/SRC-026-mosvy.gov.kh.json",
+          "pages": 52,
+          "documentLinks": 10,
+          "lastFetched": "2026-11-12T18:58:57.346Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-026",
@@ -628,9 +700,21 @@
       "onOfficialList": true,
       "folder": "20-ministry-of-labour-and-vocational-training",
       "registeredSites": 3,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 6,
+      "sites": [
+        {
+          "institution": "Ministry of Labour and Vocational Training",
+          "folder": "20-ministry-of-labour-and-vocational-training",
+          "id": "SRC-037",
+          "organization": "Ministry of Labour and Vocational Training",
+          "host": "mlvt.gov.kh",
+          "file": "20-ministry-of-labour-and-vocational-training/SRC-037-mlvt.gov.kh.json",
+          "pages": 6,
+          "documentLinks": 2,
+          "lastFetched": "2026-11-12T19:14:17.199Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-037",
@@ -655,9 +739,21 @@
       "onOfficialList": true,
       "folder": "21-ministry-of-information",
       "registeredSites": 2,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 32,
+      "sites": [
+        {
+          "institution": "Ministry of Information",
+          "folder": "21-ministry-of-information",
+          "id": "SRC-030",
+          "organization": "Ministry of Information",
+          "host": "information.gov.kh",
+          "file": "21-ministry-of-information/SRC-030-information.gov.kh.json",
+          "pages": 32,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:05:12.519Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-030",
@@ -677,9 +773,21 @@
       "onOfficialList": true,
       "folder": "22-ministry-of-environment",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 24,
+      "sites": [
+        {
+          "institution": "Ministry of Environment",
+          "folder": "22-ministry-of-environment",
+          "id": "SRC-028",
+          "organization": "Ministry of Environment",
+          "host": "moe.gov.kh",
+          "file": "22-ministry-of-environment/SRC-028-moe.gov.kh.json",
+          "pages": 24,
+          "documentLinks": 50,
+          "lastFetched": "2026-11-12T19:02:01.078Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-028",
@@ -711,9 +819,21 @@
       "onOfficialList": true,
       "folder": "24-ministry-of-culture-and-fine-arts",
       "registeredSites": 2,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 24,
+      "sites": [
+        {
+          "institution": "Ministry of Culture and Fine Arts",
+          "folder": "24-ministry-of-culture-and-fine-arts",
+          "id": "SRC-035",
+          "organization": "Ministry of Culture and Fine Arts",
+          "host": "mcfa.gov.kh",
+          "file": "24-ministry-of-culture-and-fine-arts/SRC-035-mcfa.gov.kh.json",
+          "pages": 24,
+          "documentLinks": 28,
+          "lastFetched": "2026-11-12T19:14:00.844Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-035",
@@ -750,9 +870,21 @@
       "onOfficialList": true,
       "folder": "26-ministry-of-mines-and-energy",
       "registeredSites": 2,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 24,
+      "sites": [
+        {
+          "institution": "Ministry of Mines and Energy",
+          "folder": "26-ministry-of-mines-and-energy",
+          "id": "SRC-022",
+          "organization": "Ministry of Mines and Energy",
+          "host": "mme.gov.kh",
+          "file": "26-ministry-of-mines-and-energy/SRC-022-mme.gov.kh.json",
+          "pages": 24,
+          "documentLinks": 33,
+          "lastFetched": "2026-11-12T18:55:46.958Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-022",
@@ -772,9 +904,21 @@
       "onOfficialList": true,
       "folder": "27-ministry-of-land-management-urban-planning-and-construction",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 59,
+      "sites": [
+        {
+          "institution": "Ministry of Land Management, Urban Planning and Construction",
+          "folder": "27-ministry-of-land-management-urban-planning-and-construction",
+          "id": "SRC-027",
+          "organization": "Ministry of Land Management, Urban Planning and Construction",
+          "host": "mlmupc.gov.kh",
+          "file": "27-ministry-of-land-management-urban-planning-and-construction/SRC-027-mlmupc.gov.kh.json",
+          "pages": 59,
+          "documentLinks": 3,
+          "lastFetched": "2026-11-12T19:00:57.526Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-027",
@@ -811,9 +955,21 @@
       "onOfficialList": true,
       "folder": "29-ministry-of-water-resources-and-meteorology",
       "registeredSites": 1,
-      "crawledSites": 0,
-      "pages": 0,
-      "sites": [],
+      "crawledSites": 1,
+      "pages": 22,
+      "sites": [
+        {
+          "institution": "Ministry of Water Resources and Meteorology",
+          "folder": "29-ministry-of-water-resources-and-meteorology",
+          "id": "SRC-029",
+          "organization": "Ministry of Water Resources and Meteorology",
+          "host": "mowram.gov.kh",
+          "file": "29-ministry-of-water-resources-and-meteorology/SRC-029-mowram.gov.kh.json",
+          "pages": 22,
+          "documentLinks": 0,
+          "lastFetched": "2026-11-12T19:03:26.765Z"
+        }
+      ],
       "registry": [
         {
           "id": "SRC-029",

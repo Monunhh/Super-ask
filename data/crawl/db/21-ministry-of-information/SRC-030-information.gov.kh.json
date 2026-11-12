@@ -1,0 +1,700 @@
+{
+  "_note": "Crawled material, not steward-approved. Not read by SuperAsk retrieval (see data/README.md).",
+  "institution": {
+    "name": "Ministry of Information",
+    "onOfficialList": true,
+    "order": 21
+  },
+  "source": {
+    "id": "SRC-030",
+    "registryId": 30,
+    "organization": "Ministry of Information",
+    "organizationKm": "ក្រសួងព័ត៌មាន",
+    "abbreviation": "MINF",
+    "category": "Ministry",
+    "parentMinistry": null,
+    "url": "https://information.gov.kh",
+    "host": "information.gov.kh",
+    "priority": 1,
+    "provenance": "directory",
+    "notes": "HQ: 62 Monivong Blvd. Establishing official sites for all 25 provincial information departments."
+  },
+  "reachability": {
+    "outcome": "live",
+    "httpStatus": 200,
+    "homepageTitle": "ក្រសួងព័ត៌មាន",
+    "checkedAt": "2026-11-12T17:48:14.829Z"
+  },
+  "crawl": {
+    "pageCount": 32,
+    "documentLinks": 0,
+    "firstFetched": "2026-11-12T19:04:08.392Z",
+    "lastFetched": "2026-11-12T19:05:12.519Z",
+    "builtAt": "2026-11-12T19:14:17.878Z"
+  },
+  "chrome": [
+    "ទំព័រដើម ព័ត៌មាន សេចក្ដីជូនដំណឹង សេចក្តីប្រកាសព័ត៌មាន អំពីយើង តំណទៅ អំពីយើង ទំនាក់ទំនង រចនាសម្ព័ន្ធ មន្ទីររាជធានីខេត្ត អង្គភាពឯកជន ទំព័រឯកជនភាព បណ្តាញសង្គម © 2020 - រក្សាសិទ្ធិគ្រប់យា៉ងដោយ ក្រសួងព័ត៌មាន",
+    "- ក្រសួងព័ត៌មាន ព្រហស្បតិ៍, ១២ វិច្ឆិកា ២០២៦ ក្រសួងព័ត៌មាន មន្ទីរ"
+  ],
+  "pages": [
+    {
+      "url": "https://information.gov.kh",
+      "title": "ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:08.392Z",
+      "sha256": "8edf29792729cbe31ff562f56aa7ab2c42674b6d738bbe438bef5c27b41394c0",
+      "rawPath": "data/crawl/raw/SRC-030/a237d007db3c4297-8edf29792729.html",
+      "textLength": 52,
+      "text": "ក្រសួងព័ត៌មាន ទំព័រដើម អត្ថបទ នាយកដ្ឋាន ព័ត៌មានថ្មីៗ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/about-us",
+      "title": "ក្រសួងព័ត៌មាន-អំពី​​យើង",
+      "fetchedAt": "2026-11-12T19:04:12.816Z",
+      "sha256": "8d5474c2d8a3fb783c1f79d51fdc99d4f3cbabc6f4b2897f061bdd642bd34294",
+      "rawPath": "data/crawl/raw/SRC-030/470f1f7282792582-8d5474c2d8a3.html",
+      "textLength": 367,
+      "text": "ក្រសួងព័ត៌មាន-អំពីយើង ទំព័រដើម អត្ថបទ នាយកដ្ឋាន ក្រសួងព័ត៌មាន អគ្គលេខាធិការដ្ឋាន អគ្គនាយកដ្ឋានព័ត៌មាន និងសោតទស្សន៍ វិទ្យុជាតិកម្ពុជា ទូរទស្សន៍ជាតិកម្ពុជា ទីភ្នាក់ងារសារព័ត៌មានកម្ពុជា APP MoINFO ដំណើរការក្រោមការដឹកនាំរបស់គណកម្មាការដឹកនាំប្រតិបត្តិការផ្សាយព័ត៌មានតាមអី៊នធឺណិតក្រសួងព័ត៌មាន ដែលមាន ឯកឧត្ដម ហួត ឃាងវេង រដ្ឋលេខាធិការ ជាប្រធាន។ សេចក្ដីសម្រេច៖ ប្រកាសអនុញ្ញាត៖",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/battambang",
+      "title": "មន្ទីរខេត្តបាត់ដំបង - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:54.694Z",
+      "sha256": "84a260a71deab008efa26b79004697b79dd47357724f02d0bdf18c8cff0b0fcf",
+      "rawPath": "data/crawl/raw/SRC-030/0b211e38e2aba563-84a260a71dea.html",
+      "textLength": 33,
+      "text": "មន្ទីរខេត្តបាត់ដំបង ខេត្តបាត់ដំបង",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/battambang",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/bonteaymeanchey",
+      "title": "មន្ទីរខេត្តបន្ទាយមានជ័យ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:05:12.519Z",
+      "sha256": "2e58142fbf40bc473c89d388e0fa92afcae7d0c35a70a0f2100a34250f24649e",
+      "rawPath": "data/crawl/raw/SRC-030/3bd4bafaafa81311-2e58142fbf40.html",
+      "textLength": 41,
+      "text": "មន្ទីរខេត្តបន្ទាយមានជ័យ ខេត្តបន្ទាយមានជ័យ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/bonteaymeanchey",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/contact",
+      "title": "ក្រសួងព័ត៌មាន-ទំនាក់ទំនង",
+      "fetchedAt": "2026-11-12T19:04:14.555Z",
+      "sha256": "e78011bed1ee7aa3da3d78b4071f315beabb488f6d27e13286a3bef2cc974ae5",
+      "rawPath": "data/crawl/raw/SRC-030/b630297e63eb30b8-e78011bed1ee.html",
+      "textLength": 193,
+      "text": "ក្រសួងព័ត៌មាន-ទំនាក់ទំនង ទំព័រដើម អត្ថបទ នាយកដ្ឋាន វិទ្យុជាតិកម្ពុជា ទូរទស្សន៍ជាតិកម្ពុជា ទីភ្នាក់ងារសារព័ត៌មានកម្ពុជា APP MoINFO Tel:(855-23)722 869, (855-23)725 522, Fax,Phone:(855-23)427 319",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/kampongcham",
+      "title": "មន្ទីរខេត្តកំពង់ចាម - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:05:08.499Z",
+      "sha256": "12d9a19ed397203077cc41900c21d50977006ac9ea5708ed6b26a34d8d8dcef1",
+      "rawPath": "data/crawl/raw/SRC-030/345c5db3e0577c0a-12d9a19ed397.html",
+      "textLength": 33,
+      "text": "មន្ទីរខេត្តកំពង់ចាម ខេត្តកំពង់ចាម",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/kampongcham",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/kampongchhnang",
+      "title": "មន្ទីរខេត្តកំពង់ឆ្នាំង - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:34.464Z",
+      "sha256": "ac31998265d82046b452ea1b8e8356e3fbec9f490f91ba15947dac7173d6af11",
+      "rawPath": "data/crawl/raw/SRC-030/4b018f6f3209c2e7-ac31998265d8.html",
+      "textLength": 39,
+      "text": "មន្ទីរខេត្តកំពង់ឆ្នាំង ខេត្តកំពង់ឆ្នាំង",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/kampongchhnang",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/kampongspeu",
+      "title": "មន្ទីរខេត្តកំពង់ស្ពឺ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:56.495Z",
+      "sha256": "ff22d3db72c336c8b02312557c5e3e87a6b4a9ff1d19e3def0bba65b259045c6",
+      "rawPath": "data/crawl/raw/SRC-030/6742358ddf24c12a-ff22d3db72c3.html",
+      "textLength": 35,
+      "text": "មន្ទីរខេត្តកំពង់ស្ពឺ ខេត្តកំពង់ស្ពឺ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/kampongspeu",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/kampongthom",
+      "title": "មន្ទីរខេត្តកំពង់ធំ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:58.583Z",
+      "sha256": "b29696680b33704004ff2dcfbaaddf9cbd2f85ec7b9f871554d090eb8009335c",
+      "rawPath": "data/crawl/raw/SRC-030/9d1d6fa0792b7084-b29696680b33.html",
+      "textLength": 31,
+      "text": "មន្ទីរខេត្តកំពង់ធំ ខេត្តកំពង់ធំ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/kampongthom",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/kampot",
+      "title": "មន្ទីរខេត្តកំពត - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:38.466Z",
+      "sha256": "af6c95f98293f7f6f71a63c73b5f89e42d1d0eb6d0dbe89a011a84e344762644",
+      "rawPath": "data/crawl/raw/SRC-030/fee54952f615a7f7-af6c95f98293.html",
+      "textLength": 25,
+      "text": "មន្ទីរខេត្តកំពត ខេត្តកំពត",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/kampot",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/kandal",
+      "title": "មន្ទីរខេត្តកណ្តាល - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:05:06.538Z",
+      "sha256": "41f4d94e157c4a1d7342a8782d76c158341f70ae1891e165f30c87919a4fea2a",
+      "rawPath": "data/crawl/raw/SRC-030/9f376e5e74879fe6-41f4d94e157c.html",
+      "textLength": 29,
+      "text": "មន្ទីរខេត្តកណ្តាល ខេត្តកណ្តាល",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/kandal",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/kep",
+      "title": "មន្ទីរខេត្តកែប - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:26.463Z",
+      "sha256": "3fa92bbe18ad607c4c4c33dd3afb758411459a3b24919253d166d01d34e9a723",
+      "rawPath": "data/crawl/raw/SRC-030/976467638517e50e-3fa92bbe18ad.html",
+      "textLength": 23,
+      "text": "មន្ទីរខេត្តកែប ខេត្តកែប",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/kep",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/kohkong",
+      "title": "មន្ទីរខេត្តកោះកុង - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:42.466Z",
+      "sha256": "e75827a5ed7f3070cd048585033ec2d5f5c04cd2453379c5cb1ee402b6809863",
+      "rawPath": "data/crawl/raw/SRC-030/8e33e79a36860d5a-e75827a5ed7f.html",
+      "textLength": 29,
+      "text": "មន្ទីរខេត្តកោះកុង ខេត្តកោះកុង",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/kohkong",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/kratie",
+      "title": "មន្ទីរខេត្តក្រចេះ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:32.458Z",
+      "sha256": "b5b9a642b56838b5116c8002beba85088518d05500e202b01526d134472c37a6",
+      "rawPath": "data/crawl/raw/SRC-030/4c828e60ab1fad0b-b5b9a642b568.html",
+      "textLength": 89,
+      "text": "មន្ទីរខេត្តក្រចេះ ខេត្តក្រចេះ ទំព័រដើម ព័ត៌មាន សេចក្ដីជូនដំណឹង សេចក្តីប្រកាសព័ត៌មាន ឯកសារ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/kratie",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/mondulkiri",
+      "title": "មន្ទីរខេត្តមណ្ឌលគិរី - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:24.491Z",
+      "sha256": "f5926a48a4ceac4853bf53a4c9dc8174b7cc62408906c7f23b24807ae315ac6f",
+      "rawPath": "data/crawl/raw/SRC-030/fb9005120fb14f30-f5926a48a4ce.html",
+      "textLength": 35,
+      "text": "មន្ទីរខេត្តមណ្ឌលគិរី ខេត្តមណ្ឌលគិរី",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/mondulkiri",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/oudormeanchey",
+      "title": "មន្ទីរខេត្តឧត្តរមានជ័យ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:05:00.568Z",
+      "sha256": "bce0bcd8ab0415f849daaddb4cf36d699c23219b47ddc002284e12c8c411763e",
+      "rawPath": "data/crawl/raw/SRC-030/f97dafcdda30eebb-bce0bcd8ab04.html",
+      "textLength": 39,
+      "text": "មន្ទីរខេត្តឧត្តរមានជ័យ ខេត្តឧត្តរមានជ័យ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/oudormeanchey",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/pailin",
+      "title": "មន្ទីរខេត្តប៉ៃលិន - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:48.654Z",
+      "sha256": "6f921339c5e4bc278ee3ad93dc3cfaacfc548affde9d10fe5f675f44656e3510",
+      "rawPath": "data/crawl/raw/SRC-030/98297a6358a9a4f0-6f921339c5e4.html",
+      "textLength": 29,
+      "text": "មន្ទីរខេត្តបៃ៉លិន ខេត្តបៃ៉លិន",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/pailin",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/phnom_penh",
+      "title": "មន្ទីររាជធានីភ្នំពេញ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:50.470Z",
+      "sha256": "f9d6dd646396d5a2ce1da49d7228a05e6958505a4b40bc5ae42968ec0890f4e3",
+      "rawPath": "data/crawl/raw/SRC-030/f3f60c7a71406eb7-f9d6dd646396.html",
+      "textLength": 89,
+      "text": "មន្ទីររាជធានីភ្នំពេញ រាជធានីភ្នំពេញ ទំព័រដើម ព័ត៌មាន សេចក្ដីជូនដំណឹង សេចក្ដីប្រកាសព័ត៌មាន",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/phnom_penh",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/phreahvihear",
+      "title": "មន្ទីរខេត្តព្រះវិហារ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:05:10.505Z",
+      "sha256": "f52edc4d229a4165d7b1aceb633f0bff2b1a1a63d0992951813af4eb1a1117c0",
+      "rawPath": "data/crawl/raw/SRC-030/61654e275e17b0ee-f52edc4d229a.html",
+      "textLength": 35,
+      "text": "មន្ទីរខេត្តព្រះវិហារ ខេត្តព្រះវិហារ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/phreahvihear",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/preyveng",
+      "title": "មន្ទីរខេត្តព្រៃវែង - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:46.476Z",
+      "sha256": "51987d1e20d79eefb6eca71a4359902ecd9c3fddc3441a621841ed57f722d3a9",
+      "rawPath": "data/crawl/raw/SRC-030/be7240beed33b871-51987d1e20d7.html",
+      "textLength": 31,
+      "text": "មន្ទីរខេត្តព្រៃវែង ខេត្តព្រៃវែង",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/preyveng",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/privacy",
+      "title": "ក្រសួងព័ត៌មាន-Privacy Policy",
+      "fetchedAt": "2026-11-12T19:04:23.675Z",
+      "sha256": "3223a58c9ffd9f3aa826667fecc4a88ef18625ab1262d66840e76cbc49dd2213",
+      "rawPath": "data/crawl/raw/SRC-030/4d2692bb146e4eae-3223a58c9ffd.html",
+      "textLength": 4314,
+      "text": "ក្រសួងព័ត៌មាន-Privacy Policy ទំព័រដើម អត្ថបទ នាយកដ្ឋាន Privacy Policy Ministry of Information website www.information.gov.kh - contains modules that collect your personal information. Ministry of Information App will collect and use this information for the purpose for which it is provide only. We will hold the information securely and will only use it for contacting you and in purpose of identification. Also this information maybe used for providing you information about account and services that we think might be of interest to you (including from our selected business partners). If you ask us not to provide you with this information, we wil comply with your request. You have rights of access to, and correction of, your information. You do not have to provide us with information we request, though it may affect which products or services we can provide you with. We will not sell your information to third parties. Link to the privacy policy of third-party service providers used by the app Google Play Services Google Analytics for Firebase Firebase Crashlytics Facebook One Signal Log Data We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics. Cookies Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory. This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service. Service Providers We may employ third-party companies and individuals due to the following reasons: To facilitate our Service; To provide the Service on our behalf; To perform Service-related services; or To assist us in analyzing how our Service is used. We want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose. Security We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security. Links to Other Sites This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services. Children’s Privacy These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do the necessary actions. Changes to This Privacy Policy We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. This policy is effective as of 2022-10-19 Contact Us If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at [email protected] .",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/cdn-cgi/l/email-protection",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/private-companies",
+      "title": "ក្រសួងព័ត៌មាន-អង្គភាពឯកជន",
+      "fetchedAt": "2026-11-12T19:04:21.382Z",
+      "sha256": "65ea98d2739f664ca6914a9b06140985aa1cc0c87cda6814170d4f8fbad40f9a",
+      "rawPath": "data/crawl/raw/SRC-030/e02c91a4aa255953-65ea98d2739f.html",
+      "textLength": 774,
+      "text": "ក្រសួងព័ត៌មាន-អង្គភាពឯកជន ទំព័រដើម អត្ថបទ នាយកដ្ឋាន Fresh News KPS99 TV 3N News ៥ហ្វ័កញូ៉ស៍ មជ្ឈមណ្ឌលព័ត៌មានមូស្លីមកម្ពុជា CKK News CNI TV ONLINE Cootel CN TV Online CTV News Daily Khmer DBN News DAP News ដូនពេញ តេជះអង្គរវត្ត ធីវី អនឡាញ ដំណឹងភ្នំពេញ គេហទំព័រ ភ្នំពេញអភិវឌ្ឍន៍ DR Super Stars DSN Cambodia DT N7 Estern Alliance សេដ្ឋកិច្ចជាតិ Efen News សារព័ត៌មាន ឯករាជ្យ ENN TV EPK News Express News Eyes News Eye TV Online អំណាចទាំង៤ Friday Daily News នគរភ្នំ GivAngel គេហទំព័រ តំបន់ទន្លេ ហង្ស ពេជ្រ គេហទំព័រ សុខភាព Hello Cambodia ហុ៊ងហ្គា អាយសី៊ឌីធីវីអនឡាញ រស្មី ព័ត៌មាន Kamanmedia កំណត់ ត្រា សារព័ត៌មាន កម្ពុជារាល់ថ្ងៃ TNM News កម្ពុជាអភិវឌ្ឍន៍ កម្ពុជាជោគជ័យ ក្ដៅ ក្ដៅ K ESAN ខេមរបុត្រ សារព័ត៌មាន ខ្លីខ្លឹម ខ្លុយ ខ្មែរ Khmer7 News គេហទំព័រ ខ្មែរលីក Khmer Load ច្រើនទៀត ...",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/provinces",
+      "title": "ក្រសួងព័ត៌មាន-មន្ទីររាជធានីខេត្ត",
+      "fetchedAt": "2026-11-12T19:04:18.455Z",
+      "sha256": "70419cfc4da1d6e87ba2110a1eb24e459c752cb5f8756ade46e67c53aab698a6",
+      "rawPath": "data/crawl/raw/SRC-030/af49d86f88d2d5c4-70419cfc4da1.html",
+      "textLength": 403,
+      "text": "ក្រសួងព័ត៌មាន-មន្ទីររាជធានីខេត្ត ទំព័រដើម អត្ថបទ នាយកដ្ឋាន ខេត្តមណ្ឌលគិរី ខេត្តកែប ខេត្តសៀមរាប ខេត្តពោធិ៍សាត់ ខេត្តក្រចេះ ខេត្តកំពង់ឆ្នាំង ខេត្តតាកែវ ខេត្តកំពត ខេត្តរតនគីរី ខេត្តកោះកុង ខេត្តត្បូងឃ្មុំ ខេត្តព្រៃវែង ខេត្តបៃ៉លិន រាជធានីភ្នំពេញ ខេត្តស្ទឹងត្រែង ខេត្តបាត់ដំបង ខេត្តកំពង់ស្ពឺ ខេត្តកំពង់ធំ ខេត្តឧត្តរមានជ័យ ខេត្តព្រះសីហនុ ខេត្តស្វាយរៀង ខេត្តកណ្តាល ខេត្តកំពង់ចាម ខេត្តព្រះវិហារ ខេត្តបន្ទាយមានជ័យ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/mondulkiri",
+        "https://information.gov.kh/kep",
+        "https://information.gov.kh/siemreap",
+        "https://information.gov.kh/pursat",
+        "https://information.gov.kh/kratie",
+        "https://information.gov.kh/kampongchhnang",
+        "https://information.gov.kh/takeo",
+        "https://information.gov.kh/kampot",
+        "https://information.gov.kh/ratanakiri",
+        "https://information.gov.kh/kohkong",
+        "https://information.gov.kh/tbongkhmom",
+        "https://information.gov.kh/preyveng",
+        "https://information.gov.kh/pailin",
+        "https://information.gov.kh/phnom_penh",
+        "https://information.gov.kh/stengtreng",
+        "https://information.gov.kh/battambang",
+        "https://information.gov.kh/kampongspeu",
+        "https://information.gov.kh/kampongthom",
+        "https://information.gov.kh/oudormeanchey",
+        "https://information.gov.kh/shihanukville",
+        "https://information.gov.kh/svay_rieng",
+        "https://information.gov.kh/kandal",
+        "https://information.gov.kh/kampongcham",
+        "https://information.gov.kh/phreahvihear",
+        "https://information.gov.kh/bonteaymeanchey",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/pursat",
+      "title": "មន្ទីរខេត្តពោធិ៍សាត់ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:30.473Z",
+      "sha256": "bea4662e4afd407afd5b56d8cd176db63d76fe58dcd4d2c29ca65e7c8cc48dae",
+      "rawPath": "data/crawl/raw/SRC-030/c702028e276f41f6-bea4662e4afd.html",
+      "textLength": 35,
+      "text": "មន្ទីរខេត្តពោធិ៍សាត់ ខេត្តពោធិ៍សាត់",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/pursat",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/ratanakiri",
+      "title": "មន្ទីរខេត្តរតនគីរី - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:40.472Z",
+      "sha256": "599b7dded2aa47f92146e46d05f1ad7b0a1ed6bd74eb8ed5eb3add7abc0d38a0",
+      "rawPath": "data/crawl/raw/SRC-030/817cf10748af9d3b-599b7dded2aa.html",
+      "textLength": 31,
+      "text": "មន្ទីរខេត្តរតនគីរី ខេត្តរតនគីរី",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/ratanakiri",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/shihanukville",
+      "title": "មន្ទីរខេត្តព្រះសីហនុ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:05:02.588Z",
+      "sha256": "df7f54208ece57bebdd63a7329b79f32d395c035c8df30321b30d6e8982910d9",
+      "rawPath": "data/crawl/raw/SRC-030/7d74c809296abf80-df7f54208ece.html",
+      "textLength": 35,
+      "text": "មន្ទីរខេត្តព្រះសីហនុ ខេត្តព្រះសីហនុ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/shihanukville",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/siemreap",
+      "title": "មន្ទីរខេត្តសៀមរាប - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:28.479Z",
+      "sha256": "dc557dfc6e3af45404c1bf6837a9cc51eefdfd858519d66ef14138af26c54a29",
+      "rawPath": "data/crawl/raw/SRC-030/880d6c729d16c124-dc557dfc6e3a.html",
+      "textLength": 29,
+      "text": "មន្ទីរខេត្តសៀមរាប ខេត្តសៀមរាប",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/siemreap",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/stengtreng",
+      "title": "មន្ទីរខេត្តស្ទឹងត្រែង - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:52.475Z",
+      "sha256": "1c3b8dd00ac63224522dd129c3d13bc1e17d4a63e0cf47f4475dcb0ccfb452d1",
+      "rawPath": "data/crawl/raw/SRC-030/7addc6ac6e1dd323-1c3b8dd00ac6.html",
+      "textLength": 37,
+      "text": "មន្ទីរខេត្តស្ទឹងត្រែង ខេត្តស្ទឹងត្រែង",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/stengtreng",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/structure",
+      "title": "ក្រសួងព័ត៌មាន-រចនាសម្ព័ន្ធ",
+      "fetchedAt": "2026-11-12T19:04:16.458Z",
+      "sha256": "7bf99024e1134a6ab9e1e596cae048a5d66d7553e915e83fe1dd2690d790103e",
+      "rawPath": "data/crawl/raw/SRC-030/84673e25e8e3814b-7bf99024e113.html",
+      "textLength": 202,
+      "text": "ក្រសួងព័ត៌មាន-រចនាសម្ព័ន្ធ ទំព័រដើម អត្ថបទ នាយកដ្ឋាន ក្រសួងព័ត៌មាន ខុទ្ទកាល័យរដ្ឋមន្ត្រី អគ្គលេខាធិការដ្ឋាន អគ្គ ព័ត៌មាន និងសោតទស្សន៍ អគ្គ វិទ្យុជាតិ អគ្គ ទូរទស្សន៍ជាតិ អគ្គ ទីភ្នាក់ងារសារព័ត៌មានកម្ពុជា",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/svay_rieng",
+      "title": "មន្ទីរខេត្តស្វាយរៀង - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:05:04.634Z",
+      "sha256": "3d977635ab20b5394324693a03c43c4c7847c2e092f662104d633e2f7baea413",
+      "rawPath": "data/crawl/raw/SRC-030/ecfa9cef24af65db-3d977635ab20.html",
+      "textLength": 33,
+      "text": "មន្ទីរខេត្តស្វាយរៀង ខេត្តស្វាយរៀង",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/svay_rieng",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/takeo",
+      "title": "មន្ទីរខេត្តតាកែវ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:36.545Z",
+      "sha256": "c484b14741b0f6272c3efd7ce0487ca8bb1e921e9ab54bd147f4acb55b55da58",
+      "rawPath": "data/crawl/raw/SRC-030/7527682275a75356-c484b14741b0.html",
+      "textLength": 27,
+      "text": "មន្ទីរខេត្តតាកែវ ខេត្តតាកែវ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/takeo",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    },
+    {
+      "url": "https://information.gov.kh/tbongkhmom",
+      "title": "មន្ទីរខេត្តត្បូងឃ្មុំ - ក្រសួងព័ត៌មាន",
+      "fetchedAt": "2026-11-12T19:04:44.483Z",
+      "sha256": "0175c782af0e27cbaafba93d45a787ba7398ee64cff6cff054e8c6e565351285",
+      "rawPath": "data/crawl/raw/SRC-030/9ea720916101cb72-0175c782af0e.html",
+      "textLength": 37,
+      "text": "មន្ទីរខេត្តត្បូងឃ្មុំ ខេត្តត្បូងឃ្មុំ",
+      "links": [
+        "https://information.gov.kh/",
+        "https://information.gov.kh/tbongkhmom",
+        "https://information.gov.kh/about-us",
+        "https://information.gov.kh/contact",
+        "https://information.gov.kh/structure",
+        "https://information.gov.kh/provinces",
+        "https://information.gov.kh/private-companies",
+        "https://information.gov.kh/privacy"
+      ],
+      "documents": []
+    }
+  ]
+}
