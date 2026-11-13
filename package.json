@@ -24,6 +24,7 @@
     "crawl:monitor": "tsx scripts/crawl.ts --mode=monitor",
     "crawl:weekly": "tsx scripts/crawl.ts --mode=monitor --priority=1,2",
     "build-site-db": "tsx scripts/build-site-db.ts",
+    "build-sqlite": "tsx scripts/build-sqlite.ts",
     "check": "npm run typecheck && npm run test && npm run eval && npm run verify-check && npm run curated-check && npm run scope-check && npm run rationale-check",
     "telegram:webhook": "tsx scripts/telegram-webhook.ts"
   },
