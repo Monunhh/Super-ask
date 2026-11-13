@@ -79,9 +79,21 @@ function siteFiles(dir: string): string[] {
   return out.sort();
 }
 
-/** Undo the HTML entities the extractor left in place. */
+/**
+ * Embedded binary: inline images the extractor kept as text.
+ *
+ * One university page is 5 MB of base64 image data, which became 7,200
+ * "passages" of random characters — more than half the index. Real prose never
+ * runs 100 characters without a space or punctuation mark, in either script
+ * (Khmer is outside this character class entirely), so the test cannot remove
+ * anything a person could read.
+ */
+const BINARY = /(?:data:[a-z0-9.+/-]+;base64,)?[A-Za-z0-9+/=]{100,}/g;
+
+/** Undo the HTML entities the extractor left in place, and drop embedded binary. */
 function clean(text: string): string {
   return text
+    .replace(BINARY, " ")
     .replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&")
     .replace(/&quot;/g, '"')
