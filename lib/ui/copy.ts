@@ -28,6 +28,16 @@ export const UNVERIFIED_NOTICE: Copy = {
   km: "⚠️ មិនមែនមកពីឯកសារយោងដែលបានអនុម័តទេ។ SuperAsk គ្មានឯកសាររដ្ឋាភិបាលដែលបានអនុម័តសម្រាប់ករណីនេះទេ ដូច្នេះខ្លឹមសារខាងលើគឺជាការណែនាំទូទៅពីម៉ូដែល AI — វាអាចមិនពេញលេញ ហួសសម័យ ឬខុស។ សូមផ្ទៀងផ្ទាត់ថ្លៃសេវា កំណត់ពេល ឯកសារ ឬការិយាល័យទទួលបន្ទុក ជាមួយការិយាល័យពាក់ព័ន្ធ មុននឹងអនុវត្ត។",
 };
 
+/**
+ * Appended to an answer served from crawled website content, for the same
+ * reason UNVERIFIED_NOTICE is: a consumer that renders only the answer string
+ * (Telegram, Messenger) must still tell the citizen what they are reading.
+ */
+export const UNREVIEWED_NOTICE: Copy = {
+  en: "⚠️ From an official website, not reviewed. SuperAsk has no approved document covering this, so the above comes from text collected automatically from the website linked below. Nobody has checked it — it may be incomplete or out of date. Open the page and confirm with the responsible office before acting on it.",
+  km: "⚠️ មកពីគេហទំព័រផ្លូវការ ប៉ុន្តែមិនទាន់បានត្រួតពិនិត្យ។ SuperAsk គ្មានឯកសារយោងដែលបានអនុម័តសម្រាប់ករណីនេះទេ ដូច្នេះខ្លឹមសារខាងលើដកស្រង់ដោយស្វ័យប្រវត្តិពីគេហទំព័រខាងក្រោម។ គ្មាននរណាបានពិនិត្យវាទេ — វាអាចមិនពេញលេញ ឬហួសសម័យ។ សូមបើកទំព័រនោះ ហើយផ្ទៀងផ្ទាត់ជាមួយការិយាល័យទទួលបន្ទុក មុននឹងអនុវត្ត។",
+};
+
 export const UI = {
   brandSub: {
     en: "Independent service guide",
@@ -98,6 +108,20 @@ export const UI = {
     en: "SuperAsk has no approved government document covering this. The answer below is general guidance from the AI model — confirm any fee, deadline, document, or office before acting on it.",
     km: "SuperAsk គ្មានឯកសាររដ្ឋាភិបាលដែលបានអនុម័តសម្រាប់ករណីនេះទេ។ ចម្លើយខាងក្រោមគឺជាការណែនាំទូទៅពីម៉ូដែល AI — សូមផ្ទៀងផ្ទាត់ថ្លៃសេវា កំណត់ពេល ឯកសារ ឬការិយាល័យ មុននឹងអនុវត្ត។",
   } satisfies Copy,
+
+  /** The banner above an answer served from crawled website content. */
+  unreviewedLabel: {
+    en: "From an official website — not reviewed",
+    km: "មកពីគេហទំព័រផ្លូវការ — មិនទាន់បានត្រួតពិនិត្យ",
+  } satisfies Copy,
+
+  unreviewedBody: {
+    en: "SuperAsk has no approved document covering this. The answer below comes from text collected automatically from the website linked under it. Nobody has checked it — open the page and confirm with the responsible office before acting on it.",
+    km: "SuperAsk គ្មានឯកសារយោងដែលបានអនុម័តសម្រាប់ករណីនេះទេ។ ចម្លើយខាងក្រោមដកស្រង់ដោយស្វ័យប្រវត្តិពីគេហទំព័រដែលភ្ជាប់នៅខាងក្រោម។ គ្មាននរណាបានពិនិត្យវាទេ — សូមបើកទំព័រនោះ ហើយផ្ទៀងផ្ទាត់ជាមួយការិយាល័យទទួលបន្ទុក មុននឹងអនុវត្ត។",
+  } satisfies Copy,
+
+  websiteSource: { en: "Website page · not reviewed", km: "ទំព័រគេហទំព័រ · មិនទាន់ត្រួតពិនិត្យ" } satisfies Copy,
+  fetchedOn: { en: "Collected", km: "ប្រមូលនៅ" } satisfies Copy,
 
   /** UC-4: shown under a declined answer when no approved source covers it. */
   noSourceNotice: {

@@ -20,6 +20,7 @@ export function toCitation(chunk: Chunk, lang: Lang): Citation {
     reviewDue: chunk.reviewDue,
     freshness: freshnessOf(chunk),
     quote: lang === "km" && chunk.textKm ? chunk.textKm : chunk.text,
+    ...(chunk.origin === "crawl" ? { unreviewed: true } : {}),
   };
 }
 

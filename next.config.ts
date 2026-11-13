@@ -13,6 +13,23 @@ const nextConfig: NextConfig = {
   // exactly what this is, and buys nothing. The reverse proxy also strips it,
   // but a deployment should not depend on the proxy to avoid disclosing this.
   poweredByHeader: false,
+  // The engine reads data/ from disk at request time. Ship the crawl search
+  // index with every function that answers questions, and keep the crawl
+  // database it was built from (55 MB of JSON and SQLite the engine never
+  // opens) out of the function bundle.
+  outputFileTracingIncludes: {
+    "/api/ask": ["./data/crawl/index/*"],
+    "/api/health": ["./data/crawl/index/*"],
+    "/api/telegram/webhook": ["./data/crawl/index/*"],
+  },
+  outputFileTracingExcludes: {
+    "/**": [
+      "data/crawl/db/**/*",
+      "data/crawl/raw/**/*",
+      "data/crawl/*.db", "data/crawl/verification*",
+      "docs/**/*",
+    ],
+  },
   async headers() {
     return [
       // Telegram Mini App — must be embeddable (no X-Frame-Options: DENY).

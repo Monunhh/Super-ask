@@ -12,6 +12,7 @@ import { NextResponse } from "next/server";
 import { describeProvider } from "@/lib/llm";
 import { getKb } from "@/lib/kb/loader";
 import { ministryFreshnessScore } from "@/lib/engine/freshness";
+import { crawlStats } from "@/lib/retrieval/crawl-index";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -50,6 +51,9 @@ export async function GET() {
           ]),
         ),
       },
+      // The second corpus: unreviewed passages from crawled official websites,
+      // consulted only when the approved corpus above has no answer.
+      crawledWebsites: crawlStats(),
     },
     { headers: { "Cache-Control": "no-store" } },
   );

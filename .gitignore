@@ -26,6 +26,9 @@ data/crawl/raw/
 data/crawl/snapshots.json
 data/crawl/review-queue.jsonl
 data/crawl/last-report.json
+# Search index over data/crawl/db/. A build product: `npm run build` (prebuild)
+# regenerates it with scripts/build-crawl-index.ts.
+data/crawl/index/
 
 .DS_Store
 Thumbs.db

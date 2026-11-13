@@ -2,3 +2,7 @@
 .env
 .env.*
 !.env.example
+
+# Not needed by the build or at runtime: the SQLite export of the crawl.
+data/crawl/superask-sites.db
+data/crawl/raw

@@ -26,6 +26,9 @@ async function loadAsk(env: Record<string, string> = {}) {
     GENERAL_FALLBACK_ENABLED: "false",
     RETRIEVAL_MIN_SCORE: "0.20",
     CURATED_MATCH_THRESHOLD: "0.72",
+    // This suite pins the approved-corpus pipeline. The crawled-website path
+    // that follows a coverage gap has its own suite: crawl-answer.test.ts.
+    CRAWL_KB_ENABLED: "false",
   };
   for (const [k, v] of Object.entries({ ...defaults, ...env })) {
     vi.stubEnv(k, v);

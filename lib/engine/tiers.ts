@@ -52,6 +52,7 @@ import {
 } from "./copy";
 import { toCitation } from "./citations";
 import { tryGeneralFallback } from "./fallback";
+import { tryCrawlAnswer } from "./crawl-answer";
 
 const CURATED_THRESHOLD = Number(
   process.env.CURATED_MATCH_THRESHOLD ?? "0.72",
@@ -63,6 +64,12 @@ const CURATED_THRESHOLD = Number(
  * the corpus, the segmenter, or the reranker changes.
  */
 const RETRIEVAL_MIN_SCORE = Number(process.env.RETRIEVAL_MIN_SCORE ?? "0.20");
+
+/**
+ * Below this topicality coverage, an approved source can be displaced by a
+ * crawled passage that covers strictly more of the question.
+ */
+const CRAWL_CHALLENGE_BELOW = Number(process.env.CRAWL_CHALLENGE_BELOW ?? "0.75");
 
 export async function ask(req: AskRequest): Promise<AskResponse> {
   const id = randomUUID();
@@ -256,6 +263,21 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
       baseDiagnostics,
     });
 
+  // Crawled official-website content: consulted only once the approved corpus
+  // has failed to answer, and labelled unreviewed. See lib/engine/crawl-answer.ts.
+  const crawlAnswer = (beat = 0) =>
+    tryCrawlAnswer({
+      beat,
+      question,
+      history,
+      lang,
+      normalisedQuery: query.normalised,
+      id,
+      retrievalDiag,
+      finish,
+      baseDiagnostics,
+    });
+
   // ── Confidence gate: decline rather than generate over weak sources ─────
   // FR-16. This runs before generation on purpose (section 13).
   if (candidates.length === 0 || topScore < RETRIEVAL_MIN_SCORE) {
@@ -298,7 +320,11 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
     }
 
     // Anything reaching here is in domain — the off-domain screen ran before
-    // retrieval — so this is a coverage gap.
+    // retrieval — so this is a coverage gap in the approved corpus. A page on
+    // an official website beats the model's memory, so the crawl goes first.
+    const crawled = await crawlAnswer();
+    if (crawled) return crawled;
+
     const fallback = await generalFallback();
     if (fallback) return fallback;
 
@@ -366,6 +392,16 @@ async function executeAsk(req: AskRequest, id: string): Promise<AskResponse> {
         refusalReason: "scope:entity_record_lookup",
       }),
     );
+  }
+
+  // The approved corpus cleared the floor on similarity, but its best source
+  // leaves a good part of the question unmentioned — "register my business
+  // for tax online" lands on vehicle registration this way. Before answering
+  // from it, see whether an official website covers MORE of what was asked.
+  // A source that covers the question is never displaced.
+  if (topical.coverage < CRAWL_CHALLENGE_BELOW) {
+    const crawled = await crawlAnswer(topical.coverage);
+    if (crawled) return crawled;
   }
 
   // ── Tier 2: generation over retrieved sources only (FR-14) ───────────────

@@ -27,7 +27,8 @@ export function SourceCard({
   citation: Citation;
   lang: Lang;
 }) {
-  const fresh = citation.freshness === "fresh";
+  // A crawled page is never "verified", however recently it was fetched.
+  const fresh = citation.freshness === "fresh" && !citation.unreviewed;
   return (
     <div
       className="flex items-start gap-2.5 rounded-[10px] px-3.5 py-3"
@@ -51,7 +52,11 @@ export function SourceCard({
               lineHeight: 1.8,
             }}
           >
-            {fresh ? UI.verifiedSource[lang] : UI.sourceOne[lang]}
+            {citation.unreviewed
+              ? UI.websiteSource[lang]
+              : fresh
+                ? UI.verifiedSource[lang]
+                : UI.sourceOne[lang]}
           </div>
           <FreshnessBadge freshness={citation.freshness} lang={lang} />
         </div>
@@ -76,12 +81,22 @@ export function SourceCard({
             lineHeight: 1.8,
           }}
         >
-          {citation.instrument} · {citation.article}
-          <br />
-          {UI.effective[lang]} {citation.effective} ·{" "}
-          <span style={{ color: fresh ? T.tealText : T.inkSoft, fontWeight: 600 }}>
-            {UI.lastVerified[lang]} {citation.verified}
-          </span>
+          {citation.unreviewed ? (
+            <>
+              {citation.article}
+              <br />
+              {UI.fetchedOn[lang]} {citation.verified}
+            </>
+          ) : (
+            <>
+              {citation.instrument} · {citation.article}
+              <br />
+              {UI.effective[lang]} {citation.effective} ·{" "}
+              <span style={{ color: fresh ? T.tealText : T.inkSoft, fontWeight: 600 }}>
+                {UI.lastVerified[lang]} {citation.verified}
+              </span>
+            </>
+          )}
         </div>
 
         {citation.url && (

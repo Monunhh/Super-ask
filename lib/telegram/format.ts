@@ -11,9 +11,19 @@ export function formatTelegramAnswer(res: AskResponse): string {
 
   if (res.citations.length > 0) {
     lines.push("");
-    lines.push(res.lang === "km" ? "ប្រភពផ្លូវការ:" : "Official sources:");
+    lines.push(
+      res.unreviewed
+        ? res.lang === "km"
+          ? "ទំព័រគេហទំព័រ (មិនទាន់ត្រួតពិនិត្យ):"
+          : "Website pages (not reviewed):"
+        : res.lang === "km"
+          ? "ប្រភពផ្លូវការ:"
+          : "Official sources:",
+    );
     for (const c of res.citations.slice(0, 3)) {
-      const title = [c.instrument, c.article].filter(Boolean).join(" · ");
+      const title = c.unreviewed
+        ? `${c.ministry} — ${c.doc}`
+        : [c.instrument, c.article].filter(Boolean).join(" · ");
       const label = title || c.doc;
       if (c.url) {
         lines.push(`• ${label}\n  ${c.url}`);

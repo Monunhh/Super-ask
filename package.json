@@ -5,7 +5,9 @@
   "description": "SuperAsk — citizen information assistant for Cambodian government services. Phase 0 prototype.",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/build-crawl-index.ts",
     "build": "next build",
+    "build-crawl-index": "tsx scripts/build-crawl-index.ts",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",

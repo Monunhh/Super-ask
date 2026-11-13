@@ -50,6 +50,12 @@ export interface Chunk {
    * signed it off.
    */
   stewardApproved?: boolean;
+  /**
+   * "crawl" marks a passage served straight from the crawl index
+   * (lib/retrieval/crawl-index.ts) rather than from data/kb/. Absent on
+   * everything in the approved corpus.
+   */
+  origin?: "crawl";
   /** When ingestion fetched this, and from where (FR-54 provenance). */
   ingestedAt?: string;
   ingestedFrom?: string;
@@ -92,6 +98,11 @@ export interface Citation {
   reviewDue: string;
   freshness: Freshness;
   quote: string;
+  /**
+   * The source is a crawled official web page that no steward has reviewed.
+   * The interface must not label it "verified" or "approved".
+   */
+  unreviewed?: boolean;
 }
 
 /** Internal diagnostic payload. SuperAsk team only (FR-72, FR-73). */
@@ -141,6 +152,9 @@ export interface Diagnostics {
    *                       provider:declined because the corpus does cover the
    *                       subject: the rate of these measures a gap in the
    *                       published source pages, and the fix is content.
+   *   fallback:crawled_website  NOT a refusal — the approved corpus had no
+   *                       answer and one was served from unreviewed crawled
+   *                       website content, labelled as such.
    *   fallback:general_knowledge  NOT a refusal — no source covered the
    *                       question and GENERAL_FALLBACK_ENABLED served an
    *                       unverified model answer instead. Recorded here so the
@@ -183,6 +197,13 @@ export interface AskResponse {
    * backed by a cited approved source — the default contract.
    */
   unverified?: boolean;
+  /**
+   * The answer rests on text crawled from an official website, which no steward
+   * has reviewed. Unlike `unverified`, it HAS citations — each one a link to
+   * the page the text was fetched from — and the interface must say plainly
+   * that the content is unreviewed. See lib/engine/crawl-answer.ts.
+   */
+  unreviewed?: boolean;
   /** Emergency path: FR guardrail 6. Terminates the interaction. */
   terminal?: boolean;
   diagnostics?: Diagnostics;

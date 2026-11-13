@@ -3,9 +3,11 @@
 Everything SuperAsk's answers can come from, and everything it watches, lives
 here. One place to look for "where does this content come from".
 
-> **Progress note:** Phase 0 serves answers only from the sample approved corpus
-> below (`kb/`, `curated.json`, `glossary.json`). Crawl output is monitored for
-> stewards but is **not** answerable yet. For the full use-case / status write-up,
+> **Progress note:** answers come first from the approved corpus below (`kb/`,
+> `curated.json`, `glossary.json`). Since 2026-11-13, when that corpus has no
+> answer, the engine also searches the crawl database (`crawl/db/`, 58 official
+> websites) and serves the closest passage **labelled as unreviewed website
+> content**, with a link to the page. See "Crawled content in answers" below. For the full use-case / status write-up,
 > see [Project coordination and progress report](../README.md#project-coordination-and-progress-report)
 > in the root README.
 
@@ -33,10 +35,31 @@ Two kinds of content sit here and they are **not** interchangeable.
 |---|---|---|
 | Where | `kb/`, `curated.json`, `glossary.json` | `crawl/` |
 | Status | A human signed it off | Nobody has looked at it |
-| Retrieval reads it | **Yes** | **Never** |
+| Retrieval reads it | **Yes**, first | Only as a labelled fallback |
 
-`lib/retrieval/` reads `kb/` and nothing else. `lib/crawl/` writes `crawl/`
-and nothing else — there is no function in it that can write to `kb/`.
+`lib/retrieval/index.ts` reads `kb/` and nothing else. `lib/crawl/` writes
+`crawl/` and nothing else — there is no function in it that can write to `kb/`.
+
+### Crawled content in answers
+
+`crawl/` is still not approved content, and nothing promotes it. What changed
+is that it is no longer invisible:
+
+- `npm run build` runs `scripts/build-crawl-index.ts` first (`prebuild`), which
+  cuts every page in `crawl/db/` into passages and writes a BM25 index to
+  `crawl/index/crawl-index.json` (gitignored build product, ~35 MB).
+- `lib/retrieval/crawl-index.ts` searches it; `lib/engine/crawl-answer.ts`
+  decides whether a passage covers the question well enough to show.
+- The engine goes there only after the approved corpus failed — nothing above
+  the retrieval floor, or a top source that leaves much of the question
+  unmentioned. An approved answer that covers the question is never displaced.
+- Every such answer has `unreviewed: true`, carries a notice in its text, and
+  cites the page it came from as "Website page · not reviewed".
+- `CRAWL_KB_ENABLED=false` switches it off and restores the strict behaviour
+  described in the rest of this section. `/api/health` reports what is loaded
+  under `crawledWebsites`.
+
+The paragraphs below describe the approved corpus and still hold for it.
 
 That gap is FR-49 and §10.4: monitored content must not reach a citizen without
 steward approval. It is deliberate, and it is also why **adding a site to
